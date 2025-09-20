@@ -1,10 +1,11 @@
+
 import type { SVGProps } from 'react';
 import { Medal } from 'lucide-react';
 import Image from 'next/image';
 
 
 export const Logo = (props: SVGProps<SVGSVGElement>) => (
-    <div className="flex items-center" style={{ width: '150px', height: 'auto' }}>
+    <div className="flex items-center" style={{ width: '120px', height: 'auto' }}>
     <svg 
     viewBox="0 0 512 512" 
     xmlns="http://www.w3.org/2000/svg"
@@ -160,3 +161,5 @@ export const FutbolIcon = (props: SVGProps<SVGSVGElement>) => (
     <path d="m7.5 12 4.5 0" />
   </svg>
 );
+
+    
