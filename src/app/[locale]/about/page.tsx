@@ -44,6 +44,7 @@ export default function AboutPage() {
              alt={aboutHeroImage.description}
              data-ai-hint={aboutHeroImage.imageHint}
              fill
+             sizes="100vw"
              className="object-cover"
            />
         )}

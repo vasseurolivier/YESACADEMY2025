@@ -54,6 +54,7 @@ export default function CampsPage() {
              alt={heroImage.description}
              data-ai-hint={heroImage.imageHint}
              fill
+             sizes="100vw"
              className="object-cover"
            />
         )}
@@ -67,7 +68,7 @@ export default function CampsPage() {
         </div>
       </section>
 
-      <section className="container py-16 md:py-24">
+      <section className="container mx-auto py-16 md:py-24">
         <div className="mx-auto max-w-3xl text-center">
             <h2 className="font-headline text-3xl font-bold md:text-4xl">
               {t('section_title')}

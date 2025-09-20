@@ -68,6 +68,7 @@ export default function ProgramsPage() {
              alt={heroImage.description}
              data-ai-hint={heroImage.imageHint}
              fill
+             sizes="100vw"
              className="object-cover"
            />
         )}
@@ -82,7 +83,7 @@ export default function ProgramsPage() {
       </section>
 
       <section className="py-16 md:py-24">
-        <div className="container">
+        <div className="container mx-auto">
           <div className="mx-auto max-w-3xl text-center">
             <h2 className="font-headline text-3xl font-bold md:text-4xl">
               {t('section_title')}
@@ -101,6 +102,7 @@ export default function ProgramsPage() {
                             alt={program.image.description}
                             data-ai-hint={program.image.imageHint}
                             fill
+                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                             className="object-cover"
                         />
                     </div>

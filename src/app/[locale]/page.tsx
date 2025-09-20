@@ -46,6 +46,7 @@ export default function Home() {
                 alt={heroImage.description}
                 data-ai-hint={heroImage.imageHint}
                 fill
+                sizes="100vw"
                 className="object-cover"
                 priority
             />
@@ -65,7 +66,7 @@ export default function Home() {
       </section>
 
       <section id="sports" className="py-16 md:py-24">
-        <div className="container">
+        <div className="container mx-auto">
           <div className="mx-auto max-w-3xl text-center">
             <h2 className="font-headline text-3xl font-bold md:text-4xl">
               {t('sports_title')}
@@ -75,7 +76,7 @@ export default function Home() {
             </p>
           </div>
           <div className="mt-12">
-            <div className="grid grid-cols-2 gap-4 text-center sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 lg:gap-6">
+            <div className="mx-auto grid grid-cols-2 gap-4 text-center sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 lg:gap-6">
                 {sports.map(sport => (
                 <Link href={`/sports/${sport.slug}`} key={sport.name} className="group mx-auto">
                     <div className="relative aspect-square w-36 overflow-hidden rounded-lg">
@@ -84,6 +85,7 @@ export default function Home() {
                             alt={sport.image.alt}
                             data-ai-hint={sport.image.hint}
                             fill
+                            sizes="(max-width: 640px) 50vw, (max-width: 768px) 33vw, (max-width: 1024px) 25vw, 14vw"
                             className="object-cover transition-transform duration-300 group-hover:scale-110"
                         />
                         <div className="absolute inset-0 bg-black/40 transition-colors duration-300 group-hover:bg-black/20" />
@@ -138,7 +140,7 @@ export default function Home() {
       </section>
 
       <section id="testimonials" className="py-16 md:py-24">
-        <div className="container">
+        <div className="container mx-auto">
           <div className="mx-auto max-w-3xl text-center">
             <h2 className="font-headline text-3xl font-bold md:text-4xl">
               {t('testimonials_title')}
