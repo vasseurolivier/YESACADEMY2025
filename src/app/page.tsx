@@ -75,7 +75,7 @@ export default function Home() {
               From the court to the field, the wall to the water, we offer a diverse range of sports for all ages and skill levels.
             </p>
           </div>
-          <div className="mt-12 flex justify-center">
+          <div className="mt-12">
             <div className="grid grid-cols-2 gap-4 text-center sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 lg:gap-6">
                 {sports.map(sport => (
                 <Link href={`/sports/${sport.slug}`} key={sport.name} className="group mx-auto">

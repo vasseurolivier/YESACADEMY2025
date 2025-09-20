@@ -95,7 +95,7 @@ export default function SportDetailPage({ params }: Props) {
 
       <section className="py-16 md:py-24">
         <div className="container max-w-5xl">
-            <div className="mx-auto grid grid-cols-1 gap-12 md:grid-cols-2 md:items-center">
+            <div className="grid grid-cols-1 gap-12 md:grid-cols-2 md:items-center">
                 <div className="prose prose-lg dark:prose-invert">
                     <h2 className="font-headline text-3xl font-bold">À propos de notre programme {sport.name}</h2>
                     <p className="lead text-muted-foreground">
