@@ -124,6 +124,18 @@
       "id": "programs-hero", "description": "An overhead shot of various sports happening at once.", "imageUrl": "https://picsum.photos/seed/programs1/1200/400", "imageHint": "sports complex"
     },
     {
+      "id": "program-private", "description": "A coach giving one-on-one tennis instruction.", "imageUrl": "https://picsum.photos/seed/progprivate/600/400", "imageHint": "tennis lesson"
+    },
+    {
+      "id": "program-group", "description": "A group of kids in a basketball training session.", "imageUrl": "https://picsum.photos/seed/proggroup/600/400", "imageHint": "basketball training"
+    },
+    {
+      "id": "program-intensive", "description": "Athletes training hard during a sports camp.", "imageUrl": "https://picsum.photos/seed/progintensive/600/400", "imageHint": "sports camp"
+    },
+    {
+      "id": "program-corporate", "description": "Colleagues high-fiving during a team-building sport event.", "imageUrl": "https://picsum.photos/seed/progcorporate/600/400", "imageHint": "team building"
+    },
+    {
       "id": "camps-hero", "description": "Kids laughing and running at a summer camp.", "imageUrl": "https://picsum.photos/seed/camps1/1200/400", "imageHint": "summer camp"
     },
     {

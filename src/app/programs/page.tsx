@@ -1,4 +1,4 @@
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import { User, Users, Calendar, Building2 } from 'lucide-react';
@@ -15,22 +15,30 @@ const programs = [
   {
     icon: User,
     title: 'Private Coaching',
-    description: 'One-on-one sessions tailored to your specific goals. Accelerate your learning with personalized feedback from our expert coaches.',
+    target: "For the dedicated athlete",
+    description: 'One-on-one sessions tailored to your specific goals. Accelerate your learning with personalized feedback and unlock your peak performance.',
+    image: PlaceHolderImages.find(p => p.id === 'program-private'),
   },
   {
     icon: Users,
     title: 'Group Classes',
-    description: 'Join a dynamic group environment to learn, compete, and grow with peers. Classes are available for all age groups and skill levels.',
+    target: "For the social competitor",
+    description: 'Join a dynamic group environment to learn, compete, and grow with peers. Perfect for developing teamwork and game-sense in a fun atmosphere.',
+    image: PlaceHolderImages.find(p => p.id === 'program-group'),
   },
   {
     icon: Calendar,
     title: 'Intensive Stages',
-    description: 'Immersive training camps during holidays. A perfect opportunity to significantly boost your skills in a short amount of time.',
+    target: "For the ambitious player",
+    description: 'Immersive training camps during holidays. A perfect opportunity to significantly boost your skills and gain a competitive edge in a short amount of time.',
+    image: PlaceHolderImages.find(p => p.id === 'program-intensive'),
   },
   {
     icon: Building2,
     title: 'Corporate Events',
-    description: 'Unique team-building experiences centered around sports. Boost morale, communication, and teamwork within your organization.',
+    target: "For the modern team",
+    description: 'Unique team-building experiences centered around sports. Boost morale, communication, and teamwork within your organization in an active, engaging way.',
+    image: PlaceHolderImages.find(p => p.id === 'program-corporate'),
   },
 ];
 
@@ -64,26 +72,40 @@ export default function ProgramsPage() {
               Find Your Perfect Fit
             </h2>
             <p className="mt-4 text-lg text-muted-foreground">
-              Whether you are a beginner taking your first steps, a dedicated athlete aiming for the top, or a company looking for a unique event, we have a program for you.
+              Whether you're a beginner taking your first steps, a dedicated athlete aiming for the top, or a company looking for a unique event, we have a program for you.
             </p>
           </div>
-          <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-2">
+          <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-2">
             {programs.map(program => (
-              <Card key={program.title}>
-                <CardHeader className="flex-row items-center gap-4">
-                  <program.icon className="h-10 w-10 text-primary" />
-                  <CardTitle>{program.title}</CardTitle>
+              <Card key={program.title} className="flex flex-col overflow-hidden transition-shadow hover:shadow-lg">
+                {program.image && (
+                    <div className="aspect-video relative">
+                        <Image 
+                            src={program.image.imageUrl}
+                            alt={program.image.description}
+                            data-ai-hint={program.image.imageHint}
+                            fill
+                            className="object-cover"
+                        />
+                    </div>
+                )}
+                <CardHeader>
+                  <CardTitle className="flex items-center gap-3">
+                    <program.icon className="h-8 w-8 text-primary" />
+                    <span className="text-2xl">{program.title}</span>
+                  </CardTitle>
+                  <CardDescription>{program.target}</CardDescription>
                 </CardHeader>
-                <CardContent>
+                <CardContent className="flex-grow">
                   <p className="text-muted-foreground">{program.description}</p>
                 </CardContent>
+                <CardFooter>
+                  <Button asChild className="w-full">
+                    <Link href="/contact">Learn More</Link>
+                  </Button>
+                </CardFooter>
               </Card>
             ))}
-          </div>
-          <div className="mt-16 text-center">
-            <Button asChild size="lg">
-              <Link href="/contact">Enroll Today</Link>
-            </Button>
           </div>
         </div>
       </section>
