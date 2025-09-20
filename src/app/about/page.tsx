@@ -2,7 +2,7 @@ import Image from 'next/image';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
-import { Target, Heart, Users, Medal, Trophy, Calendar } from 'lucide-react';
+import { Target, Heart, Users, Medal, Trophy, Calendar, Futbol } from 'lucide-react';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -18,8 +18,8 @@ const values = [
 ];
 
 const stats = [
-    { icon: Users, value: '10,000+', label: 'Athletes Trained' },
-    { icon: Trophy, value: '250+', label: 'Championships Won' },
+    { icon: Users, value: '3,000+', label: 'Athletes Trained' },
+    { icon: Futbol, value: '7', label: 'Sports Offered' },
     { icon: Calendar, value: '2015', label: 'Founded In' },
     { icon: Medal, value: '2', label: 'Countries' },
 ]
