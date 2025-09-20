@@ -40,7 +40,7 @@ export default function Home() {
 
   return (
     <div className="flex flex-col">
-       <section className="relative h-[80vh] min-h-[600px] w-full text-white -ml-4">
+       <section className="relative -mx-4 h-[80vh] min-h-[600px] w-[100vw]">
         {heroImage && (
             <Image
                 src={heroImage.imageUrl}
@@ -99,7 +99,7 @@ export default function Home() {
         </div>
       </section>
       
-      <section className="bg-white py-16 md:py-24 -mx-4 sm:-mx-6 lg:-mx-8 px-4 sm:px-6 lg:px-8">
+      <section className="bg-white py-16 md:py-24 -mx-4 px-4">
         <div className="container grid gap-12 text-center md:grid-cols-2 md:items-center md:text-left">
           <div className="md:order-2">
             <h2 className="font-headline text-3xl font-bold md:text-4xl">Why YES ACADEMY?</h2>
@@ -170,7 +170,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-primary py-16 text-primary-foreground md:py-24 -mx-4 sm:-mx-6 lg:-mx-8 px-4 sm:px-6 lg:px-8">
+      <section className="bg-primary py-16 text-primary-foreground md:py-24 -mx-4 px-4">
         <div className="container text-center">
           <h2 className="font-headline text-3xl font-bold md:text-4xl">Ready to Join the Elite?</h2>
           <p className="mx-auto mt-4 max-w-2xl text-lg">

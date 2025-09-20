@@ -28,7 +28,7 @@ const enrollmentSteps = [
 export default function ContactPage() {
   return (
     <div>
-      <section className="bg-primary py-16 text-primary-foreground -mx-8 sm:-mx-10 lg:-mx-12 px-4 sm:px-6 lg:px-8">
+      <section className="bg-primary py-16 text-primary-foreground -mx-4 px-4">
         <div className="container text-center">
           <h1 className="font-headline text-4xl font-bold md:text-5xl">Join the Academy</h1>
           <p className="mx-auto mt-4 max-w-2xl text-lg">
@@ -70,7 +70,7 @@ export default function ContactPage() {
         </div>
       </section>
 
-      <section className="bg-white py-16 md:py-24 -mx-8 sm:-mx-10 lg:-mx-12 px-4 sm:px-6 lg:px-8">
+      <section className="bg-white py-16 md:py-24 -mx-4 px-4">
         <div className="container">
           <h2 className="text-center font-headline text-3xl font-bold">Our Locations</h2>
           <p className="text-center mt-4 text-muted-foreground max-w-2xl mx-auto">

@@ -30,7 +30,7 @@ export default function AboutPage() {
 
   return (
     <div>
-      <section className="relative h-64 w-full bg-primary -mx-12 sm:-mx-14 lg:-mx-16">
+      <section className="relative -mx-4 h-64 w-[100vw] bg-primary">
         {aboutHeroImage && (
              <Image
              src={aboutHeroImage.imageUrl}
@@ -68,7 +68,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="bg-white py-16 md:py-24 -mx-12 sm:-mx-14 lg:-mx-16 px-4 sm:px-6 lg:px-8">
+      <section className="bg-white py-16 md:py-24 -mx-4 px-4">
         <div className="container">
             <div className="mx-auto max-w-3xl text-center">
                 <h2 className="font-headline text-3xl font-bold md:text-4xl">Our Core Values</h2>
