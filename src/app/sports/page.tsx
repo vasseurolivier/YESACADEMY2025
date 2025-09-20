@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 export default function SportsPage() {
   return (
     <div>
-       <section className="bg-primary py-16 text-primary-foreground">
+       <section className="bg-primary py-16 text-primary-foreground -mx-4 sm:-mx-6 lg:-mx-8 px-4 sm:px-6 lg:px-8">
         <div className="container text-center">
           <h1 className="font-headline text-4xl font-bold md:text-5xl">Our Sports Disciplines</h1>
           <p className="mx-auto mt-4 max-w-2xl text-lg">

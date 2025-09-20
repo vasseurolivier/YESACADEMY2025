@@ -39,7 +39,7 @@ export default function SportDetailPage({ params }: Props) {
 
   return (
     <div>
-      <section className="relative h-72 w-full">
+      <section className="relative h-72 w-full -mx-4 sm:-mx-6 lg:-mx-8">
         <Image
           src={sport.image.url}
           alt={sport.image.alt}

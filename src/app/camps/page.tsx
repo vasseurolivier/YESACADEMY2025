@@ -32,7 +32,7 @@ export default function CampsPage() {
     const heroImage = PlaceHolderImages.find(p => p.id === 'camps-hero');
   return (
     <div>
-       <section className="relative h-64 w-full bg-primary">
+       <section className="relative h-64 w-full bg-primary -mx-4 sm:-mx-6 lg:-mx-8">
          {heroImage && (
              <Image
              src={heroImage.imageUrl}
