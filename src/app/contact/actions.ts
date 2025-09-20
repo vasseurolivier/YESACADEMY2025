@@ -17,7 +17,9 @@ export const contactSchema = z.object({
     message: z.string().min(10, { message: "Message must be at least 10 characters." }),
 });
 
-export async function handleContactSubmission(data: z.infer<typeof contactSchema>) {
+export type ContactFormValues = z.infer<typeof contactSchema>;
+
+export async function handleContactSubmission(data: ContactFormValues) {
     try {
         console.log("New contact form submission:", data);
         // Here you would typically send an email or save to a database

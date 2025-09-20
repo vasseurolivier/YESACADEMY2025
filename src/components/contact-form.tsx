@@ -14,7 +14,23 @@ import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Loader2 } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
 import { sports } from '@/lib/sports-data';
-import { contactSchema, handleContactSubmission } from '@/app/contact/actions';
+import { handleContactSubmission } from '@/app/contact/actions';
+
+const contactSchema = z.object({
+    name: z.string().min(2, { message: "Name must be at least 2 characters." }),
+    email: z.string().email({ message: "Please enter a valid email address." }),
+    phone: z.string().optional(),
+    location: z.enum(["china", "vietnam", "other"], {
+        required_error: "You need to select a location.",
+    }),
+    program: z.string({
+        required_error: "Please select a program of interest.",
+    }),
+    subject: z.string().min(3, { message: "Subject must be at least 3 characters." }),
+    message: z.string().min(10, { message: "Message must be at least 10 characters." }),
+});
+
+type ContactFormValues = z.infer<typeof contactSchema>;
 
 const programsOfInterest = [
   ...sports.map(s => s.name),
@@ -29,14 +45,14 @@ const programsOfInterest = [
 export function ContactForm() {
   const { toast } = use-toast();
 
-  const form = useForm<z.infer<typeof contactSchema>>({
+  const form = useForm<ContactFormValues>({
     resolver: zodResolver(contactSchema),
     defaultValues: { name: "", email: "", phone: "", subject: "", message: "" },
   });
 
   const { isSubmitting } = form.formState;
 
-  const onSubmit = async (values: z.infer<typeof contactSchema>) => {
+  const onSubmit = async (values: ContactFormValues) => {
     const result = await handleContactSubmission(values);
      if (result.success) {
         toast({
