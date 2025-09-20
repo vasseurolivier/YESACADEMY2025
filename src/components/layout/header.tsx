@@ -5,7 +5,6 @@ import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { Menu } from 'lucide-react';
-import { LanguageSwitcher } from './language-switcher';
 import { Logo } from '@/components/icons';
 
 const navLinks = [
@@ -76,7 +75,6 @@ export function Header() {
         </nav>
 
         <div className="flex items-center gap-2">
-          <LanguageSwitcher />
           {isClient && (
             <Button asChild className="hidden sm:inline-flex bg-accent text-accent-foreground hover:bg-accent/90">
               <Link href="/contact">Enroll Now</Link>
