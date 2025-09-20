@@ -44,7 +44,7 @@ export default function Home() {
 
   return (
     <div className="flex flex-col">
-      <section className="relative h-[60vh] min-h-[400px] w-full text-white md:h-[80vh] -mx-4 sm:-mx-6 lg:-mx-8">
+      <section className="relative h-[60vh] min-h-[400px] w-full text-white">
         <Carousel className="h-full w-full" opts={{ loop: true }}>
           <CarouselContent>
             {heroImages.map((image, index) => (
@@ -107,31 +107,31 @@ export default function Home() {
         </div>
       </section>
       
-      <section className="bg-white py-16 md:py-24 -mx-4 sm:-mx-6 lg:-mx-8 px-4 sm:px-6 lg:px-8">
+      <section className="bg-white py-16 md:py-24">
         <div className="container grid gap-12 md:grid-cols-2 md:items-center">
-          <div>
+          <div className="text-center md:text-left">
             <h2 className="font-headline text-3xl font-bold md:text-4xl">Why YES ACADEMY?</h2>
             <p className="mt-4 text-lg text-muted-foreground">We are more than just an academy. We are a community dedicated to excellence, growth, and passion for sport.</p>
             <ul className="mt-8 space-y-4 text-lg">
-              <li className="flex items-start">
+              <li className="flex items-start justify-center md:justify-start">
                 <CheckCircle className="mr-3 mt-1 h-6 w-6 shrink-0 text-primary" />
                 <span><span className="font-semibold">Expert International Coaches:</span> Learn from the best in the industry.</span>
               </li>
-              <li className="flex items-start">
+              <li className="flex items-start justify-center md:justify-start">
                 <CheckCircle className="mr-3 mt-1 h-6 w-6 shrink-0 text-primary" />
                 <span><span className="font-semibold">State-of-the-Art Facilities:</span> Train in premium, fully-equipped environments.</span>
               </li>
-              <li className="flex items-start">
+              <li className="flex items-start justify-center md:justify-start">
                 <CheckCircle className="mr-3 mt-1 h-6 w-6 shrink-0 text-primary" />
                 <span><span className="font-semibold">Holistic Development:</span> We focus on both athletic skills and personal growth.</span>
               </li>
-              <li className="flex items-start">
+              <li className="flex items-start justify-center md:justify-start">
                 <CheckCircle className="mr-3 mt-1 h-6 w-6 shrink-0 text-primary" />
                 <span><span className="font-semibold">Vibrant Community:</span> Join a diverse and inclusive family of sports lovers.</span>
               </li>
             </ul>
           </div>
-           <div>
+           <div className="flex justify-center">
             {PlaceHolderImages.find(p => p.id === 'why-us-1') && 
               <Image 
                 src={PlaceHolderImages.find(p => p.id === 'why-us-1')?.imageUrl!}
@@ -178,7 +178,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-primary py-16 text-primary-foreground md:py-24 -mx-4 sm:-mx-6 lg:-mx-8 px-4 sm:px-6 lg:px-8">
+      <section className="bg-primary py-16 text-primary-foreground md:py-24">
         <div className="container text-center">
           <h2 className="font-headline text-3xl font-bold md:text-4xl">Ready to Join the Elite?</h2>
           <p className="mx-auto mt-4 max-w-2xl text-lg">
