@@ -18,7 +18,7 @@ const camps = [
     location: 'China & Vietnam',
     description: 'An action-packed summer of sports, friendship, and fun. Our multi-sport camps offer a chance to try new activities and master existing skills in a vibrant, international environment.',
     image: PlaceHolderImages.find(p => p.id === 'gallery-1')?.imageUrl,
-    active: true,
+    active: false,
   },
   {
     icon: Snowflake,
