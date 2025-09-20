@@ -87,22 +87,114 @@ const ageCategories = [
     }
 ]
 
-const testimonials = [
-  {
-    name: 'Li Wei',
-    role: 'Parent of a U12 Player',
-    avatar: 'LW',
-    image: PlaceHolderImages.find(p => p.id === 'testimonial-1')?.imageUrl,
-    testimonial: "The training methodology has completely transformed my son's game. The coaches don't just teach, they inspire.",
-  },
-  {
-    name: 'Alex Johnson',
-    role: 'Adult Tennis Member',
-    avatar: 'AJ',
-    image: PlaceHolderImages.find(p => p.id === 'testimonial-2')?.imageUrl,
-    testimonial: "I've progressed more in six months here than in two years elsewhere. The personalized attention and community atmosphere are unmatched.",
-  },
-];
+const allTestimonials: {[key: string]: {name: string, role: string, avatar: string, image?: string, testimonial: string}[]} = {
+  football: [
+    {
+      name: 'Wang Hao',
+      role: 'Parent of a U14 Football Player',
+      avatar: 'WH',
+      image: PlaceHolderImages.find(p => p.id === 'testimonial-1')?.imageUrl,
+      testimonial: "The tactical training is incredible. My son understands the game on a much deeper level now. The coaches are truly world-class.",
+    },
+    {
+      name: 'Chen Wei',
+      role: 'U16 Goalkeeper',
+      avatar: 'CW',
+      image: PlaceHolderImages.find(p => p.id === 'testimonial-2')?.imageUrl,
+      testimonial: "The specific goalkeeper training has been a game-changer. I feel more confident and my reaction times have improved dramatically.",
+    },
+  ],
+  basketball: [
+    {
+      name: 'Li Na',
+      role: 'Parent of a U15 Basketball Player',
+      avatar: 'LN',
+      image: PlaceHolderImages.find(p => p.id === 'testimonial-3')?.imageUrl,
+      testimonial: "The focus on fundamental skills is outstanding. My daughter's dribbling and shooting have improved so much, and she loves going to practice.",
+    },
+    {
+      name: 'Mike Anderson',
+      role: 'Adult League Player',
+      avatar: 'MA',
+      testimonial: "Great way to stay fit and competitive. The facilities are top-notch and the league is well-organized. It's the highlight of my week.",
+    },
+  ],
+  volleyball: [
+    {
+      name: 'Zoe Tran',
+      role: 'U18 Volleyball Captain',
+      avatar: 'ZT',
+      image: PlaceHolderImages.find(p => p.id === 'testimonial-2')?.imageUrl,
+      testimonial: "Our team cohesion has improved massively. The coaches teach us how to communicate effectively on the court, and it shows in our results.",
+    },
+    {
+      name: 'David Garcia',
+      role: 'Parent of a Volleyball Player',
+      avatar: 'DG',
+      testimonial: "I'm impressed by the positive and supportive environment. The coaches build confidence in the players, both on and off the court.",
+    },
+  ],
+  tennis: [
+    {
+      name: 'Sophie Dubois',
+      role: 'Competitive Tennis Player (U16)',
+      avatar: 'SD',
+      image: PlaceHolderImages.find(p => p.id === 'testimonial-1')?.imageUrl,
+      testimonial: "The one-on-one coaching has refined my backhand and serve immensely. The video analysis sessions are incredibly helpful to see what I need to work on.",
+    },
+    {
+      name: 'Alex Johnson',
+      role: 'Adult Tennis Member',
+      avatar: 'AJ',
+      image: PlaceHolderImages.find(p => p.id === 'testimonial-2')?.imageUrl,
+      testimonial: "I've progressed more in six months here than in two years elsewhere. The personalized attention and community atmosphere are unmatched.",
+    },
+  ],
+  golf: [
+    {
+      name: 'Kenji Tanaka',
+      role: 'Golf Program Member',
+      avatar: 'KT',
+      testimonial: "My handicap has dropped by 5 strokes since I joined. The PGA pros here know exactly how to fine-tune your swing for consistency and power.",
+    },
+    {
+      name: 'Emily Carter',
+      role: 'Beginner Golfer',
+      avatar: 'EC',
+      image: PlaceHolderImages.find(p => p.id === 'testimonial-3')?.imageUrl,
+      testimonial: "As a complete beginner, I was intimidated. But the coaches made it so accessible and fun. Now I have a passion for golf I never expected!",
+    },
+  ],
+  'scuba-diving': [
+    {
+      name: 'Isabelle Rossi',
+      role: 'PADI Advanced Open Water Diver',
+      avatar: 'IR',
+      testimonial: "The instructors are incredibly patient and thorough. I felt completely safe and prepared. Seeing the coral reefs was an unforgettable experience.",
+    },
+    {
+      name: 'Tom Nguyen',
+      role: 'New Diver',
+      avatar: 'TN',
+      testimonial: "I was nervous about breathing underwater, but the training was top-notch. It opened up a whole new world to me. Highly recommend!",
+    },
+  ],
+  climbing: [
+    {
+      name: 'Chloe Kim',
+      role: 'Youth Climbing Team',
+      avatar: 'CK',
+      image: PlaceHolderImages.find(p => p.id === 'testimonial-2')?.imageUrl,
+      testimonial: "I love the problem-solving aspect of bouldering. The route setters are so creative, and there's always a new challenge to conquer.",
+    },
+    {
+      name: 'Liam Chen',
+      role: 'Adult Climber',
+      avatar: 'LC',
+      testimonial: "The community here is amazing. Everyone is so encouraging. It's a great workout for both body and mind.",
+    },
+  ],
+};
 
 export default function SportDetailPage({ params }: Props) {
   const sport = sports.find(s => s.slug === params.slug);
@@ -110,6 +202,8 @@ export default function SportDetailPage({ params }: Props) {
   if (!sport) {
     notFound();
   }
+
+  const testimonials = allTestimonials[sport.slug] || [];
 
   return (
     <div>
@@ -223,7 +317,7 @@ export default function SportDetailPage({ params }: Props) {
       <section className="bg-white py-16 md:py-24">
         <div className="container max-w-5xl">
           <div className="mx-auto max-w-3xl text-center">
-            <h2 className="font-headline text-3xl font-bold md:text-4xl">What our athletes say</h2>
+            <h2 className="font-headline text-3xl font-bold md:text-4xl">What our {sport.name} athletes say</h2>
           </div>
           <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-2">
             {testimonials.map(testimonial => (
