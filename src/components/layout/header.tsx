@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { Menu, Medal } from 'lucide-react';
@@ -18,6 +18,11 @@ const navLinks = [
 
 export function Header() {
   const [isOpen, setIsOpen] = useState(false);
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
@@ -80,9 +85,11 @@ export function Header() {
 
         <div className="flex items-center gap-2">
           <LanguageSwitcher />
-          <Button asChild className="hidden sm:inline-flex bg-accent text-accent-foreground hover:bg-accent/90">
-            <Link href="/contact">Enroll Now</Link>
-          </Button>
+          {isClient && (
+            <Button asChild className="hidden sm:inline-flex bg-accent text-accent-foreground hover:bg-accent/90">
+              <Link href="/contact">Enroll Now</Link>
+            </Button>
+          )}
         </div>
       </div>
     </header>
