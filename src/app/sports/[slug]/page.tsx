@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import type { Metadata, ResolvingMetadata } from 'next';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
-import { CheckCircle, Medal, Star, Users, Trophy, BrainCircuit, ShieldCheck, HeartPulse } from 'lucide-react';
+import { BrainCircuit, HeartPulse, Medal, ShieldCheck, Star, Trophy, Users, Baby, School, Backpack, GraduationCap, Building2 } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 
@@ -59,6 +59,34 @@ const methodologyPillars = [
     }
 ]
 
+const ageCategories = [
+    {
+        icon: Baby,
+        title: "Kindergarten (Ages 3-5)",
+        description: "A playful introduction to the sport. Our program focuses on developing fundamental motor skills, coordination, and a love for physical activity through fun games and positive reinforcement."
+    },
+    {
+        icon: School,
+        title: "Elementary School (Ages 6-10)",
+        description: "Building the foundation. At this stage, we introduce core techniques and basic rules in a structured yet fun environment. Emphasis is placed on teamwork, sportsmanship, and skill development."
+    },
+    {
+        icon: Backpack,
+        title: "Middle School (Ages 11-14)",
+        description: "Developing the athlete. Training becomes more structured with an introduction to tactical concepts, position-specific skills, and physical conditioning. This is where game intelligence begins to take shape."
+    },
+    {
+        icon: GraduationCap,
+        title: "High School (Ages 15-18)",
+        description: "Preparing for the next level. This elite program is for serious athletes aiming to compete at a high level. It involves advanced tactical training, strength and conditioning, and guidance for university recruitment."
+    },
+    {
+        icon: Building2,
+        title: "University & Adults",
+        description: "Lifelong passion and performance. We offer elite training for collegiate athletes, competitive adult leagues, and recreational programs for those who want to stay active, refine their skills, and be part of a community."
+    }
+]
+
 const testimonials = [
   {
     name: 'Li Wei',
@@ -82,12 +110,6 @@ export default function SportDetailPage({ params }: Props) {
   if (!sport) {
     notFound();
   }
-
-  const galleryImages = [
-    PlaceHolderImages.find(p => p.id === 'gallery-1'),
-    PlaceHolderImages.find(p => p.id === 'gallery-2'),
-    PlaceHolderImages.find(p => p.id === 'gallery-3'),
-  ].filter(Boolean) as (typeof PlaceHolderImages[0])[];
 
   return (
     <div>
@@ -153,8 +175,32 @@ export default function SportDetailPage({ params }: Props) {
             </div>
         </div>
       </section>
-
-      <section className="py-16 md:py-24 bg-gray-50 dark:bg-gray-900">
+      
+      <section className="py-16 md:py-24">
+        <div className="container max-w-5xl">
+          <div className="mx-auto max-w-3xl text-center">
+            <h2 className="font-headline text-3xl font-bold md:text-4xl">A Program for Every Age and Stage</h2>
+            <p className="mt-4 text-lg text-muted-foreground">Our curriculum is carefully designed to foster development from early childhood to adult competition, ensuring a clear path for growth.</p>
+          </div>
+          <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+            {ageCategories.map((category) => (
+              <Card key={category.title}>
+                <CardHeader className="flex-row items-start gap-4">
+                  <category.icon className="h-8 w-8 shrink-0 text-primary" />
+                  <div>
+                    <CardTitle className="text-xl">{category.title}</CardTitle>
+                  </div>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-muted-foreground">{category.description}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+      
+      <section className="bg-gray-50 dark:bg-gray-900 py-16 md:py-24">
         <div className="container max-w-5xl">
             <div className="mx-auto max-w-3xl text-center">
                 <h2 className="font-headline text-3xl font-bold md:text-4xl">The YES ACADEMY Advantage</h2>
@@ -171,29 +217,6 @@ export default function SportDetailPage({ params }: Props) {
                     </div>
                 ))}
             </div>
-        </div>
-      </section>
-      
-       <section className="py-16 md:py-24">
-        <div className="container max-w-5xl">
-          <div className="mx-auto max-w-3xl text-center">
-            <h2 className="font-headline text-3xl font-bold md:text-4xl">In Action</h2>
-            <p className="mt-4 text-lg text-muted-foreground">A glimpse of the intensity and passion on the field.</p>
-          </div>
-          <div className="mt-12 grid grid-cols-1 gap-4 sm:grid-cols-3">
-            {galleryImages.map((image, index) => (
-              <div key={index} className="aspect-square overflow-hidden rounded-lg shadow-lg">
-                <Image
-                  src={image.imageUrl}
-                  alt={image.description}
-                  data-ai-hint={image.imageHint}
-                  width={400}
-                  height={400}
-                  className="h-full w-full object-cover transition-transform duration-300 hover:scale-110"
-                />
-              </div>
-            ))}
-          </div>
         </div>
       </section>
 
