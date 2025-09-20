@@ -31,7 +31,6 @@ export default function AboutPage() {
   return (
     <div>
       <section className="relative h-64 w-full bg-primary">
-        <div className="container">
         {aboutHeroImage && (
              <Image
              src={aboutHeroImage.imageUrl}
@@ -42,7 +41,6 @@ export default function AboutPage() {
            />
         )}
         <div className="absolute inset-0 bg-black/50" />
-        </div>
         <div className="relative z-10 flex h-full flex-col items-center justify-center text-center text-white container">
           <h1 className="font-headline text-4xl font-extrabold tracking-tight md:text-5xl">
             About YES ACADEMY
