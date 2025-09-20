@@ -41,16 +41,8 @@ export default function RootLayout({
   const messages = useMessages();
 
   return (
-    <html lang={locale} className="scroll-smooth">
-      <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-          rel="stylesheet"
-        />
-      </head>
-      <body className={`font-body antialiased ${inter.variable}`}>
+    <html lang={locale} className={`scroll-smooth ${inter.variable}`}>
+      <body className="font-body antialiased">
         <NextIntlClientProvider locale={locale} messages={messages}>
           <div className="flex min-h-screen flex-col">
             <Header />
