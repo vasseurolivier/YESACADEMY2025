@@ -6,6 +6,11 @@ import Image from 'next/image';
 
 export const Logo = (props: SVGProps<SVGSVGElement>) => (
     <div className="flex items-center gap-2" style={{ height: 'auto' }}>
+      <svg width="24" height="24" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" className="text-primary">
+        <circle cx="10" cy="16" r="6" stroke="currentColor" strokeWidth="3" />
+        <circle cx="22" cy="16" r="6" stroke="currentColor" strokeWidth="3" />
+        <circle cx="16" cy="10" r="6" stroke="currentColor" strokeWidth="3" />
+      </svg>
       <span className="font-bold text-lg text-foreground">YES ACADEMY</span>
   </div>
 );
