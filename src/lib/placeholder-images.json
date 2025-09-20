@@ -130,7 +130,10 @@
       "imageHint": "tennis lesson"
     },
     {
-      "id": "program-group", "description": "A group of kids in a basketball training session.", "imageUrl": "https://picsum.photos/seed/proggroup/600/400", "imageHint": "basketball training"
+      "id": "program-group",
+      "description": "A group of kids in a football training session.",
+      "imageUrl": "https://images.unsplash.com/photo-1626248801379-51a0748a5f96?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxmb290YmFsbCUyMG1hdGNofGVufDB8fHx8MTc1ODM3MzUzN3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "football match"
     },
     {
       "id": "program-intensive", "description": "Athletes training hard during a sports camp.", "imageUrl": "https://picsum.photos/seed/progintensive/600/400", "imageHint": "sports camp"
