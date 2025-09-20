@@ -36,14 +36,35 @@ const testimonials = [
 ];
 
 export default function Home() {
-  const heroImages = [
-    PlaceHolderImages.find(p => p.id === 'hero-football-match'),
-    PlaceHolderImages.find(p => p.id === 'hero-basketball-match'),
-    PlaceHolderImages.find(p => p.id === 'hero-golfer'),
-  ].filter(Boolean);
+  const heroImage = PlaceHolderImages.find(p => p.id === 'hero-football-match');
 
   return (
     <div className="flex flex-col">
+       <section className="relative h-[60vh] min-h-[400px] w-full text-white">
+        {heroImage && (
+            <Image
+                src={heroImage.imageUrl}
+                alt={heroImage.description}
+                data-ai-hint={heroImage.imageHint}
+                fill
+                className="object-cover"
+                priority
+            />
+        )}
+        <div className="absolute inset-0 bg-black/60" />
+        <div className="relative z-10 flex h-full flex-col items-center justify-center text-center">
+            <h1 className="font-headline text-4xl font-extrabold tracking-tight md:text-6xl">
+                YOUR JOURNEY, YOUR SPORT, YOUR VICTORY
+            </h1>
+            <p className="mt-4 max-w-2xl text-lg">
+                Experience premium multi-sport training at YES ACADEMY. We forge champions in China and Vietnam.
+            </p>
+            <Button asChild size="lg" className="mt-8">
+                <Link href="/contact">Start Your Journey</Link>
+            </Button>
+        </div>
+      </section>
+
       <section id="sports" className="py-16 md:py-24">
         <div className="container">
           <div className="mx-auto max-w-3xl text-center">
@@ -54,9 +75,9 @@ export default function Home() {
               From the court to the field, the wall to the water, we offer a diverse range of sports for all ages and skill levels.
             </p>
           </div>
-          <div className="mt-12 grid grid-cols-2 gap-4 md:grid-cols-4 lg:grid-cols-7">
+          <div className="mt-12 grid grid-cols-2 gap-4 text-center md:grid-cols-4 lg:grid-cols-7">
             {sports.map(sport => (
-              <Link href={`/sports/${sport.slug}`} key={sport.name} className="group flex flex-col items-center text-center">
+              <Link href={`/sports/${sport.slug}`} key={sport.name} className="group flex flex-col items-center">
                   <div className="relative aspect-square w-full overflow-hidden rounded-lg">
                     <Image 
                       src={sport.image.url}
@@ -74,8 +95,8 @@ export default function Home() {
       </section>
       
       <section className="bg-white py-16 md:py-24">
-        <div className="container grid gap-12 md:grid-cols-2 md:items-center">
-          <div className="text-center md:text-left">
+        <div className="container grid gap-12 text-center md:grid-cols-2 md:items-center md:text-left">
+          <div>
             <h2 className="font-headline text-3xl font-bold md:text-4xl">Why YES ACADEMY?</h2>
             <p className="mt-4 text-lg text-muted-foreground">We are more than just an academy. We are a community dedicated to excellence, growth, and passion for sport.</p>
             <ul className="mt-8 space-y-4 text-lg">
