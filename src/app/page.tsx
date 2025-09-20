@@ -90,14 +90,19 @@ export default function Home() {
           </div>
           <div className="mt-12 grid grid-cols-2 gap-4 md:grid-cols-4 lg:grid-cols-7">
             {sports.map(sport => (
-              <Link href={`/sports/${sport.slug}`} key={sport.name} className="group">
-                <Card className="h-full overflow-hidden text-center transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
-                  <CardContent className="flex flex-col items-center justify-center p-6">
-                    <sport.icon className="h-12 w-12 text-primary" />
-                    <h3 className="mt-4 font-semibold">{sport.name}</h3>
-                    <p className="mt-2 text-xs text-muted-foreground">{sport.description}</p>
-                  </CardContent>
-                </Card>
+              <Link href={`/sports/${sport.slug}`} key={sport.name} className="group relative block aspect-square overflow-hidden rounded-lg">
+                  <Image 
+                    src={sport.image.url}
+                    alt={sport.image.alt}
+                    data-ai-hint={sport.image.hint}
+                    fill
+                    className="object-cover transition-transform duration-300 group-hover:scale-110"
+                  />
+                  <div className="absolute inset-0 bg-black/40 transition-colors group-hover:bg-black/60"></div>
+                  <div className="absolute inset-0 flex flex-col items-center justify-center p-4 text-center text-white">
+                      <sport.icon className="h-10 w-10 text-white drop-shadow-md" />
+                      <h3 className="mt-2 font-semibold">{sport.name}</h3>
+                  </div>
               </Link>
             ))}
           </div>
