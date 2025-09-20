@@ -2,7 +2,7 @@ import Image from 'next/image';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
-import { Target, Heart, Users, Medal } from 'lucide-react';
+import { Target, Heart, Users, Medal, Trophy, Calendar } from 'lucide-react';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -10,35 +10,18 @@ export const metadata: Metadata = {
   description: 'Learn about YES ACADEMY\'s mission, values, and the expert team dedicated to fostering champions.',
 };
 
-const coaches = [
-  {
-    name: 'Coach Michael Chen',
-    title: 'Head of Football',
-    expertise: 'UEFA Pro License',
-    avatar: 'MC',
-    image: PlaceHolderImages.find(p => p.id === 'coach-1')?.imageUrl,
-  },
-  {
-    name: 'Coach Emily Clark',
-    title: 'Head of Tennis',
-    expertise: 'Former WTA Top 100',
-    avatar: 'EC',
-    image: PlaceHolderImages.find(p => p.id === 'coach-2')?.imageUrl,
-  },
-  {
-    name: 'Coach David Zhang',
-    title: 'Head of Basketball',
-    expertise: 'NCAA Division 1 Player',
-    avatar: 'DZ',
-    image: PlaceHolderImages.find(p => p.id === 'coach-3')?.imageUrl,
-  },
-];
-
 const values = [
     { icon: Medal, title: 'Excellence', description: 'Striving for the highest standards in coaching, facilities, and personal achievement.' },
     { icon: Heart, title: 'Passion', description: 'Fostering a deep love for sport that inspires lifelong dedication and enjoyment.' },
     { icon: Users, title: 'Community', description: 'Building a supportive, inclusive, and diverse family of athletes, parents, and coaches.' },
     { icon: Target, title: 'Growth', description: 'Committing to the holistic development of every member, both as athletes and individuals.' },
+];
+
+const stats = [
+    { icon: Users, value: '10,000+', label: 'Athletes Trained' },
+    { icon: Trophy, value: '250+', label: 'Championships Won' },
+    { icon: Calendar, value: '2015', label: 'Founded In' },
+    { icon: Medal, value: '2', label: 'Countries' },
 ]
 
 export default function AboutPage() {
@@ -46,7 +29,7 @@ export default function AboutPage() {
 
   return (
     <div>
-      <section className="relative h-64 w-full bg-primary -mx-8 sm:-mx-10 lg:-mx-12">
+      <section className="relative h-64 w-full bg-primary -mx-12 sm:-mx-14 lg:-mx-16">
         {aboutHeroImage && (
              <Image
              src={aboutHeroImage.imageUrl}
@@ -84,7 +67,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="bg-white py-16 md:py-24 -mx-8 sm:-mx-10 lg:-mx-12 px-4 sm:px-6 lg:px-8">
+      <section className="bg-white py-16 md:py-24 -mx-12 sm:-mx-14 lg:-mx-16 px-4 sm:px-6 lg:px-8">
         <div className="container">
             <div className="mx-auto max-w-3xl text-center">
                 <h2 className="font-headline text-3xl font-bold md:text-4xl">Our Core Values</h2>
@@ -106,36 +89,21 @@ export default function AboutPage() {
 
       <section className="py-16 md:py-24">
         <div className="container">
-          <div className="mx-auto max-w-3xl text-center">
+          <div className="mx-auto max-w-5xl text-center">
             <h2 className="font-headline text-3xl font-bold md:text-4xl">
-              Meet Our Expert Coaches
+              Our Impact in Numbers
             </h2>
             <p className="mt-4 text-lg text-muted-foreground">
-              Our team is composed of seasoned professionals with international experience and a passion for teaching.
+              We are proud of the community we've built and the milestones we've achieved together.
             </p>
           </div>
-          <div className="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
-            {coaches.map(coach => (
-              <Card key={coach.name} className="overflow-hidden text-center">
-                {coach.image && (
-                  <div className="aspect-square">
-                    <Image
-                      src={coach.image}
-                      alt={`Coach ${coach.name}`}
-                      width={400}
-                      height={400}
-                      className="h-full w-full object-cover"
-                    />
-                  </div>
-                )}
-                <CardHeader>
-                  <CardTitle>{coach.name}</CardTitle>
-                  <p className="text-sm text-accent">{coach.title}</p>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-sm text-muted-foreground">{coach.expertise}</p>
-                </CardContent>
-              </Card>
+          <div className="mt-12 grid grid-cols-2 gap-8 text-center md:grid-cols-4">
+            {stats.map(stat => (
+              <div key={stat.label} className="rounded-lg border bg-card p-6 shadow-sm">
+                <stat.icon className="mx-auto h-12 w-12 text-accent" />
+                <p className="mt-4 text-4xl font-bold">{stat.value}</p>
+                <p className="mt-2 text-sm text-muted-foreground">{stat.label}</p>
+              </div>
             ))}
           </div>
         </div>
