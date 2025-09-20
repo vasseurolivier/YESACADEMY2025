@@ -1,27 +1,24 @@
-
 'use client';
 
 import { useState, useEffect } from 'react';
+import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { Menu } from 'lucide-react';
 import { LanguageSwitcher } from './language-switcher';
 import { Logo } from '@/components/icons';
-import { useTranslations } from 'next-intl';
-import { Link } from '@/navigation';
 
 const navLinks = [
-  { href: '/about', label: 'about' },
-  { href: '/sports', label: 'sports' },
-  { href: '/programs', label: 'programs' },
-  { href: '/camps', label: 'camps' },
-  { href: '/contact', label: 'enroll' },
+  { href: '/about', label: 'About' },
+  { href: '/sports', label: 'Sports' },
+  { href: '/programs', label: 'Programs' },
+  { href: '/camps', label: 'Camps' },
+  { href: '/contact', label: 'Enroll' },
 ];
 
 export function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const [isClient, setIsClient] = useState(false);
-  const t = useTranslations('Header');
 
   useEffect(() => {
     setIsClient(true);
@@ -36,7 +33,7 @@ export function Header() {
               <SheetTrigger asChild>
                 <Button variant="ghost" size="icon">
                   <Menu className="h-6 w-6" />
-                  <span className="sr-only">{t('toggle_menu')}</span>
+                  <span className="sr-only">Toggle Menu</span>
                 </Button>
               </SheetTrigger>
               <SheetContent side="left">
@@ -52,7 +49,7 @@ export function Header() {
                         className="text-lg font-medium text-foreground/80 hover:text-foreground"
                         onClick={() => setIsOpen(false)}
                       >
-                        {t(`nav.${link.label}`)}
+                        {link.label}
                       </Link>
                     ))}
                   </nav>
@@ -73,7 +70,7 @@ export function Header() {
               href={link.href}
               className="text-sm font-medium text-foreground/60 transition-colors hover:text-foreground"
             >
-              {t(`nav.${link.label}`)}
+              {link.label}
             </Link>
           ))}
         </nav>
@@ -82,7 +79,7 @@ export function Header() {
           <LanguageSwitcher />
           {isClient && (
             <Button asChild className="hidden sm:inline-flex bg-accent text-accent-foreground hover:bg-accent/90">
-              <Link href="/contact">{t('enroll_now')}</Link>
+              <Link href="/contact">Enroll Now</Link>
             </Button>
           )}
         </div>
