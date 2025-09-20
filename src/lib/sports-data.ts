@@ -1,5 +1,5 @@
-import { Soccer, Dribbble, Volleyball, type LucideIcon } from 'lucide-react';
-import { TennisIcon, GolfIcon, ScubaIcon, ClimbingIcon } from '@/components/icons';
+import { Dribbble, Volleyball, type LucideIcon } from 'lucide-react';
+import { TennisIcon, GolfIcon, ScubaIcon, ClimbingIcon, FutbolIcon } from '@/components/icons';
 import type { SVGProps } from 'react';
 import { PlaceHolderImages } from './placeholder-images';
 
@@ -20,7 +20,7 @@ export const sports: Sport[] = [
   {
     name: 'Football',
     slug: 'football',
-    icon: Soccer,
+    icon: FutbolIcon,
     description: 'Team play, strategy, and skill on the pitch.',
     longDescription: 'Our football program focuses on developing technical skills, tactical awareness, and teamwork. Led by UEFA-certified coaches, we offer training for all ages, from grassroots beginners to elite youth players preparing for professional careers. Join us to live the beautiful game.',
     image: {
