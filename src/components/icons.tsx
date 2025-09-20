@@ -5,54 +5,22 @@ import Image from 'next/image';
 
 
 export const Logo = (props: SVGProps<SVGSVGElement>) => (
-    <div className="flex items-center" style={{ width: '120px', height: 'auto' }}>
-    <svg 
-    viewBox="0 0 512 512" 
-    xmlns="http://www.w3.org/2000/svg"
-    {...props}>
-        <circle cx="256" cy="256" r="230" fill="white" stroke="#D32F2F" strokeWidth="12"/>
-        <circle cx="256" cy="256" r="212" fill="white" stroke="#002D62" strokeWidth="12"/>
-        <path d="M120 362 L140 362 L140 150 L372 150 L372 362 L392 362 L392 150 A180 180 0 0 0 120 150 Z" fill="#002D62" />
-        
-        <path d="M140 256 L150 256" stroke="white" strokeWidth="1"/>
-        <text fill="#002D62" fontSize="54" fontWeight="bold" letterSpacing="2">
-            <path id="text-arc-top" d="M130 256 A 126 126 0 1 1 382 256" fill="none"/>
-            <textPath href="#text-arc-top" startOffset="50%" textAnchor="middle">YES ACADEMY</textPath>
-        </text>
-
-        <text fill="#002D62" fontSize="40" fontWeight="bold" letterSpacing="1">
-            <path id="text-arc-bottom" d="M150 256 A 106 106 0 0 0 362 256" fill="none"/>
-            <textPath href="#text-arc-bottom" startOffset="50%" textAnchor="middle">MULTI-SPORTS</textPath>
-        </text>
-        
-        <g transform="translate(165, 256)">
-            <polygon points="0,0 10,-5 10,5" fill="white"/>
-        </g>
-        
-        <g transform="translate(347, 256)">
-            <polygon points="0,0 -10,-5 -10,5" fill="white"/>
-        </g>
-
-        <g transform="translate(256, 256) scale(0.9)">
-            <path d="M0 -110 L45 -50 L45 110 L-45 110 L-45 -50 Z" fill="none" stroke="#002D62" strokeWidth="10"/>
-            <g transform="translate(0, 15) scale(0.6)">
-                <path d="M0 -150 L0 150" stroke="#002D62" strokeWidth="15"/>
-                <path d="M-20 -150 L20 -150" stroke="#002D62" strokeWidth="15"/>
-                <path d="M-40 0 L40 0" stroke="#002D62" strokeWidth="15"/>
-                <path d="M-20 150 L20 150" stroke="#002D62" strokeWidth="15"/>
-                <path d="M-40, -110 a40,40 0 0,1 80,0" fill="none" stroke="#002D62" strokeWidth="15"/>
-                <path d="M-40, 40 a40,40 0 0,0 80,0" fill="none" stroke="#002D62" strokeWidth="15"/>
-            </g>
-            <g transform="translate(0, 30)">
-                <path d="M0 -130 C 40 -90, 40 -30, 0 10" stroke="#D32F2F" strokeWidth="8" fill="none" />
-                <path d="M0 -130 C -40 -90, -40 -30, 0 10" stroke="white" strokeWidth="8" fill="none" />
-                <path d="M0 -130 C -40 -90, -40 -30, 0 10" stroke="#002D62" strokeWidth="8" fill="none" transform="translate(2,0)"/>
-            </g>
-        </g>
-
-        <path d="M 184 256 l -8 -4 -1 8 9 0 z" fill="white" />
-        <path d="M 328 256 l 8 -4 1 8 -9 0 z" fill="white" />
-    </svg>
+    <div className="flex items-center gap-2" style={{ height: 'auto' }}>
+         <svg 
+            width="32" 
+            height="32" 
+            viewBox="0 0 32 32" 
+            fill="none" 
+            xmlns="http://www.w3.org/2000/svg"
+            className="text-primary"
+            {...props}
+        >
+            <path d="M16 2L16 12" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/>
+            <path d="M25 9L19 15" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/>
+            <path d="M7 9L13 15" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/>
+            <path d="M16 30L16 16" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/>
+        </svg>
+      <span className="font-bold text-lg text-foreground">YES ACADEMY</span>
   </div>
 );
 
