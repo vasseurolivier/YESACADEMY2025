@@ -6,6 +6,7 @@ import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { sports } from '@/lib/sports-data';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { CheckCircle } from 'lucide-react';
+import { Carousel, CarouselContent, CarouselItem } from '@/components/ui/carousel';
 
 const testimonials = [
   {
@@ -35,21 +36,34 @@ const testimonials = [
 ];
 
 export default function Home() {
-  const heroImage = PlaceHolderImages.find(p => p.id === 'hero-1');
+  const heroImages = [
+    PlaceHolderImages.find(p => p.id === 'hero-1'),
+    PlaceHolderImages.find(p => p.id === 'camps-hero'),
+    PlaceHolderImages.find(p => p.id === 'programs-hero'),
+  ].filter(Boolean);
 
   return (
     <div className="flex flex-col">
       <section className="relative h-[60vh] min-h-[400px] w-full text-white md:h-[80vh]">
-        {heroImage && (
-          <Image
-            src={heroImage.imageUrl}
-            alt={heroImage.description}
-            data-ai-hint={heroImage.imageHint}
-            fill
-            priority
-            className="object-cover"
-          />
-        )}
+        <Carousel className="h-full w-full" opts={{ loop: true }}>
+          <CarouselContent>
+            {heroImages.map((image, index) => (
+                image && (
+              <CarouselItem key={index}>
+                <Image
+                  src={image.imageUrl}
+                  alt={image.description}
+                  data-ai-hint={image.imageHint}
+                  fill
+                  priority={index === 0}
+                  className="object-cover"
+                />
+              </CarouselItem>
+                )
+            ))}
+          </CarouselContent>
+        </Carousel>
+
         <div className="absolute inset-0 bg-black/50" />
         <div className="relative z-10 flex h-full flex-col items-center justify-center text-center">
           <h1 className="font-headline text-4xl font-extrabold tracking-tight md:text-6xl lg:text-7xl">
