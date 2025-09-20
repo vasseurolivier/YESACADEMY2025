@@ -40,7 +40,7 @@ export default function Home() {
 
   return (
     <div className="flex flex-col">
-       <section className="relative h-[60vh] min-h-[400px] w-full text-white">
+       <section className="relative h-[80vh] min-h-[500px] w-full text-white">
         {heroImage && (
             <Image
                 src={heroImage.imageUrl}
@@ -75,10 +75,10 @@ export default function Home() {
               From the court to the field, the wall to the water, we offer a diverse range of sports for all ages and skill levels.
             </p>
           </div>
-          <div className="mt-12 grid grid-cols-2 gap-4 text-center md:grid-cols-4 lg:grid-cols-7">
+          <div className="mt-12 grid grid-cols-2 gap-8 text-center md:grid-cols-4 lg:grid-cols-7">
             {sports.map(sport => (
               <Link href={`/sports/${sport.slug}`} key={sport.name} className="group flex flex-col items-center">
-                  <div className="relative aspect-square w-full overflow-hidden rounded-lg">
+                  <div className="relative aspect-square w-24 overflow-hidden rounded-full">
                     <Image 
                       src={sport.image.url}
                       alt={sport.image.alt}
@@ -96,29 +96,29 @@ export default function Home() {
       
       <section className="bg-white py-16 md:py-24">
         <div className="container grid gap-12 text-center md:grid-cols-2 md:items-center md:text-left">
-          <div>
+          <div className="md:order-2">
             <h2 className="font-headline text-3xl font-bold md:text-4xl">Why YES ACADEMY?</h2>
             <p className="mt-4 text-lg text-muted-foreground">We are more than just an academy. We are a community dedicated to excellence, growth, and passion for sport.</p>
             <ul className="mt-8 space-y-4 text-lg">
-              <li className="flex items-start justify-center md:justify-start">
+              <li className="flex items-start">
                 <CheckCircle className="mr-3 mt-1 h-6 w-6 shrink-0 text-primary" />
                 <span><span className="font-semibold">Expert International Coaches:</span> Learn from the best in the industry.</span>
               </li>
-              <li className="flex items-start justify-center md:justify-start">
+              <li className="flex items-start">
                 <CheckCircle className="mr-3 mt-1 h-6 w-6 shrink-0 text-primary" />
                 <span><span className="font-semibold">State-of-the-Art Facilities:</span> Train in premium, fully-equipped environments.</span>
               </li>
-              <li className="flex items-start justify-center md:justify-start">
+              <li className="flex items-start">
                 <CheckCircle className="mr-3 mt-1 h-6 w-6 shrink-0 text-primary" />
                 <span><span className="font-semibold">Holistic Development:</span> We focus on both athletic skills and personal growth.</span>
               </li>
-              <li className="flex items-start justify-center md:justify-start">
+              <li className="flex items-start">
                 <CheckCircle className="mr-3 mt-1 h-6 w-6 shrink-0 text-primary" />
                 <span><span className="font-semibold">Vibrant Community:</span> Join a diverse and inclusive family of sports lovers.</span>
               </li>
             </ul>
           </div>
-           <div className="flex justify-center">
+           <div className="flex justify-center md:order-1">
             {PlaceHolderImages.find(p => p.id === 'why-us-1') && 
               <Image 
                 src={PlaceHolderImages.find(p => p.id === 'why-us-1')?.imageUrl!}
