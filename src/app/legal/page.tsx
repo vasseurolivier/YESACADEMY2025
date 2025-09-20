@@ -7,7 +7,7 @@ export const metadata: Metadata = {
 
 export default function LegalPage() {
   return (
-    <div className="bg-white -mx-4 sm:-mx-6 lg:-mx-8 px-4 sm:px-6 lg:px-8">
+    <div className="bg-white -mx-8 sm:-mx-10 lg:-mx-12 px-4 sm:px-6 lg:px-8">
       <div className="container mx-auto max-w-4xl py-16 md:py-24">
         <h1 className="font-headline text-4xl font-bold">Legal & Privacy</h1>
         <div className="prose prose-lg mt-8 dark:prose-invert">
