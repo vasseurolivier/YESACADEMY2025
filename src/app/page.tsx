@@ -44,38 +44,37 @@ export default function Home() {
 
   return (
     <div className="flex flex-col">
-      <section className="relative w-full text-white">
-        <Carousel className="h-[60vh] min-h-[400px] w-full" opts={{ loop: true }}>
-          <CarouselContent>
+      <section className="relative w-full h-[60vh] min-h-[400px] text-white">
+        <Carousel className="w-full h-full" opts={{ loop: true }}>
+          <CarouselContent className="h-full">
             {heroImages.map((image, index) => (
-                image && (
-              <CarouselItem key={index} className="relative h-full w-full">
-                <Image
-                  src={image.imageUrl}
-                  alt={image.description}
-                  data-ai-hint={image.imageHint}
-                  fill
-                  priority={index === 0}
-                  className="object-cover"
-                />
-                 <div className="absolute inset-0 bg-black/50 z-10" />
-              </CarouselItem>
-                )
+              image && (
+                <CarouselItem key={index} className="relative h-full w-full">
+                  <Image
+                    src={image.imageUrl}
+                    alt={image.description}
+                    data-ai-hint={image.imageHint}
+                    fill
+                    priority={index === 0}
+                    className="object-cover"
+                  />
+                  <div className="absolute inset-0 bg-black/50 z-10" />
+                </CarouselItem>
+              )
             ))}
           </CarouselContent>
         </Carousel>
-
-        <div className="container absolute inset-0 z-20 flex h-full flex-col items-center justify-center text-center">
-          <h1 className="font-headline text-4xl font-extrabold tracking-tight md:text-6xl lg:text-7xl">
-            YOUR JOURNEY, YOUR SPORT, YOUR VICTORY
-          </h1>
-          <p className="mt-4 max-w-2xl text-lg md:text-xl">
-            Experience premium multi-sport training at YES ACADEMY. We forge champions in China and Vietnam.
-          </p>
-          <Button asChild size="lg" className="mt-8 bg-accent text-accent-foreground hover:bg-accent/90">
-            <Link href="/programs">Start Your Journey</Link>
-          </Button>
-        </div>
+        <div className="absolute inset-0 z-20 flex flex-col items-center justify-center text-center container">
+            <h1 className="font-headline text-4xl font-extrabold tracking-tight md:text-6xl lg:text-7xl">
+              YOUR JOURNEY, YOUR SPORT, YOUR VICTORY
+            </h1>
+            <p className="mt-4 max-w-2xl text-lg md:text-xl">
+              Experience premium multi-sport training at YES ACADEMY. We forge champions in China and Vietnam.
+            </p>
+            <Button asChild size="lg" className="mt-8 bg-accent text-accent-foreground hover:bg-accent/90">
+              <Link href="/programs">Start Your Journey</Link>
+            </Button>
+          </div>
       </section>
 
       <section id="sports" className="py-16 md:py-24">
