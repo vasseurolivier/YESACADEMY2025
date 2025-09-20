@@ -95,6 +95,7 @@ export default function Home() {
                   <CardContent className="flex flex-col items-center justify-center p-6">
                     <sport.icon className="h-12 w-12 text-primary" />
                     <h3 className="mt-4 font-semibold">{sport.name}</h3>
+                    <p className="mt-2 text-xs text-muted-foreground">{sport.description}</p>
                   </CardContent>
                 </Card>
               </Link>
