@@ -1,7 +1,7 @@
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
-import { Sun, Snowflake } from 'lucide-react';
+import { Sun, Snowflake, Flag, Info } from 'lucide-react';
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
@@ -18,6 +18,7 @@ const camps = [
     location: 'China & Vietnam',
     description: 'An action-packed summer of sports, friendship, and fun. Our multi-sport camps offer a chance to try new activities and master existing skills in a vibrant, international environment.',
     image: PlaceHolderImages.find(p => p.id === 'gallery-1')?.imageUrl,
+    active: true,
   },
   {
     icon: Snowflake,
@@ -25,6 +26,15 @@ const camps = [
     location: 'China & Vietnam',
     description: 'Use the winter break to gain a competitive edge. These intensive camps focus on deep skill development and strategic gameplay, preparing athletes for the upcoming season.',
     image: PlaceHolderImages.find(p => p.id === 'gallery-2')?.imageUrl,
+    active: true,
+  },
+   {
+    icon: Flag,
+    title: 'France 2026 Special Camp',
+    location: 'France',
+    description: 'Une opportunité unique de s\'entraîner en France, en immersion dans le pays de l\'excellence sportive. Plus d\'informations à venir prochainement.',
+    image: PlaceHolderImages.find(p => p.id === 'camps-hero')?.imageUrl,
+    active: false,
   },
 ];
 
@@ -61,7 +71,7 @@ export default function CampsPage() {
               Our camps are more than just training; they are an opportunity for growth, independence, and making friends from around the world.
             </p>
           </div>
-          <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-2">
+          <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
             {camps.map(camp => (
               <Card key={camp.title} className="flex flex-col">
                 <CardHeader>
@@ -76,9 +86,16 @@ export default function CampsPage() {
                   <p className="text-muted-foreground">{camp.description}</p>
                 </CardContent>
                 <CardFooter>
-                  <Button asChild className="w-full">
-                    <Link href="/contact">Learn More & Register</Link>
-                  </Button>
+                  {camp.active ? (
+                    <Button asChild className="w-full">
+                      <Link href="/contact">Learn More & Register</Link>
+                    </Button>
+                  ) : (
+                    <Button variant="secondary" disabled className="w-full">
+                      <Info className="mr-2 h-4 w-4" />
+                      Information Coming Soon
+                    </Button>
+                  )}
                 </CardFooter>
               </Card>
             ))}
