@@ -45,11 +45,11 @@ export default function Home() {
   return (
     <div className="flex flex-col">
       <section className="relative h-[60vh] min-h-[400px] w-full text-white">
-        <Carousel className="h-full w-full" opts={{ loop: true }}>
+        <Carousel className="absolute h-full w-full" opts={{ loop: true }}>
           <CarouselContent>
             {heroImages.map((image, index) => (
                 image && (
-              <CarouselItem key={index} className="relative h-[60vh] min-h-[400px] w-full md:h-[80vh]">
+              <CarouselItem key={index} className="relative h-full w-full">
                 <Image
                   src={image.imageUrl}
                   alt={image.description}
@@ -64,8 +64,8 @@ export default function Home() {
           </CarouselContent>
         </Carousel>
 
-        <div className="absolute inset-0 bg-black/50" />
-        <div className="absolute inset-0 z-10 flex flex-col items-center justify-center text-center">
+        <div className="absolute inset-0 bg-black/50 z-10" />
+        <div className="relative z-20 flex h-full flex-col items-center justify-center text-center">
           <h1 className="font-headline text-4xl font-extrabold tracking-tight md:text-6xl lg:text-7xl">
             YOUR JOURNEY, YOUR SPORT, YOUR VICTORY
           </h1>
