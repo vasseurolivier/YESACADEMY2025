@@ -76,7 +76,7 @@ export default function ProgramsPage() {
       </section>
 
       <section className="py-16 md:py-24">
-        <div className="container">
+        <div className="container mx-auto">
           <div className="mx-auto max-w-3xl text-center">
             <h2 className="font-headline text-3xl font-bold md:text-4xl">
               Find Your Perfect Fit
