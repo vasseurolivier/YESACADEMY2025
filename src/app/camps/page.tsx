@@ -33,7 +33,7 @@ const camps = [
     title: 'France 2026 Special Camp',
     location: 'France',
     description: 'Une opportunité unique de s\'entraîner en France, en immersion dans le pays de l\'excellence sportive. Plus d\'informations à venir prochainement.',
-    image: PlaceHolderImages.find(p => p.id === 'camps-hero')?.imageUrl,
+    image: PlaceHolderImages.find(p => p.id === 'france-camp')?.imageUrl,
     active: false,
   },
 ];

@@ -125,6 +125,12 @@
     },
     {
       "id": "camps-hero", "description": "Kids laughing and running at a summer camp.", "imageUrl": "https://picsum.photos/seed/camps1/1200/400", "imageHint": "summer camp"
+    },
+    {
+      "id": "france-camp",
+      "description": "Eiffel tower in Paris, France.",
+      "imageUrl": "https://images.unsplash.com/photo-1502602898657-3e91760c0341?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxQYXJpc3xlbnwwfHx8fDE3MzAwMTg3Njd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "Eiffel tower"
     }
   ]
 }
