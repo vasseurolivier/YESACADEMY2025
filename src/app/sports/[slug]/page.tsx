@@ -218,7 +218,6 @@ export default function SportDetailPage({ params }: Props) {
         />
         <div className="absolute inset-0 bg-black/60" />
         <div className="relative z-10 flex h-full flex-col items-center justify-center text-center text-white container">
-          <sport.icon className="h-16 w-16" />
           <h1 className="mt-4 font-headline text-4xl font-extrabold tracking-tight md:text-6xl">
             {sport.name}
           </h1>
