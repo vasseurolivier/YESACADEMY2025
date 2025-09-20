@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import type { Metadata, ResolvingMetadata } from 'next';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
-import { CheckCircle, Medal, Star, Users } from 'lucide-react';
+import { CheckCircle, Medal, Star, Users, Trophy } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 
@@ -35,9 +35,10 @@ export async function generateStaticParams() {
 }
 
 const keyBenefits = [
-    { icon: Medal, title: 'Elite Coaching', description: 'Learn from the best with our certified and experienced coaches.' },
-    { icon: Users, title: 'Holistic Development', description: 'We build well-rounded athletes, focusing on both technique and character.' },
-    { icon: Star, title: 'Top-tier Facilities', description: 'Train in premium environments designed for performance.' },
+    { icon: Medal, title: 'World-Class Coaching', description: "Our coaches aren't just experienced; they hold elite certifications (UEFA, ATP, PGA). Receive personalized, professional-grade instruction to unlock your true potential." },
+    { icon: Users, title: 'Holistic Athlete Development', description: 'We build champions in life, not just in sports. Our programs instill discipline, resilience, and leadership, focusing on character as much as technical skill.' },
+    { icon: Star, title: 'State-of-the-Art Facilities', description: 'Train like a pro in premium, fully-equipped environments. Our facilities are designed for optimal performance, safety, and a world-class training experience.' },
+    { icon: Trophy, title: 'Pathway to Competition', description: 'Go beyond training. We provide clear pathways to compete, from local leagues to international tournaments, giving you the platform to showcase your skills.' },
 ];
 
 const testimonials = [
@@ -116,10 +117,10 @@ export default function SportDetailPage({ params }: Props) {
       <section className="bg-white py-16 md:py-24">
         <div className="container max-w-5xl">
             <div className="mx-auto max-w-3xl text-center">
-                <h2 className="font-headline text-3xl font-bold md:text-4xl">Key Benefits</h2>
-                <p className="mt-4 text-lg text-muted-foreground">Discover why our program stands out.</p>
+                <h2 className="font-headline text-3xl font-bold md:text-4xl">The YES ACADEMY Advantage</h2>
+                <p className="mt-4 text-lg text-muted-foreground">This is where potential meets opportunity. Discover why our program is the ultimate choice for aspiring champions.</p>
             </div>
-            <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-3">
+            <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
                 {keyBenefits.map(benefit => (
                     <div key={benefit.title} className="text-center">
                         <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-primary/10 text-primary">
