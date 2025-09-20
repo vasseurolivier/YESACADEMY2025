@@ -22,7 +22,7 @@ export default function SportsPage() {
       </section>
 
       <section className="py-16 md:py-24">
-        <div className="container">
+        <div className="container mx-auto">
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
             {sports.map(sport => (
               <Link href={`/sports/${sport.slug}`} key={sport.name} className="group">
