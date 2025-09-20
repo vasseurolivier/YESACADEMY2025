@@ -142,7 +142,10 @@
       "imageHint": "sports camp"
     },
     {
-      "id": "program-corporate", "description": "Colleagues high-fiving during a team-building sport event.", "imageUrl": "https://picsum.photos/seed/progcorporate/600/400", "imageHint": "team building"
+      "id": "program-corporate",
+      "description": "Colleagues high-fiving during a team-building sport event.",
+      "imageUrl": "https://images.unsplash.com/photo-1739675155042-dae546a50558?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxjb3Jwb3JhdGUlMjBzcG9ydHN8ZW58MHx8fHwxNzU4MzgyMTQxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "team building"
     },
     {
       "id": "program-schools",
