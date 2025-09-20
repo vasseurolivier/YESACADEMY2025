@@ -40,7 +40,7 @@ export default function Home() {
 
   return (
     <div className="flex flex-col">
-       <section className="relative h-[80vh] min-h-[600px] w-full text-white">
+       <section className="relative h-[80vh] min-h-[600px] w-full text-white -mx-4 sm:-mx-6 lg:-mx-8">
         {heroImage && (
             <Image
                 src={heroImage.imageUrl}
@@ -99,7 +99,7 @@ export default function Home() {
         </div>
       </section>
       
-      <section className="bg-white py-16 md:py-24">
+      <section className="bg-white py-16 md:py-24 -mx-4 sm:-mx-6 lg:-mx-8 px-4 sm:px-6 lg:px-8">
         <div className="container grid gap-12 text-center md:grid-cols-2 md:items-center md:text-left">
           <div className="md:order-2">
             <h2 className="font-headline text-3xl font-bold md:text-4xl">Why YES ACADEMY?</h2>
@@ -107,19 +107,19 @@ export default function Home() {
             <ul className="mt-8 space-y-4 text-lg">
               <li className="flex items-start">
                 <CheckCircle className="mr-3 mt-1 h-6 w-6 shrink-0 text-primary" />
-                <span><span className="font-semibold">Expert International Coaches:</span> Learn from the best in the industry.</span>
+                <span><span className="font-semibold">French-Inspired Methodology:</span> Our training is rooted in renowned French teaching methods, focusing on structured, technical, and tactical development from a young age.</span>
               </li>
               <li className="flex items-start">
                 <CheckCircle className="mr-3 mt-1 h-6 w-6 shrink-0 text-primary" />
-                <span><span className="font-semibold">State-of-the-Art Facilities:</span> Train in premium, fully-equipped environments.</span>
+                <span><span className="font-semibold">Professionally Certified Coaches:</span> All our coaches hold top-tier professional diplomas (UEFA, ATP, PGA, etc.), ensuring the highest standard of expert instruction.</span>
               </li>
               <li className="flex items-start">
                 <CheckCircle className="mr-3 mt-1 h-6 w-6 shrink-0 text-primary" />
-                <span><span className="font-semibold">Holistic Development:</span> We focus on both athletic skills and personal growth.</span>
+                <span><span className="font-semibold">State-of-the-Art Facilities:</span> Train in premium, fully-equipped environments designed for optimal performance.</span>
               </li>
               <li className="flex items-start">
                 <CheckCircle className="mr-3 mt-1 h-6 w-6 shrink-0 text-primary" />
-                <span><span className="font-semibold">Vibrant Community:</span> Join a diverse and inclusive family of sports lovers.</span>
+                <span><span className="font-semibold">Holistic Development:</span> We focus on both athletic skills and personal growth, building resilient and confident individuals.</span>
               </li>
             </ul>
           </div>
@@ -170,7 +170,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-primary py-16 text-primary-foreground md:py-24">
+      <section className="bg-primary py-16 text-primary-foreground md:py-24 -mx-4 sm:-mx-6 lg:-mx-8 px-4 sm:px-6 lg:px-8">
         <div className="container text-center">
           <h2 className="font-headline text-3xl font-bold md:text-4xl">Ready to Join the Elite?</h2>
           <p className="mx-auto mt-4 max-w-2xl text-lg">
