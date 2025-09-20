@@ -1,7 +1,6 @@
 
 'use client';
 
-import Link from 'next-intl/link';
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
@@ -9,6 +8,7 @@ import { Menu } from 'lucide-react';
 import { LanguageSwitcher } from './language-switcher';
 import { Logo } from '@/components/icons';
 import { useTranslations } from 'next-intl';
+import { Link } from '@/navigation';
 
 const navLinks = [
   { href: '/about', label: 'about' },

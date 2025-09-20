@@ -1,4 +1,5 @@
-import Link from 'next-intl/link';
+
+import { Link } from '@/navigation';
 import { Logo } from '@/components/icons';
 import { Button } from '@/components/ui/button';
 import { Facebook, Instagram, Twitter, Youtube } from 'lucide-react';
