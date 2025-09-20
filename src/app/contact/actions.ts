@@ -21,11 +21,15 @@ export type ContactFormValues = z.infer<typeof contactSchema>;
 
 export async function handleContactSubmission(data: ContactFormValues) {
     try {
+        const validatedData = contactSchema.parse(data);
         // Here you would typically send an email or save to a database
-        console.log("New contact form submission:", data);
+        console.log("New contact form submission:", validatedData);
         return { success: true, message: "Your message has been sent successfully!" };
     } catch (error) {
         console.error(error);
+        if (error instanceof z.ZodError) {
+            return { success: false, error: 'Validation failed.', issues: error.errors };
+        }
         return { success: false, error: 'Failed to send message.' };
     }
 }

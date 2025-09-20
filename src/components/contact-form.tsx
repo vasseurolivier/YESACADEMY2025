@@ -14,7 +14,8 @@ import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Loader2 } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
 import { sports } from '@/lib/sports-data';
-import { handleContactSubmission, type ContactFormValues } from '@/app/contact/actions';
+import { handleContactSubmission } from '@/app/contact/actions';
+import type { ContactFormValues } from '@/app/contact/actions';
 
 const contactSchema = z.object({
     name: z.string().min(2, { message: "Name must be at least 2 characters." }),
@@ -42,7 +43,7 @@ const programsOfInterest = [
 
 
 export function ContactForm() {
-  const { toast } = use-toast();
+  const { toast } = useToast();
 
   const form = useForm<ContactFormValues>({
     resolver: zodResolver(contactSchema),
