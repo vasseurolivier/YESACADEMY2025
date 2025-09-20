@@ -81,7 +81,7 @@
     {
       "id": "sport-climbing",
       "description": "A climber scaling a steep rock face.",
-      "imageUrl": "https://picsum.photos/seed/climbing/800/600",
+      "imageUrl": "https://images.unsplash.com/photo-1577434150790-3bfe143fe4f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxyb2NrJTIwY2xpbWJpbmd8ZW58MHx8fHwxNzU4MzcwNzk0fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "rock climbing"
     },
     {
