@@ -76,13 +76,13 @@ export default function ContactPage() {
           <p className="text-center mt-4 text-muted-foreground max-w-2xl mx-auto">
             Our teams are ready to welcome you at our state-of-the-art facilities in both China and Vietnam.
           </p>
-           <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8 text-center">
+           <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-center">
               <div className="rounded-lg border p-6">
-                <h3 className="text-xl font-semibold">YES ACADEMY - China</h3>
+                <h3 className="text-xl font-semibold">YES ACADEMY - Beijing</h3>
                 <div className="mt-4 space-y-2 text-muted-foreground">
                   <p className="flex items-center justify-center"><MapPin className="mr-2 h-4 w-4" /> 123 Sports Avenue, Beijing, China</p>
                   <p className="flex items-center justify-center"><Phone className="mr-2 h-4 w-4" /> +86 10 1234 5678</p>
-                  <p className="flex items-center justify-center"><Mail className="mr-2 h-4 w-4" /> china@yesacademy.com</p>
+                  <p className="flex items-center justify-center"><Mail className="mr-2 h-4 w-4" /> beijing@yesacademy.com</p>
                 </div>
               </div>
 
@@ -92,6 +92,15 @@ export default function ContactPage() {
                   <p className="flex items-center justify-center"><MapPin className="mr-2 h-4 w-4" /> 456 Athlete Road, Hanoi, Vietnam</p>
                   <p className="flex items-center justify-center"><Phone className="mr-2 h-4 w-4" /> +84 24 8765 4321</p>
                   <p className="flex items-center justify-center"><Mail className="mr-2 h-4 w-4" /> vietnam@yesacademy.com</p>
+                </div>
+              </div>
+              
+              <div className="rounded-lg border p-6 md:col-span-2 lg:col-span-1">
+                <h3 className="text-xl font-semibold">YES ACADEMY - Yiwu</h3>
+                <div className="mt-4 space-y-2 text-muted-foreground">
+                  <p className="flex items-center justify-center"><MapPin className="mr-2 h-4 w-4" /> 789 Champion Plaza, Yiwu, China</p>
+                  <p className="flex items-center justify-center"><Phone className="mr-2 h-4 w-4" /> +86 579 8888 9999</p>
+                  <p className="flex items-center justify-center"><Mail className="mr-2 h-4 w-4" /> yiwu@yesacademy.com</p>
                 </div>
               </div>
             </div>

@@ -56,20 +56,18 @@ export function Footer() {
             </div>
 
             <div>
-              <p className="font-semibold">Contact (China)</p>
+              <p className="font-semibold">Our Locations</p>
               <ul className="mt-4 space-y-2 text-sm text-muted-foreground">
-                <li>123 Sports Avenue, Beijing</li>
-                <li>+86 10 1234 5678</li>
-                <li>china@yesacademy.com</li>
+                <li>Beijing, China</li>
+                <li>Yiwu, China</li>
+                <li>Hanoi, Vietnam</li>
               </ul>
             </div>
 
             <div>
-              <p className="font-semibold">Contact (Vietnam)</p>
-              <ul className="mt-4 space-y-2 text-sm text-muted-foreground">
-                <li>456 Athlete Road, Hanoi</li>
-                <li>+84 24 8765 4321</li>
-                <li>vietnam@yesacademy.com</li>
+              <p className="font-semibold">Contact</p>
+               <ul className="mt-4 space-y-2 text-sm text-muted-foreground">
+                <li>info@yesacademy.com</li>
               </ul>
             </div>
           </div>
