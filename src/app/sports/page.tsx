@@ -37,8 +37,7 @@ export default function SportsPage() {
                       className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
                     />
                   </div>
-                  <CardHeader className="flex-row items-center gap-4">
-                    <sport.icon className="h-10 w-10 shrink-0 text-primary" />
+                  <CardHeader>
                     <div>
                       <CardTitle>{sport.name}</CardTitle>
                     </div>
