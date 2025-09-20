@@ -30,7 +30,7 @@ export default function AboutPage() {
 
   return (
     <div>
-      <section className="relative -mx-4 h-64 w-[100vw] bg-primary">
+      <section className="relative h-64 w-full bg-primary">
         {aboutHeroImage && (
              <Image
              src={aboutHeroImage.imageUrl}
@@ -41,7 +41,7 @@ export default function AboutPage() {
            />
         )}
         <div className="absolute inset-0 bg-black/50" />
-        <div className="relative z-10 flex h-full flex-col items-center justify-center text-center text-white">
+        <div className="relative z-10 flex h-full flex-col items-center justify-center text-center text-white container">
           <h1 className="font-headline text-4xl font-extrabold tracking-tight md:text-5xl">
             About YES ACADEMY
           </h1>
@@ -68,7 +68,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="bg-white py-16 md:py-24 -mx-4 px-4">
+      <section className="bg-white py-16 md:py-24">
         <div className="container">
             <div className="mx-auto max-w-3xl text-center">
                 <h2 className="font-headline text-3xl font-bold md:text-4xl">Our Core Values</h2>

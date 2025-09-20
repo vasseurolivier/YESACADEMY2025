@@ -42,7 +42,7 @@ export default function CampsPage() {
     const heroImage = PlaceHolderImages.find(p => p.id === 'camps-hero');
   return (
     <div>
-       <section className="relative -mx-4 h-64 w-[100vw] bg-primary">
+       <section className="relative h-64 w-full bg-primary">
          {heroImage && (
              <Image
              src={heroImage.imageUrl}
@@ -53,7 +53,7 @@ export default function CampsPage() {
            />
         )}
         <div className="absolute inset-0 bg-black/50" />
-        <div className="relative z-10 flex h-full flex-col items-center justify-center text-center text-white">
+        <div className="relative z-10 flex h-full flex-col items-center justify-center text-center text-white container">
           <h1 className="font-headline text-4xl font-extrabold tracking-tight md:text-5xl">
             Academy Camps
           </h1>

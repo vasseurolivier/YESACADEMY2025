@@ -75,7 +75,7 @@ export default function SportDetailPage({ params }: Props) {
 
   return (
     <div>
-      <section className="relative -mx-4 h-72 w-[100vw]">
+      <section className="relative h-72 w-full">
         <Image
           src={sport.image.url}
           alt={sport.image.alt}
@@ -85,7 +85,7 @@ export default function SportDetailPage({ params }: Props) {
           className="object-cover"
         />
         <div className="absolute inset-0 bg-black/60" />
-        <div className="relative z-10 flex h-full flex-col items-center justify-center text-center text-white">
+        <div className="relative z-10 flex h-full flex-col items-center justify-center text-center text-white container">
           <sport.icon className="h-16 w-16" />
           <h1 className="mt-4 font-headline text-4xl font-extrabold tracking-tight md:text-6xl">
             {sport.name}
@@ -116,7 +116,7 @@ export default function SportDetailPage({ params }: Props) {
         </div>
       </section>
 
-      <section className="bg-white py-16 md:py-24 -mx-4 px-4">
+      <section className="bg-white py-16 md:py-24">
         <div className="container max-w-5xl">
             <div className="mx-auto max-w-3xl text-center">
                 <h2 className="font-headline text-3xl font-bold md:text-4xl">Avantages Clés</h2>
@@ -159,7 +159,7 @@ export default function SportDetailPage({ params }: Props) {
         </div>
       </section>
 
-      <section className="bg-white py-16 md:py-24 -mx-4 px-4">
+      <section className="bg-white py-16 md:py-24">
         <div className="container max-w-5xl">
           <div className="mx-auto max-w-3xl text-center">
             <h2 className="font-headline text-3xl font-bold md:text-4xl">Ce que disent nos athlètes</h2>
@@ -186,7 +186,7 @@ export default function SportDetailPage({ params }: Props) {
         </div>
       </section>
 
-      <section className="bg-primary py-16 text-primary-foreground md:py-24 -mx-4 px-4">
+      <section className="bg-primary py-16 text-primary-foreground md:py-24">
         <div className="container max-w-3xl text-center">
           <h2 className="font-headline text-3xl font-bold md:text-4xl">Prêt à commencer ?</h2>
           <p className="mx-auto mt-4 max-w-2xl text-lg">

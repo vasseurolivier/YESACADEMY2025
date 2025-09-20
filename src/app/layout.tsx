@@ -46,7 +46,7 @@ export default function RootLayout({
         />
       </head>
       <body className={`font-body antialiased ${inter.variable}`}>
-        <div className="flex min-h-screen flex-col px-4">
+        <div className="flex min-h-screen flex-col">
           <Header />
           <main className="flex-grow">{children}</main>
           <Footer />
