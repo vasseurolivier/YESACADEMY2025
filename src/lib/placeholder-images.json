@@ -1,10 +1,22 @@
 {
   "placeholderImages": [
     {
-      "id": "hero-1",
+      "id": "hero-football-match",
+      "description": "An intense football match in a packed stadium.",
+      "imageUrl": "https://picsum.photos/seed/herofootball/1920/1080",
+      "imageHint": "football match"
+    },
+    {
+      "id": "hero-basketball-match",
       "description": "Dynamic action shot of a basketball player dunking.",
-      "imageUrl": "https://picsum.photos/seed/hero1/1920/1080",
-      "imageHint": "sports action"
+      "imageUrl": "https://picsum.photos/seed/herobasketball/1920/1080",
+      "imageHint": "basketball dunk"
+    },
+    {
+      "id": "hero-golfer",
+      "description": "A golfer mid-swing on a beautiful course at sunset.",
+      "imageUrl": "https://picsum.photos/seed/herogolf/1920/1080",
+      "imageHint": "golfer swing"
     },
     {
       "id": "why-us-1",
@@ -113,15 +125,6 @@
     },
     {
       "id": "camps-hero", "description": "Kids laughing and running at a summer camp.", "imageUrl": "https://picsum.photos/seed/camps1/1200/400", "imageHint": "summer camp"
-    },
-    {
-      "id": "blog-1", "description": "A close-up of running shoes.", "imageUrl": "https://picsum.photos/seed/blog1/400/300", "imageHint": "running shoes"
-    },
-    {
-      "id": "blog-2", "description": "A nutritious meal for athletes.", "imageUrl": "https://picsum.photos/seed/blog2/400/300", "imageHint": "healthy food"
-    },
-    {
-      "id": "blog-3", "description": "An athlete stretching.", "imageUrl": "https://picsum.photos/seed/blog3/400/300", "imageHint": "athlete stretching"
     }
   ]
 }

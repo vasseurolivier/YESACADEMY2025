@@ -37,9 +37,9 @@ const testimonials = [
 
 export default function Home() {
   const heroImages = [
-    PlaceHolderImages.find(p => p.id === 'hero-1'),
-    PlaceHolderImages.find(p => p.id === 'camps-hero'),
-    PlaceHolderImages.find(p => p.id === 'programs-hero'),
+    PlaceHolderImages.find(p => p.id === 'hero-football-match'),
+    PlaceHolderImages.find(p => p.id === 'hero-basketball-match'),
+    PlaceHolderImages.find(p => p.id === 'hero-golfer'),
   ].filter(Boolean);
 
   return (
@@ -58,13 +58,13 @@ export default function Home() {
                   priority={index === 0}
                   className="object-cover"
                 />
+                 <div className="absolute inset-0 bg-black/50 z-10" />
               </CarouselItem>
                 )
             ))}
           </CarouselContent>
         </Carousel>
 
-        <div className="absolute inset-0 bg-black/50 z-10" />
         <div className="relative z-20 flex h-full flex-col items-center justify-center text-center">
           <h1 className="font-headline text-4xl font-extrabold tracking-tight md:text-6xl lg:text-7xl">
             YOUR JOURNEY, YOUR SPORT, YOUR VICTORY
