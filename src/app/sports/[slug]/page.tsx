@@ -225,7 +225,7 @@ export default function SportDetailPage({ params }: Props) {
       </section>
 
       <section className="py-16 md:py-24">
-        <div className="container max-w-5xl">
+        <div className="container max-w-5xl mx-auto">
             <div className="grid grid-cols-1 gap-12 md:grid-cols-2 md:items-center">
                 <div className="prose prose-lg dark:prose-invert">
                     <h2 className="font-headline text-3xl font-bold">About our {sport.name} program</h2>
@@ -248,7 +248,7 @@ export default function SportDetailPage({ params }: Props) {
       </section>
 
       <section className="bg-white py-16 md:py-24">
-        <div className="container max-w-5xl">
+        <div className="container max-w-5xl mx-auto">
              <div className="text-center">
                 <h2 className="font-headline text-3xl font-bold md:text-4xl">The French Methodology: A Smarter Approach to Sport</h2>
                 <p className="mt-4 max-w-3xl mx-auto text-lg text-muted-foreground">Our training is built on the pillars of the renowned French sports education system, famous for producing technically gifted and intelligent players.</p>
@@ -270,7 +270,7 @@ export default function SportDetailPage({ params }: Props) {
       </section>
       
       <section className="py-16 md:py-24">
-        <div className="container max-w-5xl">
+        <div className="container max-w-5xl mx-auto">
           <div className="mx-auto max-w-3xl text-center">
             <h2 className="font-headline text-3xl font-bold md:text-4xl">A Program for Every Age and Stage</h2>
             <p className="mt-4 text-lg text-muted-foreground">Our curriculum is carefully designed to foster development from early childhood to adult competition, ensuring a clear path for growth.</p>
@@ -294,7 +294,7 @@ export default function SportDetailPage({ params }: Props) {
       </section>
       
       <section className="bg-gray-50 dark:bg-gray-900 py-16 md:py-24">
-        <div className="container max-w-5xl">
+        <div className="container max-w-5xl mx-auto">
             <div className="mx-auto max-w-3xl text-center">
                 <h2 className="font-headline text-3xl font-bold md:text-4xl">The YES ACADEMY Advantage</h2>
                 <p className="mt-4 text-lg text-muted-foreground">This is where potential meets opportunity. Discover why our program is the ultimate choice for aspiring champions.</p>
@@ -314,7 +314,7 @@ export default function SportDetailPage({ params }: Props) {
       </section>
 
       <section className="bg-white py-16 md:py-24">
-        <div className="container max-w-5xl">
+        <div className="container max-w-5xl mx-auto">
           <div className="mx-auto max-w-3xl text-center">
             <h2 className="font-headline text-3xl font-bold md:text-4xl">What our {sport.name} athletes say</h2>
           </div>
@@ -341,7 +341,7 @@ export default function SportDetailPage({ params }: Props) {
       </section>
 
       <section className="bg-primary py-16 text-primary-foreground md:py-24">
-        <div className="container max-w-3xl text-center">
+        <div className="container max-w-3xl text-center mx-auto">
           <h2 className="font-headline text-3xl font-bold md:text-4xl">Ready to start?</h2>
           <p className="mx-auto mt-4 max-w-2xl text-lg">
             Join our {sport.name} program and begin your journey to excellence. Spaces are limited.
