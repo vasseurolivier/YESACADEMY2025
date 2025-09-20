@@ -1,4 +1,3 @@
-import InteractiveMap from '@/components/interactive-map';
 import { Mail, Phone, MapPin, Trophy, ClipboardCheck, MessageSquareHeart } from 'lucide-react';
 import type { Metadata } from 'next';
 import { ContactForm } from '@/components/contact-form';
@@ -97,10 +96,6 @@ export default function ContactPage() {
               </div>
             </div>
         </div>
-      </section>
-
-      <section className="h-[500px] w-full -mx-4 sm:-mx-6 lg:-mx-8">
-        <InteractiveMap />
       </section>
     </div>
   );
