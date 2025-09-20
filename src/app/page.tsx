@@ -40,7 +40,7 @@ export default function Home() {
 
   return (
     <div className="flex flex-col">
-       <section className="relative h-[80vh] min-h-[500px] w-full text-white">
+       <section className="relative h-[80vh] min-h-[600px] w-full text-white">
         {heroImage && (
             <Image
                 src={heroImage.imageUrl}
@@ -75,21 +75,26 @@ export default function Home() {
               From the court to the field, the wall to the water, we offer a diverse range of sports for all ages and skill levels.
             </p>
           </div>
-          <div className="mt-12 grid grid-cols-2 gap-8 text-center md:grid-cols-4 lg:grid-cols-7">
-            {sports.map(sport => (
-              <Link href={`/sports/${sport.slug}`} key={sport.name} className="group flex flex-col items-center">
-                  <div className="relative aspect-square w-24 overflow-hidden rounded-full">
-                    <Image 
-                      src={sport.image.url}
-                      alt={sport.image.alt}
-                      data-ai-hint={sport.image.hint}
-                      fill
-                      className="object-cover transition-transform duration-300 group-hover:scale-110"
-                    />
-                  </div>
-                  <h3 className="mt-4 font-semibold">{sport.name}</h3>
-              </Link>
-            ))}
+          <div className="mt-12 flex justify-center">
+            <div className="grid grid-cols-2 gap-4 text-center md:grid-cols-4 lg:grid-cols-7 lg:gap-6">
+                {sports.map(sport => (
+                <Link href={`/sports/${sport.slug}`} key={sport.name} className="group">
+                    <div className="relative aspect-square w-36 overflow-hidden rounded-lg">
+                        <Image 
+                            src={sport.image.url}
+                            alt={sport.image.alt}
+                            data-ai-hint={sport.image.hint}
+                            fill
+                            className="object-cover transition-transform duration-300 group-hover:scale-110"
+                        />
+                        <div className="absolute inset-0 bg-black/40 transition-colors duration-300 group-hover:bg-black/20" />
+                        <div className="absolute inset-0 flex items-center justify-center p-2">
+                            <h3 className="font-semibold text-white shadow-md">{sport.name}</h3>
+                        </div>
+                    </div>
+                </Link>
+                ))}
+            </div>
           </div>
         </div>
       </section>
