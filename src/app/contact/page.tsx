@@ -38,40 +38,41 @@ export default function ContactPage() {
       </section>
 
       <section className="py-16 md:py-24">
-        <div className="container grid grid-cols-1 gap-16 lg:grid-cols-5">
+        <div className="container mx-auto max-w-7xl">
+          <div className="grid grid-cols-1 gap-16 lg:grid-cols-5">
+            <div className="lg:col-span-3">
+              <h2 className="font-headline text-3xl font-bold">Start Your Enrollment</h2>
+                <p className="mt-4 text-muted-foreground mb-8">
+                Tell us about yourself or your child, and which program you're interested in. Our team will get back to you shortly to finalize the details.
+                </p>
+                <ContactForm />
+            </div>
 
-          <div className="lg:col-span-3">
-             <h2 className="font-headline text-3xl font-bold">Start Your Enrollment</h2>
+            <div className="lg:col-span-2">
+              <h2 className="font-headline text-3xl font-bold">A Simple Process</h2>
               <p className="mt-4 text-muted-foreground mb-8">
-               Tell us about yourself or your child, and which program you're interested in. Our team will get back to you shortly to finalize the details.
+                Joining our community is straightforward. Here’s how it works.
               </p>
-              <ContactForm />
-          </div>
-
-          <div className="lg:col-span-2">
-            <h2 className="font-headline text-3xl font-bold">A Simple Process</h2>
-            <p className="mt-4 text-muted-foreground mb-8">
-              Joining our community is straightforward. Here’s how it works.
-            </p>
-            <div className="space-y-6">
-                {enrollmentSteps.map(step => (
-                    <div key={step.title} className="flex items-start gap-4">
-                        <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10 text-primary">
-                            <step.icon className="h-6 w-6" />
-                        </div>
-                        <div>
-                            <h3 className="font-semibold">{step.title}</h3>
-                            <p className="text-sm text-muted-foreground">{step.description}</p>
-                        </div>
-                    </div>
-                ))}
+              <div className="space-y-6">
+                  {enrollmentSteps.map(step => (
+                      <div key={step.title} className="flex items-start gap-4">
+                          <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10 text-primary">
+                              <step.icon className="h-6 w-6" />
+                          </div>
+                          <div>
+                              <h3 className="font-semibold">{step.title}</h3>
+                              <p className="text-sm text-muted-foreground">{step.description}</p>
+                          </div>
+                      </div>
+                  ))}
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       <section className="bg-white py-16 md:py-24">
-        <div className="container">
+        <div className="container mx-auto">
           <h2 className="text-center font-headline text-3xl font-bold">Our Locations</h2>
           <p className="text-center mt-4 text-muted-foreground max-w-2xl mx-auto">
             Our teams are ready to welcome you at our state-of-the-art facilities in both China and Vietnam.
