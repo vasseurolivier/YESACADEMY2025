@@ -1,4 +1,4 @@
-import { Futbol, Basketball, Volleyball, type LucideIcon } from 'lucide-react';
+import { Soccer, Dribbble, Volleyball, type LucideIcon } from 'lucide-react';
 import { TennisIcon, GolfIcon, ScubaIcon, ClimbingIcon } from '@/components/icons';
 import type { SVGProps } from 'react';
 import { PlaceHolderImages } from './placeholder-images';
@@ -20,7 +20,7 @@ export const sports: Sport[] = [
   {
     name: 'Football',
     slug: 'football',
-    icon: Futbol,
+    icon: Soccer,
     description: 'Team play, strategy, and skill on the pitch.',
     longDescription: 'Our football program focuses on developing technical skills, tactical awareness, and teamwork. Led by UEFA-certified coaches, we offer training for all ages, from grassroots beginners to elite youth players preparing for professional careers. Join us to live the beautiful game.',
     image: {
@@ -32,7 +32,7 @@ export const sports: Sport[] = [
   {
     name: 'Basketball',
     slug: 'basketball',
-    icon: Basketball,
+    icon: Dribbble,
     description: 'Dribble, shoot, and score on the court.',
     longDescription: 'Experience the high-energy world of basketball at YES ACADEMY. Our programs, designed by former professional players, emphasize fundamental skills, physical conditioning, and game intelligence. Whether you\'re learning to dribble or aiming for the big leagues, our courts are where you belong.',
     image: {
