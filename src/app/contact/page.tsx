@@ -1,7 +1,7 @@
 import InteractiveMap from '@/components/interactive-map';
 import { Mail, Phone, MapPin } from 'lucide-react';
 import type { Metadata } from 'next';
-import { SloganGeneratorForm } from '@/components/slogan-generator-form';
+import { ContactForm } from '@/components/contact-form';
 
 export const metadata: Metadata = {
   title: 'Contact Us',
@@ -54,7 +54,7 @@ export default function ContactPage() {
               <p className="mt-4 text-muted-foreground mb-8">
                For inquiries about programs, enrollment, or anything else, please fill out the form below.
               </p>
-              <SloganGeneratorForm formType='contact' />
+              <ContactForm />
           </div>
         </div>
       </section>

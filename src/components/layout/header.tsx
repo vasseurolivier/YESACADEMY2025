@@ -13,10 +13,7 @@ const navLinks = [
   { href: '/sports', label: 'Sports' },
   { href: '/programs', label: 'Programs' },
   { href: '/camps', label: 'Camps' },
-  { href: '/gallery', label: 'Gallery' },
-  { href: '/blog', label: 'Blog' },
   { href: '/contact', label: 'Contact' },
-  { href: '/slogan-generator', label: 'Slogan AI' },
 ];
 
 export function Header() {
