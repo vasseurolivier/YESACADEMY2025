@@ -16,24 +16,21 @@ const camps = [
     icon: Sun,
     title: 'Summer Champions Camp',
     location: 'China & Vietnam',
-    description: 'An action-packed summer of sports, friendship, and fun. Our multi-sport camps offer a chance to try new activities and master existing skills in a vibrant, international environment.',
-    image: PlaceHolderImages.find(p => p.id === 'gallery-1')?.imageUrl,
+    description: 'An action-packed summer of sports, friendship, and fun. Our multi-sport camps offer a chance to try new activities and master existing skills in a vibrant, international environment. Participants will benefit from professional coaching, competitive matches, and cultural excursions, creating lasting memories.',
     active: false,
   },
   {
     icon: Snowflake,
     title: 'Winter Intensive Camp',
     location: 'China & Vietnam',
-    description: 'Use the winter break to gain a competitive edge. These intensive camps focus on deep skill development and strategic gameplay, preparing athletes for the upcoming season.',
-    image: PlaceHolderImages.find(p => p.id === 'gallery-2')?.imageUrl,
+    description: 'Use the winter break to gain a competitive edge. These intensive camps focus on deep skill development, advanced tactical training, and strategic gameplay analysis to prepare athletes for the upcoming season. It\'s a perfect opportunity for dedicated players to elevate their game.',
     active: false,
   },
    {
     icon: Flag,
     title: 'France 2026 Special Camp',
     location: 'France',
-    description: 'Une opportunité unique de s\'entraîner en France, en immersion dans le pays de l\'excellence sportive. Plus d\'informations à venir prochainement.',
-    image: PlaceHolderImages.find(p => p.id === 'france-camp')?.imageUrl,
+    description: 'A unique opportunity to train in France, immersing yourself in a country renowned for sporting excellence. This special camp will offer specialized coaching, participation in local tournaments, and a rich cultural experience. More information will be available soon.',
     active: false,
   },
 ];
@@ -53,7 +50,7 @@ export default function CampsPage() {
            />
         )}
         <div className="absolute inset-0 bg-black/50" />
-        <div className="relative z-10 flex h-full flex-col items-center justify-center text-center text-white container">
+        <div className="container relative z-10 flex h-full flex-col items-center justify-center text-center text-white">
           <h1 className="font-headline text-4xl font-extrabold tracking-tight md:text-5xl">
             Academy Camps
           </h1>
@@ -81,7 +78,6 @@ export default function CampsPage() {
                   <CardDescription>{camp.location}</CardDescription>
                 </CardHeader>
                 <CardContent className="flex-grow">
-                   {camp.image && <Image src={camp.image} alt={camp.title} width={600} height={400} className="mb-4 rounded-lg object-cover" />}
                   <p className="text-muted-foreground">{camp.description}</p>
                 </CardContent>
                 <CardFooter>
