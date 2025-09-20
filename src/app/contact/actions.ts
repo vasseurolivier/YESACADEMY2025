@@ -3,7 +3,7 @@
 
 import { z } from 'zod';
 
-export const contactSchema = z.object({
+const contactSchema = z.object({
     name: z.string().min(2, { message: "Name must be at least 2 characters." }),
     email: z.string().email({ message: "Please enter a valid email address." }),
     phone: z.string().optional(),
@@ -21,8 +21,8 @@ export type ContactFormValues = z.infer<typeof contactSchema>;
 
 export async function handleContactSubmission(data: ContactFormValues) {
     try {
-        console.log("New contact form submission:", data);
         // Here you would typically send an email or save to a database
+        console.log("New contact form submission:", data);
         return { success: true, message: "Your message has been sent successfully!" };
     } catch (error) {
         console.error(error);

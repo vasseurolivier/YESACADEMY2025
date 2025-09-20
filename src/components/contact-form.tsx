@@ -14,7 +14,7 @@ import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Loader2 } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
 import { sports } from '@/lib/sports-data';
-import { handleContactSubmission } from '@/app/contact/actions';
+import { handleContactSubmission, type ContactFormValues } from '@/app/contact/actions';
 
 const contactSchema = z.object({
     name: z.string().min(2, { message: "Name must be at least 2 characters." }),
@@ -30,7 +30,6 @@ const contactSchema = z.object({
     message: z.string().min(10, { message: "Message must be at least 10 characters." }),
 });
 
-type ContactFormValues = z.infer<typeof contactSchema>;
 
 const programsOfInterest = [
   ...sports.map(s => s.name),
