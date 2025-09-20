@@ -1,0 +1,328 @@
+{
+  "Header": {
+    "nav": {
+      "about": "About",
+      "sports": "Sports",
+      "programs": "Programs",
+      "camps": "Camps",
+      "enroll": "Enroll"
+    },
+    "enroll_now": "Enroll Now",
+    "toggle_menu": "Toggle Menu"
+  },
+  "Footer": {
+    "tagline": "Forging champions through passion, dedication, and expert guidance.",
+    "quick_links": "Quick Links",
+    "locations_title": "Our Locations",
+    "locations": {
+      "beijing": "Beijing, China",
+      "yiwu": "Yiwu, China",
+      "hanoi": "Hanoi, Vietnam"
+    },
+    "contact_title": "Contact",
+    "copyright": "© {year} YES ACADEMY. All rights reserved.",
+    "legal_link": "Legal & Privacy"
+  },
+  "LanguageSwitcher": {
+    "title": "Change language",
+    "en": "English",
+    "zh": "中文 (Mandarin)",
+    "vi": "Tiếng Việt (Vietnamese)"
+  },
+  "HomePage": {
+    "hero_title": "YOUR JOURNEY, YOUR SPORT, YOUR VICTORY",
+    "hero_subtitle": "Experience premium multi-sport training at YES ACADEMY. We forge champions in China and Vietnam.",
+    "hero_cta": "Start Your Journey",
+    "sports_title": "Discover Your Passion",
+    "sports_subtitle": "From the court to the field, the wall to the water, we offer a diverse range of sports for all ages and skill levels.",
+    "sports": {
+      "football": {
+        "name": "Football",
+        "description": "Team play, strategy, and skill on the pitch.",
+        "longDescription": "Our football program focuses on developing technical skills, tactical awareness, and teamwork. Led by UEFA-certified coaches, we offer training for all ages, from grassroots beginners to elite youth players preparing for professional careers. Join us to live the beautiful game."
+      },
+      "basketball": {
+        "name": "Basketball",
+        "description": "Dribble, shoot, and score on the court.",
+        "longDescription": "Experience the high-energy world of basketball at YES ACADEMY. Our programs, designed by former professional players, emphasize fundamental skills, physical conditioning, and game intelligence. Whether you're learning to dribble or aiming for the big leagues, our courts are where you belong."
+      },
+      "volleyball": {
+        "name": "Volleyball",
+        "description": "Serve, set, and spike your way to victory.",
+        "longDescription": "From beach to hardcourt, our volleyball training covers all aspects of the game. We focus on technique, agility, and communication. Join our squads for competitive league play or learn the basics in a fun and supportive environment."
+      },
+      "tennis": {
+        "name": "Tennis",
+        "description": "Master your serve and backhand on our courts.",
+        "longDescription": "Our ATP & WTA experienced coaches provide world-class tennis instruction for all levels. We offer private lessons, group clinics, and competitive junior programs on our pristine courts. Perfect your technique and develop a lifelong passion for the game."
+      },
+      "golf": {
+        "name": "Golf",
+        "description": "Perfect your swing on the green.",
+        "longDescription": "With access to premier golf courses and cutting-edge swing analysis technology, our golf academy is the perfect place to hone your game. Our PGA-certified professionals offer personalized instruction to lower your handicap and improve your course management."
+      },
+      "scuba-diving": {
+        "name": "Scuba Diving",
+        "description": "Explore the vibrant world beneath the waves.",
+        "longDescription": "Get PADI certified with our expert dive masters. We offer courses from Open Water to Divemaster, as well as guided fun dives in some of the most beautiful locations in Vietnam and China. Discover the thrill of breathing underwater and the beauty of marine life."
+      },
+      "climbing": {
+        "name": "Climbing",
+        "description": "Conquer new heights on our climbing walls.",
+        "longDescription": "Push your limits in our state-of-the-art climbing and bouldering gym. We provide courses on safety, technique, and lead climbing for all abilities. Join our community and reach new peaks, both on the wall and in yourself."
+      }
+    },
+    "why_us_title": "Why YES ACADEMY?",
+    "why_us_subtitle": "We are more than just an academy. We are a community dedicated to excellence, growth, and passion for sport.",
+    "why_us_point1_title": "French-Inspired Methodology:",
+    "why_us_point1_text": "Our training is rooted in renowned French teaching methods, focusing on structured, technical, and tactical development from a young age.",
+    "why_us_point2_title": "Professionally Certified Coaches:",
+    "why_us_point2_text": "All our coaches hold top-tier professional diplomas (UEFA, ATP, PGA, etc.), ensuring the highest standard of expert instruction.",
+    "why_us_point3_title": "State-of-the-Art Facilities:",
+    "why_us_point3_text": "Train in premium, fully-equipped environments designed for optimal performance.",
+    "why_us_point4_title": "Holistic Development:",
+    "why_us_point4_text": "We focus on both athletic skills and personal growth, building resilient and confident individuals.",
+    "testimonials_title": "Hear From Our Champions",
+    "testimonials_subtitle": "Our members are our greatest pride. See what they have to say about their experience.",
+    "testimonial1_text": "The coaching at YES ACADEMY is world-class. My son's confidence and skills have skyrocketed since he joined the football program. The facilities are top-notch and the community is so welcoming.",
+    "testimonial1_role": "Parent of a U12 Player",
+    "testimonial2_text": "As an expat, finding a premium sports community was key. YES ACADEMY exceeded my expectations. The tennis coaches are fantastic and I've met so many great people here.",
+    "testimonial2_role": "Adult Tennis Member",
+    "testimonial3_text": "The summer camp was the best experience of my life! I learned so much, improved my game, and made friends from all over the world. I can't wait for the next one.",
+    "testimonial3_role": "Teenage Basketball Player",
+    "cta_title": "Ready to Join the Elite?",
+    "cta_subtitle": "Your journey towards sporting excellence starts now. Explore our programs or get in touch with our team today.",
+    "cta_button_programs": "View Programs",
+    "cta_button_contact": "Contact Us"
+  },
+  "AboutPage": {
+    "metadata": {
+      "title": "About Us",
+      "description": "Learn about YES ACADEMY's mission, values, and the expert team dedicated to fostering champions."
+    },
+    "hero_title": "About YES ACADEMY",
+    "hero_subtitle": "Pioneering Sports Excellence in Asia",
+    "story_title": "Our Story",
+    "story_text": "Founded in 2015, YES ACADEMY was born from a vision to bring world-class, professional sports training to the heart of Asia. We started in China with a small group of passionate coaches and a handful of students. Today, we are a leading institution in both China and Vietnam, trusted by thousands of families.",
+    "mission_title": "Our Mission",
+    "mission_text": "Our mission is to provide a premium, dynamic, and inspiring environment where individuals of all ages and backgrounds can unlock their full potential. We aim to develop not just skilled athletes, but also resilient, confident, and well-rounded individuals ready to take on any challenge.",
+    "values_title": "Our Core Values",
+    "values_subtitle": "The principles that guide every decision we make.",
+    "values": {
+      "excellence_title": "Excellence",
+      "excellence_desc": "Striving for the highest standards in coaching, facilities, and personal achievement.",
+      "passion_title": "Passion",
+      "passion_desc": "Fostering a deep love for sport that inspires lifelong dedication and enjoyment.",
+      "community_title": "Community",
+      "community_desc": "Building a supportive, inclusive, and diverse family of athletes, parents, and coaches.",
+      "growth_title": "Growth",
+      "growth_desc": "Committing to the holistic development of every member, both as athletes and individuals."
+    },
+    "impact_title": "Our Impact in Numbers",
+    "impact_subtitle": "We are proud of the community we've built and the milestones we've achieved together.",
+    "impact": {
+      "stats_athletes": "Athletes Trained",
+      "stats_sports": "Sports Offered",
+      "stats_founded": "Founded In",
+      "stats_countries": "Countries"
+    }
+  },
+  "CampsPage": {
+    "metadata": {
+      "title": "Camps",
+      "description": "Join our exciting summer and winter sports camps in China and Vietnam for an unforgettable experience of growth and fun."
+    },
+    "hero_title": "Academy Camps",
+    "hero_subtitle": "Unforgettable Experiences, Lifelong Skills",
+    "section_title": "An Adventure in Sport",
+    "section_subtitle": "Our camps are more than just training; they are an opportunity for growth, independence, and making friends from around the world.",
+    "camps": {
+      "summer_camp_title": "Summer Champions Camp",
+      "summer_camp_location": "China & Vietnam",
+      "summer_camp_desc": "An action-packed summer of sports, friendship, and fun. Our multi-sport camps offer a chance to try new activities and master existing skills in a vibrant, international environment. Participants will benefit from professional coaching, competitive matches, and cultural excursions, creating lasting memories.",
+      "winter_camp_title": "Winter Intensive Camp",
+      "winter_camp_location": "China & Vietnam",
+      "winter_camp_desc": "Use the winter break to gain a competitive edge. These intensive camps focus on deep skill development, advanced tactical training, and strategic gameplay analysis to prepare athletes for the upcoming season. It's a perfect opportunity for dedicated players to elevate their game.",
+      "france_camp_title": "France 2026 Special Camp",
+      "france_camp_location": "France",
+      "france_camp_desc": "A unique opportunity to train in France, immersing yourself in a country renowned for sporting excellence. This special camp will offer specialized coaching, participation in local tournaments, and a rich cultural experience. More information will be available soon."
+    },
+    "register_button": "Learn More & Register",
+    "coming_soon_button": "Information Coming Soon"
+  },
+  "ContactPage": {
+    "metadata": {
+      "title": "Enroll Now",
+      "description": "Join YES ACADEMY today. Fill out our enrollment form to start your journey to sporting excellence in China or Vietnam."
+    },
+    "hero_title": "Join the Academy",
+    "hero_subtitle": "Your journey to victory starts here. Fill out the form below to begin the enrollment process.",
+    "form_title": "Start Your Enrollment",
+    "form_subtitle": "Tell us about yourself or your child, and which program you're interested in. Our team will get back to you shortly to finalize the details.",
+    "steps_title": "A Simple Process",
+    "steps_subtitle": "Joining our community is straightforward. Here’s how it works.",
+    "steps": {
+      "step1_title": "Step 1: Fill the Form",
+      "step1_desc": "Provide us with your details and program interests. It only takes a few minutes.",
+      "step2_title": "Step 2: We Connect",
+      "step2_desc": "An academy advisor will contact you to discuss your goals and answer your questions.",
+      "step3_title": "Step 3: Start Your Journey",
+      "step3_desc": "Finalize your enrollment and join the champions on the field, court, or in the water!"
+    },
+    "locations_title": "Our Locations",
+    "locations_subtitle": "Our teams are ready to welcome you at our state-of-the-art facilities in both China and Vietnam.",
+    "locations": {
+      "beijing": {
+        "name": "YES ACADEMY - Beijing",
+        "address": "123 Sports Avenue, Beijing, China",
+        "phone": "+86 10 1234 5678",
+        "email": "beijing@yesacademy.com"
+      },
+      "vietnam": {
+        "name": "YES ACADEMY - Vietnam",
+        "address": "456 Athlete Road, Hanoi, Vietnam",
+        "phone": "+84 24 8765 4321",
+        "email": "vietnam@yesacademy.com"
+      },
+      "yiwu": {
+        "name": "YES ACADEMY - Yiwu",
+        "address": "789 Champion Plaza, Yiwu, China",
+        "phone": "+86 579 8888 9999",
+        "email": "yiwu@yesacademy.com"
+      }
+    }
+  },
+  "ContactForm": {
+    "name_label": "Full Name",
+    "name_placeholder": "John Doe",
+    "email_label": "Email Address",
+    "email_placeholder": "you@example.com",
+    "phone_label": "Phone Number (Optional)",
+    "phone_placeholder": "+1 234 567 890",
+    "location_label": "Preferred Location",
+    "location_china": "China",
+    "location_vietnam": "Vietnam",
+    "location_other": "Other / Not applicable",
+    "program_label": "Program of Interest",
+    "program_placeholder": "Select a program",
+    "other_inquiry": "Other Inquiry",
+    "subject_label": "Subject",
+    "subject_placeholder": "Inquiry about Summer Camp",
+    "message_label": "Message",
+    "message_placeholder": "Your message here...",
+    "submit_button": "Send Message",
+    "toast": {
+      "success_title": "Success!",
+      "success_message": "Your message has been sent successfully!",
+      "error_title": "Error"
+    }
+  },
+  "LegalPage": {
+    "metadata": {
+      "title": "Legal & Privacy",
+      "description": "Read the legal mentions, privacy policy, and terms of service for YES ACADEMY."
+    },
+    "title": "Legal & Privacy",
+    "intro": "Welcome to the legal section of YES ACADEMY. Here you will find information about our company, our website policies, and how we handle your data.",
+    "mentions_title": "Legal Mentions",
+    "mentions": {
+      "company_name_label": "Company Name:",
+      "company_name": "YES ACADEMY Global Ltd.",
+      "address_label": "Registered Address:",
+      "address": "123 Sports Avenue, Beijing, China",
+      "phone_label": "Official Phone:",
+      "phone": "+86 10 1234 5678",
+      "email_label": "Official Email:",
+      "email": "legal@yesacademy.com",
+      "director_label": "Director of Publication:",
+      "director": "[Director's Name]",
+      "host_label": "Website Host:",
+      "host": "Hosted by Firebase"
+    },
+    "ip_title": "Intellectual Property",
+    "ip_text": "All content on this website, including but not limited to text, images, logos, videos, and icons, is the exclusive property of YES ACADEMY Global Ltd. or its partners. Any reproduction, representation, modification, publication, or adaptation of all or part of the site's elements, regardless of the means or process used, is prohibited, except with prior written authorization from YES ACADEMY.",
+    "privacy_title": "Privacy Policy (GDPR Adapted)",
+    "privacy_intro": "YES ACADEMY is committed to protecting your privacy. This policy outlines how we collect, use, and safeguard your personal information when you use our website or services.",
+    "privacy": {
+      "collection_title": "Data Collection",
+      "collection_text": "We collect information when you register for a program, fill out a contact form, or subscribe to our newsletter. This may include your name, email address, phone number, and information about the athlete.",
+      "use_title": "Use of Information",
+      "use_intro": "The information we collect is used to:",
+      "use_item1": "Process your registration and manage your account.",
+      "use_item2": "Communicate with you about programs, schedules, and events.",
+      "use_item3": "Improve our services and website experience.",
+      "use_item4": "Send periodic marketing emails, from which you can unsubscribe at any time.",
+      "protection_title": "Data Protection",
+      "protection_text": "We implement a variety of security measures to maintain the safety of your personal information. Your data is stored on secure servers and is only accessible by a limited number of persons who have special access rights and are required to keep the information confidential.",
+      "rights_title": "Your Rights",
+      "rights_text": "You have the right to access, correct, or delete your personal information. To exercise these rights, please contact us at legal@yesacademy.com."
+    },
+    "tos_title": "Terms of Service",
+    "tos_text": "[Full terms of service content to be added here. This would include clauses on payment, cancellation, code of conduct, liability, etc.]"
+  },
+  "ProgramsPage": {
+    "metadata": {
+      "title": "Our Programs",
+      "description": "Discover the variety of programs at YES ACADEMY, including private lessons, group classes, school programs, and corporate events."
+    },
+    "hero_title": "Our Programs",
+    "hero_subtitle": "A Path for Every Athlete",
+    "section_title": "Find Your Perfect Fit",
+    "section_subtitle": "Whether you're a beginner taking your first steps, a dedicated athlete aiming for the top, or a company looking for a unique event, we have a program for you.",
+    "programs": {
+      "schools_title": "Cooperation with International Schools",
+      "schools_target": "For educational partners",
+      "schools_desc": "We partner with international schools to provide high-quality sports education as part of their curriculum or as extracurricular activities, promoting a healthy and active lifestyle.",
+      "private_title": "Private Coaching",
+      "private_target": "For the dedicated athlete",
+      "private_desc": "One-on-one sessions tailored to your specific goals. Accelerate your learning with personalized feedback and unlock your peak performance.",
+      "group_title": "Group Classes",
+      "group_target": "For the social competitor",
+      "group_desc": "Join a dynamic group environment to learn, compete, and grow with peers. Perfect for developing teamwork and game-sense in a fun atmosphere.",
+      "intensive_title": "Intensive Stages",
+      "intensive_target": "For the ambitious player",
+      "intensive_desc": "Immersive training camps during holidays. A perfect opportunity to significantly boost your skills and gain a competitive edge in a short amount of time.",
+      "corporate_title": "Corporate Events",
+      "corporate_target": "For the modern team",
+      "corporate_desc": "Unique team-building experiences centered around sports. Boost morale, communication, and teamwork within your organization in an active, engaging way."
+    },
+    "learn_more_button": "Learn More"
+  },
+  "SportsPage": {
+    "metadata": {
+      "title": "Our Sports",
+      "description": "Explore the wide range of sports offered at YES ACADEMY, from football and basketball to climbing and scuba diving."
+    },
+    "hero_title": "Our Sports Disciplines",
+    "hero_subtitle": "Find your passion. Master your craft. YES ACADEMY offers a comprehensive range of sports programs for every interest and skill level."
+  },
+  "SportDetailPage": {
+    "about_program_title": "About our {sportName} program",
+    "key_benefits_title": "Key Benefits",
+    "key_benefits_subtitle": "Discover why our program stands out.",
+    "benefits": {
+      "elite_coaching": {
+        "title": "Elite Coaching",
+        "description": "Learn from the best with our certified and experienced coaches."
+      },
+      "holistic_development": {
+        "title": "Holistic Development",
+        "description": "We build well-rounded athletes, focusing on both technique and character."
+      },
+      "top_facilities": {
+        "title": "Top-tier Facilities",
+        "description": "Train in premium environments designed for performance."
+      }
+    },
+    "in_action_title": "In Action",
+    "in_action_subtitle": "A glimpse of the intensity and passion on the field.",
+    "athletes_say_title": "What our athletes say",
+    "testimonials": {
+      "testimonial1_text": "The training methodology has completely transformed my son's game. The coaches don't just teach, they inspire.",
+      "testimonial2_text": "I've progressed more in six months here than in two years elsewhere. The personalized attention and community atmosphere are unmatched."
+    },
+    "ready_to_start_title": "Ready to start?",
+    "ready_to_start_subtitle": "Join our {sportName} program and begin your journey to excellence. Spaces are limited.",
+    "enroll_button": "Enroll in the {sportName} program"
+  }
+}

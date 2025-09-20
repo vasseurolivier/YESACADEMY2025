@@ -5,32 +5,39 @@ import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Target, Heart, Users, Medal, Calendar } from 'lucide-react';
 import { FutbolIcon } from '@/components/icons';
 import type { Metadata } from 'next';
+import { useTranslations } from 'next-intl';
 
-export const metadata: Metadata = {
-  title: 'About Us',
-  description: 'Learn about YES ACADEMY\'s mission, values, and the expert team dedicated to fostering champions.',
-};
+export async function generateMetadata({params: {locale}}: {params: {locale: string}}): Promise<Metadata> {
+  const t = (await import(`@/messages/${locale}.json`)).default;
+  const aboutPage = t.AboutPage;
+  return {
+    title: aboutPage.metadata.title,
+    description: aboutPage.metadata.description,
+  };
+}
 
 const values = [
-    { icon: Medal, title: 'Excellence', description: 'Striving for the highest standards in coaching, facilities, and personal achievement.' },
-    { icon: Heart, title: 'Passion', description: 'Fostering a deep love for sport that inspires lifelong dedication and enjoyment.' },
-    { icon: Users, title: 'Community', description: 'Building a supportive, inclusive, and diverse family of athletes, parents, and coaches.' },
-    { icon: Target, title: 'Growth', description: 'Committing to the holistic development of every member, both as athletes and individuals.' },
+    { icon: Medal, title: 'excellence_title', description: 'excellence_desc' },
+    { icon: Heart, title: 'passion_title', description: 'passion_desc' },
+    { icon: Users, title: 'community_title', description: 'community_desc' },
+    { icon: Target, title: 'growth_title', description: 'growth_desc' },
 ];
 
 const stats = [
-    { icon: Users, value: '3,000+', label: 'Athletes Trained' },
-    { icon: FutbolIcon, value: '7', label: 'Sports Offered' },
-    { icon: Calendar, value: '2015', label: 'Founded In' },
-    { icon: Medal, value: '2', label: 'Countries' },
+    { icon: Users, value: '3,000+', label: 'stats_athletes' },
+    { icon: FutbolIcon, value: '7', label: 'stats_sports' },
+    { icon: Calendar, value: '2015', label: 'stats_founded' },
+    { icon: Medal, value: '2', label: 'stats_countries' },
 ]
 
 export default function AboutPage() {
   const aboutHeroImage = PlaceHolderImages.find(p => p.id === 'about-hero');
+  const t = useTranslations('AboutPage');
 
   return (
     <div>
       <section className="relative h-64 w-full bg-primary">
+        <div className="container">
         {aboutHeroImage && (
              <Image
              src={aboutHeroImage.imageUrl}
@@ -43,9 +50,10 @@ export default function AboutPage() {
         <div className="absolute inset-0 bg-black/50" />
         <div className="relative z-10 flex h-full flex-col items-center justify-center text-center text-white container">
           <h1 className="font-headline text-4xl font-extrabold tracking-tight md:text-5xl">
-            About YES ACADEMY
+            {t('hero_title')}
           </h1>
-          <p className="mt-2 max-w-2xl text-lg">Pioneering Sports Excellence in Asia</p>
+          <p className="mt-2 max-w-2xl text-lg">{t('hero_subtitle')}</p>
+        </div>
         </div>
       </section>
 
@@ -53,15 +61,15 @@ export default function AboutPage() {
         <div className="container">
           <div className="mx-auto grid max-w-5xl grid-cols-1 gap-12 text-center md:grid-cols-2 md:text-left">
             <div>
-              <h2 className="font-headline text-3xl font-bold">Our Story</h2>
+              <h2 className="font-headline text-3xl font-bold">{t('story_title')}</h2>
               <p className="mt-4 text-muted-foreground">
-                Founded in 2015, YES ACADEMY was born from a vision to bring world-class, professional sports training to the heart of Asia. We started in China with a small group of passionate coaches and a handful of students. Today, we are a leading institution in both China and Vietnam, trusted by thousands of families.
+                {t('story_text')}
               </p>
             </div>
             <div>
-              <h2 className="font-headline text-3xl font-bold">Our Mission</h2>
+              <h2 className="font-headline text-3xl font-bold">{t('mission_title')}</h2>
               <p className="mt-4 text-muted-foreground">
-                Our mission is to provide a premium, dynamic, and inspiring environment where individuals of all ages and backgrounds can unlock their full potential. We aim to develop not just skilled athletes, but also resilient, confident, and well-rounded individuals ready to take on any challenge.
+                {t('mission_text')}
               </p>
             </div>
           </div>
@@ -71,8 +79,8 @@ export default function AboutPage() {
       <section className="bg-white py-16 md:py-24">
         <div className="container">
             <div className="mx-auto max-w-3xl text-center">
-                <h2 className="font-headline text-3xl font-bold md:text-4xl">Our Core Values</h2>
-                <p className="mt-4 text-lg text-muted-foreground">The principles that guide every decision we make.</p>
+                <h2 className="font-headline text-3xl font-bold md:text-4xl">{t('values_title')}</h2>
+                <p className="mt-4 text-lg text-muted-foreground">{t('values_subtitle')}</p>
             </div>
             <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
                 {values.map(value => (
@@ -80,8 +88,8 @@ export default function AboutPage() {
                         <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-primary/10 text-primary">
                             <value.icon className="h-8 w-8" />
                         </div>
-                        <h3 className="mt-6 text-xl font-semibold">{value.title}</h3>
-                        <p className="mt-2 text-muted-foreground">{value.description}</p>
+                        <h3 className="mt-6 text-xl font-semibold">{t(`values.${value.title}`)}</h3>
+                        <p className="mt-2 text-muted-foreground">{t(`values.${value.description}`)}</p>
                     </div>
                 ))}
             </div>
@@ -92,10 +100,10 @@ export default function AboutPage() {
         <div className="container">
           <div className="mx-auto max-w-5xl text-center">
             <h2 className="font-headline text-3xl font-bold md:text-4xl">
-              Our Impact in Numbers
+              {t('impact_title')}
             </h2>
             <p className="mt-4 text-lg text-muted-foreground">
-              We are proud of the community we've built and the milestones we've achieved together.
+              {t('impact_subtitle')}
             </p>
           </div>
           <div className="mt-12 grid grid-cols-2 gap-8 text-center md:grid-cols-4">
@@ -103,7 +111,7 @@ export default function AboutPage() {
               <div key={stat.label} className="rounded-lg border bg-card p-6 shadow-sm">
                 <stat.icon className="mx-auto h-12 w-12 text-accent" />
                 <p className="mt-4 text-4xl font-bold">{stat.value}</p>
-                <p className="mt-2 text-sm text-muted-foreground">{stat.label}</p>
+                <p className="mt-2 text-sm text-muted-foreground">{t(`impact.${stat.label}`)}</p>
               </div>
             ))}
           </div>

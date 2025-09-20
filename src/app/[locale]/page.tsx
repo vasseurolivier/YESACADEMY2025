@@ -6,37 +6,36 @@ import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { sports } from '@/lib/sports-data';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { CheckCircle } from 'lucide-react';
-import { Carousel, CarouselContent, CarouselItem } from '@/components/ui/carousel';
+import { getTranslations } from 'next-intl/server';
+import { useTranslations } from 'next-intl';
 
 const testimonials = [
   {
     name: 'Li Wei',
-    role: 'Parent of a U12 Player',
+    role: 'testimonial1_role',
     avatar: 'LW',
     image: PlaceHolderImages.find(p => p.id === 'testimonial-1')?.imageUrl,
-    testimonial:
-      "The coaching at YES ACADEMY is world-class. My son's confidence and skills have skyrocketed since he joined the football program. The facilities are top-notch and the community is so welcoming.",
+    testimonial: 'testimonial1_text',
   },
   {
     name: 'Alex Johnson',
-    role: 'Adult Tennis Member',
+    role: 'testimonial2_role',
     avatar: 'AJ',
     image: PlaceHolderImages.find(p => p.id === 'testimonial-2')?.imageUrl,
-    testimonial:
-      "As an expat, finding a premium sports community was key. YES ACADEMY exceeded my expectations. The tennis coaches are fantastic and I've met so many great people here.",
+    testimonial: 'testimonial2_text',
   },
   {
     name: 'Trần Minh',
-    role: 'Teenage Basketball Player',
+    role: 'testimonial3_role',
     avatar: 'TM',
     image: PlaceHolderImages.find(p => p.id === 'testimonial-3')?.imageUrl,
-    testimonial:
-      'The summer camp was the best experience of my life! I learned so much, improved my game, and made friends from all over the world. I can\'t wait for the next one.',
+    testimonial: 'testimonial3_text',
   },
 ];
 
 export default function Home() {
   const heroImage = PlaceHolderImages.find(p => p.id === 'hero-football-match');
+  const t = useTranslations('HomePage');
 
   return (
     <div className="flex flex-col">
@@ -54,13 +53,13 @@ export default function Home() {
         <div className="absolute inset-0 bg-black/60" />
         <div className="relative z-10 flex h-full flex-col items-center justify-center text-center text-white container">
             <h1 className="font-headline text-4xl font-extrabold tracking-tight md:text-6xl">
-                YOUR JOURNEY, YOUR SPORT, YOUR VICTORY
+                {t('hero_title')}
             </h1>
             <p className="mt-4 max-w-2xl text-lg">
-                Experience premium multi-sport training at YES ACADEMY. We forge champions in China and Vietnam.
+                {t('hero_subtitle')}
             </p>
             <Button asChild size="lg" className="mt-8">
-                <Link href="/contact">Start Your Journey</Link>
+                <Link href="/contact">{t('hero_cta')}</Link>
             </Button>
         </div>
       </section>
@@ -69,10 +68,10 @@ export default function Home() {
         <div className="container">
           <div className="mx-auto max-w-3xl text-center">
             <h2 className="font-headline text-3xl font-bold md:text-4xl">
-              Discover Your Passion
+              {t('sports_title')}
             </h2>
             <p className="mt-4 text-lg text-muted-foreground">
-              From the court to the field, the wall to the water, we offer a diverse range of sports for all ages and skill levels.
+              {t('sports_subtitle')}
             </p>
           </div>
           <div className="mt-12">
@@ -89,7 +88,7 @@ export default function Home() {
                         />
                         <div className="absolute inset-0 bg-black/40 transition-colors duration-300 group-hover:bg-black/20" />
                         <div className="absolute inset-0 flex items-center justify-center p-2">
-                            <h3 className="font-semibold text-white shadow-md">{sport.name}</h3>
+                            <h3 className="font-semibold text-white shadow-md">{t(`sports.${sport.slug}.name`)}</h3>
                         </div>
                     </div>
                 </Link>
@@ -102,24 +101,24 @@ export default function Home() {
       <section className="bg-white py-16 md:py-24">
         <div className="container grid gap-12 text-center md:grid-cols-2 md:items-center md:text-left">
           <div className="md:order-2">
-            <h2 className="font-headline text-3xl font-bold md:text-4xl">Why YES ACADEMY?</h2>
-            <p className="mt-4 text-lg text-muted-foreground">We are more than just an academy. We are a community dedicated to excellence, growth, and passion for sport.</p>
+            <h2 className="font-headline text-3xl font-bold md:text-4xl">{t('why_us_title')}</h2>
+            <p className="mt-4 text-lg text-muted-foreground">{t('why_us_subtitle')}</p>
             <ul className="mt-8 space-y-4 text-lg">
               <li className="flex items-start">
                 <CheckCircle className="mr-3 mt-1 h-6 w-6 shrink-0 text-primary" />
-                <span><span className="font-semibold">French-Inspired Methodology:</span> Our training is rooted in renowned French teaching methods, focusing on structured, technical, and tactical development from a young age.</span>
+                <span><span className="font-semibold">{t('why_us_point1_title')}</span> {t('why_us_point1_text')}</span>
               </li>
               <li className="flex items-start">
                 <CheckCircle className="mr-3 mt-1 h-6 w-6 shrink-0 text-primary" />
-                <span><span className="font-semibold">Professionally Certified Coaches:</span> All our coaches hold top-tier professional diplomas (UEFA, ATP, PGA, etc.), ensuring the highest standard of expert instruction.</span>
+                <span><span className="font-semibold">{t('why_us_point2_title')}</span> {t('why_us_point2_text')}</span>
               </li>
               <li className="flex items-start">
                 <CheckCircle className="mr-3 mt-1 h-6 w-6 shrink-0 text-primary" />
-                <span><span className="font-semibold">State-of-the-Art Facilities:</span> Train in premium, fully-equipped environments designed for optimal performance.</span>
+                <span><span className="font-semibold">{t('why_us_point3_title')}</span> {t('why_us_point3_text')}</span>
               </li>
               <li className="flex items-start">
                 <CheckCircle className="mr-3 mt-1 h-6 w-6 shrink-0 text-primary" />
-                <span><span className="font-semibold">Holistic Development:</span> We focus on both athletic skills and personal growth, building resilient and confident individuals.</span>
+                <span><span className="font-semibold">{t('why_us_point4_title')}</span> {t('why_us_point4_text')}</span>
               </li>
             </ul>
           </div>
@@ -142,17 +141,17 @@ export default function Home() {
         <div className="container">
           <div className="mx-auto max-w-3xl text-center">
             <h2 className="font-headline text-3xl font-bold md:text-4xl">
-              Hear From Our Champions
+              {t('testimonials_title')}
             </h2>
             <p className="mt-4 text-lg text-muted-foreground">
-              Our members are our greatest pride. See what they have to say about their experience.
+              {t('testimonials_subtitle')}
             </p>
           </div>
           <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
             {testimonials.map(testimonial => (
               <Card key={testimonial.name} className="flex flex-col">
                 <CardContent className="pt-6">
-                  <p className="italic text-muted-foreground">"{testimonial.testimonial}"</p>
+                  <p className="italic text-muted-foreground">"{t(testimonial.testimonial)}"</p>
                 </CardContent>
                 <CardHeader className="mt-auto flex-row items-center gap-4">
                   <Avatar>
@@ -161,7 +160,7 @@ export default function Home() {
                   </Avatar>
                   <div>
                     <CardTitle className="text-base">{testimonial.name}</CardTitle>
-                    <p className="text-sm text-muted-foreground">{testimonial.role}</p>
+                    <p className="text-sm text-muted-foreground">{t(testimonial.role)}</p>
                   </div>
                 </CardHeader>
               </Card>
@@ -172,16 +171,16 @@ export default function Home() {
 
       <section className="bg-primary py-16 text-primary-foreground md:py-24">
         <div className="container text-center">
-          <h2 className="font-headline text-3xl font-bold md:text-4xl">Ready to Join the Elite?</h2>
+          <h2 className="font-headline text-3xl font-bold md:text-4xl">{t('cta_title')}</h2>
           <p className="mx-auto mt-4 max-w-2xl text-lg">
-            Your journey towards sporting excellence starts now. Explore our programs or get in touch with our team today.
+            {t('cta_subtitle')}
           </p>
           <div className="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
             <Button asChild size="lg" variant="secondary">
-              <Link href="/programs">View Programs</Link>
+              <Link href="/programs">{t('cta_button_programs')}</Link>
             </Button>
             <Button asChild size="lg" variant="outline" className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary">
-              <Link href="/contact">Contact Us</Link>
+              <Link href="/contact">{t('cta_button_contact')}</Link>
             </Button>
           </div>
         </div>

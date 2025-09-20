@@ -16,6 +16,7 @@ import { useToast } from '@/hooks/use-toast';
 import { sports } from '@/lib/sports-data';
 import { handleContactSubmission } from '@/app/contact/actions';
 import type { ContactFormValues } from '@/app/contact/actions';
+import { useTranslations } from 'next-intl';
 
 const contactSchema = z.object({
     name: z.string().min(2, { message: "Name must be at least 2 characters." }),
@@ -31,20 +32,22 @@ const contactSchema = z.object({
     message: z.string().min(10, { message: "Message must be at least 10 characters." }),
 });
 
-
-const programsOfInterest = [
-  "Cooperation with International Schools",
-  ...sports.map(s => s.name),
-  "Summer Champions Camp",
-  "Winter Intensive Camp",
-  "France 2026 Special Camp",
-  "Corporate Events",
-  "Other Inquiry"
-];
-
-
 export function ContactForm() {
   const { toast } = useToast();
+  const t = useTranslations('ContactForm');
+  const tSports = useTranslations('HomePage.sports');
+  const tPrograms = useTranslations('ProgramsPage.programs');
+  const tCamps = useTranslations('CampsPage.camps');
+
+  const programsOfInterest = [
+      tPrograms('schools_title'),
+      ...sports.map(s => tSports(`${s.slug}.name`)),
+      tCamps('summer_camp_title'),
+      tCamps('winter_camp_title'),
+      tCamps('france_camp_title'),
+      tPrograms('corporate_title'),
+      t('other_inquiry')
+  ];
 
   const form = useForm<ContactFormValues>({
     resolver: zodResolver(contactSchema),
@@ -57,14 +60,14 @@ export function ContactForm() {
     const result = await handleContactSubmission(values);
      if (result.success) {
         toast({
-            title: 'Success!',
-            description: result.message,
+            title: t('toast.success_title'),
+            description: t('toast.success_message'),
         });
         form.reset();
     } else {
          toast({
             variant: 'destructive',
-            title: 'Error',
+            title: t('toast.error_title'),
             description: result.error,
         });
     }
@@ -81,8 +84,8 @@ export function ContactForm() {
                             name="name"
                             render={({ field }) => (
                                 <FormItem>
-                                    <FormLabel>Full Name</FormLabel>
-                                    <FormControl><Input placeholder="John Doe" {...field} /></FormControl>
+                                    <FormLabel>{t('name_label')}</FormLabel>
+                                    <FormControl><Input placeholder={t('name_placeholder')} {...field} /></FormControl>
                                     <FormMessage />
                                 </FormItem>
                             )}
@@ -92,8 +95,8 @@ export function ContactForm() {
                             name="email"
                             render={({ field }) => (
                                 <FormItem>
-                                    <FormLabel>Email Address</FormLabel>
-                                    <FormControl><Input placeholder="you@example.com" {...field} /></FormControl>
+                                    <FormLabel>{t('email_label')}</FormLabel>
+                                    <FormControl><Input placeholder={t('email_placeholder')} {...field} /></FormControl>
                                     <FormMessage />
                                 </FormItem>
                             )}
@@ -104,8 +107,8 @@ export function ContactForm() {
                         name="phone"
                         render={({ field }) => (
                             <FormItem>
-                                <FormLabel>Phone Number (Optional)</FormLabel>
-                                <FormControl><Input placeholder="+1 234 567 890" {...field} /></FormControl>
+                                <FormLabel>{t('phone_label')}</FormLabel>
+                                <FormControl><Input placeholder={t('phone_placeholder')} {...field} /></FormControl>
                                 <FormMessage />
                             </FormItem>
                         )}
@@ -116,7 +119,7 @@ export function ContactForm() {
                         name="location"
                         render={({ field }) => (
                             <FormItem className="space-y-3">
-                            <FormLabel>Preferred Location</FormLabel>
+                            <FormLabel>{t('location_label')}</FormLabel>
                             <FormControl>
                                 <RadioGroup
                                 onValueChange={field.onChange}
@@ -128,7 +131,7 @@ export function ContactForm() {
                                     <RadioGroupItem value="china" />
                                     </FormControl>
                                     <FormLabel className="font-normal">
-                                    China
+                                    {t('location_china')}
                                     </FormLabel>
                                 </FormItem>
                                 <FormItem className="flex items-center space-x-3 space-y-0">
@@ -136,14 +139,14 @@ export function ContactForm() {
                                     <RadioGroupItem value="vietnam" />
                                     </FormControl>
                                     <FormLabel className="font-normal">
-                                    Vietnam
+                                    {t('location_vietnam')}
                                     </FormLabel>
                                 </FormItem>
                                 <FormItem className="flex items-center space-x-3 space-y-0">
                                     <FormControl>
                                     <RadioGroupItem value="other" />
                                     </FormControl>
-                                    <FormLabel className="font-normal">Other / Not applicable</FormLabel>
+                                    <FormLabel className="font-normal">{t('location_other')}</FormLabel>
                                 </FormItem>
                                 </RadioGroup>
                             </FormControl>
@@ -157,11 +160,11 @@ export function ContactForm() {
                         name="program"
                         render={({ field }) => (
                             <FormItem>
-                            <FormLabel>Program of Interest</FormLabel>
+                            <FormLabel>{t('program_label')}</FormLabel>
                             <Select onValueChange={field.onChange} defaultValue={field.value}>
                                 <FormControl>
                                 <SelectTrigger>
-                                    <SelectValue placeholder="Select a program" />
+                                    <SelectValue placeholder={t('program_placeholder')} />
                                 </SelectTrigger>
                                 </FormControl>
                                 <SelectContent>
@@ -180,8 +183,8 @@ export function ContactForm() {
                         name="subject"
                         render={({ field }) => (
                             <FormItem>
-                                <FormLabel>Subject</FormLabel>
-                                <FormControl><Input placeholder="Inquiry about Summer Camp" {...field} /></FormControl>
+                                <FormLabel>{t('subject_label')}</FormLabel>
+                                <FormControl><Input placeholder={t('subject_placeholder')} {...field} /></FormControl>
                                 <FormMessage />
                             </FormItem>
                         )}
@@ -191,15 +194,15 @@ export function ContactForm() {
                         name="message"
                         render={({ field }) => (
                             <FormItem>
-                                <FormLabel>Message</FormLabel>
-                                <FormControl><Textarea placeholder="Your message here..." className="min-h-[120px]" {...field} /></FormControl>
+                                <FormLabel>{t('message_label')}</FormLabel>
+                                <FormControl><Textarea placeholder={t('message_placeholder')} className="min-h-[120px]" {...field} /></FormControl>
                                 <FormMessage />
                             </FormItem>
                         )}
                     />
                     <Button type="submit" disabled={isSubmitting} className="w-full">
                         {isSubmitting && <Loader2 className="mr-2 h-4 w-4 animate-spin" />}
-                        Send Message
+                        {t('submit_button')}
                     </Button>
                 </form>
             </Form>

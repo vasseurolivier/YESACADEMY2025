@@ -1,0 +1,328 @@
+{
+  "Header": {
+    "nav": {
+      "about": "关于我们",
+      "sports": "体育项目",
+      "programs": "课程",
+      "camps": "训练营",
+      "enroll": "报名"
+    },
+    "enroll_now": "立即报名",
+    "toggle_menu": "切换菜单"
+  },
+  "Footer": {
+    "tagline": "通过激情、奉献和专业指导打造冠军。",
+    "quick_links": "快速链接",
+    "locations_title": "我们的位置",
+    "locations": {
+      "beijing": "中国北京",
+      "yiwu": "中国义乌",
+      "hanoi": "越南河内"
+    },
+    "contact_title": "联系方式",
+    "copyright": "© {year} YES ACADEMY. 版权所有。",
+    "legal_link": "法律与隐私"
+  },
+  "LanguageSwitcher": {
+    "title": "更改语言",
+    "en": "English",
+    "zh": "中文 (普通话)",
+    "vi": "Tiếng Việt (越南语)"
+  },
+  "HomePage": {
+    "hero_title": "你的旅程，你的运动，你的胜利",
+    "hero_subtitle": "在YES ACADEMY体验顶级综合体育训练。我们在中国和越南打造冠军。",
+    "hero_cta": "开始你的旅程",
+    "sports_title": "发现你的热情",
+    "sports_subtitle": "从球场到田径场，从攀岩墙到水中，我们为所有年龄和技能水平的人提供多样化的体育项目。",
+    "sports": {
+      "football": {
+        "name": "足球",
+        "description": "球场上的团队合作、策略和技巧。",
+        "longDescription": "我们的足球项目专注于培养技术技能、战术意识和团队合作精神。由欧足联认证的教练领导，我们为所有年龄段提供培训，从初学者到准备进入职业生涯的精英青年球员。加入我们，体验美丽的比赛。"
+      },
+      "basketball": {
+        "name": "篮球",
+        "description": "在球场上运球、投篮、得分。",
+        "longDescription": "在YES ACADEMY体验高能篮球世界。我们的课程由前职业球员设计，强调基本技能、体能训练和比赛智慧。无论您是学习运球还是志在大联盟，我们的球场都是您的归属。"
+      },
+      "volleyball": {
+        "name": "排球",
+        "description": "发球、垫球、扣球，走向胜利。",
+        "longDescription": "从沙滩到硬地，我们的排球训练涵盖了比赛的各个方面。我们专注于技术、敏捷性和沟通。加入我们的队伍参加联赛，或在有趣和支持性的环境中学习基础知识。"
+      },
+      "tennis": {
+        "name": "网球",
+        "description": "在我们的球场上掌握您的发球和反手。",
+        "longDescription": "我们经验丰富的ATP和WTA教练为所有级别的学生提供世界一流的网球指导。我们在原始的球场上提供私人课程、团体诊所和有竞争力的青少年项目。完善您的技术，培养对这项运动的终身热情。"
+      },
+      "golf": {
+        "name": "高尔夫",
+        "description": "在果岭上完善您的挥杆。",
+        "longDescription": "我们的高尔夫学院拥有顶级高尔夫球场和尖端的挥杆分析技术，是您磨练球技的完美场所。我们的PGA认证专业人士提供个性化指导，以降低您的高尔夫差点并改善您的球场管理。"
+      },
+      "scuba-diving": {
+        "name": "水肺潜水",
+        "description": "探索波浪下充满活力的世界。",
+        "longDescription": "与我们的专业潜水大师一起获得PADI认证。我们提供从开放水域到潜水长的课程，以及在越南和中国一些最美丽地点的带导潜水。发现水下呼吸的快感和海洋生物的美丽。"
+      },
+      "climbing": {
+        "name": "攀岩",
+        "description": "在我们的攀岩墙上征服新的高度。",
+        "longDescription": "在我们最先进的攀岩和抱石馆挑战您的极限。我们为所有能力水平的人提供安全、技术和先锋攀登课程。加入我们的社区，在墙上和内心中达到新的高峰。"
+      }
+    },
+    "why_us_title": "为什么选择YES ACADEMY？",
+    "why_us_subtitle": "我们不仅仅是一所学院。我们是一个致力于卓越、成长和热爱运动的社区。",
+    "why_us_point1_title": "法式教学法：",
+    "why_us_point1_text": "我们的训练植根于著名的法国教学方法，专注于从小培养结构化、技术性和战术性的发展。",
+    "why_us_point2_title": "专业认证教练：",
+    "why_us_point2_text": "我们所有的教练都持有顶级的专业文凭（UEFA、ATP、PGA等），确保最高标准的专家指导。",
+    "why_us_point3_title": "最先进的设施：",
+    "why_us_point3_text": "在为实现最佳性能而设计的优质、设备齐全的环境中进行训练。",
+    "why_us_point4_title": "全面发展：",
+    "why_us_point4_text": "我们专注于运动技能和个人成长，培养有韧性和自信的个人。",
+    "testimonials_title": "听听我们的冠军怎么说",
+    "testimonials_subtitle": "我们的成员是我们最大的骄傲。看看他们对自己的经历有什么要说。",
+    "testimonial1_text": "YES ACADEMY的教练是世界一流的。自从我的儿子加入足球项目以来，他的信心和技能飞速提升。设施一流，社区非常热情。",
+    "testimonial1_role": "U12球员的家长",
+    "testimonial2_text": "作为一名外籍人士，找到一个优质的体育社区至关重要。YES ACADEMY超出了我的预期。网球教练非常棒，我在这里认识了很多很棒的人。",
+    "testimonial2_role": "成人网球会员",
+    "testimonial3_text": "夏令营是我一生中最美好的经历！我学到了很多，提高了我的比赛水平，还交了来自世界各地的朋友。我等不及下一次了。",
+    "testimonial3_role": "青少年篮球运动员",
+    "cta_title": "准备好加入精英行列了吗？",
+    "cta_subtitle": "您的体育卓越之旅现在开始。立即浏览我们的课程或与我们的团队联系。",
+    "cta_button_programs": "查看课程",
+    "cta_button_contact": "联系我们"
+  },
+  "AboutPage": {
+    "metadata": {
+      "title": "关于我们",
+      "description": "了解YES ACADEMY的使命、价值观以及致力于培养冠军的专家团队。"
+    },
+    "hero_title": "关于YES ACADEMY",
+    "hero_subtitle": "亚洲体育卓越的先驱",
+    "story_title": "我们的故事",
+    "story_text": "YES ACADEMY成立于2015年，源于一个将世界一流的专业体育训练带到亚洲心脏地带的愿景。我们从中国的一小群充满激情的教练和少数学生开始。今天，我们是中国和越南的领先机构，受到成千上万家庭的信赖。",
+    "mission_title": "我们的使命",
+    "mission_text": "我们的使命是提供一个优质、充满活力和鼓舞人心的环境，让所有年龄和背景的个人都能释放他们的全部潜力。我们的目标不仅是培养技术娴熟的运动员，而且是培养有韧性、自信和全面发展、准备迎接任何挑战的个人。",
+    "values_title": "我们的核心价值观",
+    "values_subtitle": "指导我们每一个决策的原则。",
+    "values": {
+      "excellence_title": "卓越",
+      "excellence_desc": "在教练、设施和个人成就方面力求达到最高标准。",
+      "passion_title": "激情",
+      "passion_desc": "培养对运动的深厚热爱，激发终身奉献和享受。",
+      "community_title": "社区",
+      "community_desc": "建立一个支持性、包容性和多元化的运动员、家长和教练大家庭。",
+      "growth_title": "成长",
+      "growth_desc": "致力于每个成员作为运动员和个人的全面发展。"
+    },
+    "impact_title": "我们的数字影响力",
+    "impact_subtitle": "我们为我们共同建立的社区和取得的里程碑感到自豪。",
+    "impact": {
+      "stats_athletes": "训练的运动员",
+      "stats_sports": "提供的体育项目",
+      "stats_founded": "成立于",
+      "stats_countries": "国家"
+    }
+  },
+  "CampsPage": {
+    "metadata": {
+      "title": "训练营",
+      "description": "参加我们在中国和越南举办的激动人心的夏季和冬季体育训练营，享受难忘的成长和乐趣体验。"
+    },
+    "hero_title": "学院训练营",
+    "hero_subtitle": "难忘的经历，终身受益的技能",
+    "section_title": "体育冒险",
+    "section_subtitle": "我们的训练营不仅仅是训练；它们是成长、独立和结交来自世界各地的朋友的机会。",
+    "camps": {
+      "summer_camp_title": "夏季冠军营",
+      "summer_camp_location": "中国和越南",
+      "summer_camp_desc": "一个充满运动、友谊和乐趣的夏天。我们的综合体育训练营提供了一个尝试新活动和掌握现有技能的机会，在一个充满活力的国际环境中。参与者将受益于专业教练、竞技比赛和文化游览，创造持久的回忆。",
+      "winter_camp_title": "冬季强化营",
+      "winter_camp_location": "中国和越南",
+      "winter_camp_desc": "利用寒假获得竞争优势。这些强化训练营专注于深度技能发展、高级战术训练和战略性比赛分析，为运动员即将到来的赛季做准备。这是专注球员提升比赛水平的绝佳机会。",
+      "france_camp_title": "2026年法国特别营",
+      "france_camp_location": "法国",
+      "france_camp_desc": "一个在法国训练的独特机会，沉浸在一个以体育卓越著称的国家。这个特别训练营将提供专业教练、参加当地锦标赛和丰富的文化体验。更多信息将很快公布。"
+    },
+    "register_button": "了解更多并注册",
+    "coming_soon_button": "信息即将公布"
+  },
+  "ContactPage": {
+    "metadata": {
+      "title": "立即报名",
+      "description": "立即加入YES ACADEMY。填写我们的报名表，开始您在中国或越南的体育卓越之旅。"
+    },
+    "hero_title": "加入学院",
+    "hero_subtitle": "您的胜利之旅从这里开始。填写下面的表格开始报名过程。",
+    "form_title": "开始您的报名",
+    "form_subtitle": "告诉我们您或您孩子的情况，以及您感兴趣的课程。我们的团队会尽快与您联系，以敲定细节。",
+    "steps_title": "一个简单的过程",
+    "steps_subtitle": "加入我们的社区很简单。以下是具体流程。",
+    "steps": {
+      "step1_title": "第一步：填写表格",
+      "step1_desc": "向我们提供您的详细信息和课程兴趣。只需要几分钟。",
+      "step2_title": "第二步：我们联系",
+      "step2_desc": "学院顾问将与您联系，讨论您的目标并回答您的问题。",
+      "step3_title": "第三步：开始您的旅程",
+      "step3_desc": "最终确定您的报名，并与冠军们一起在球场、赛场或水中驰骋！"
+    },
+    "locations_title": "我们的位置",
+    "locations_subtitle": "我们的团队准备好在中国和越南的最先进设施中欢迎您。",
+    "locations": {
+      "beijing": {
+        "name": "YES ACADEMY - 北京",
+        "address": "中国北京市体育大道123号",
+        "phone": "+86 10 1234 5678",
+        "email": "beijing@yesacademy.com"
+      },
+      "vietnam": {
+        "name": "YES ACADEMY - 越南",
+        "address": "越南河内市运动员路456号",
+        "phone": "+84 24 8765 4321",
+        "email": "vietnam@yesacademy.com"
+      },
+      "yiwu": {
+        "name": "YES ACADEMY - 义乌",
+        "address": "中国义乌市冠军广场789号",
+        "phone": "+86 579 8888 9999",
+        "email": "yiwu@yesacademy.com"
+      }
+    }
+  },
+  "ContactForm": {
+    "name_label": "全名",
+    "name_placeholder": "张三",
+    "email_label": "电子邮件地址",
+    "email_placeholder": "you@example.com",
+    "phone_label": "电话号码（可选）",
+    "phone_placeholder": "+86 123 4567 8901",
+    "location_label": "首选地点",
+    "location_china": "中国",
+    "location_vietnam": "越南",
+    "location_other": "其他/不适用",
+    "program_label": "感兴趣的课程",
+    "program_placeholder": "选择一个课程",
+    "other_inquiry": "其他咨询",
+    "subject_label": "主题",
+    "subject_placeholder": "关于夏令营的咨询",
+    "message_label": "信息",
+    "message_placeholder": "请在此处输入您的信息...",
+    "submit_button": "发送信息",
+    "toast": {
+      "success_title": "成功！",
+      "success_message": "您的信息已成功发送！",
+      "error_title": "错误"
+    }
+  },
+  "LegalPage": {
+    "metadata": {
+      "title": "法律与隐私",
+      "description": "阅读YES ACADEMY的法律声明、隐私政策和服务条款。"
+    },
+    "title": "法律与隐私",
+    "intro": "欢迎来到YES ACADEMY的法律部分。在这里，您将找到有关我们公司、我们网站政策以及我们如何处理您的数据的信息。",
+    "mentions_title": "法律声明",
+    "mentions": {
+      "company_name_label": "公司名称：",
+      "company_name": "YES ACADEMY Global Ltd.",
+      "address_label": "注册地址：",
+      "address": "中国北京市体育大道123号",
+      "phone_label": "官方电话：",
+      "phone": "+86 10 1234 5678",
+      "email_label": "官方邮箱：",
+      "email": "legal@yesacademy.com",
+      "director_label": "出版总监：",
+      "director": "[总监姓名]",
+      "host_label": "网站托管：",
+      "host": "由Firebase托管"
+    },
+    "ip_title": "知识产权",
+    "ip_text": "本网站所有内容，包括但不限于文本、图像、徽标、视频和图标，均为YES ACADEMY Global Ltd.或其合作伙伴的专有财产。未经YES ACADEMY事先书面授权，禁止对本网站全部或部分元素进行任何形式的复制、陈述、修改、出版或改编。",
+    "privacy_title": "隐私政策（适应GDPR）",
+    "privacy_intro": "YES ACADEMY致力于保护您的隐私。本政策概述了您在使用我们网站或服务时我们如何收集、使用和保护您的个人信息。",
+    "privacy": {
+      "collection_title": "数据收集",
+      "collection_text": "当您注册课程、填写联系表格或订阅我们的新闻通讯时，我们会收集信息。这可能包括您的姓名、电子邮件地址、电话号码以及有关运动员的信息。",
+      "use_title": "信息使用",
+      "use_intro": "我们收集的信息用于：",
+      "use_item1": "处理您的注册并管理您的帐户。",
+      "use_item2": "与您沟通有关课程、时间表和活动的信息。",
+      "use_item3": "改善我们的服务和网站体验。",
+      "use_item4": "发送定期营销电子邮件，您可以随时取消订阅。",
+      "protection_title": "数据保护",
+      "protection_text": "我们采取各种安全措施来维护您的个人信息的安全。您的数据存储在安全的服务器上，只有少数拥有特殊访问权限并被要求对信息保密的人员才能访问。",
+      "rights_title": "您的权利",
+      "rights_text": "您有权访问、更正或删除您的个人信息。要行使这些权利，请通过legal@yesacademy.com与我们联系。"
+    },
+    "tos_title": "服务条款",
+    "tos_text": "[完整的服务条款内容将在此处添加。这将包括有关付款、取消、行为准则、责任等条款。]"
+  },
+  "ProgramsPage": {
+    "metadata": {
+      "title": "我们的课程",
+      "description": "了解YES ACADEMY的各种课程，包括私人课程、团体课程、学校项目和公司活动。"
+    },
+    "hero_title": "我们的课程",
+    "hero_subtitle": "每位运动员的道路",
+    "section_title": "找到最适合您的",
+    "section_subtitle": "无论您是迈出第一步的初学者，还是追求顶峰的专注运动员，或者是寻找独特活动的公司，我们都有适合您的课程。",
+    "programs": {
+      "schools_title": "与国际学校合作",
+      "schools_target": "为教育合作伙伴",
+      "schools_desc": "我们与国际学校合作，提供高质量的体育教育，作为其课程的一部分或课外活动，倡导健康积极的生活方式。",
+      "private_title": "私人教练",
+      "private_target": "为专注的运动员",
+      "private_desc": "根据您的具体目标量身定制的一对一课程。通过个性化反馈加速您的学习，释放您的巅峰表现。",
+      "group_title": "团体课程",
+      "group_target": "为社交型竞争者",
+      "group_desc": "加入一个充满活力的团体环境，与同伴一起学习、竞争和成长。非常适合在有趣的氛围中培养团队合作和比赛意识。",
+      "intensive_title": "强化阶段",
+      "intensive_target": "为有抱负的球员",
+      "intensive_desc": "假期期间的沉浸式训练营。在短时间内显著提升您的技能并获得竞争优势的绝佳机会。",
+      "corporate_title": "公司活动",
+      "corporate_target": "为现代团队",
+      "corporate_desc": "以体育为中心的独特团队建设体验。在积极、引人入胜的方式中提升您组织的士气、沟通和团队合作。"
+    },
+    "learn_more_button": "了解更多"
+  },
+  "SportsPage": {
+    "metadata": {
+      "title": "我们的体育项目",
+      "description": "探索YES ACADEMY提供的广泛体育项目，从足球和篮球到攀岩和水肺潜水。"
+    },
+    "hero_title": "我们的体育学科",
+    "hero_subtitle": "找到您的热情。掌握您的技艺。YES ACADEMY为每个兴趣和技能水平提供全面的体育课程。"
+  },
+  "SportDetailPage": {
+    "about_program_title": "关于我们的{sportName}课程",
+    "key_benefits_title": "主要优势",
+    "key_benefits_subtitle": "了解为什么我们的课程脱颖而出。",
+    "benefits": {
+      "elite_coaching": {
+        "title": "精英教练",
+        "description": "向我们认证和经验丰富的教练学习最好的。"
+      },
+      "holistic_development": {
+        "title": "全面发展",
+        "description": "我们培养全面的运动员，注重技术和品格。"
+      },
+      "top_facilities": {
+        "title": "顶级设施",
+        "description": "在为性能而设计的优质环境中训练。"
+      }
+    },
+    "in_action_title": "在行动中",
+    "in_action_subtitle": "一瞥球场上的强度和激情。",
+    "athletes_say_title": "我们的运动员怎么说",
+    "testimonials": {
+      "testimonial1_text": "训练方法彻底改变了我儿子的比赛。教练不仅教学，他们还激励人心。",
+      "testimonial2_text": "我在这里六个月的进步比在别处两年还多。个性化的关注和社区氛围是无与伦比的。"
+    },
+    "ready_to_start_title": "准备好开始了吗？",
+    "ready_to_start_subtitle": "加入我们的{sportName}课程，开始您的卓越之旅。名额有限。",
+    "enroll_button": "报名参加{sportName}课程"
+  }
+}

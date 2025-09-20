@@ -3,20 +3,27 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { sports } from '@/lib/sports-data';
 import type { Metadata } from 'next';
 import Image from 'next/image';
+import { useTranslations } from 'next-intl';
 
-export const metadata: Metadata = {
-  title: 'Our Sports',
-  description: 'Explore the wide range of sports offered at YES ACADEMY, from football and basketball to climbing and scuba diving.',
-};
+export async function generateMetadata({params: {locale}}: {params: {locale: string}}): Promise<Metadata> {
+  const t = (await import(`@/messages/${locale}.json`)).default;
+  const sportsPage = t.SportsPage;
+  return {
+    title: sportsPage.metadata.title,
+    description: sportsPage.metadata.description,
+  };
+}
 
 export default function SportsPage() {
+  const t = useTranslations('SportsPage');
+  const tSports = useTranslations('HomePage.sports');
   return (
     <div>
        <section className="bg-primary py-16 text-primary-foreground">
         <div className="container text-center">
-          <h1 className="font-headline text-4xl font-bold md:text-5xl">Our Sports Disciplines</h1>
+          <h1 className="font-headline text-4xl font-bold md:text-5xl">{t('hero_title')}</h1>
           <p className="mx-auto mt-4 max-w-2xl text-lg">
-            Find your passion. Master your craft. YES ACADEMY offers a comprehensive range of sports programs for every interest and skill level.
+            {t('hero_subtitle')}
           </p>
         </div>
       </section>
@@ -40,11 +47,11 @@ export default function SportsPage() {
                   <CardHeader className="flex-row items-center gap-4">
                     <sport.icon className="h-10 w-10 shrink-0 text-primary" />
                     <div>
-                      <CardTitle>{sport.name}</CardTitle>
+                      <CardTitle>{tSports(`${sport.slug}.name`)}</CardTitle>
                     </div>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-muted-foreground">{sport.description}</p>
+                    <p className="text-muted-foreground">{tSports(`${sport.slug}.description`)}</p>
                   </CardContent>
                 </Card>
               </Link>

@@ -1,0 +1,328 @@
+{
+  "Header": {
+    "nav": {
+      "about": "Về chúng tôi",
+      "sports": "Các môn thể thao",
+      "programs": "Chương trình",
+      "camps": "Trại hè",
+      "enroll": "Ghi danh"
+    },
+    "enroll_now": "Ghi danh ngay",
+    "toggle_menu": "Chuyển đổi menu"
+  },
+  "Footer": {
+    "tagline": "Rèn luyện nhà vô địch qua đam mê, cống hiến và sự hướng dẫn chuyên môn.",
+    "quick_links": "Liên kết nhanh",
+    "locations_title": "Địa điểm của chúng tôi",
+    "locations": {
+      "beijing": "Bắc Kinh, Trung Quốc",
+      "yiwu": "Nghĩa Ô, Trung Quốc",
+      "hanoi": "Hà Nội, Việt Nam"
+    },
+    "contact_title": "Liên hệ",
+    "copyright": "© {year} YES ACADEMY. Mọi quyền được bảo lưu.",
+    "legal_link": "Pháp lý & Bảo mật"
+  },
+  "LanguageSwitcher": {
+    "title": "Thay đổi ngôn ngữ",
+    "en": "English",
+    "zh": "中文 (Quan thoại)",
+    "vi": "Tiếng Việt"
+  },
+  "HomePage": {
+    "hero_title": "HÀNH TRÌNH CỦA BẠN, MÔN THỂ THAO CỦA BẠN, CHIẾN THẮNG CỦA BẠN",
+    "hero_subtitle": "Trải nghiệm đào tạo đa môn thể thao cao cấp tại YES ACADEMY. Chúng tôi rèn luyện các nhà vô địch ở Trung Quốc và Việt Nam.",
+    "hero_cta": "Bắt đầu hành trình của bạn",
+    "sports_title": "Khám phá đam mê của bạn",
+    "sports_subtitle": "Từ sân đấu đến sân cỏ, từ bức tường leo núi đến mặt nước, chúng tôi cung cấp đa dạng các môn thể thao cho mọi lứa tuổi và trình độ kỹ năng.",
+    "sports": {
+      "football": {
+        "name": "Bóng đá",
+        "description": "Chơi đồng đội, chiến lược và kỹ năng trên sân cỏ.",
+        "longDescription": "Chương trình bóng đá của chúng tôi tập trung vào việc phát triển kỹ năng kỹ thuật, nhận thức chiến thuật và tinh thần đồng đội. Được dẫn dắt bởi các huấn luyện viên được chứng nhận của UEFA, chúng tôi cung cấp khóa đào tạo cho mọi lứa tuổi, từ những người mới bắt đầu đến các cầu thủ trẻ ưu tú chuẩn bị cho sự nghiệp chuyên nghiệp. Hãy tham gia cùng chúng tôi để sống cùng trận đấu đẹp."
+      },
+      "basketball": {
+        "name": "Bóng rổ",
+        "description": "Rê bóng, ném và ghi điểm trên sân.",
+        "longDescription": "Trải nghiệm thế giới bóng rổ năng động tại YES ACADEMY. Các chương trình của chúng tôi, được thiết kế bởi các cựu cầu thủ chuyên nghiệp, nhấn mạnh vào các kỹ năng cơ bản, thể lực và trí tuệ trận đấu. Dù bạn đang học rê bóng hay nhắm đến các giải đấu lớn, sân của chúng tôi là nơi bạn thuộc về."
+      },
+      "volleyball": {
+        "name": "Bóng chuyền",
+        "description": "Phát bóng, chuyền bóng và đập bóng để chiến thắng.",
+        "longDescription": "Từ bãi biển đến sân cứng, chương trình đào tạo bóng chuyền của chúng tôi bao gồm tất cả các khía cạnh của trò chơi. Chúng tôi tập trung vào kỹ thuật, sự nhanh nhẹn và giao tiếp. Hãy tham gia các đội của chúng tôi để thi đấu giải hoặc học những điều cơ bản trong một môi trường vui vẻ và hỗ trợ."
+      },
+      "tennis": {
+        "name": "Quần vợt",
+        "description": "Làm chủ cú giao bóng và cú trái tay trên sân của chúng tôi.",
+        "longDescription": "Các huấn luyện viên giàu kinh nghiệm của chúng tôi từ ATP & WTA cung cấp hướng dẫn quần vợt đẳng cấp thế giới cho mọi trình độ. Chúng tôi cung cấp các buổi học riêng, các lớp học nhóm và các chương trình thi đấu cho lứa tuổi thiếu niên trên các sân đấu nguyên sơ của chúng tôi. Hoàn thiện kỹ thuật của bạn và phát triển niềm đam mê suốt đời với môn thể thao này."
+      },
+      "golf": {
+        "name": "Golf",
+        "description": "Hoàn thiện cú swing của bạn trên sân green.",
+        "longDescription": "Với quyền truy cập vào các sân golf hàng đầu và công nghệ phân tích cú swing tiên tiến, học viện golf của chúng tôi là nơi hoàn hảo để bạn rèn luyện kỹ năng của mình. Các chuyên gia được chứng nhận PGA của chúng tôi cung cấp hướng dẫn cá nhân hóa để giảm handicap và cải thiện khả năng quản lý sân của bạn."
+      },
+      "scuba-diving": {
+        "name": "Lặn biển",
+        "description": "Khám phá thế giới sôi động dưới những con sóng.",
+        "longDescription": "Hãy lấy chứng chỉ PADI với các chuyên gia lặn của chúng tôi. Chúng tôi cung cấp các khóa học từ Open Water đến Divemaster, cũng như các chuyến lặn vui vẻ có hướng dẫn viên tại một số địa điểm đẹp nhất ở Việt Nam và Trung Quốc. Khám phá cảm giác hồi hộp khi thở dưới nước và vẻ đẹp của sinh vật biển."
+      },
+      "climbing": {
+        "name": "Leo núi",
+        "description": "Chinh phục những tầm cao mới trên các bức tường leo núi của chúng tôi.",
+        "longDescription": "Hãy đẩy giới hạn của bạn trong phòng tập leo núi và leo tảng đá hiện đại của chúng tôi. Chúng tôi cung cấp các khóa học về an toàn, kỹ thuật và leo dẫn đường cho mọi trình độ. Hãy tham gia cộng đồng của chúng tôi và đạt đến những đỉnh cao mới, cả trên tường và trong chính bạn."
+      }
+    },
+    "why_us_title": "Tại sao chọn YES ACADEMY?",
+    "why_us_subtitle": "Chúng tôi không chỉ là một học viện. Chúng tôi là một cộng đồng dành riêng cho sự xuất sắc, sự phát triển và niềm đam mê thể thao.",
+    "why_us_point1_title": "Phương pháp lấy cảm hứng từ Pháp:",
+    "why_us_point1_text": "Chương trình đào tạo của chúng tôi bắt nguồn từ các phương pháp giảng dạy nổi tiếng của Pháp, tập trung vào sự phát triển có cấu trúc, kỹ thuật và chiến thuật ngay từ khi còn nhỏ.",
+    "why_us_point2_title": "Huấn luyện viên được chứng nhận chuyên nghiệp:",
+    "why_us_point2_text": "Tất cả các huấn luyện viên của chúng tôi đều có bằng cấp chuyên nghiệp hàng đầu (UEFA, ATP, PGA, v.v.), đảm bảo tiêu chuẩn hướng dẫn chuyên môn cao nhất.",
+    "why_us_point3_title": "Cơ sở vật chất hiện đại:",
+    "why_us_point3_text": "Tập luyện trong môi trường cao cấp, được trang bị đầy đủ, được thiết kế để đạt hiệu suất tối ưu.",
+    "why_us_point4_title": "Phát triển toàn diện:",
+    "why_us_point4_text": "Chúng tôi tập trung vào cả kỹ năng thể thao và sự phát triển cá nhân, xây dựng những cá nhân kiên cường và tự tin.",
+    "testimonials_title": "Nghe từ các nhà vô địch của chúng tôi",
+    "testimonials_subtitle": "Các thành viên của chúng tôi là niềm tự hào lớn nhất của chúng tôi. Hãy xem họ nói gì về trải nghiệm của mình.",
+    "testimonial1_text": "Huấn luyện tại YES ACADEMY là đẳng cấp thế giới. Sự tự tin và kỹ năng của con trai tôi đã tăng vọt kể từ khi tham gia chương trình bóng đá. Cơ sở vật chất hàng đầu và cộng đồng rất thân thiện.",
+    "testimonial1_role": "Phụ huynh của một cầu thủ U12",
+    "testimonial2_text": "Là một người nước ngoài, việc tìm kiếm một cộng đồng thể thao cao cấp là điều quan trọng. YES ACADEMY đã vượt quá sự mong đợi của tôi. Các huấn luyện viên quần vợt thật tuyệt vời và tôi đã gặp rất nhiều người tuyệt vời ở đây.",
+    "testimonial2_role": "Thành viên quần vợt người lớn",
+    "testimonial3_text": "Trại hè là trải nghiệm tuyệt vời nhất trong đời tôi! Tôi đã học được rất nhiều, cải thiện kỹ năng của mình và kết bạn từ khắp nơi trên thế giới. Tôi không thể chờ đợi cho lần tiếp theo.",
+    "testimonial3_role": "Cầu thủ bóng rổ thiếu niên",
+    "cta_title": "Sẵn sàng tham gia cùng những người ưu tú?",
+    "cta_subtitle": "Hành trình hướng tới sự xuất sắc trong thể thao của bạn bắt đầu ngay bây giờ. Khám phá các chương trình của chúng tôi hoặc liên hệ với đội ngũ của chúng tôi ngay hôm nay.",
+    "cta_button_programs": "Xem các chương trình",
+    "cta_button_contact": "Liên hệ chúng tôi"
+  },
+  "AboutPage": {
+    "metadata": {
+      "title": "Về chúng tôi",
+      "description": "Tìm hiểu về sứ mệnh, giá trị và đội ngũ chuyên gia của YES ACADEMY, những người tận tâm bồi dưỡng các nhà vô địch."
+    },
+    "hero_title": "Về YES ACADEMY",
+    "hero_subtitle": "Tiên phong trong lĩnh vực thể thao xuất sắc ở châu Á",
+    "story_title": "Câu chuyện của chúng tôi",
+    "story_text": "Được thành lập vào năm 2015, YES ACADEMY ra đời từ một tầm nhìn mang đến chương trình đào tạo thể thao chuyên nghiệp, đẳng cấp thế giới đến trung tâm châu Á. Chúng tôi bắt đầu ở Trung Quốc với một nhóm nhỏ các huấn luyện viên đầy nhiệt huyết và một vài học viên. Ngày nay, chúng tôi là một tổ chức hàng đầu ở cả Trung Quốc và Việt Nam, được hàng ngàn gia đình tin tưởng.",
+    "mission_title": "Sứ mệnh của chúng tôi",
+    "mission_text": "Sứ mệnh của chúng tôi là cung cấp một môi trường cao cấp, năng động và đầy cảm hứng, nơi các cá nhân ở mọi lứa tuổi và hoàn cảnh có thể phát huy hết tiềm năng của mình. Chúng tôi không chỉ nhằm mục đích phát triển các vận động viên có kỹ năng mà còn là những cá nhân kiên cường, tự tin và toàn diện, sẵn sàng đối mặt với mọi thử thách.",
+    "values_title": "Giá trị cốt lõi của chúng tôi",
+    "values_subtitle": "Những nguyên tắc chỉ đạo mọi quyết định của chúng tôi.",
+    "values": {
+      "excellence_title": "Xuất sắc",
+      "excellence_desc": "Phấn đấu đạt tiêu chuẩn cao nhất trong huấn luyện, cơ sở vật chất và thành tích cá nhân.",
+      "passion_title": "Đam mê",
+      "passion_desc": "Nuôi dưỡng một tình yêu sâu sắc đối với thể thao, truyền cảm hứng cho sự cống hiến và tận hưởng suốt đời.",
+      "community_title": "Cộng đồng",
+      "community_desc": "Xây dựng một gia đình vận động viên, phụ huynh và huấn luyện viên hỗ trợ, hòa nhập và đa dạng.",
+      "growth_title": "Phát triển",
+      "growth_desc": "Cam kết phát triển toàn diện cho mọi thành viên, cả với tư cách là vận động viên và cá nhân."
+    },
+    "impact_title": "Tác động của chúng tôi qua những con số",
+    "impact_subtitle": "Chúng tôi tự hào về cộng đồng mà chúng tôi đã xây dựng và những cột mốc mà chúng tôi đã cùng nhau đạt được.",
+    "impact": {
+      "stats_athletes": "Vận động viên được đào tạo",
+      "stats_sports": "Môn thể thao được cung cấp",
+      "stats_founded": "Thành lập vào",
+      "stats_countries": "Quốc gia"
+    }
+  },
+  "CampsPage": {
+    "metadata": {
+      "title": "Trại hè",
+      "description": "Tham gia các trại hè thể thao mùa hè và mùa đông thú vị của chúng tôi tại Trung Quốc và Việt Nam để có một trải nghiệm phát triển và vui vẻ khó quên."
+    },
+    "hero_title": "Trại hè của học viện",
+    "hero_subtitle": "Trải nghiệm khó quên, Kỹ năng suốt đời",
+    "section_title": "Một cuộc phiêu lưu trong thể thao",
+    "section_subtitle": "Các trại hè của chúng tôi không chỉ là đào tạo; chúng là cơ hội để phát triển, tự lập và kết bạn từ khắp nơi trên thế giới.",
+    "camps": {
+      "summer_camp_title": "Trại hè vô địch mùa hè",
+      "summer_camp_location": "Trung Quốc & Việt Nam",
+      "summer_camp_desc": "Một mùa hè đầy hành động với thể thao, tình bạn và niềm vui. Các trại hè đa môn thể thao của chúng tôi mang đến cơ hội thử các hoạt động mới và thành thạo các kỹ năng hiện có trong một môi trường quốc tế sôi động. Những người tham gia sẽ được hưởng lợi từ việc huấn luyện chuyên nghiệp, các trận đấu cạnh tranh và các chuyến du ngoạn văn hóa, tạo ra những kỷ niệm lâu dài.",
+      "winter_camp_title": "Trại hè chuyên sâu mùa đông",
+      "winter_camp_location": "Trung Quốc & Việt Nam",
+      "winter_camp_desc": "Hãy sử dụng kỳ nghỉ đông để có được lợi thế cạnh tranh. Các trại hè chuyên sâu này tập trung vào việc phát triển kỹ năng sâu, đào tạo chiến thuật nâng cao và phân tích lối chơi chiến lược để chuẩn bị cho các vận động viên cho mùa giải sắp tới. Đây là cơ hội hoàn hảo để các cầu thủ tận tụy nâng cao trình độ của mình.",
+      "france_camp_title": "Trại hè đặc biệt Pháp 2026",
+      "france_camp_location": "Pháp",
+      "france_camp_desc": "Một cơ hội độc đáo để đào tạo tại Pháp, đắm mình trong một đất nước nổi tiếng về sự xuất sắc trong thể thao. Trại hè đặc biệt này sẽ cung cấp huấn luyện chuyên biệt, tham gia các giải đấu địa phương và trải nghiệm văn hóa phong phú. Thông tin chi tiết sẽ sớm được công bố."
+    },
+    "register_button": "Tìm hiểu thêm & Đăng ký",
+    "coming_soon_button": "Thông tin sắp có"
+  },
+  "ContactPage": {
+    "metadata": {
+      "title": "Ghi danh ngay",
+      "description": "Tham gia YES ACADEMY ngay hôm nay. Điền vào mẫu ghi danh của chúng tôi để bắt đầu hành trình đến với sự xuất sắc trong thể thao tại Trung Quốc hoặc Việt Nam."
+    },
+    "hero_title": "Tham gia học viện",
+    "hero_subtitle": "Hành trình chiến thắng của bạn bắt đầu từ đây. Hãy điền vào mẫu dưới đây để bắt đầu quá trình ghi danh.",
+    "form_title": "Bắt đầu ghi danh của bạn",
+    "form_subtitle": "Hãy cho chúng tôi biết về bạn hoặc con bạn và chương trình bạn quan tâm. Đội ngũ của chúng tôi sẽ sớm liên hệ lại với bạn để hoàn tất các chi tiết.",
+    "steps_title": "Một quy trình đơn giản",
+    "steps_subtitle": "Tham gia cộng đồng của chúng tôi rất đơn giản. Đây là cách thực hiện.",
+    "steps": {
+      "step1_title": "Bước 1: Điền vào mẫu",
+      "step1_desc": "Cung cấp cho chúng tôi thông tin chi tiết và sở thích chương trình của bạn. Chỉ mất vài phút.",
+      "step2_title": "Bước 2: Chúng tôi kết nối",
+      "step2_desc": "Một cố vấn của học viện sẽ liên hệ với bạn để thảo luận về mục tiêu của bạn và trả lời các câu hỏi của bạn.",
+      "step3_title": "Bước 3: Bắt đầu hành trình của bạn",
+      "step3_desc": "Hoàn tất việc ghi danh và tham gia cùng các nhà vô địch trên sân cỏ, sân đấu hoặc dưới nước!"
+    },
+    "locations_title": "Địa điểm của chúng tôi",
+    "locations_subtitle": "Đội ngũ của chúng tôi sẵn sàng chào đón bạn tại các cơ sở vật chất hiện đại của chúng tôi ở cả Trung Quốc và Việt Nam.",
+    "locations": {
+      "beijing": {
+        "name": "YES ACADEMY - Bắc Kinh",
+        "address": "123 Sports Avenue, Bắc Kinh, Trung Quốc",
+        "phone": "+86 10 1234 5678",
+        "email": "beijing@yesacademy.com"
+      },
+      "vietnam": {
+        "name": "YES ACADEMY - Việt Nam",
+        "address": "456 Athlete Road, Hà Nội, Việt Nam",
+        "phone": "+84 24 8765 4321",
+        "email": "vietnam@yesacademy.com"
+      },
+      "yiwu": {
+        "name": "YES ACADEMY - Nghĩa Ô",
+        "address": "789 Champion Plaza, Nghĩa Ô, Trung Quốc",
+        "phone": "+86 579 8888 9999",
+        "email": "yiwu@yesacademy.com"
+      }
+    }
+  },
+  "ContactForm": {
+    "name_label": "Họ và tên",
+    "name_placeholder": "Nguyễn Văn A",
+    "email_label": "Địa chỉ email",
+    "email_placeholder": "ban@example.com",
+    "phone_label": "Số điện thoại (Tùy chọn)",
+    "phone_placeholder": "+84 123 456 789",
+    "location_label": "Địa điểm ưu tiên",
+    "location_china": "Trung Quốc",
+    "location_vietnam": "Việt Nam",
+    "location_other": "Khác / Không áp dụng",
+    "program_label": "Chương trình quan tâm",
+    "program_placeholder": "Chọn một chương trình",
+    "other_inquiry": "Yêu cầu khác",
+    "subject_label": "Chủ đề",
+    "subject_placeholder": "Yêu cầu về Trại hè",
+    "message_label": "Tin nhắn",
+    "message_placeholder": "Tin nhắn của bạn ở đây...",
+    "submit_button": "Gửi tin nhắn",
+    "toast": {
+      "success_title": "Thành công!",
+      "success_message": "Tin nhắn của bạn đã được gửi thành công!",
+      "error_title": "Lỗi"
+    }
+  },
+  "LegalPage": {
+    "metadata": {
+      "title": "Pháp lý & Bảo mật",
+      "description": "Đọc các thông báo pháp lý, chính sách bảo mật và điều khoản dịch vụ của YES ACADEMY."
+    },
+    "title": "Pháp lý & Bảo mật",
+    "intro": "Chào mừng bạn đến với phần pháp lý của YES ACADEMY. Tại đây bạn sẽ tìm thấy thông tin về công ty của chúng tôi, chính sách trang web của chúng tôi và cách chúng tôi xử lý dữ liệu của bạn.",
+    "mentions_title": "Thông báo pháp lý",
+    "mentions": {
+      "company_name_label": "Tên công ty:",
+      "company_name": "YES ACADEMY Global Ltd.",
+      "address_label": "Địa chỉ đã đăng ký:",
+      "address": "123 Sports Avenue, Bắc Kinh, Trung Quốc",
+      "phone_label": "Điện thoại chính thức:",
+      "phone": "+86 10 1234 5678",
+      "email_label": "Email chính thức:",
+      "email": "legal@yesacademy.com",
+      "director_label": "Giám đốc xuất bản:",
+      "director": "[Tên giám đốc]",
+      "host_label": "Nhà cung cấp dịch vụ lưu trữ trang web:",
+      "host": "Được lưu trữ bởi Firebase"
+    },
+    "ip_title": "Sở hữu trí tuệ",
+    "ip_text": "Tất cả nội dung trên trang web này, bao gồm nhưng không giới hạn ở văn bản, hình ảnh, logo, video và biểu tượng, là tài sản độc quyền của YES ACADEMY Global Ltd. hoặc các đối tác của nó. Mọi hành vi sao chép, đại diện, sửa đổi, xuất bản hoặc điều chỉnh toàn bộ hoặc một phần các yếu tố của trang web, bất kể phương tiện hoặc quy trình được sử dụng, đều bị cấm, trừ khi có sự cho phép trước bằng văn bản của YES ACADEMY.",
+    "privacy_title": "Chính sách bảo mật (Phỏng theo GDPR)",
+    "privacy_intro": "YES ACADEMY cam kết bảo vệ quyền riêng tư của bạn. Chính sách này nêu rõ cách chúng tôi thu thập, sử dụng và bảo vệ thông tin cá nhân của bạn khi bạn sử dụng trang web hoặc dịch vụ của chúng tôi.",
+    "privacy": {
+      "collection_title": "Thu thập dữ liệu",
+      "collection_text": "Chúng tôi thu thập thông tin khi bạn đăng ký một chương trình, điền vào biểu mẫu liên hệ hoặc đăng ký nhận bản tin của chúng tôi. Thông tin này có thể bao gồm tên, địa chỉ email, số điện thoại và thông tin về vận động viên.",
+      "use_title": "Sử dụng thông tin",
+      "use_intro": "Thông tin chúng tôi thu thập được sử dụng để:",
+      "use_item1": "Xử lý đăng ký và quản lý tài khoản của bạn.",
+      "use_item2": "Giao tiếp với bạn về các chương trình, lịch trình và sự kiện.",
+      "use_item3": "Cải thiện dịch vụ và trải nghiệm trang web của chúng tôi.",
+      "use_item4": "Gửi email tiếp thị định kỳ, bạn có thể hủy đăng ký bất cứ lúc nào.",
+      "protection_title": "Bảo vệ dữ liệu",
+      "protection_text": "Chúng tôi thực hiện nhiều biện pháp bảo mật để duy trì sự an toàn cho thông tin cá nhân của bạn. Dữ liệu của bạn được lưu trữ trên các máy chủ an toàn và chỉ có thể được truy cập bởi một số lượng người hạn chế có quyền truy cập đặc biệt và được yêu cầu giữ bí mật thông tin.",
+      "rights_title": "Quyền của bạn",
+      "rights_text": "Bạn có quyền truy cập, sửa chữa hoặc xóa thông tin cá nhân của mình. Để thực hiện các quyền này, vui lòng liên hệ với chúng tôi tại legal@yesacademy.com."
+    },
+    "tos_title": "Điều khoản dịch vụ",
+    "tos_text": "[Nội dung đầy đủ của điều khoản dịch vụ sẽ được thêm vào đây. Điều này sẽ bao gồm các điều khoản về thanh toán, hủy bỏ, quy tắc ứng xử, trách nhiệm pháp lý, v.v.]"
+  },
+  "ProgramsPage": {
+    "metadata": {
+      "title": "Các chương trình của chúng tôi",
+      "description": "Khám phá sự đa dạng của các chương trình tại YES ACADEMY, bao gồm các buổi học riêng, lớp học nhóm, chương trình học đường và sự kiện doanh nghiệp."
+    },
+    "hero_title": "Các chương trình của chúng tôi",
+    "hero_subtitle": "Một con đường cho mọi vận động viên",
+    "section_title": "Tìm sự phù hợp hoàn hảo của bạn",
+    "section_subtitle": "Dù bạn là người mới bắt đầu những bước đầu tiên, một vận động viên tận tụy hướng tới đỉnh cao, hay một công ty đang tìm kiếm một sự kiện độc đáo, chúng tôi đều có một chương trình dành cho bạn.",
+    "programs": {
+      "schools_title": "Hợp tác với các trường quốc tế",
+      "schools_target": "Dành cho các đối tác giáo dục",
+      "schools_desc": "Chúng tôi hợp tác với các trường quốc tế để cung cấp giáo dục thể chất chất lượng cao như một phần của chương trình giảng dạy hoặc hoạt động ngoại khóa của họ, thúc đẩy một lối sống lành mạnh và năng động.",
+      "private_title": "Huấn luyện riêng",
+      "private_target": "Dành cho vận động viên tận tụy",
+      "private_desc": "Các buổi học một kèm một được thiết kế riêng theo mục tiêu cụ thể của bạn. Đẩy nhanh quá trình học tập của bạn với phản hồi được cá nhân hóa và khai phá hiệu suất cao nhất của bạn.",
+      "group_title": "Lớp học nhóm",
+      "group_target": "Dành cho người thích cạnh tranh xã hội",
+      "group_desc": "Tham gia một môi trường nhóm năng động để học hỏi, cạnh tranh và phát triển cùng với các bạn đồng trang lứa. Hoàn hảo để phát triển tinh thần đồng đội và ý thức trận đấu trong một bầu không khí vui vẻ.",
+      "intensive_title": "Giai đoạn chuyên sâu",
+      "intensive_target": "Dành cho cầu thủ tham vọng",
+      "intensive_desc": "Các trại huấn luyện chuyên sâu trong các kỳ nghỉ. Một cơ hội hoàn hảo để tăng cường đáng kể kỹ năng của bạn và có được lợi thế cạnh tranh trong một khoảng thời gian ngắn.",
+      "corporate_title": "Sự kiện doanh nghiệp",
+      "corporate_target": "Dành cho đội ngũ hiện đại",
+      "corporate_desc": "Những trải nghiệm xây dựng đội ngũ độc đáo xoay quanh thể thao. Tăng cường tinh thần, giao tiếp và tinh thần đồng đội trong tổ chức của bạn một cách năng động, hấp dẫn."
+    },
+    "learn_more_button": "Tìm hiểu thêm"
+  },
+  "SportsPage": {
+    "metadata": {
+      "title": "Các môn thể thao của chúng tôi",
+      "description": "Khám phá hàng loạt các môn thể thao được cung cấp tại YES ACADEMY, từ bóng đá và bóng rổ đến leo núi và lặn biển."
+    },
+    "hero_title": "Các môn thể thao của chúng tôi",
+    "hero_subtitle": "Tìm thấy đam mê của bạn. Làm chủ kỹ năng của bạn. YES ACADEMY cung cấp một loạt các chương trình thể thao toàn diện cho mọi sở thích và trình độ kỹ năng."
+  },
+  "SportDetailPage": {
+    "about_program_title": "Về chương trình {sportName} của chúng tôi",
+    "key_benefits_title": "Lợi ích chính",
+    "key_benefits_subtitle": "Khám phá lý do tại sao chương trình của chúng tôi nổi bật.",
+    "benefits": {
+      "elite_coaching": {
+        "title": "Huấn luyện ưu tú",
+        "description": "Học hỏi từ những người giỏi nhất với các huấn luyện viên được chứng nhận và giàu kinh nghiệm của chúng tôi."
+      },
+      "holistic_development": {
+        "title": "Phát triển toàn diện",
+        "description": "Chúng tôi xây dựng những vận động viên toàn diện, tập trung vào cả kỹ thuật và tính cách."
+      },
+      "top_facilities": {
+        "title": "Cơ sở vật chất hàng đầu",
+        "description": "Tập luyện trong môi trường cao cấp được thiết kế để đạt hiệu suất cao."
+      }
+    },
+    "in_action_title": "Trong hành động",
+    "in_action_subtitle": "Một cái nhìn thoáng qua về cường độ và niềm đam mê trên sân.",
+    "athletes_say_title": "Vận động viên của chúng tôi nói gì",
+    "testimonials": {
+      "testimonial1_text": "Phương pháp huấn luyện đã hoàn toàn thay đổi lối chơi của con trai tôi. Các huấn luyện viên không chỉ dạy, họ còn truyền cảm hứng.",
+      "testimonial2_text": "Tôi đã tiến bộ nhiều hơn trong sáu tháng ở đây so với hai năm ở nơi khác. Sự quan tâm cá nhân và không khí cộng đồng là không thể so sánh được."
+    },
+    "ready_to_start_title": "Sẵn sàng để bắt đầu?",
+    "ready_to_start_subtitle": "Tham gia chương trình {sportName} của chúng tôi và bắt đầu hành trình đến với sự xuất sắc. Số lượng có hạn.",
+    "enroll_button": "Ghi danh vào chương trình {sportName}"
+  }
+}
