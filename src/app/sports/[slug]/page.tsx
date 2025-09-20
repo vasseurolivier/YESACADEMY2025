@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import type { Metadata, ResolvingMetadata } from 'next';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
-import { CheckCircle, Medal, Star, Users, Trophy } from 'lucide-react';
+import { CheckCircle, Medal, Star, Users, Trophy, BrainCircuit, ShieldCheck, HeartPulse } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 
@@ -40,6 +40,24 @@ const keyBenefits = [
     { icon: Star, title: 'State-of-the-Art Facilities', description: 'Train like a pro in premium, fully-equipped environments. Our facilities are designed for optimal performance, safety, and a world-class training experience.' },
     { icon: Trophy, title: 'Pathway to Competition', description: 'Go beyond training. We provide clear pathways to compete, from local leagues to international tournaments, giving you the platform to showcase your skills.' },
 ];
+
+const methodologyPillars = [
+    {
+        icon: ShieldCheck,
+        title: "Technical Foundation First",
+        description: "We believe mastery begins with fundamentals. Our French-inspired approach prioritizes perfect technique from day one, building a solid base that allows for more advanced and creative play later on. Every drill is designed to refine motor skills and create muscle memory for flawless execution."
+    },
+    {
+        icon: BrainCircuit,
+        title: "Tactical Intelligence & Decision-Making",
+        description: "A great athlete doesn't just play; they think. We dedicate significant time to developing 'game intelligence.' Players learn to read the game, anticipate opponent actions, and make smart, split-second decisions under pressure. We train the mind as much as the body."
+    },
+    {
+        icon: HeartPulse,
+        title: "Long-Term Player Development",
+        description: "We don't look for quick, temporary wins. Our methodology is built around the long-term athletic and personal growth of each player. We focus on age-appropriate training, injury prevention, and fostering a lifelong love for the sport, ensuring sustainable success and well-being."
+    }
+]
 
 const testimonials = [
   {
@@ -115,6 +133,28 @@ export default function SportDetailPage({ params }: Props) {
       </section>
 
       <section className="bg-white py-16 md:py-24">
+        <div className="container max-w-5xl">
+             <div className="text-center">
+                <h2 className="font-headline text-3xl font-bold md:text-4xl">The French Methodology: A Smarter Approach to Sport</h2>
+                <p className="mt-4 max-w-3xl mx-auto text-lg text-muted-foreground">Our training is built on the pillars of the renowned French sports education system, famous for producing technically gifted and intelligent players.</p>
+            </div>
+            <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+                {methodologyPillars.map(pillar => (
+                    <div key={pillar.title} className="text-center p-6 border rounded-lg">
+                        <div className="flex justify-center mb-4">
+                             <div className="flex h-16 w-16 items-center justify-center rounded-full bg-primary/10 text-primary">
+                                <pillar.icon className="h-8 w-8" />
+                            </div>
+                        </div>
+                        <h3 className="text-xl font-semibold mb-2">{pillar.title}</h3>
+                        <p className="text-muted-foreground">{pillar.description}</p>
+                    </div>
+                ))}
+            </div>
+        </div>
+      </section>
+
+      <section className="py-16 md:py-24 bg-gray-50 dark:bg-gray-900">
         <div className="container max-w-5xl">
             <div className="mx-auto max-w-3xl text-center">
                 <h2 className="font-headline text-3xl font-bold md:text-4xl">The YES ACADEMY Advantage</h2>
