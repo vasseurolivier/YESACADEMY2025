@@ -26,7 +26,7 @@ const camps = [
     location: 'China & Vietnam',
     description: 'Use the winter break to gain a competitive edge. These intensive camps focus on deep skill development and strategic gameplay, preparing athletes for the upcoming season.',
     image: PlaceHolderImages.find(p => p.id === 'gallery-2')?.imageUrl,
-    active: true,
+    active: false,
   },
    {
     icon: Flag,
@@ -61,9 +61,8 @@ export default function CampsPage() {
         </div>
       </section>
 
-      <section className="py-16 md:py-24">
-        <div className="container">
-          <div className="mx-auto max-w-3xl text-center">
+      <section className="container py-16 md:py-24">
+        <div className="mx-auto max-w-3xl text-center">
             <h2 className="font-headline text-3xl font-bold md:text-4xl">
               An Adventure in Sport
             </h2>
@@ -100,7 +99,6 @@ export default function CampsPage() {
               </Card>
             ))}
           </div>
-        </div>
       </section>
     </div>
   );
