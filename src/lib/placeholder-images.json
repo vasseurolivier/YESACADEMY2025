@@ -133,10 +133,13 @@
       "id": "program-group",
       "description": "A group of kids in a football training session.",
       "imageUrl": "https://images.unsplash.com/photo-1626248801379-51a0748a5f96?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxmb290YmFsbCUyMG1hdGNofGVufDB8fHx8MTc1ODM3MzUzN3ww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "football match"
+      "imageHint": "basketball training"
     },
     {
-      "id": "program-intensive", "description": "Athletes training hard during a sports camp.", "imageUrl": "https://picsum.photos/seed/progintensive/600/400", "imageHint": "sports camp"
+      "id": "program-intensive",
+      "description": "Athletes training hard during a sports camp.",
+      "imageUrl": "https://images.unsplash.com/photo-1571080096581-53aefc318ac3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxNXx8Zm9vdGJhbGwlMjBtYXRjaHxlbnwwfHx8fDE3NTgzNzM1Mzd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "sports camp"
     },
     {
       "id": "program-corporate", "description": "Colleagues high-fiving during a team-building sport event.", "imageUrl": "https://picsum.photos/seed/progcorporate/600/400", "imageHint": "team building"
