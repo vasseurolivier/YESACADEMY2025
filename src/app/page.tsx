@@ -65,7 +65,7 @@ export default function Home() {
           </CarouselContent>
         </Carousel>
 
-        <div className="relative z-20 flex h-full flex-col items-center justify-center text-center">
+        <div className="container relative z-20 flex h-full flex-col items-center justify-center text-center">
           <h1 className="font-headline text-4xl font-extrabold tracking-tight md:text-6xl lg:text-7xl">
             YOUR JOURNEY, YOUR SPORT, YOUR VICTORY
           </h1>
