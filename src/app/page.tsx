@@ -72,7 +72,7 @@ export default function Home() {
             </p>
           </div>
           <div className="mt-12">
-            <div className="grid grid-cols-2 gap-4 text-center sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 lg:gap-6">
+            <div className="mx-auto grid grid-cols-2 gap-4 text-center sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 lg:gap-6">
                 {sports.map(sport => (
                 <Link href={`/sports/${sport.slug}`} key={sport.name} className="group mx-auto">
                     <div className="relative aspect-square w-36 overflow-hidden rounded-lg">
