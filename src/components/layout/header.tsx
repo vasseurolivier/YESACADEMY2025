@@ -80,7 +80,7 @@ export function Header() {
 
         <div className="flex items-center gap-2">
           <LanguageSwitcher />
-          <Button asChild className="hidden sm:inline-flex" variant="outline">
+          <Button asChild className="hidden sm:inline-flex bg-accent text-accent-foreground hover:bg-accent/90">
             <Link href="/contact">Enroll Now</Link>
           </Button>
         </div>
