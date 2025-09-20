@@ -76,22 +76,22 @@ export default function ContactPage() {
           <p className="text-center mt-4 text-muted-foreground max-w-2xl mx-auto">
             Our teams are ready to welcome you at our state-of-the-art facilities in both China and Vietnam.
           </p>
-           <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8 text-center md:text-left">
+           <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8 text-center">
               <div className="rounded-lg border p-6">
                 <h3 className="text-xl font-semibold">YES ACADEMY - China</h3>
                 <div className="mt-4 space-y-2 text-muted-foreground">
-                  <p className="flex items-center justify-center md:justify-start"><MapPin className="mr-2 h-4 w-4" /> 123 Sports Avenue, Beijing, China</p>
-                  <p className="flex items-center justify-center md:justify-start"><Phone className="mr-2 h-4 w-4" /> +86 10 1234 5678</p>
-                  <p className="flex items-center justify-center md:justify-start"><Mail className="mr-2 h-4 w-4" /> china@yesacademy.com</p>
+                  <p className="flex items-center justify-center"><MapPin className="mr-2 h-4 w-4" /> 123 Sports Avenue, Beijing, China</p>
+                  <p className="flex items-center justify-center"><Phone className="mr-2 h-4 w-4" /> +86 10 1234 5678</p>
+                  <p className="flex items-center justify-center"><Mail className="mr-2 h-4 w-4" /> china@yesacademy.com</p>
                 </div>
               </div>
 
               <div className="rounded-lg border p-6">
                 <h3 className="text-xl font-semibold">YES ACADEMY - Vietnam</h3>
-                <div className="mt-2 space-y-2 text-muted-foreground">
-                  <p className="flex items-center justify-center md:justify-start"><MapPin className="mr-2 h-4 w-4" /> 456 Athlete Road, Hanoi, Vietnam</p>
-                  <p className="flex items-center justify-center md:justify-start"><Phone className="mr-2 h-4 w-4" /> +84 24 8765 4321</p>
-                  <p className="flex items-center justify-center md:justify-start"><Mail className="mr-2 h-4 w-4" /> vietnam@yesacademy.com</p>
+                <div className="mt-4 space-y-2 text-muted-foreground">
+                  <p className="flex items-center justify-center"><MapPin className="mr-2 h-4 w-4" /> 456 Athlete Road, Hanoi, Vietnam</p>
+                  <p className="flex items-center justify-center"><Phone className="mr-2 h-4 w-4" /> +84 24 8765 4321</p>
+                  <p className="flex items-center justify-center"><Mail className="mr-2 h-4 w-4" /> vietnam@yesacademy.com</p>
                 </div>
               </div>
             </div>
