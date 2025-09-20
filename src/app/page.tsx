@@ -49,7 +49,7 @@ export default function Home() {
           <CarouselContent>
             {heroImages.map((image, index) => (
                 image && (
-              <CarouselItem key={index}>
+              <CarouselItem key={index} className="relative h-[60vh] min-h-[400px] w-full md:h-[80vh]">
                 <Image
                   src={image.imageUrl}
                   alt={image.description}
@@ -65,7 +65,7 @@ export default function Home() {
         </Carousel>
 
         <div className="absolute inset-0 bg-black/50" />
-        <div className="relative z-10 flex h-full flex-col items-center justify-center text-center">
+        <div className="absolute inset-0 z-10 flex flex-col items-center justify-center text-center">
           <h1 className="font-headline text-4xl font-extrabold tracking-tight md:text-6xl lg:text-7xl">
             YOUR JOURNEY, YOUR SPORT, YOUR VICTORY
           </h1>
