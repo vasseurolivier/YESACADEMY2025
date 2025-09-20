@@ -1,7 +1,7 @@
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
-import { User, Users, Calendar, Building2 } from 'lucide-react';
+import { User, Users, Calendar, Building2, Building } from 'lucide-react';
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
@@ -12,6 +12,13 @@ export const metadata: Metadata = {
 };
 
 const programs = [
+  {
+    icon: Building,
+    title: 'Cooperation with International Schools',
+    target: "For educational partners",
+    description: 'We partner with international schools to provide high-quality sports education as part of their curriculum or as extracurricular activities, promoting a healthy and active lifestyle.',
+    image: PlaceHolderImages.find(p => p.id === 'program-schools'),
+  },
   {
     icon: User,
     title: 'Private Coaching',
@@ -75,7 +82,7 @@ export default function ProgramsPage() {
               Whether you're a beginner taking your first steps, a dedicated athlete aiming for the top, or a company looking for a unique event, we have a program for you.
             </p>
           </div>
-          <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-2">
+          <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
             {programs.map(program => (
               <Card key={program.title} className="flex flex-col overflow-hidden transition-shadow hover:shadow-lg">
                 {program.image && (

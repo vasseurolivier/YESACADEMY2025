@@ -145,6 +145,12 @@
       "id": "program-corporate", "description": "Colleagues high-fiving during a team-building sport event.", "imageUrl": "https://picsum.photos/seed/progcorporate/600/400", "imageHint": "team building"
     },
     {
+      "id": "program-schools",
+      "description": "Students in a classroom raising their hands.",
+      "imageUrl": "https://picsum.photos/seed/progschools/600/400",
+      "imageHint": "classroom students"
+    },
+    {
       "id": "camps-hero", "description": "Kids laughing and running at a summer camp.", "imageUrl": "https://picsum.photos/seed/camps1/1200/400", "imageHint": "summer camp"
     },
     {

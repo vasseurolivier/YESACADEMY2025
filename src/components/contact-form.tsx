@@ -33,6 +33,7 @@ const contactSchema = z.object({
 
 
 const programsOfInterest = [
+  "Cooperation with International Schools",
   ...sports.map(s => s.name),
   "Summer Champions Camp",
   "Winter Intensive Camp",
