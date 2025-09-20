@@ -14,64 +14,72 @@ export const Logo = (props: SVGProps<SVGSVGElement>) => (
         <path id="text-arc-bottom" d="M 140,256 A 116,116 0 0,0 372,256" />
     </defs>
 
-    <circle cx="256" cy="256" r="230" fill="#002d62" />
+    <circle cx="256" cy="256" r="230" fill="white" />
+    <circle cx="256" cy="256" r="230" fill="none" stroke="#dc2626" strokeWidth="12" />
+    <circle cx="256" cy="256" r="218" fill="none" stroke="#002d62" strokeWidth="12" />
+    <circle cx="256" cy="256" r="206" fill="white" />
+    
+    <path d="M 140,150 a 180,180 0 0,1 232,0 L 392,362 A 180,180 0 0,1 120,362 Z" fill="#002d62" />
 
-    <circle cx="256" cy="256" r="215" fill="none" stroke="#e0e0e0" strokeWidth="2" />
-    <circle cx="256" cy="256" r="205" fill="none" stroke="red" strokeWidth="6" />
-    <circle cx="256" cy="256" r="198" fill="#002d62" />
-
-    <rect x="75" y="236" width="362" height="40" fill="#002d62" />
-    <path d="M 75 236 L 95 236 L 95 216 L 417 216 L 417 236 L 437 236 L 437 276 L 417 276 L 417 296 L 95 296 L 95 276 L 75 276 Z" fill="#002d62" />
-
-    <path d="M 95, 216 h 322 v 80 h -322 z" fill="#e0e0e0" />
-    <path d="M 100, 221 h 312 v 70 h -312 z" fill="#002d62" />
-
-    <polygon points="120,246 130,266 110,266" fill="white">
-        <path d="M115,256l-7.5-5h15z" fill="white" />
-        <polygon points="120,246 125,256 115,256" fill="white" />
-        <polygon points="120,266 125,256 115,256" fill="white" />
-        <path d="M120,256 l-2.5,5 h5z" fill="white" />
-    </polygon>
-
-    <path d="M115 251 l-5 -3 l10 0 l-5 3" fill="white"/>
-    <polygon points="112.5,251 117.5,251 115,254" fill="white"/>
-    <path d="M110 256 l5 -3 l-10 0 l5 3" fill="white"/>
-    <polygon points="107.5,256 112.5,256 110,259" fill="white"/>
-    <path d="M115 261 l-5 -3 l10 0 l-5 3" fill="white"/>
-    <polygon points="112.5,261 117.5,261 115,264" fill="white"/>
-
-    <g transform="translate(112, 256) scale(0.1)">
-      <polygon points="5,0 10,10 0,10" fill="white" />
+    <g transform="translate(140, 256)">
+        <path d="M 0,-106 L 0,106" stroke="white" strokeWidth="12" />
+    </g>
+    <g transform="translate(372, 256)">
+        <path d="M 0,-106 L 0,106" stroke="white" strokeWidth="12" />
     </g>
 
-    <g transform="translate(112, 256) scale(0.1)">
-        <polygon points="2.5,5 7.5,5 5,8" fill="white" />
-    </g>
+    <path d="M 140,150 L 120,150" stroke="#002d62" strokeWidth="12" />
+    <path d="M 372,150 L 392,150" stroke="#002d62" strokeWidth="12" />
+    <path d="M 140,362 L 120,362" stroke="#002d62" strokeWidth="12" />
+    <path d="M 372,362 L 392,362" stroke="#002d62" strokeWidth="12" />
 
-    <g transform="translate(100, 256) scale(0.1)">
-        <polygon points="5,0 10,10 0,10" fill="white" />
-    </g>
-    <g transform="translate(100, 256) scale(0.1)">
-        <polygon points="2.5,5 7.5,5 5,8" fill="white" />
-    </g>
-
-    <path d="m 402,246 0,20 -10,-10 z" fill="white" transform="translate(-1,0)" />
-    <path d="m 392,246 0,20 -10,-10 z" fill="white" transform="translate(2,0)" />
-
-    <text fill="white" fontSize="42" fontWeight="bold" letterSpacing="2">
+    <text fill="#002d62" fontSize="58" fontWeight="bold" letterSpacing="4">
         <textPath href="#text-arc-top" startOffset="50%" textAnchor="middle">YES ACADEMY</textPath>
     </text>
 
-    <text fill="white" fontSize="28" fontWeight="bold" letterSpacing="1.5">
+    <text fill="#002d62" fontSize="42" fontWeight="bold" letterSpacing="3">
         <textPath href="#text-arc-bottom" startOffset="50%" textAnchor="middle">MULTI-SPORTS</textPath>
     </text>
 
-    <path d="M 256,180 v 150" stroke="#002d62" strokeWidth="14" />
-    <path d="m 249,180 14,0 -7,-15 z" fill="#002d62" />
-    <path d="M 242,220 h 28 M 244,250 h 24 M 246,280 h 20 M 248,310 h 16" stroke="#002d62" strokeWidth="4" />
+    <path d="M 190, 256 a 66,66 0 1,0 132,0 a 66,66 0 1,0 -132,0" fill="none" stroke="#002d62" strokeWidth="10" />
 
-    <path d="m 256,180 c 20,40 20,80 0,120 c -20,40 -20,80 0,120" fill="none" stroke="red" strokeWidth="5" strokeLinecap="round" transform="translate(2, -15) scale(0.9)" />
-    <path d="m 256,180 c -20,40 -20,80 0,120 c 20,40 20,80 0,120" fill="none" stroke="#e0e0e0" strokeWidth="5" strokeLinecap="round" transform="translate(-2, -15) scale(0.9)" />
+    <g transform="translate(256, 350) scale(1.5)">
+        <path d="M 0,-60 L 15,-40 L -15,-40 Z" fill="#002d62"/>
+        <path d="M 0,-42 L 0,30" stroke="#002d62" strokeWidth="10" />
+        <path d="M -15,-10 L 15,-10" stroke="#002d62" strokeWidth="8" />
+        <path d="M -10,10 L 10,10" stroke="#002d62" strokeWidth="6" />
+        <path d="M -20,30 L 20,30" stroke="#002d62" strokeWidth="10" />
+        
+        <g transform="translate(0, -10)">
+            <path d="M 0,-40 c 25,20 25,50 0,70" fill="none" stroke="#dc2626" strokeWidth="6" strokeLinecap="round" />
+            <path d="M 0,-40 c -25,20 -25,50 0,70" fill="none" stroke="white" strokeWidth="6" strokeLinecap="round" />
+            <path d="M 0,-40 c 25,20 25,50 0,70" fill="none" stroke="#002d62" strokeWidth="6" strokeLinecap="round" transform="translate(-1.5,0)" />
+        </g>
+    </g>
+
+    <g fill="white">
+        <path d="M165 248 L 175 256 L 165 264 Z" />
+        <path d="M170 250 L 180 256 L 170 262 Z" fill="#002d62" />
+    </g>
+    <g fill="white">
+        <path d="M347 248 L 337 256 L 347 264 Z" />
+        <path d="M342 250 L 332 256 L 342 262 Z" fill="#002d62" />
+    </g>
+
+    <path d="M 195, 256 l -25,-15 0,30 z" fill="#002d62" transform="translate(5,0)" />
+    <path d="M 317, 256 l 25,-15 0,30 z" fill="#002d62" transform="translate(-5,0)" />
+
+    <polygon points="175,256 185,250 185,262" fill="white" />
+    <polygon points="337,256 327,250 327,262" fill="white" />
+
+    <g transform="translate(170, 256) scale(0.2)">
+        <polygon points="25,0 50,15 -0,15" fill="white"/>
+        <polygon points="37.5,3 42.5,12 32.5,12" fill="#002d62"/>
+    </g>
+    <g transform="translate(320, 256) scale(0.2)">
+        <polygon points="25,0 50,15 -0,15" fill="white" transform="rotate(180, 25, 7.5)" />
+        <polygon points="37.5,3 42.5,12 32.5,12" fill="#002d62" transform="rotate(180, 37.5, 7.5)" />
+    </g>
 </svg>
   </div>
 );
