@@ -15,11 +15,11 @@ export const Logo = (props: SVGProps<SVGSVGElement>) => (
             className="text-primary"
             {...props}
         >
-            <path d="M16 2L16 12" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/>
-            <path d="M25 9L19 15" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/>
-            <path d="M7 9L13 15" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/>
-            <path d="M16 30L16 16" stroke="currentColor" strokeWidth="3" strokeLinecap="round"/>
+            <path d="M4 16C4 9.37258 9.37258 4 16 4C22.6274 4 28 9.37258 28 16" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
+            <path d="M28 16C28 22.6274 22.6274 28 16 28C9.37258 28 4 22.6274 4 16" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
+            <path d="M16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"/>
         </svg>
+
       <span className="font-bold text-lg text-foreground">YES ACADEMY</span>
   </div>
 );
