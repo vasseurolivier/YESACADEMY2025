@@ -58,7 +58,7 @@ export function Footer() {
             <div>
               <p className="font-semibold">Our Locations</p>
               <ul className="mt-4 space-y-2 text-sm text-muted-foreground">
-                <li>Beijing, China</li>
+                <li>Shanghai, China</li>
                 <li>Yiwu, China</li>
                 <li>Hanoi, Vietnam</li>
               </ul>
@@ -67,7 +67,7 @@ export function Footer() {
             <div>
               <p className="font-semibold">Contact</p>
                <ul className="mt-4 space-y-2 text-sm text-muted-foreground">
-                <li>info@yesacademy.com</li>
+                <li>contact@yesacademies.org</li>
               </ul>
             </div>
           </div>

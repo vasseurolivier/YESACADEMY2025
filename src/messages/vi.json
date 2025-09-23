@@ -15,7 +15,7 @@
     "quick_links": "Liên kết nhanh",
     "locations_title": "Địa điểm của chúng tôi",
     "locations": {
-      "beijing": "Bắc Kinh, Trung Quốc",
+      "shanghai": "Thượng Hải, Trung Quốc",
       "yiwu": "Nghĩa Ô, Trung Quốc",
       "hanoi": "Hà Nội, Việt Nam"
     },
@@ -176,19 +176,19 @@
         "name": "YES ACADEMY - Thượng Hải",
         "address": "999 Century Avenue, Thượng Hải, Trung Quốc",
         "phone": "+86 138 1738 9758",
-        "email": "shanghai@yesacademy.com"
+        "email": "contact@yesacademies.org"
       },
       "vietnam": {
         "name": "YES ACADEMY - Việt Nam",
         "address": "456 Athlete Road, Hà Nội, Việt Nam",
         "phone": "+84 24 8765 4321",
-        "email": "vietnam@yesacademy.com"
+        "email": "contact@yesacademies.org"
       },
       "yiwu": {
         "name": "YES ACADEMY - Nghĩa Ô",
         "address": "Sân vận động bóng đá Wanda Riverside, đường Tây Giang, Nghĩa Ô",
         "phone": "+86 579 8888 9999",
-        "email": "yiwu@yesacademy.com"
+        "email": "contact@yesacademies.org"
       }
     }
   },
@@ -233,7 +233,7 @@
       "phone_label": "Điện thoại chính thức:",
       "phone": "+86 138 1738 9758",
       "email_label": "Email chính thức:",
-      "email": "legal@yesacademy.com",
+      "email": "contact@yesacademies.org",
       "director_label": "Giám đốc xuất bản:",
       "director": "[Tên giám đốc]",
       "host_label": "Nhà cung cấp dịch vụ lưu trữ trang web:",
@@ -255,7 +255,7 @@
       "protection_title": "Bảo vệ dữ liệu",
       "protection_text": "Chúng tôi thực hiện nhiều biện pháp bảo mật để duy trì sự an toàn cho thông tin cá nhân của bạn. Dữ liệu của bạn được lưu trữ trên các máy chủ an toàn và chỉ có thể được truy cập bởi một số lượng người hạn chế có quyền truy cập đặc biệt và được yêu cầu giữ bí mật thông tin.",
       "rights_title": "Quyền của bạn",
-      "rights_text": "Bạn có quyền truy cập, sửa chữa hoặc xóa thông tin cá nhân của mình. Để thực hiện các quyền này, vui lòng liên hệ với chúng tôi tại legal@yesacademy.com."
+      "rights_text": "Bạn có quyền truy cập, sửa chữa hoặc xóa thông tin cá nhân của mình. Để thực hiện các quyền này, vui lòng liên hệ với chúng tôi tại contact@yesacademies.org."
     },
     "tos_title": "Điều khoản dịch vụ",
     "tos_text": "[Nội dung đầy đủ của điều khoản dịch vụ sẽ được thêm vào đây. Điều này sẽ bao gồm các điều khoản về thanh toán, hủy bỏ, quy tắc ứng xử, trách nhiệm pháp lý, v.v.]"

@@ -21,7 +21,7 @@ export default function LegalPage() {
             <br />
             <strong>Official Phone:</strong> +86 138 1738 9758
             <br />
-            <strong>Official Email:</strong> legal@yesacademy.com
+            <strong>Official Email:</strong> contact@yesacademies.org
             <br />
             <strong>Director of Publication:</strong> [Director's Name]
             <br />
@@ -50,7 +50,7 @@ export default function LegalPage() {
           <p>We implement a variety of security measures to maintain the safety of your personal information. Your data is stored on secure servers and is only accessible by a limited number of persons who have special access rights and are required to keep the information confidential.</p>
 
           <h3>Your Rights</h3>
-          <p>You have the right to access, correct, or delete your personal information. To exercise these rights, please contact us at legal@yesacademy.com.</p>
+          <p>You have the right to access, correct, or delete your personal information. To exercise these rights, please contact us at contact@yesacademies.org.</p>
 
           <h2 className="font-headline">Terms of Service</h2>
           <p>[Full terms of service content to be added here. This would include clauses on payment, cancellation, code of conduct, liability, etc.]</p>

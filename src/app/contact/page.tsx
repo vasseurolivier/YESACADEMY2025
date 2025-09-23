@@ -37,8 +37,8 @@ export default function ContactPage() {
         </div>
       </section>
 
-      <section className="py-16 md:py-24">
-        <div className="container mx-auto max-w-7xl">
+      <section className="container mx-auto py-16 md:py-24">
+        <div className="mx-auto max-w-7xl">
           <div className="grid grid-cols-1 gap-16 lg:grid-cols-5">
             <div className="lg:col-span-3">
               <h2 className="font-headline text-3xl font-bold">Start Your Enrollment</h2>
@@ -83,7 +83,7 @@ export default function ContactPage() {
                 <div className="mt-4 space-y-2 text-muted-foreground">
                   <p className="flex items-center justify-center"><MapPin className="mr-2 h-4 w-4" /> 999 Century Avenue, Shanghai, China</p>
                   <p className="flex items-center justify-center"><Phone className="mr-2 h-4 w-4" /> +86 138 1738 9758</p>
-                  <p className="flex items-center justify-center"><Mail className="mr-2 h-4 w-4" /> shanghai@yesacademy.com</p>
+                  <p className="flex items-center justify-center"><Mail className="mr-2 h-4 w-4" /> contact@yesacademies.org</p>
                 </div>
               </div>
 
@@ -92,7 +92,7 @@ export default function ContactPage() {
                 <div className="mt-4 space-y-2 text-muted-foreground">
                   <p className="flex items-center justify-center"><MapPin className="mr-2 h-4 w-4" /> 456 Athlete Road, Hanoi, Vietnam</p>
                   <p className="flex items-center justify-center"><Phone className="mr-2 h-4 w-4" /> +84 24 8765 4321</p>
-                  <p className="flex items-center justify-center"><Mail className="mr-2 h-4 w-4" /> vietnam@yesacademy.com</p>
+                  <p className="flex items-center justify-center"><Mail className="mr-2 h-4 w-4" /> contact@yesacademies.org</p>
                 </div>
               </div>
               
@@ -101,7 +101,7 @@ export default function ContactPage() {
                 <div className="mt-4 space-y-2 text-muted-foreground">
                   <p className="flex items-center justify-center"><MapPin className="mr-2 h-4 w-4" /> Wanda Riverside Football Stadium, Xijiang Road, Yiwu</p>
                   <p className="flex items-center justify-center"><Phone className="mr-2 h-4 w-4" /> +86 579 8888 9999</p>
-                  <p className="flex items-center justify-center"><Mail className="mr-2 h-4 w-4" /> yiwu@yesacademy.com</p>
+                  <p className="flex items-center justify-center"><Mail className="mr-2 h-4 w-4" /> contact@yesacademies.org</p>
                 </div>
               </div>
             </div>
