@@ -181,7 +181,7 @@
       "vietnam": {
         "name": "YES ACADEMY - Vietnam",
         "address": "456 Athlete Road, Hanoi, Vietnam",
-        "phone": "+84 24 8765 4321",
+        "phone": "+84 32 603 0993",
         "email": "contact@yesacademies.org"
       },
       "yiwu": {
@@ -326,3 +326,5 @@
     "enroll_button": "Enroll in the {sportName} program"
   }
 }
+
+    

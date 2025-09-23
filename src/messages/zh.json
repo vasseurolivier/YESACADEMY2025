@@ -181,7 +181,7 @@
       "vietnam": {
         "name": "YES ACADEMY - 越南",
         "address": "越南河内市运动员路456号",
-        "phone": "+84 24 8765 4321",
+        "phone": "+84 32 603 0993",
         "email": "contact@yesacademies.org"
       },
       "yiwu": {
@@ -326,3 +326,5 @@
     "enroll_button": "报名参加{sportName}课程"
   }
 }
+
+    
