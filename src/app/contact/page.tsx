@@ -27,7 +27,7 @@ const enrollmentSteps = [
 
 export default function ContactPage() {
   return (
-    <div>
+    <div className="container mx-auto">
       <section className="bg-primary py-16 text-primary-foreground">
         <div className="container text-center">
           <h1 className="font-headline text-4xl font-bold md:text-5xl">Join the Academy</h1>
@@ -99,7 +99,7 @@ export default function ContactPage() {
               <div className="rounded-lg border p-6 md:col-span-2 lg:col-span-1">
                 <h3 className="text-xl font-semibold">YES ACADEMY - Yiwu</h3>
                 <div className="mt-4 space-y-2 text-muted-foreground">
-                  <p className="flex items-center justify-center"><MapPin className="mr-2 h-4 w-4" /> 789 Champion Plaza, Yiwu, China</p>
+                  <p className="flex items-center justify-center"><MapPin className="mr-2 h-4 w-4" /> Wanda Riverside Football Stadium, Xijiang Road, Yiwu</p>
                   <p className="flex items-center justify-center"><Phone className="mr-2 h-4 w-4" /> +86 579 8888 9999</p>
                   <p className="flex items-center justify-center"><Mail className="mr-2 h-4 w-4" /> yiwu@yesacademy.com</p>
                 </div>
