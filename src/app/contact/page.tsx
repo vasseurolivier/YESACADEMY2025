@@ -101,7 +101,7 @@ export default function ContactPage() {
                   <h3 className="text-xl font-semibold">YES ACADEMY - Yiwu</h3>
                   <div className="mt-4 space-y-2 text-muted-foreground">
                     <p className="flex items-center justify-center"><MapPin className="mr-2 h-4 w-4" /> Wanda Riverside Football Stadium, Xijiang Road, Yiwu</p>
-                    <p className="flex items-center justify-center"><Phone className="mr-2 h-4 w-4" /> +86 579 8888 9999</p>
+                    <p className="flex items-center justify-center"><Phone className="mr-2 h-4 w-4" /> +86 138 1738 9758</p>
                     <p className="flex items-center justify-center"><Mail className="mr-2 h-4 w-4" /> contact@yesacademies.org</p>
                   </div>
                 </div>
