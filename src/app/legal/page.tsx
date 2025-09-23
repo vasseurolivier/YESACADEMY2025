@@ -15,7 +15,7 @@ export default function LegalPage() {
 
           <h2 className="font-headline">Legal Mentions</h2>
           <p>
-            <strong>Company Name:</strong> YES ACADEMY Global Ltd.
+            <strong>Company Name:</strong> SHANGHAI PARIS SPORTS SERVICES COMPANY LIMITED
             <br />
             <strong>Registered Address:</strong> 345 Huangyang Road Pudong, Shanghai China 201206
             <br />
@@ -23,7 +23,7 @@ export default function LegalPage() {
             <br />
             <strong>Official Email:</strong> contact@yesacademies.org
             <br />
-            <strong>Director of Publication:</strong> [Director's Name]
+            <strong>Director of Publication:</strong> Didier Marc Brizard
             <br />
             <strong>Website Host:</strong> Hosted by Firebase
           </p>

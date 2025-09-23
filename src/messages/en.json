@@ -227,7 +227,7 @@
     "mentions_title": "Legal Mentions",
     "mentions": {
       "company_name_label": "Company Name:",
-      "company_name": "YES ACADEMY Global Ltd.",
+      "company_name": "SHANGHAI PARIS SPORTS SERVICES COMPANY LIMITED",
       "address_label": "Registered Address:",
       "address": "345 Huangyang Road Pudong, Shanghai China 201206",
       "phone_label": "Official Phone:",
@@ -235,7 +235,7 @@
       "email_label": "Official Email:",
       "email": "contact@yesacademies.org",
       "director_label": "Director of Publication:",
-      "director": "[Director's Name]",
+      "director": "Didier Marc Brizard",
       "host_label": "Website Host:",
       "host": "Hosted by Firebase"
     },

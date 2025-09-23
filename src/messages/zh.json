@@ -227,7 +227,7 @@
     "mentions_title": "法律声明",
     "mentions": {
       "company_name_label": "公司名称：",
-      "company_name": "YES ACADEMY Global Ltd.",
+      "company_name": "SHANGHAI PARIS SPORTS SERVICES COMPANY LIMITED",
       "address_label": "注册地址：",
       "address": "中国上海市浦东新区黄杨路345号，邮编201206",
       "phone_label": "官方电话：",
@@ -235,7 +235,7 @@
       "email_label": "官方邮箱：",
       "email": "contact@yesacademies.org",
       "director_label": "出版总监：",
-      "director": "[总监姓名]",
+      "director": "Didier Marc Brizard",
       "host_label": "网站托管：",
       "host": "由Firebase托管"
     },

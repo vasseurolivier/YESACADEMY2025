@@ -227,7 +227,7 @@
     "mentions_title": "Thông báo pháp lý",
     "mentions": {
       "company_name_label": "Tên công ty:",
-      "company_name": "YES ACADEMY Global Ltd.",
+      "company_name": "SHANGHAI PARIS SPORTS SERVICES COMPANY LIMITED",
       "address_label": "Địa chỉ đã đăng ký:",
       "address": "345 Huangyang Road Pudong, Shanghai China 201206",
       "phone_label": "Điện thoại chính thức:",
@@ -235,7 +235,7 @@
       "email_label": "Email chính thức:",
       "email": "contact@yesacademies.org",
       "director_label": "Giám đốc xuất bản:",
-      "director": "[Tên giám đốc]",
+      "director": "Didier Marc Brizard",
       "host_label": "Nhà cung cấp dịch vụ lưu trữ trang web:",
       "host": "Được lưu trữ bởi Firebase"
     },
