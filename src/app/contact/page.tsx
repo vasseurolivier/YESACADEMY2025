@@ -91,7 +91,7 @@ export default function ContactPage() {
                 <div className="rounded-lg border p-6">
                   <h3 className="text-xl font-semibold">YES ACADEMY - Vietnam</h3>
                   <div className="mt-4 space-y-2 text-muted-foreground">
-                    <p className="flex items-center justify-center"><MapPin className="mr-2 h-4 w-4" /> 456 Athlete Road, Hanoi, Vietnam</p>
+                    <p className="flex items-center justify-center"><MapPin className="mr-2 h-4 w-4" /> Hoa Lan Road, Vinhomes Riverside Phuc Loi Ward Hanoi 100000</p>
                     <p className="flex items-center justify-center"><Phone className="mr-2 h-4 w-4" /> +84 32 603 0993</p>
                     <p className="flex items-center justify-center"><Mail className="mr-2 h-4 w-4" /> contact@yesacademies.org</p>
                   </div>
@@ -113,4 +113,5 @@ export default function ContactPage() {
   );
 }
 
+    
     
