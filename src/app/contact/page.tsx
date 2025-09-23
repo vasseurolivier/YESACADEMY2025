@@ -79,11 +79,11 @@ export default function ContactPage() {
           </p>
            <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-center">
               <div className="rounded-lg border p-6">
-                <h3 className="text-xl font-semibold">YES ACADEMY - Beijing</h3>
+                <h3 className="text-xl font-semibold">YES ACADEMY - Shanghai</h3>
                 <div className="mt-4 space-y-2 text-muted-foreground">
-                  <p className="flex items-center justify-center"><MapPin className="mr-2 h-4 w-4" /> 123 Sports Avenue, Beijing, China</p>
+                  <p className="flex items-center justify-center"><MapPin className="mr-2 h-4 w-4" /> 999 Century Avenue, Shanghai, China</p>
                   <p className="flex items-center justify-center"><Phone className="mr-2 h-4 w-4" /> +86 138 1738 9758</p>
-                  <p className="flex items-center justify-center"><Mail className="mr-2 h-4 w-4" /> beijing@yesacademy.com</p>
+                  <p className="flex items-center justify-center"><Mail className="mr-2 h-4 w-4" /> shanghai@yesacademy.com</p>
                 </div>
               </div>
 

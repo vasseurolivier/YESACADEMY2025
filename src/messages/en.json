@@ -172,11 +172,11 @@
     "locations_title": "Our Locations",
     "locations_subtitle": "Our teams are ready to welcome you at our state-of-the-art facilities in both China and Vietnam.",
     "locations": {
-      "beijing": {
-        "name": "YES ACADEMY - Beijing",
-        "address": "123 Sports Avenue, Beijing, China",
+      "shanghai": {
+        "name": "YES ACADEMY - Shanghai",
+        "address": "999 Century Avenue, Shanghai, China",
         "phone": "+86 138 1738 9758",
-        "email": "beijing@yesacademy.com"
+        "email": "shanghai@yesacademy.com"
       },
       "vietnam": {
         "name": "YES ACADEMY - Vietnam",
@@ -229,7 +229,7 @@
       "company_name_label": "Company Name:",
       "company_name": "YES ACADEMY Global Ltd.",
       "address_label": "Registered Address:",
-      "address": "123 Sports Avenue, Beijing, China",
+      "address": "999 Century Avenue, Shanghai, China",
       "phone_label": "Official Phone:",
       "phone": "+86 138 1738 9758",
       "email_label": "Official Email:",
