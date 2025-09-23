@@ -175,7 +175,7 @@
       "beijing": {
         "name": "YES ACADEMY - 北京",
         "address": "中国北京市体育大道123号",
-        "phone": "+86 10 1234 5678",
+        "phone": "+86 138 1738 9758",
         "email": "beijing@yesacademy.com"
       },
       "vietnam": {
@@ -231,7 +231,7 @@
       "address_label": "注册地址：",
       "address": "中国北京市体育大道123号",
       "phone_label": "官方电话：",
-      "phone": "+86 10 1234 5678",
+      "phone": "+86 138 1738 9758",
       "email_label": "官方邮箱：",
       "email": "legal@yesacademy.com",
       "director_label": "出版总监：",

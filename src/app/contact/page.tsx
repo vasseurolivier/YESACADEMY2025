@@ -82,7 +82,7 @@ export default function ContactPage() {
                 <h3 className="text-xl font-semibold">YES ACADEMY - Beijing</h3>
                 <div className="mt-4 space-y-2 text-muted-foreground">
                   <p className="flex items-center justify-center"><MapPin className="mr-2 h-4 w-4" /> 123 Sports Avenue, Beijing, China</p>
-                  <p className="flex items-center justify-center"><Phone className="mr-2 h-4 w-4" /> +86 10 1234 5678</p>
+                  <p className="flex items-center justify-center"><Phone className="mr-2 h-4 w-4" /> +86 138 1738 9758</p>
                   <p className="flex items-center justify-center"><Mail className="mr-2 h-4 w-4" /> beijing@yesacademy.com</p>
                 </div>
               </div>

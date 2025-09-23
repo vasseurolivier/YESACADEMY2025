@@ -19,7 +19,7 @@ export default function LegalPage() {
             <br />
             <strong>Registered Address:</strong> 123 Sports Avenue, Beijing, China
             <br />
-            <strong>Official Phone:</strong> +86 10 1234 5678
+            <strong>Official Phone:</strong> +86 138 1738 9758
             <br />
             <strong>Official Email:</strong> legal@yesacademy.com
             <br />
