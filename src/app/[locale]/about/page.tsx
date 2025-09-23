@@ -59,7 +59,7 @@ export default function AboutPage() {
       </section>
 
       <section className="py-16 md:py-24">
-        <div className="container">
+        <div className="container mx-auto">
           <div className="mx-auto grid max-w-5xl grid-cols-1 gap-12 text-center md:grid-cols-2 md:text-left">
             <div>
               <h2 className="font-headline text-3xl font-bold">{t('story_title')}</h2>
@@ -78,7 +78,7 @@ export default function AboutPage() {
       </section>
 
       <section className="bg-white py-16 md:py-24">
-        <div className="container">
+        <div className="container mx-auto">
             <div className="mx-auto max-w-3xl text-center">
                 <h2 className="font-headline text-3xl font-bold md:text-4xl">{t('values_title')}</h2>
                 <p className="mt-4 text-lg text-muted-foreground">{t('values_subtitle')}</p>
@@ -98,7 +98,7 @@ export default function AboutPage() {
       </section>
 
       <section className="py-16 md:py-24">
-        <div className="container">
+        <div className="container mx-auto">
           <div className="mx-auto max-w-5xl text-center">
             <h2 className="font-headline text-3xl font-bold md:text-4xl">
               {t('impact_title')}
