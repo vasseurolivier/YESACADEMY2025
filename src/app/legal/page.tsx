@@ -17,7 +17,7 @@ export default function LegalPage() {
           <p>
             <strong>Company Name:</strong> YES ACADEMY Global Ltd.
             <br />
-            <strong>Registered Address:</strong> 999 Century Avenue, Shanghai, China
+            <strong>Registered Address:</strong> 345 Huangyang Road Pudong, Shanghai China 201206
             <br />
             <strong>Official Phone:</strong> +86 138 1738 9758
             <br />

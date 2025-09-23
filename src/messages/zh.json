@@ -174,7 +174,7 @@
     "locations": {
       "shanghai": {
         "name": "YES ACADEMY - 上海",
-        "address": "中国上海市世纪大道999号",
+        "address": "中国上海市浦东新区黄杨路345号，邮编201206",
         "phone": "+86 138 1738 9758",
         "email": "contact@yesacademies.org"
       },
@@ -229,7 +229,7 @@
       "company_name_label": "公司名称：",
       "company_name": "YES ACADEMY Global Ltd.",
       "address_label": "注册地址：",
-      "address": "中国上海市世纪大道999号",
+      "address": "中国上海市浦东新区黄杨路345号，邮编201206",
       "phone_label": "官方电话：",
       "phone": "+86 138 1738 9758",
       "email_label": "官方邮箱：",

@@ -37,8 +37,8 @@ export default function ContactPage() {
         </div>
       </section>
 
-      <section className="container mx-auto py-16 md:py-24">
-        <div className="mx-auto max-w-7xl">
+      <section className="py-16 md:py-24">
+        <div className="container mx-auto max-w-7xl">
           <div className="grid grid-cols-1 gap-16 lg:grid-cols-5">
             <div className="lg:col-span-3">
               <h2 className="font-headline text-3xl font-bold">Start Your Enrollment</h2>
@@ -81,7 +81,7 @@ export default function ContactPage() {
               <div className="rounded-lg border p-6">
                 <h3 className="text-xl font-semibold">YES ACADEMY - Shanghai</h3>
                 <div className="mt-4 space-y-2 text-muted-foreground">
-                  <p className="flex items-center justify-center"><MapPin className="mr-2 h-4 w-4" /> 999 Century Avenue, Shanghai, China</p>
+                  <p className="flex items-center justify-center"><MapPin className="mr-2 h-4 w-4" /> 345 Huangyang Road Pudong, Shanghai China 201206</p>
                   <p className="flex items-center justify-center"><Phone className="mr-2 h-4 w-4" /> +86 138 1738 9758</p>
                   <p className="flex items-center justify-center"><Mail className="mr-2 h-4 w-4" /> contact@yesacademies.org</p>
                 </div>
