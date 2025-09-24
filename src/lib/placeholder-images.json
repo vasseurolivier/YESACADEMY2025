@@ -92,9 +92,9 @@
     },
     {
       "id": "gallery-2",
-      "description": "Young athletes playing basketball indoors.",
-      "imageUrl": "https://images.unsplash.com/photo-1519861531473-9200262188bf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHx5b3V0aCUyMGJhc2tldGJhbGx8ZW58MHx8fHwxNzU4NDA0MzM4fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "indoor basketball"
+      "description": "The word 'Advantages' spelled out with scrabble tiles.",
+      "imageUrl": "https://images.unsplash.com/photo-1621929209241-3df9f6fa1743?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhZHZhbnRhZ2VzfGVufDB8fHx8MTc1ODcwNTA5NHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "advantages"
     },
     {
       "id": "gallery-3",
@@ -177,31 +177,31 @@
     {
       "id": "program-intensive",
       "description": "Athletes training hard during a sports camp.",
-      "imageUrl": "https://images.unsplash.com/photo-1571080096581-53aefc318ac3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxNXx8Zm9vdGJhbGwlMjBtYXRjaHxlbnwwfHx8fDE3NTgzNzM1Mzd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1571080096581-53aefc318ac3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxNXx8Zm9vdGJhbGwlMjBtYXRjaHxlbnwwfHx8fDE3NTgzNzM1Mzd8MA&ixlibrb-4.1.0&q=80&w=1080",
       "imageHint": "sports camp"
     },
     {
       "id": "program-corporate",
       "description": "Colleagues high-fiving during a team-building sport event.",
-      "imageUrl": "https://images.unsplash.com/photo-1739675155042-dae546a50558?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxjb3Jwb3JhdGUlMjBzcG9ydHN8ZW58MHx8fHwxNzU4MzgyMTQxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1739675155042-dae546a50558?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxjb3Jwb3JhdGUlMjBzcG9ydHN8ZW58MHx8fHwxNzU4MzgyMTQxfDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "team building"
     },
     {
       "id": "program-schools",
       "description": "A modern school building exterior.",
-      "imageUrl": "https://images.unsplash.com/photo-1633095975779-fd354aa0dc95?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxM3x8ZWNvbGUlMjBpbnRlcm5hdGlvbmFsZXxlbnwwfHx8fDE3NTgzODIwODJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1633095975779-fd354aa0dc95?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxM3x8ZWNvbGUlMjBpbnRlcm5hdGlvbmFsZXxlbnwwfHx8fDE3NTgzODIwODJ8MA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "international school"
     },
     {
       "id": "camps-hero",
       "description": "A group of diverse kids at a sports camp, huddled together and cheering.",
-      "imageUrl": "https://images.unsplash.com/photo-1612872087720-bb876e2e67d1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx5b3V0aCUyMHNwb3J0cyUyMGNhbXB8ZW58MHx8fHwxNzU4NDA0MTg3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1612872087720-bb876e2e67d1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx5b3V0aCUyMHNwb3J0cyUyMGNhbXB8ZW58MHx8fHwxNzU4NDA0MTg3fDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "sports camp"
     },
     {
       "id": "france-camp",
       "description": "Eiffel tower in Paris, France.",
-      "imageUrl": "https://images.unsplash.com/photo-1502602898657-3e91760c0341?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxQYXJpc3xlbnwwfHx8fDE3MzAwMTg3Njd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1502602898657-3e91760c0341?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxQYXJpc3xlbnwwfHx8fDE3MzAwMTg3Njd8MA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "Eiffel tower"
     }
   ]
