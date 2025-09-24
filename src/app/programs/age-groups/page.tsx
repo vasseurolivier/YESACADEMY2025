@@ -1,55 +1,51 @@
 import { Baby, School, Backpack, GraduationCap, Building2 } from "lucide-react"
 import type { Metadata } from "next"
-import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { Card, CardContent } from "@/components/ui/card";
 
-export async function generateMetadata({params: {locale}}: {params: {locale: string}}): Promise<Metadata> {
-  const t = (await import(`@/messages/${locale}.json`)).default.AgeGroupsPage;
-  return {
-    title: t.metadata.title,
-    description: t.metadata.description,
-  };
-}
+export const metadata: Metadata = {
+  title: "Programs by Age",
+  description: "Discover our age-specific programs designed to foster development from early childhood to adult competition.",
+};
+
 
 const ageCategories = [
     {
         icon: Baby,
-        title: "kindergarten.title",
-        description: "kindergarten.description",
+        title: "Kindergarten (Ages 3-5)",
+        description: "A playful introduction to sport. Our program focuses on developing fundamental motor skills, coordination, and a love for physical activity through fun games and positive reinforcement.",
         image: PlaceHolderImages.find(p => p.id === 'age-group-kindergarten')
     },
     {
         icon: School,
-        title: "elementary.title",
-        description: "elementary.description",
+        title: "Elementary School (Ages 6-10)",
+        description: "Building the foundation. At this stage, we introduce core techniques and basic rules in a structured yet fun environment. Emphasis is placed on teamwork, sportsmanship, and skill development.",
         image: PlaceHolderImages.find(p => p.id === 'age-group-elementary')
     },
     {
         icon: Backpack,
-        title: "middle_school.title",
-        description: "middle_school.description",
+        title: "Middle School (Ages 11-14)",
+        description: "Developing the athlete. Training becomes more structured with an introduction to tactical concepts, position-specific skills, and physical conditioning. This is where game intelligence begins to take shape.",
         image: PlaceHolderImages.find(p => p.id === 'age-group-middle-school')
     },
     {
         icon: GraduationCap,
-        title: "high_school.title",
-        description: "high_school.description",
+        title: "High School (Ages 15-18)",
+        description: "Preparing for the next level. This elite program is for serious athletes aiming to compete at a high level. It involves advanced tactical training, strength and conditioning, and guidance for university recruitment.",
         image: PlaceHolderImages.find(p => p.id === 'age-group-high-school')
     },
     {
         icon: Building2,
-        title: "university_adults.title",
-        description: "university_adults.description",
+        title: "University & Adults",
+        description: "Lifelong passion and performance. We offer elite training for collegiate athletes, competitive adult leagues, and recreational programs for those who want to stay active, refine their skills, and be part of a community.",
         image: PlaceHolderImages.find(p => p.id === 'age-group-adults')
     }
 ];
 
 export default function AgeGroupsPage() {
-    const t = useTranslations('AgeGroupsPage');
     const heroImage = PlaceHolderImages.find(p => p.id === 'gallery-1');
 
     return (
@@ -68,9 +64,9 @@ export default function AgeGroupsPage() {
                 )}
                 <div className="absolute inset-0 bg-black/50" />
                 <div className="container relative z-10 flex h-full flex-col items-center justify-center text-center text-white">
-                    <h1 className="font-headline text-4xl font-bold md:text-5xl">{t('hero_title')}</h1>
+                    <h1 className="font-headline text-4xl font-bold md:text-5xl">A Program for Every Age and Stage</h1>
                     <p className="mx-auto mt-4 max-w-2xl text-lg">
-                        {t('hero_subtitle')}
+                        Our curriculum is carefully designed to foster development from early childhood to adult competition, ensuring a clear path for growth.
                     </p>
                 </div>
             </section>
@@ -98,9 +94,9 @@ export default function AgeGroupsPage() {
                                         <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10 text-primary">
                                             <category.icon className="h-6 w-6" />
                                         </div>
-                                        <h2 className="font-headline text-2xl font-bold text-gray-800">{t(`categories.${category.title}`)}</h2>
+                                        <h2 className="font-headline text-2xl font-bold text-gray-800">{category.title}</h2>
                                     </div>
-                                    <p className="text-muted-foreground">{t(`categories.${category.description}`)}</p>
+                                    <p className="text-muted-foreground">{category.description}</p>
                                </CardContent>
                             </Card>
                         ))}
@@ -110,13 +106,13 @@ export default function AgeGroupsPage() {
 
             <section className="bg-primary py-16 text-primary-foreground md:py-24">
                 <div className="container text-center">
-                <h2 className="font-headline text-3xl font-bold md:text-4xl">{t('cta.title')}</h2>
+                <h2 className="font-headline text-3xl font-bold md:text-4xl">Find the Perfect Program</h2>
                 <p className="mx-auto mt-4 max-w-2xl text-lg">
-                    {t('cta.subtitle')}
+                    No matter the age or skill level, we have a place for you. Contact us to find the perfect fit for your family.
                 </p>
                 <div className="mt-8 flex justify-center">
                     <Button asChild size="lg" variant="secondary" className="text-lg py-6 px-10">
-                    <Link href="/contact">{t('cta.button')}</Link>
+                    <Link href="/contact">Enroll Now</Link>
                     </Button>
                 </div>
                 </div>
