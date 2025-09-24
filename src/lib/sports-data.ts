@@ -58,7 +58,7 @@ export const sports: Sport[] = [
     slug: 'tennis',
     icon: TennisIcon,
     description: 'Master your serve and backhand on our courts.',
-    longDescription: "Our ATP & WTA experienced coaches provide world-class tennis instruction for all levels. The program focuses on perfecting groundstrokes, mastering the serve, and developing strategic singles and doubles play. With video analysis and personalized coaching, we help you build a powerful, all-court game.",
+    longDescription: "Perfect your game on our premier courts with instruction from ATP & WTA experienced coaches. Our tennis program is a comprehensive experience that builds a powerful, all-court game. We focus on developing technically sound groundstrokes, a reliable and powerful serve, and a strategic net game. Through a combination of live-ball drills, match-play simulations, and personalized video analysis, players learn to construct points, exploit opponent weaknesses, and compete with mental toughness. Our curriculum covers singles and doubles strategy, advanced footwork patterns, and physical conditioning tailored to the demands of modern tennis. From the first forehand to the final match point, we guide players on a path to excellence.",
     image: {
       url: PlaceHolderImages.find(p => p.id === 'sport-tennis')?.imageUrl || '',
       alt: PlaceHolderImages.find(p => p.id === 'sport-tennis')?.description || '',
@@ -70,7 +70,7 @@ export const sports: Sport[] = [
     slug: 'golf',
     icon: GolfIcon,
     description: 'Perfect your swing on the green.',
-    longDescription: "With access to premier golf courses, our PGA-certified professionals help you master every aspect of the game. We focus on swing mechanics, short game precision, and course management strategy. Using cutting-edge technology, we provide the data-driven feedback needed to lower your handicap and play with confidence.",
+    longDescription: "Lower your handicap and elevate your game at the YES ACADEMY golf program. With access to premier courses and cutting-edge swing analysis technology, our PGA-certified professionals help you master every facet of golf. Our instruction is built around a holistic approach, focusing on perfecting swing mechanics for consistency and power, developing a masterful short game (chipping, pitching, bunker play, and putting), and instilling intelligent course management strategies. We use launch monitors and video feedback to provide data-driven insights, allowing players to understand their swing and make precise adjustments. Whether you're learning the fundamentals or refining your skills for competitive play, our program provides the expert guidance to play with confidence and precision.",
     image: {
       url: PlaceHolderImages.find(p => p.id === 'sport-golf')?.imageUrl || '',
       alt: PlaceHolderImages.find(p => p.id === 'sport-golf')?.description || '',
@@ -82,7 +82,7 @@ export const sports: Sport[] = [
     slug: 'scuba-diving',
     icon: ScubaIcon,
     description: 'Explore the vibrant world beneath the waves.',
-    longDescription: "Get PADI certified with our expert dive masters. Our courses cover everything from the fundamentals of underwater breathing and buoyancy control to advanced navigation and rescue skills. We offer a safe and thrilling pathway to explore the world's most beautiful underwater ecosystems.",
+    longDescription: "Dive into a new world with our PADI-certified scuba diving program. YES ACADEMY offers a comprehensive range of courses, from the introductory 'Discover Scuba Diving' experience to advanced certifications like 'Advanced Open Water', 'Rescue Diver', and professional-level 'Divemaster' training. Our expert instructors prioritize safety above all, teaching you crucial skills such as buoyancy control, underwater navigation, and emergency procedures in a controlled and supportive environment. We organize expeditions to some of the most breathtaking underwater ecosystems in Asia, where you'll encounter vibrant coral reefs and diverse marine life. Join us to gain the confidence and certification to explore the 70% of our planet that lies beneath the waves.",
     image: {
       url: PlaceHolderImages.find(p => p.id === 'sport-scuba')?.imageUrl || '',
       alt: PlaceHolderImages.find(p => p.id === 'sport-scuba')?.description || '',
@@ -94,7 +94,7 @@ export const sports: Sport[] = [
     slug: 'climbing',
     icon: ClimbingIcon,
     description: 'Conquer new heights on our climbing walls.',
-    longDescription: "Push your limits in our state-of-the-art climbing and bouldering gym. Our program, designed by certified instructors, teaches crucial safety protocols, efficient movement techniques, and problem-solving on the wall. We help climbers of all levels build strength, endurance, and mental focus to conquer any route.",
+    longDescription: "Ascend to new heights with the YES ACADEMY climbing program. Our state-of-the-art indoor facility features a wide variety of bouldering problems and roped climbing routes for all skill levels, from absolute beginners to advanced climbers. Led by certified instructors, our curriculum is built on a foundation of safety, technique, and strength. You will learn essential skills such as proper belaying, knot tying, and climbing movement (footwork, body positioning). Our courses cover everything from introductory bouldering to advanced lead climbing and anchor building. We focus on developing not just physical strength and endurance, but also the problem-solving skills and mental focus required to read a route and execute it successfully. Join our vibrant climbing community and push your physical and mental limits.",
     image: {
       url: PlaceHolderImages.find(p => p.id === 'sport-climbing')?.imageUrl || '',
       alt: PlaceHolderImages.find(p => p.id === 'sport-climbing')?.description || '',
