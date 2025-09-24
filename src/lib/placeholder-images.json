@@ -27,13 +27,13 @@
     {
       "id": "testimonial-1",
       "description": "Portrait of a smiling Asian man.",
-      "imageUrl": "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxtYW4lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NTg1ODI4MTZ8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxtYW4lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NTg1ODI4MTZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "man portrait"
     },
     {
       "id": "testimonial-2",
       "description": "Portrait of a caucasian man.",
-      "imageUrl": "https://images.unsplash.com/photo-1624395213043-fa2e123b2656?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxtYW4lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NTg1ODI4MTZ8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1624395213043-fa2e123b2656?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxtYW4lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NTg1ODI4MTZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "man portrait"
     },
     {
@@ -45,7 +45,7 @@
     {
       "id": "sport-football",
       "description": "A football on a lush green pitch.",
-      "imageUrl": "https://images.unsplash.com/photo-1579952363873-27f3bade9f55?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxmb290YmFsbHxlbnwwfHx8fDE3NTgzNjkxOTJ8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1579952363873-27f3bade9f55?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxmb290YmFsbHxlbnwwfHx8fDE3NTgzNjkxOTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "football pitch"
     },
     {
@@ -206,33 +206,45 @@
     },
     {
       "id": "age-group-kindergarten",
-      "description": "Children playing in a kindergarten classroom.",
-      "imageUrl": "https://images.unsplash.com/photo-1662428135039-1a9e41e42187?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxiYWJ5JTIwc29jY2VyfGVufDB8fHx8MTc1ODcwOTQzMnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "description": "A young child kicking a soccer ball on a field.",
+      "imageUrl": "https://images.unsplash.com/photo-1662428135039-1a9e41e42187?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxiYWJ5JTIwc29jY2VyfGVufDB8fHx8MTc1ODcwOTQzMnww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "kids soccer"
     },
     {
       "id": "age-group-elementary",
-      "description": "Elementary school kids in a team huddle with their coach.",
+      "description": "A youth football team huddling with their coach.",
       "imageUrl": "https://images.unsplash.com/photo-1526495959496-614af90aec86?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxmb290YmFsbCUyMGVuZmFudHxlbnwwfHx8fDE3NTg3MDgwMjJ8MA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "youth sports"
     },
     {
       "id": "age-group-middle-school",
-      "description": "Students in a middle school classroom.",
+      "description": "Teenagers in a school hallway, representing middle school life.",
       "imageUrl": "https://images.unsplash.com/photo-1528024719646-5360a944bd74?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxtaWRkbGUlMjBzY2hvb2x8ZW58MHx8fHwxNzU4NzA3MzQ5fDA&ixlibrb-4.1.0&q=80&w=1080",
       "imageHint": "middle school"
     },
     {
       "id": "age-group-high-school",
-      "description": "High school soccer player",
+      "description": "A high school soccer player in action on the field.",
       "imageUrl": "https://images.unsplash.com/photo-1728520508268-1766303e1ebb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxoaWdoJTIwc2Nob29sJTIwc29jY2VyfGVufDB8fHx8MTc1ODcwODQ0Nnww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "high school soccer"
     },
     {
       "id": "age-group-adults",
-      "description": "University soccer player scoring a goal.",
+      "description": "A university soccer player scoring a goal during a match.",
       "imageUrl": "https://images.unsplash.com/photo-1721441905204-ea1b56b9d7d3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMnx8dW5pdmVyc2l0eSUyMHNvY2NlcnxlbnwwfHx8fDE3NTg3MDg1NzZ8MA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "university soccer"
+    },
+    {
+      "id": "methodology-philosophy",
+      "description": "A coach drawing tactics on a whiteboard.",
+      "imageUrl": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjb2FjaCUyMHRhY3RpY3N8ZW58MHx8fHwxNzM4MzU0NjYwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "coach tactics"
+    },
+    {
+      "id": "methodology-hero",
+      "description": "A close-up shot of a soccer ball with a stadium in the background.",
+      "imageUrl": "https://images.unsplash.com/photo-1551958214-2d59cc7a36f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxzb2NjZXIlMjBzdGFkaXVtfGVufDB8fHx8MTczODQ0MDk0Mnww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageHint": "soccer stadium"
     }
   ]
 }
