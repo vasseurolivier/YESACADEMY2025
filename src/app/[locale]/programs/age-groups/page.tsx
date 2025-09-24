@@ -1,4 +1,3 @@
-import { Card, CardHeader, CardTitle, CardContent, CardFooter } from "@/components/ui/card"
 import { Baby, School, Backpack, GraduationCap, Building2 } from "lucide-react"
 import type { Metadata } from "next"
 import { useTranslations } from "next-intl";
@@ -6,6 +5,7 @@ import Image from "next/image";
 import { PlaceHolderImages } from "@/lib/placeholder-images";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import { Card, CardContent } from "@/components/ui/card";
 
 export async function generateMetadata({params: {locale}}: {params: {locale: string}}): Promise<Metadata> {
   const t = (await import(`@/messages/${locale}.json`)).default.AgeGroupsPage;
@@ -63,6 +63,7 @@ export default function AgeGroupsPage() {
                     fill
                     sizes="100vw"
                     className="object-cover"
+                    priority
                     />
                 )}
                 <div className="absolute inset-0 bg-black/50" />
@@ -76,35 +77,37 @@ export default function AgeGroupsPage() {
 
             <section className="py-16 md:py-24 bg-white">
                 <div className="container mx-auto">
-                    <div className="grid grid-cols-1 gap-8">
+                    <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3">
                         {ageCategories.map((category, index) => (
-                            <div key={category.title} className="grid items-center gap-8 overflow-hidden rounded-lg border shadow-sm md:grid-cols-2 lg:gap-12">
-                                <div className={`relative aspect-video h-full w-full ${index % 2 !== 0 ? 'md:order-2' : ''}`}>
+                           <Card key={category.title} className="group overflow-hidden rounded-lg shadow-lg transition-shadow hover:shadow-2xl">
+                                <div className="relative aspect-[4/3] w-full">
                                     {category.image && (
                                         <Image
                                             src={category.image.imageUrl}
                                             alt={category.image.description}
                                             data-ai-hint={category.image.imageHint}
                                             fill
-                                            sizes="(max-width: 768px) 100vw, 50vw"
-                                            className="object-cover"
+                                            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                                            className="object-cover transition-transform duration-300 group-hover:scale-105"
                                         />
                                     )}
+                                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                                 </div>
-                                <div className="flex flex-col justify-center p-6 md:p-0">
-                                    <div className="flex items-center gap-4">
+                               <CardContent className="p-6">
+                                     <div className="flex items-center gap-4 mb-4">
                                         <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10 text-primary">
                                             <category.icon className="h-6 w-6" />
                                         </div>
-                                        <h2 className="font-headline text-2xl font-bold">{t(`categories.${category.title}`)}</h2>
+                                        <h2 className="font-headline text-2xl font-bold text-gray-800">{t(`categories.${category.title}`)}</h2>
                                     </div>
-                                    <p className="mt-4 text-muted-foreground">{t(`categories.${category.description}`)}</p>
-                                </div>
-                            </div>
+                                    <p className="text-muted-foreground">{t(`categories.${category.description}`)}</p>
+                               </CardContent>
+                            </Card>
                         ))}
                     </div>
                 </div>
             </section>
+
             <section className="bg-primary py-16 text-primary-foreground md:py-24">
                 <div className="container text-center">
                 <h2 className="font-headline text-3xl font-bold md:text-4xl">{t('cta.title')}</h2>
@@ -112,7 +115,7 @@ export default function AgeGroupsPage() {
                     {t('cta.subtitle')}
                 </p>
                 <div className="mt-8 flex justify-center">
-                    <Button asChild size="lg" variant="secondary">
+                    <Button asChild size="lg" variant="secondary" className="text-lg py-6 px-10">
                     <Link href="/contact">{t('cta.button')}</Link>
                     </Button>
                 </div>
