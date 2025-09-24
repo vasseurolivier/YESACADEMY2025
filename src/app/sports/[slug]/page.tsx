@@ -41,7 +41,7 @@ const keyBenefits = [
     { icon: Trophy, title: 'Pathway to Competition', description: 'Go beyond training. We provide clear pathways to compete, from local leagues to international tournaments, giving you the platform to showcase your skills.' },
 ];
 
-const methodologyPillars = [
+const defaultMethodologyPillars = [
     {
         icon: ShieldCheck,
         title: "Technical Foundation First",
@@ -57,7 +57,28 @@ const methodologyPillars = [
         title: "Long-Term Player Development",
         description: "We don't look for quick, temporary wins. Our methodology is built around the long-term athletic and personal growth of each player. We focus on age-appropriate training, injury prevention, and fostering a lifelong love for the sport, ensuring sustainable success and well-being."
     }
-]
+];
+
+const sportSpecificMethodologyPillars: {[key: string]: typeof defaultMethodologyPillars} = {
+  football: [
+      {
+          icon: ShieldCheck,
+          title: "Technical Mastery of the Ball",
+          description: "Our French-inspired approach prioritizes an exceptional first touch and ball control. We build players who are comfortable and creative with the ball at their feet, forming the foundation for advanced passing, dribbling, and shooting. Drills are centered on creating a 'second-nature' relationship with the ball."
+      },
+      {
+          icon: BrainCircuit,
+          title: "Football Intelligence (Jeu d'Intelligence)",
+          description: "A great footballer reads the game. We develop 'football IQ' by teaching players to understand space, movement, and tactical positioning. They learn to anticipate plays, make intelligent runs, and make split-second decisions that break down defenses. We train players to think two steps ahead."
+      },
+      {
+          icon: HeartPulse,
+          title: "Long-Term Footballer Pathway",
+          description: "We focus on the holistic and progressive development of a footballer. Our methodology ensures age-appropriate physical and tactical loads to prevent burnout and injury, fostering a deep, enduring passion for the beautiful game. We build careers, not just seasonal players."
+      }
+  ]
+};
+
 
 const defaultAgeCategories = [
     {
@@ -236,6 +257,8 @@ export default function SportDetailPage({ params }: Props) {
 
   const testimonials = allTestimonials[sport.slug] || [];
   const ageCategories = sportSpecificAgeCategories[sport.slug] || defaultAgeCategories;
+  const methodologyPillars = sportSpecificMethodologyPillars[sport.slug] || defaultMethodologyPillars;
+
 
 
   return (
@@ -247,6 +270,7 @@ export default function SportDetailPage({ params }: Props) {
           data-ai-hint={sport.image.hint}
           fill
           priority
+          sizes="100vw"
           className="object-cover"
         />
         <div className="absolute inset-0 bg-black/60" />
