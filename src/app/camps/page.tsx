@@ -39,7 +39,7 @@ const camps = [
 ];
 
 export default function CampsPage() {
-    const heroImage = PlaceHolderImages.find(p => p.id === 'camps-hero');
+    const heroImage = PlaceHolderImages.find(p => p.id === 'hero-football-match');
 
   return (
     <div>
