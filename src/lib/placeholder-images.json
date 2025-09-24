@@ -195,7 +195,7 @@
     {
       "id": "camps-hero",
       "description": "A group of diverse kids at a sports camp, huddled together and cheering.",
-      "imageUrl": "https://images.unsplash.com/photo-1612872087720-bb876e2e67d1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx5b3V0aCUyMHNwb3J0cyUyMGNhbXB8ZW58MHx8fHwxNzU4NDA0MTg3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1612872087720-bb876e2e67d1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHlvdXRoJTIwc3BvcnRzJTIwY2FtcHxlbnwwfHx8fDE3NTg0MDQxODd8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "sports camp"
     },
     {
@@ -206,9 +206,9 @@
     },
     {
       "id": "age-group-kindergarten",
-      "description": "Young children playing with a soccer ball.",
-      "imageUrl": "https://images.unsplash.com/photo-1575361204480-aadea25a6e68?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxraWRzJTIwcGxheWluZyUyMHNvY2NlcnxlbnwwfHx8fDE3NTg3MDgyNTZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "kids soccer"
+      "description": "Children playing in a kindergarten classroom.",
+      "imageUrl": "https://images.unsplash.com/photo-1587616211892-f743fcca64f9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxOHx8a2luZGVyZ2FydGVufGVufDB8fHx8MTc1ODcwNzE5Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "kindergarten"
     },
     {
       "id": "age-group-elementary",
