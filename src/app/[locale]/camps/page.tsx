@@ -23,6 +23,7 @@ const camps = [
     location: 'summer_camp_location',
     description: 'summer_camp_desc',
     active: false,
+    image: PlaceHolderImages.find(p => p.id === 'camps-hero'),
   },
   {
     icon: Snowflake,
@@ -30,6 +31,7 @@ const camps = [
     location: 'winter_camp_location',
     description: 'winter_camp_desc',
     active: false,
+    image: PlaceHolderImages.find(p => p.id === 'program-intensive'),
   },
    {
     icon: Flag,
@@ -37,6 +39,7 @@ const camps = [
     location: 'france_camp_location',
     description: 'france_camp_desc',
     active: false,
+    image: PlaceHolderImages.find(p => p.id === 'france-camp'),
   },
 ];
 
@@ -81,10 +84,22 @@ export default function CampsPage() {
         </div>
       </section>
 
-      <section className="container mx-auto pb-16 md:pb-24">
-          <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+      <section className="container mx-auto py-16 md:py-24">
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
             {camps.map(camp => (
-              <Card key={camp.title} className="flex flex-col">
+              <Card key={camp.title} className="flex flex-col overflow-hidden transition-shadow hover:shadow-lg">
+                {camp.image && (
+                  <div className="aspect-video relative">
+                    <Image 
+                      src={camp.image.imageUrl}
+                      alt={camp.image.description}
+                      data-ai-hint={camp.image.imageHint}
+                      fill
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                      className="object-cover"
+                    />
+                  </div>
+                )}
                 <CardHeader>
                   <div className="flex items-center gap-4">
                     <camp.icon className="h-8 w-8 text-accent" />
