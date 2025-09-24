@@ -186,7 +186,7 @@ export default function MethodologyPage() {
                                         <item.icon className="h-6 w-6" />
                                     </div>
                                 </div>
-                                <div className={`w-full rounded-lg border p-6 my-4 ${index % 2 === 0 ? 'md:ml-4' : 'md:mr-4'}`}>
+                                <div className={`w-full rounded-lg border p-6 my-4 z-10 bg-background ${index % 2 === 0 ? 'md:ml-4' : 'md:mr-4'}`}>
                                     <p className="text-sm font-semibold text-primary">{item.age}</p>
                                     <h3 className="text-xl font-bold mt-1">{item.title}</h3>
                                     <p className="mt-2 text-muted-foreground">{item.description}</p>
