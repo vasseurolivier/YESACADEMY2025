@@ -129,7 +129,7 @@
     {
       "id": "gallery-8",
       "description": "Kids in a swimming class",
-      "imageUrl": "https://images.unsplash.com/photo-1519315901367-f34ff9154487?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxzd2ltbWluZyUyMGxlc3NvbnxlbnwwfHx8fDE3NTg3MDQ2NTR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1519315901367-f34ff9154487?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxzc2ltbWluZyUyMGxlc3NvbnxlbnwwfHx8fDE3NTg3MDQ2NTR8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "swimming lesson"
     },
     {
@@ -208,7 +208,7 @@
       "id": "age-group-kindergarten",
       "description": "Children playing in a kindergarten classroom.",
       "imageUrl": "https://images.unsplash.com/photo-1587616211892-f743fcca64f9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxOHx8a2luZGVyZ2FydGVufGVufDB8fHx8MTc1ODcwNzE5Mnww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "kindergarten"
+      "imageHint": "kids soccer"
     },
     {
       "id": "age-group-elementary",
@@ -218,9 +218,9 @@
     },
     {
       "id": "age-group-middle-school",
-      "description": "Teenagers playing basketball seriously.",
-      "imageUrl": "https://images.unsplash.com/photo-1519861531473-9200262188bf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHx5b3V0aCUyMGJhc2tldGJhbGx8ZW58MHx8fHwxNzU4NDA0MzM4fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "teen basketball"
+      "description": "Students in a middle school classroom.",
+      "imageUrl": "https://images.unsplash.com/photo-1528024719646-5360a944bd74?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxtaWRkbGUlMjBzY2hvb2x8ZW58MHx8fHwxNzU4NzA3MzQ5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "middle school"
     },
     {
       "id": "age-group-high-school",
