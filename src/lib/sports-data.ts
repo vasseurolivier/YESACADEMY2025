@@ -34,7 +34,7 @@ export const sports: Sport[] = [
     slug: 'basketball',
     icon: Dribbble,
     description: 'Dribble, shoot, and score on the court.',
-    longDescription: "Experience the high-energy world of basketball at YES ACADEMY. Our programs, designed by former professional players and FIBA-certified coaches, emphasize fundamental skills like dribbling and shooting, advanced tactical plays, and superior physical conditioning. We build dynamic, court-aware players ready for any challenge.",
+    longDescription: "Step onto the court and unleash your potential with YES ACADEMY's elite basketball program. Our coaching philosophy, shaped by former professional players and FIBA-certified experts, is built on a dual focus: mastering the fundamentals and developing superior basketball IQ. Players will undergo rigorous training in ball handling, shooting mechanics, defensive footwork, and offensive spacing. We move beyond simple drills to simulate real-game scenarios, teaching players how to execute pick-and-rolls, run fast breaks, and read complex defensive schemes. Our program is structured to build physically dominant and mentally tough athletes, with dedicated strength and conditioning sessions to improve agility, speed, and verticality. Whether you're a young player learning the basics or a serious athlete with collegiate or professional aspirations, our pathway provides the expert guidance and competitive environment needed to elevate your game to the next level.",
     image: {
       url: PlaceHolderImages.find(p => p.id === 'sport-basketball')?.imageUrl || '',
       alt: PlaceHolderImages.find(p => p.id === 'sport-basketball')?.description || '',
