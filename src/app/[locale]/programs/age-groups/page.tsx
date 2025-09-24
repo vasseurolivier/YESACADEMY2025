@@ -78,7 +78,7 @@ export default function AgeGroupsPage() {
             <section className="py-16 md:py-24 bg-white">
                 <div className="container mx-auto">
                     <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3">
-                        {ageCategories.map((category, index) => (
+                        {ageCategories.map((category) => (
                            <Card key={category.title} className="group overflow-hidden rounded-lg shadow-lg transition-shadow hover:shadow-2xl">
                                 <div className="relative aspect-[4/3] w-full">
                                     {category.image && (
