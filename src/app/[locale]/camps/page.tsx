@@ -68,15 +68,20 @@ export default function CampsPage() {
         </div>
       </section>
 
-      <section className="container mx-auto py-16 md:py-24">
-        <div className="mx-auto max-w-3xl text-center">
-            <h2 className="font-headline text-3xl font-bold md:text-4xl">
-              {t('section_title')}
-            </h2>
-            <p className="mt-4 text-lg text-muted-foreground">
-              {t('section_subtitle')}
-            </p>
-          </div>
+      <section className="bg-white py-16 md:py-24">
+        <div className="container mx-auto">
+            <div className="mx-auto max-w-3xl text-center">
+                <h2 className="font-headline text-3xl font-bold md:text-4xl">
+                  {t('section_title')}
+                </h2>
+                <p className="mt-4 text-lg text-muted-foreground">
+                  {t('section_subtitle')}
+                </p>
+              </div>
+        </div>
+      </section>
+
+      <section className="container mx-auto pb-16 md:pb-24">
           <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
             {camps.map(camp => (
               <Card key={camp.title} className="flex flex-col">

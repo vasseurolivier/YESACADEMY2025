@@ -47,6 +47,7 @@ export default function CampsPage() {
              alt={heroImage.description}
              data-ai-hint={heroImage.imageHint}
              fill
+             sizes="100vw"
              className="object-cover"
            />
         )}
@@ -59,15 +60,20 @@ export default function CampsPage() {
         </div>
       </section>
 
+      <section className="bg-white py-16 md:py-24">
+        <div className="container mx-auto">
+            <div className="mx-auto max-w-3xl text-center">
+                <h2 className="font-headline text-3xl font-bold md:text-4xl">
+                  An Adventure in Sport
+                </h2>
+                <p className="mt-4 text-lg text-muted-foreground">
+                  Our camps are far more than just training sessions; they are transformative life experiences. We believe that true athletic development goes hand-in-hand with personal growth. Participants step out of their comfort zones, fostering independence and resilience as they navigate new challenges. In our vibrant, international environment, they forge friendships with peers from diverse backgrounds, creating a global network of friends and future leaders bonded by a shared passion for sport.
+                </p>
+              </div>
+        </div>
+      </section>
+
       <section className="container py-16 md:py-24">
-        <div className="mx-auto max-w-3xl text-center">
-            <h2 className="font-headline text-3xl font-bold md:text-4xl">
-              An Adventure in Sport
-            </h2>
-            <p className="mt-4 text-lg text-muted-foreground">
-              Our camps are more than just training; they are an opportunity for growth, independence, and making friends from around the world.
-            </p>
-          </div>
           <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
             {camps.map(camp => (
               <Card key={camp.title} className="flex flex-col">
