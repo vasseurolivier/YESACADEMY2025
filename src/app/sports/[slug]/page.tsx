@@ -152,6 +152,33 @@ const sportSpecificAgeCategories: {[key: string]: typeof defaultAgeCategories} =
         title: "Adult & Corporate Leagues",
         description: "Passion for life. We offer elite training for university athletes, competitive adult leagues, and recreational programs for those who want to stay active, refine skills, and enjoy the beautiful game."
     }
+  ],
+  basketball: [
+      {
+          icon: Baby,
+          title: "Mini-Dribblers (Ages 3-5)",
+          description: "An energetic and fun introduction to the court. Our focus is on developing coordination, balance, and a love for basketball through playful games centered around dribbling and movement."
+      },
+      {
+          icon: School,
+          title: "Foundations (Ages 6-10)",
+          description: "Building the complete player from the ground up. We introduce fundamental skills like proper shooting form, basic dribbling moves, and defensive stances in an encouraging and structured setting."
+      },
+      {
+          icon: Backpack,
+          title: "Pre-Competition (Ages 11-14)",
+          description: "Developing game-time skills. Training shifts to incorporate tactical understanding, including offensive plays, team defense concepts, and in-game decision-making, preparing players for competitive scenarios."
+      },
+      {
+          icon: GraduationCap,
+          title: "Elite Performance (Ages 15-18)",
+          description: "Honing the competitive athlete. This program is for dedicated players targeting high-level competition. It includes advanced strategies, rigorous physical conditioning, and performance analysis."
+      },
+      {
+          icon: Building2,
+          title: "Adult League & Performance",
+          description: "For the lifelong baller. We provide competitive adult leagues, high-level training for collegiate players, and skill clinics for adults who want to stay sharp, compete, and enjoy the game."
+      }
   ]
 };
 
