@@ -76,7 +76,24 @@ const sportSpecificMethodologyPillars: {[key: string]: typeof defaultMethodology
           title: "Long-Term Footballer Pathway",
           description: "We focus on the holistic and progressive development of a footballer. Our methodology ensures age-appropriate physical and tactical loads to prevent burnout and injury, fostering a deep, enduring passion for the beautiful game. We build careers, not just seasonal players."
       }
-  ]
+  ],
+  basketball: [
+    {
+        icon: ShieldCheck,
+        title: "Mastery of Fundamentals",
+        description: "Our philosophy starts with flawless fundamentals. We instill perfect form in shooting, precise ball-handling, and crisp passing. Every player builds a versatile technical toolkit, becoming a threat from anywhere on the court and a reliable teammate in any situation."
+    },
+    {
+        icon: BrainCircuit,
+        title: "Basketball IQ & Court Vision",
+        description: "We develop players who see the game in slow motion. Training focuses on reading defenses, understanding floor spacing, and making high-percentage decisions. Players learn not just how to execute plays, but why, turning them into on-court coaches who elevate their entire team."
+    },
+    {
+        icon: HeartPulse,
+        title: "Long-Term Athlete Pathway",
+        description: "We build durable, intelligent athletes for the long haul. Our program integrates basketball-specific conditioning to enhance agility and prevent injury, while managing workload to avoid burnout. We foster resilience and a strategic mindset for a long and successful career."
+    }
+]
 };
 
 
