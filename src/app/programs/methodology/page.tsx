@@ -129,8 +129,8 @@ export default function MethodologyPage() {
                                     src={philosophyImage.imageUrl}
                                     alt={philosophyImage.description}
                                     data-ai-hint={philosophyImage.imageHint}
-                                    width={500}
-                                    height={500}
+                                    width={450}
+                                    height={450}
                                     className="rounded-lg shadow-xl"
                                 />
                             )}
