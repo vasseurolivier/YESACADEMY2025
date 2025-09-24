@@ -46,7 +46,7 @@ export const sports: Sport[] = [
     slug: 'volleyball',
     icon: Volleyball,
     description: 'Serve, set, and spike your way to victory.',
-    longDescription: "From beach to hardcourt, our volleyball training, led by FIVB-certified coaches, covers all aspects of the game. We develop powerful servers, strategic setters, and explosive hitters. Our program hones technique, agility, and the crucial on-court communication needed for a winning team.",
+    longDescription: "Unleash your power at the net with the YES ACADEMY volleyball program. Guided by FIVB-certified coaches with international experience, our curriculum is designed to build complete players, proficient in both beach and indoor volleyball. We focus on mastering every key skill: from generating power and precision on your serve, to developing the soft hands and strategic mind of a setter, and cultivating the explosive vertical and timing of a dominant hitter. Training sessions incorporate advanced drills to improve agility, reaction time, and defensive positioning (digging, blocking). More than just individual skills, we emphasize the crucial on-court communication and team cohesion that turn a group of players into a winning unit. Whether you're stepping onto the court for the first time or aiming for a competitive team, our program will hone your technique and ignite your passion for the game.",
     image: {
       url: PlaceHolderImages.find(p => p.id === 'sport-volleyball')?.imageUrl || '',
       alt: PlaceHolderImages.find(p => p.id === 'sport-volleyball')?.description || '',
