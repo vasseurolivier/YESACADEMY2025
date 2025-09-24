@@ -111,14 +111,14 @@ export default function WhyUsPage() {
                     
                     <div className="grid grid-cols-1 items-center gap-12 md:grid-cols-2">
                         <div className="md:order-2">
-                            <h3 className="font-headline text-3xl font-bold flex items-center gap-4"><Star className="h-10 w-10 text-primary" />State-of-the-Art Facilities</h3>
+                             <h3 className="font-headline text-3xl font-bold flex items-center gap-4"><Star className="h-10 w-10 text-primary" />High-End Facilities</h3>
                             <p className="mt-4 text-muted-foreground">
-                                To be the best, you must train with the best. We provide our athletes with access to premium, professional-grade facilities that are meticulously maintained for optimal performance and safety.
+                                To be the best, you must train in the best environment. We provide our athletes with access to premium facilities that are meticulously maintained for optimal performance and safety.
                             </p>
                             <ul className="mt-6 space-y-4">
                                 <li className="flex items-start"><CheckCircle className="mr-3 mt-1 h-5 w-5 shrink-0 text-accent" /><span><strong>Professional-Grade Surfaces:</strong> Train on pristine pitches, perfectly maintained courts, and world-class greens that mirror competitive environments.</span></li>
-                                <li className="flex items-start"><CheckCircle className="mr-3 mt-1 h-5 w-5 shrink-0 text-accent" /><span><strong>Advanced Training Technology:</strong> Utilize cutting-edge equipment, including video analysis and performance tracking tools, to gain a competitive edge.</span></li>
-                                <li className="flex items-start"><CheckCircle className="mr-3 mt-1 h-5 w-5 shrink-0 text-accent" /><span><strong>Supporting Amenities:</strong> Our facilities include dedicated strength and conditioning zones, recovery areas, and classrooms for tactical sessions.</span></li>
+                                <li className="flex items-start"><CheckCircle className="mr-3 mt-1 h-5 w-5 shrink-0 text-accent" /><span><strong>Safe & Secure Environments:</strong> All our locations are selected for their safety and quality, allowing athletes to focus completely on their training.</span></li>
+                                <li className="flex items-start"><CheckCircle className="mr-3 mt-1 h-5 w-5 shrink-0 text-accent" /><span><strong>Prime Locations:</strong> Our facilities are conveniently located and easily accessible, making training a seamless part of your routine.</span></li>
                             </ul>
                         </div>
                         {facilitiesImage && (
