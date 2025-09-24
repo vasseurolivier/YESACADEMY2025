@@ -316,6 +316,11 @@
       "high_school.description": "Chuẩn bị cho cấp độ tiếp theo. Chương trình ưu tú này dành cho các vận động viên nghiêm túc muốn thi đấu ở cấp độ cao. Nó bao gồm đào tạo chiến thuật nâng cao, sức mạnh và điều hòa, và hướng dẫn tuyển sinh đại học.",
       "university_adults.title": "Đại học & Người lớn",
       "university_adults.description": "Đam mê và hiệu suất suốt đời. Chúng tôi cung cấp đào tạo ưu tú cho các vận động viên đại học, các giải đấu cạnh tranh dành cho người lớn và các chương trình giải trí cho những người muốn duy trì hoạt động, rèn luyện kỹ năng và trở thành một phần của cộng đồng."
+    },
+    "cta": {
+        "title": "Tìm chương trình hoàn hảo",
+        "subtitle": "Bất kể tuổi tác hay trình độ kỹ năng, chúng tôi đều có một vị trí dành cho bạn. Liên hệ với chúng tôi để tìm sự phù hợp hoàn hảo cho gia đình bạn.",
+        "button": "Ghi danh ngay"
     }
   },
   "MethodologyPage": {

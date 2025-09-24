@@ -307,7 +307,7 @@
     "hero_subtitle": "Our curriculum is carefully designed to foster development from early childhood to adult competition, ensuring a clear path for growth.",
     "categories": {
       "kindergarten.title": "Kindergarten (Ages 3-5)",
-      "kindergarten.description": "A playful introduction to the sport. Our program focuses on developing fundamental motor skills, coordination, and a love for physical activity through fun games and positive reinforcement.",
+      "kindergarten.description": "A playful introduction to sport. Our program focuses on developing fundamental motor skills, coordination, and a love for physical activity through fun games and positive reinforcement.",
       "elementary.title": "Elementary School (Ages 6-10)",
       "elementary.description": "Building the foundation. At this stage, we introduce core techniques and basic rules in a structured yet fun environment. Emphasis is placed on teamwork, sportsmanship, and skill development.",
       "middle_school.title": "Middle School (Ages 11-14)",
@@ -316,6 +316,11 @@
       "high_school.description": "Preparing for the next level. This elite program is for serious athletes aiming to compete at a high level. It involves advanced tactical training, strength and conditioning, and guidance for university recruitment.",
       "university_adults.title": "University & Adults",
       "university_adults.description": "Lifelong passion and performance. We offer elite training for collegiate athletes, competitive adult leagues, and recreational programs for those who want to stay active, refine their skills, and be part of a community."
+    },
+    "cta": {
+        "title": "Find the Perfect Program",
+        "subtitle": "No matter the age or skill level, we have a place for you. Contact us to find the perfect fit for your family.",
+        "button": "Enroll Now"
     }
   },
   "MethodologyPage": {

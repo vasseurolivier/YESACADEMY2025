@@ -316,8 +316,13 @@
       "high_school.description": "为下一个级别做准备。这个精英项目是为旨在高水平竞争的认真运动员准备的。它涉及高级战术训练、力量和体能训练以及大学招募指导。",
       "university_adults.title": "大学与成人",
       "university_adults.description": "终身的热情和表现。我们为大学生运动员、有竞争力的成人联赛以及希望保持活跃、提高技能并成为社区一部分的娱乐项目提供精英训练。"
+    },
+    "cta": {
+        "title": "找到完美的课程",
+        "subtitle": "无论年龄或技能水平如何，我们都有适合您的地方。联系我们，为您的家人找到最合适的课程。",
+        "button": "立即报名"
     }
-},
+  },
   "MethodologyPage": {
     "metadata": {
       "title": "我们的方法论",
