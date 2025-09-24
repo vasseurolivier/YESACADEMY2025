@@ -1,7 +1,7 @@
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
-import { User, Users, Calendar, Building2, Building } from 'lucide-react';
+import { User, Users, Calendar, Building2, Building, Star, BrainCircuit, Baby } from 'lucide-react';
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
@@ -16,7 +16,31 @@ export async function generateMetadata({params: {locale}}: {params: {locale: str
   };
 }
 
-const programs = [
+const programCategories = [
+  {
+    icon: Baby,
+    title: 'programs_by_age.title',
+    description: 'programs_by_age.description',
+    link: '/programs/age-groups',
+    image: PlaceHolderImages.find(p => p.id === 'gallery-1'),
+  },
+  {
+    icon: BrainCircuit,
+    title: 'our_methodology.title',
+    description: 'our_methodology.description',
+    link: '/programs/methodology',
+    image: PlaceHolderImages.find(p => p.id === 'why-us-1'),
+  },
+  {
+    icon: Star,
+    title: 'academy_advantage.title',
+    description: 'academy_advantage.description',
+    link: '/programs/why-us',
+    image: PlaceHolderImages.find(p => p.id === 'gallery-2'),
+  }
+];
+
+const otherPrograms = [
   {
     icon: Building,
     title: 'schools_title',
@@ -72,6 +96,7 @@ export default function ProgramsPage() {
              className="object-cover"
            />
         )}
+        </div>
         <div className="absolute inset-0 bg-black/50" />
         <div className="relative z-10 flex h-full flex-col items-center justify-center text-center text-white container">
           <h1 className="font-headline text-4xl font-extrabold tracking-tight md:text-5xl">
@@ -79,10 +104,54 @@ export default function ProgramsPage() {
           </h1>
           <p className="mt-2 max-w-2xl text-lg">{t('hero_subtitle')}</p>
         </div>
-        </div>
       </section>
 
       <section className="py-16 md:py-24">
+        <div className="container mx-auto">
+          <div className="mx-auto max-w-3xl text-center">
+            <h2 className="font-headline text-3xl font-bold md:text-4xl">
+              {t('philosophy_title')}
+            </h2>
+            <p className="mt-4 text-lg text-muted-foreground">
+              {t('philosophy_subtitle')}
+            </p>
+          </div>
+          <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-3">
+            {programCategories.map(program => (
+              <Card key={program.title} className="flex flex-col overflow-hidden transition-shadow hover:shadow-lg">
+                {program.image && (
+                    <div className="aspect-video relative">
+                        <Image 
+                            src={program.image.imageUrl}
+                            alt={program.image.description}
+                            data-ai-hint={program.image.imageHint}
+                            fill
+                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                            className="object-cover"
+                        />
+                    </div>
+                )}
+                <CardHeader>
+                  <CardTitle className="flex items-center gap-3">
+                    <program.icon className="h-8 w-8 text-primary" />
+                    <span className="text-2xl">{t(`categories.${program.title}`)}</span>
+                  </CardTitle>
+                </CardHeader>
+                <CardContent className="flex-grow">
+                  <p className="text-muted-foreground">{t(`categories.${program.description}`)}</p>
+                </CardContent>
+                <CardFooter>
+                  <Button asChild className="w-full">
+                    <Link href={program.link}>{t('learn_more_button')}</Link>
+                  </Button>
+                </CardFooter>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="py-16 md:py-24 bg-white">
         <div className="container mx-auto">
           <div className="mx-auto max-w-3xl text-center">
             <h2 className="font-headline text-3xl font-bold md:text-4xl">
@@ -93,7 +162,7 @@ export default function ProgramsPage() {
             </p>
           </div>
           <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-            {programs.map(program => (
+            {otherPrograms.map(program => (
               <Card key={program.title} className="flex flex-col overflow-hidden transition-shadow hover:shadow-lg">
                 {program.image && (
                     <div className="aspect-video relative">

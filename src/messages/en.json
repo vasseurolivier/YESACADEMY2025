@@ -49,12 +49,12 @@
       "volleyball": {
         "name": "Volleyball",
         "description": "Serve, set, and spike your way to victory.",
-        "longDescription": "From beach to hardcourt, our volleyball training covers all aspects of the game. We focus on technique, agility, and communication. Join our squads for competitive league play or learn the basics in a fun and supportive environment."
+        "longDescription": "From beach to hardcourt, our volleyball training, led by FIVB-certified coaches, covers all aspects of the game. We develop powerful servers, strategic setters, and explosive hitters. Our program hones technique, agility, and the crucial on-court communication needed for a winning team."
       },
       "tennis": {
         "name": "Tennis",
         "description": "Master your serve and backhand on our courts.",
-        "longDescription": "Our ATP & WTA experienced coaches provide world-class tennis instruction for all levels. We offer private lessons, group clinics, and competitive junior programs on our pristine courts. Perfect your technique and develop a lifelong passion for the game."
+        "longDescription": "Our ATP & WTA experienced coaches provide world-class tennis instruction for all levels. The program focuses on perfecting groundstrokes, mastering the serve, and developing strategic singles and doubles play. With video analysis and personalized coaching, we help you build a powerful, all-court game."
       },
       "golf": {
         "name": "Golf",
@@ -267,8 +267,18 @@
     },
     "hero_title": "Our Programs",
     "hero_subtitle": "A Path for Every Athlete",
+    "philosophy_title": "Explore Our Training Philosophy",
+    "philosophy_subtitle": "Our programs are built on a foundation of proven methodology and a commitment to holistic development.",
     "section_title": "Find Your Perfect Fit",
     "section_subtitle": "Whether you're a beginner taking your first steps, a dedicated athlete aiming for the top, or a company looking for a unique event, we have a program for you.",
+    "categories": {
+      "programs_by_age.title": "Programs by Age",
+      "programs_by_age.description": "Our curriculum is carefully designed to foster development from early childhood to adult competition.",
+      "our_methodology.title": "Our Methodology",
+      "our_methodology.description": "Discover the pillars of the renowned French sports education system that produces intelligent players.",
+      "academy_advantage.title": "The Academy Advantage",
+      "academy_advantage.description": "Learn about our world-class coaching, holistic development, and top-tier facilities."
+    },
     "programs": {
       "schools_title": "Cooperation with International Schools",
       "schools_target": "For educational partners",
@@ -288,6 +298,60 @@
     },
     "learn_more_button": "Learn More"
   },
+  "AgeGroupsPage": {
+    "metadata": {
+      "title": "Programs by Age",
+      "description": "Discover our age-specific programs designed to foster development from early childhood to adult competition."
+    },
+    "hero_title": "A Program for Every Age and Stage",
+    "hero_subtitle": "Our curriculum is carefully designed to foster development from early childhood to adult competition, ensuring a clear path for growth.",
+    "categories": {
+      "kindergarten.title": "Kindergarten (Ages 3-5)",
+      "kindergarten.description": "A playful introduction to the sport. Our program focuses on developing fundamental motor skills, coordination, and a love for physical activity through fun games and positive reinforcement.",
+      "elementary.title": "Elementary School (Ages 6-10)",
+      "elementary.description": "Building the foundation. At this stage, we introduce core techniques and basic rules in a structured yet fun environment. Emphasis is placed on teamwork, sportsmanship, and skill development.",
+      "middle_school.title": "Middle School (Ages 11-14)",
+      "middle_school.description": "Developing the athlete. Training becomes more structured with an introduction to tactical concepts, position-specific skills, and physical conditioning. This is where game intelligence begins to take shape.",
+      "high_school.title": "High School (Ages 15-18)",
+      "high_school.description": "Preparing for the next level. This elite program is for serious athletes aiming to compete at a high level. It involves advanced tactical training, strength and conditioning, and guidance for university recruitment.",
+      "university_adults.title": "University & Adults",
+      "university_adults.description": "Lifelong passion and performance. We offer elite training for collegiate athletes, competitive adult leagues, and recreational programs for those who want to stay active, refine their skills, and be part of a community."
+    }
+  },
+  "MethodologyPage": {
+    "metadata": {
+      "title": "Our Methodology",
+      "description": "Learn about our French-inspired methodology that focuses on technical foundation, tactical intelligence, and long-term player development."
+    },
+    "hero_title": "The French Methodology",
+    "hero_subtitle": "Our training is built on the pillars of the renowned French sports education system, famous for producing technically gifted and intelligent players.",
+    "pillars": {
+      "technical_foundation.title": "Technical Foundation First",
+      "technical_foundation.description": "We believe mastery begins with fundamentals. Our French-inspired approach prioritizes perfect technique from day one, building a solid base that allows for more advanced and creative play later on. Every drill is designed to refine motor skills and create muscle memory for flawless execution.",
+      "tactical_intelligence.title": "Tactical Intelligence & Decision-Making",
+      "tactical_intelligence.description": "A great athlete doesn't just play; they think. We dedicate significant time to developing 'game intelligence.' Players learn to read the game, anticipate opponent actions, and make smart, split-second decisions under pressure. We train the mind as much as the body.",
+      "long_term_development.title": "Long-Term Player Development",
+      "long_term_development.description": "We don't look for quick, temporary wins. Our methodology is built around the long-term athletic and personal growth of each player. We focus on age-appropriate training, injury prevention, and fostering a lifelong love for the sport, ensuring sustainable success and well-being."
+    }
+  },
+  "WhyUsPage": {
+    "metadata": {
+      "title": "Why Us - The Academy Advantage",
+      "description": "Discover why YES ACADEMY is the ultimate choice for aspiring champions with our world-class coaching and holistic development approach."
+    },
+    "hero_title": "The YES ACADEMY Advantage",
+    "hero_subtitle": "This is where potential meets opportunity. Discover why our program is the ultimate choice for aspiring champions.",
+    "benefits": {
+      "world_class_coaching.title": "World-Class Coaching",
+      "world_class_coaching.description": "Our coaches aren't just experienced; they hold elite certifications (UEFA, ATP, PGA). Receive personalized, professional-grade instruction to unlock your true potential.",
+      "holistic_development.title": "Holistic Athlete Development",
+      "holistic_development.description": "We build champions in life, not just in sports. Our programs instill discipline, resilience, and leadership, focusing on character as much as technical skill.",
+      "top_facilities.title": "State-of-the-Art Facilities",
+      "top_facilities.description": "Train like a pro in premium, fully-equipped environments. Our facilities are designed for optimal performance, safety, and a world-class training experience.",
+      "pathway_to_competition.title": "Pathway to Competition",
+      "pathway_to_competition.description": "Go beyond training. We provide clear pathways to compete, from local leagues to international tournaments, giving you the platform to showcase your skills."
+    }
+  },
   "SportsPage": {
     "metadata": {
       "title": "Our Sports",
@@ -298,29 +362,6 @@
   },
   "SportDetailPage": {
     "about_program_title": "About our {sportName} program",
-    "key_benefits_title": "Key Benefits",
-    "key_benefits_subtitle": "Discover why our program stands out.",
-    "benefits": {
-      "elite_coaching": {
-        "title": "Elite Coaching",
-        "description": "Learn from the best with our certified and experienced coaches."
-      },
-      "holistic_development": {
-        "title": "Holistic Development",
-        "description": "We build well-rounded athletes, focusing on both technique and character."
-      },
-      "top_facilities": {
-        "title": "Top-tier Facilities",
-        "description": "Train in premium environments designed for performance."
-      }
-    },
-    "in_action_title": "In Action",
-    "in_action_subtitle": "A glimpse of the intensity and passion on the field.",
-    "athletes_say_title": "What our athletes say",
-    "testimonials": {
-      "testimonial1_text": "The training methodology has completely transformed my son's game. The coaches don't just teach, they inspire.",
-      "testimonial2_text": "I've progressed more in six months here than in two years elsewhere. The personalized attention and community atmosphere are unmatched."
-    },
     "ready_to_start_title": "Ready to start?",
     "ready_to_start_subtitle": "Join our {sportName} program and begin your journey to excellence. Spaces are limited.",
     "enroll_button": "Enroll in the {sportName} program"

@@ -267,8 +267,18 @@
     },
     "hero_title": "我们的课程",
     "hero_subtitle": "每位运动员的道路",
+    "philosophy_title": "探索我们的训练理念",
+    "philosophy_subtitle": "我们的课程建立在经过验证的方法论和对全面发展的承诺之上。",
     "section_title": "找到最适合您的",
     "section_subtitle": "无论您是迈出第一步的初学者，还是追求顶峰的专注运动员，或者是寻找独特活动的公司，我们都有适合您的课程。",
+    "categories": {
+      "programs_by_age.title": "按年龄划分的课程",
+      "programs_by_age.description": "我们的课程经过精心设计，旨在促进从幼儿到成人竞赛的发展。",
+      "our_methodology.title": "我们的方法论",
+      "our_methodology.description": "探索著名的法国体育教育体系的支柱，该体系培养出聪明的球员。",
+      "academy_advantage.title": "学院优势",
+      "academy_advantage.description": "了解我们的世界一流教练、全面发展和顶级设施。"
+    },
     "programs": {
       "schools_title": "与国际学校合作",
       "schools_target": "为教育合作伙伴",
@@ -288,6 +298,60 @@
     },
     "learn_more_button": "了解更多"
   },
+  "AgeGroupsPage": {
+    "metadata": {
+      "title": "按年龄划分的课程",
+      "description": "探索我们针对特定年龄的课程，旨在促进从幼儿到成人竞赛的发展。"
+    },
+    "hero_title": "每个年龄和阶段的课程",
+    "hero_subtitle": "我们的课程经过精心设计，旨在促进从幼儿到成人竞赛的发展，确保一条清晰的成长道路。",
+    "categories": {
+      "kindergarten.title": "幼儿园（3-5岁）",
+      "kindergarten.description": "对这项运动的有趣介绍。我们的课程通过有趣的游戏和积极的强化，专注于发展基本的运动技能、协调能力和对体育活动的热爱。",
+      "elementary.title": "小学（6-10岁）",
+      "elementary.description": "奠定基础。在这个阶段，我们以结构化而有趣的方式介绍核心技术和基本规则。重点是团队合作、体育精神和技能发展。",
+      "middle_school.title": "初中（11-14岁）",
+      "middle_school.description": "培养运动员。训练变得更加结构化，引入了战术概念、特定位置的技能和体能训练。这是比赛智慧开始形成的地方。",
+      "high_school.title": "高中（15-18岁）",
+      "high_school.description": "为下一个级别做准备。这个精英项目是为旨在高水平竞争的认真运动员准备的。它涉及高级战术训练、力量和体能训练以及大学招募指导。",
+      "university_adults.title": "大学与成人",
+      "university_adults.description": "终身的热情和表现。我们为大学生运动员、有竞争力的成人联赛以及希望保持活跃、提高技能并成为社区一部分的娱乐项目提供精英训练。"
+    }
+  },
+  "MethodologyPage": {
+    "metadata": {
+      "title": "我们的方法论",
+      "description": "了解我们受法国启发的方法论，该方法论侧重于技术基础、战术智慧和长期球员发展。"
+    },
+    "hero_title": "法国方法论",
+    "hero_subtitle": "我们的训练建立在著名的法国体育教育体系的支柱之上，该体系以培养技术天赋和聪明的球员而闻名。",
+    "pillars": {
+      "technical_foundation.title": "技术基础第一",
+      "technical_foundation.description": "我们相信精通始于基础。我们受法国启发的方法从第一天起就优先考虑完美的技术，为以后更高级和更具创造性的比赛打下坚实的基础。每个训练都旨在提高运动技能和创造肌肉记忆，以实现完美执行。",
+      "tactical_intelligence.title": "战术智慧与决策",
+      "tactical_intelligence.description": "一个伟大的运动员不仅仅是比赛；他们还思考。我们投入大量时间来发展“比赛智慧”。球员学习阅读比赛，预测对手的行动，并在压力下做出明智、瞬间的决定。我们训练头脑和身体一样多。",
+      "long_term_development.title": "长期球员发展",
+      "long_term_development.description": "我们不寻求快速、暂时的胜利。我们的方法论是围绕每个球员的长期运动和个人成长而建立的。我们专注于适合年龄的训练、预防伤害和培养对这项运动的终身热爱，确保持续的成功和福祉。"
+    }
+  },
+  "WhyUsPage": {
+    "metadata": {
+      "title": "为什么选择我们 - 学院优势",
+      "description": "探索为什么YES ACADEMY是雄心勃勃的冠军的终极选择，我们拥有世界一流的教练和全面的发展方法。"
+    },
+    "hero_title": "YES ACADEMY的优势",
+    "hero_subtitle": "这是潜力与机遇相遇的地方。探索为什么我们的课程是雄心勃勃的冠军的终极选择。",
+    "benefits": {
+      "world_class_coaching.title": "世界一流的教练",
+      "world_class_coaching.description": "我们的教练不仅经验丰富；他们还持有精英认证（UEFA、ATP、PGA）。接受个性化的专业级指导，释放您的真正潜力。",
+      "holistic_development.title": "全面的运动员发展",
+      "holistic_development.description": "我们培养生活中的冠军，而不仅仅是体育界的冠军。我们的课程灌输纪律、韧性和领导力，同样注重品格和技术技能。",
+      "top_facilities.title": "最先进的设施",
+      "top_facilities.description": "在为实现最佳性能、安全和世界一流训练体验而设计的优质、设备齐全的环境中进行专业训练。",
+      "pathway_to_competition.title": "通往竞赛的道路",
+      "pathway_to_competition.description": "超越训练。我们提供从地方联赛到国际锦标赛的明确竞争途径，为您提供展示技能的平台。"
+    }
+  },
   "SportsPage": {
     "metadata": {
       "title": "我们的体育项目",
@@ -298,29 +362,6 @@
   },
   "SportDetailPage": {
     "about_program_title": "关于我们的{sportName}课程",
-    "key_benefits_title": "主要优势",
-    "key_benefits_subtitle": "了解为什么我们的课程脱颖而出。",
-    "benefits": {
-      "elite_coaching": {
-        "title": "精英教练",
-        "description": "向我们认证和经验丰富的教练学习最好的。"
-      },
-      "holistic_development": {
-        "title": "全面发展",
-        "description": "我们培养全面的运动员，注重技术和品格。"
-      },
-      "top_facilities": {
-        "title": "顶级设施",
-        "description": "在为性能而设计的优质环境中训练。"
-      }
-    },
-    "in_action_title": "在行动中",
-    "in_action_subtitle": "一瞥球场上的强度和激情。",
-    "athletes_say_title": "我们的运动员怎么说",
-    "testimonials": {
-      "testimonial1_text": "训练方法彻底改变了我儿子的比赛。教练不仅教学，他们还激励人心。",
-      "testimonial2_text": "我在这里六个月的进步比在别处两年还多。个性化的关注和社区氛围是无与伦比的。"
-    },
     "ready_to_start_title": "准备好开始了吗？",
     "ready_to_start_subtitle": "加入我们的{sportName}课程，开始您的卓越之旅。名额有限。",
     "enroll_button": "报名参加{sportName}课程"

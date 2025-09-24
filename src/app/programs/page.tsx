@@ -1,7 +1,7 @@
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
-import { User, Users, Calendar, Building2, Building } from 'lucide-react';
+import { User, Users, Calendar, Building2, Building, Star, BrainCircuit, Baby } from 'lucide-react';
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
@@ -11,7 +11,31 @@ export const metadata: Metadata = {
   description: 'Discover the variety of programs at YES ACADEMY, including private lessons, group classes, school programs, and corporate events.',
 };
 
-const programs = [
+const programCategories = [
+  {
+    icon: Baby,
+    title: 'Programs by Age',
+    description: 'Our curriculum is carefully designed to foster development from early childhood to adult competition.',
+    link: '/programs/age-groups',
+    image: PlaceHolderImages.find(p => p.id === 'gallery-1'),
+  },
+  {
+    icon: BrainCircuit,
+    title: 'Our Methodology',
+    description: 'Discover the pillars of the renowned French sports education system that produces intelligent players.',
+    link: '/programs/methodology',
+    image: PlaceHolderImages.find(p => p.id === 'why-us-1'),
+  },
+  {
+    icon: Star,
+    title: 'The Academy Advantage',
+    description: 'Learn about our world-class coaching, holistic development, and top-tier facilities.',
+    link: '/programs/why-us',
+    image: PlaceHolderImages.find(p => p.id === 'gallery-2'),
+  }
+];
+
+const otherPrograms = [
   {
     icon: Building,
     title: 'Cooperation with International Schools',
@@ -55,17 +79,16 @@ export default function ProgramsPage() {
   return (
     <div>
       <section className="relative h-64 w-full bg-primary">
-        <div className="container">
-         {heroImage && (
+        {heroImage && (
              <Image
              src={heroImage.imageUrl}
              alt={heroImage.description}
              data-ai-hint={heroImage.imageHint}
              fill
+             sizes="100vw"
              className="object-cover"
            />
         )}
-        </div>
         <div className="absolute inset-0 bg-black/50" />
         <div className="relative z-10 flex h-full flex-col items-center justify-center text-center text-white container">
           <h1 className="font-headline text-4xl font-extrabold tracking-tight md:text-5xl">
@@ -79,14 +102,14 @@ export default function ProgramsPage() {
         <div className="container mx-auto">
           <div className="mx-auto max-w-3xl text-center">
             <h2 className="font-headline text-3xl font-bold md:text-4xl">
-              Find Your Perfect Fit
+              Explore Our Training Philosophy
             </h2>
             <p className="mt-4 text-lg text-muted-foreground">
-              Whether you're a beginner taking your first steps, a dedicated athlete aiming for the top, or a company looking for a unique event, we have a program for you.
+              Our programs are built on a foundation of proven methodology and a commitment to holistic development.
             </p>
           </div>
-          <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-            {programs.map(program => (
+          <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-3">
+            {programCategories.map(program => (
               <Card key={program.title} className="flex flex-col overflow-hidden transition-shadow hover:shadow-lg">
                 {program.image && (
                     <div className="aspect-video relative">
@@ -95,6 +118,52 @@ export default function ProgramsPage() {
                             alt={program.image.description}
                             data-ai-hint={program.image.imageHint}
                             fill
+                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                            className="object-cover"
+                        />
+                    </div>
+                )}
+                <CardHeader>
+                  <CardTitle className="flex items-center gap-3">
+                    <program.icon className="h-8 w-8 text-primary" />
+                    <span className="text-2xl">{program.title}</span>
+                  </CardTitle>
+                </CardHeader>
+                <CardContent className="flex-grow">
+                  <p className="text-muted-foreground">{program.description}</p>
+                </CardContent>
+                <CardFooter>
+                  <Button asChild className="w-full">
+                    <Link href={program.link}>Learn More</Link>
+                  </Button>
+                </CardFooter>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="py-16 md:py-24 bg-white">
+        <div className="container mx-auto">
+          <div className="mx-auto max-w-3xl text-center">
+            <h2 className="font-headline text-3xl font-bold md:text-4xl">
+              Find Your Perfect Fit
+            </h2>
+            <p className="mt-4 text-lg text-muted-foreground">
+              Whether you're a beginner taking your first steps, a dedicated athlete aiming for the top, or a company looking for a unique event, we have a program for you.
+            </p>
+          </div>
+          <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+            {otherPrograms.map(program => (
+              <Card key={program.title} className="flex flex-col overflow-hidden transition-shadow hover:shadow-lg">
+                {program.image && (
+                    <div className="aspect-video relative">
+                        <Image 
+                            src={program.image.imageUrl}
+                            alt={program.image.description}
+                            data-ai-hint={program.image.imageHint}
+                            fill
+                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                             className="object-cover"
                         />
                     </div>

@@ -267,8 +267,18 @@
     },
     "hero_title": "Các chương trình của chúng tôi",
     "hero_subtitle": "Một con đường cho mọi vận động viên",
+    "philosophy_title": "Khám phá Triết lý Đào tạo của chúng tôi",
+    "philosophy_subtitle": "Các chương trình của chúng tôi được xây dựng trên nền tảng của phương pháp đã được chứng minh và cam kết phát triển toàn diện.",
     "section_title": "Tìm sự phù hợp hoàn hảo của bạn",
     "section_subtitle": "Dù bạn là người mới bắt đầu những bước đầu tiên, một vận động viên tận tụy hướng tới đỉnh cao, hay một công ty đang tìm kiếm một sự kiện độc đáo, chúng tôi đều có một chương trình dành cho bạn.",
+    "categories": {
+      "programs_by_age.title": "Chương trình theo lứa tuổi",
+      "programs_by_age.description": "Chương trình giảng dạy của chúng tôi được thiết kế cẩn thận để thúc đẩy sự phát triển từ thời thơ ấu đến thi đấu người lớn.",
+      "our_methodology.title": "Phương pháp của chúng tôi",
+      "our_methodology.description": "Khám phá các trụ cột của hệ thống giáo dục thể thao nổi tiếng của Pháp tạo ra những cầu thủ thông minh.",
+      "academy_advantage.title": "Lợi thế của học viện",
+      "academy_advantage.description": "Tìm hiểu về huấn luyện đẳng cấp thế giới, phát triển toàn diện và cơ sở vật chất hàng đầu của chúng tôi."
+    },
     "programs": {
       "schools_title": "Hợp tác với các trường quốc tế",
       "schools_target": "Dành cho các đối tác giáo dục",
@@ -288,6 +298,60 @@
     },
     "learn_more_button": "Tìm hiểu thêm"
   },
+  "AgeGroupsPage": {
+    "metadata": {
+      "title": "Chương trình theo lứa tuổi",
+      "description": "Khám phá các chương trình theo lứa tuổi của chúng tôi được thiết kế để thúc đẩy sự phát triển từ thời thơ ấu đến thi đấu người lớn."
+    },
+    "hero_title": "Chương trình cho mọi lứa tuổi và giai đoạn",
+    "hero_subtitle": "Chương trình giảng dạy của chúng tôi được thiết kế cẩn thận để thúc đẩy sự phát triển từ thời thơ ấu đến thi đấu người lớn, đảm bảo một con đường phát triển rõ ràng.",
+    "categories": {
+      "kindergarten.title": "Mẫu giáo (3-5 tuổi)",
+      "kindergarten.description": "Một sự giới thiệu vui nhộn về môn thể thao. Chương trình của chúng tôi tập trung vào việc phát triển các kỹ năng vận động cơ bản, phối hợp và tình yêu hoạt động thể chất thông qua các trò chơi vui nhộn và củng cố tích cực.",
+      "elementary.title": "Trường tiểu học (6-10 tuổi)",
+      "elementary.description": "Xây dựng nền tảng. Ở giai đoạn này, chúng tôi giới thiệu các kỹ thuật cốt lõi và các quy tắc cơ bản trong một môi trường có cấu trúc nhưng vui vẻ. Nhấn mạnh vào tinh thần đồng đội, tinh thần thể thao và phát triển kỹ năng.",
+      "middle_school.title": "Trường trung học cơ sở (11-14 tuổi)",
+      "middle_school.description": "Phát triển vận động viên. Việc đào tạo trở nên có cấu trúc hơn với việc giới thiệu các khái niệm chiến thuật, kỹ năng theo vị trí và điều hòa thể chất. Đây là nơi trí thông minh trận đấu bắt đầu hình thành.",
+      "high_school.title": "Trường trung học phổ thông (15-18 tuổi)",
+      "high_school.description": "Chuẩn bị cho cấp độ tiếp theo. Chương trình ưu tú này dành cho các vận động viên nghiêm túc muốn thi đấu ở cấp độ cao. Nó bao gồm đào tạo chiến thuật nâng cao, sức mạnh và điều hòa, và hướng dẫn tuyển sinh đại học.",
+      "university_adults.title": "Đại học & Người lớn",
+      "university_adults.description": "Đam mê và hiệu suất suốt đời. Chúng tôi cung cấp đào tạo ưu tú cho các vận động viên đại học, các giải đấu cạnh tranh dành cho người lớn và các chương trình giải trí cho những người muốn duy trì hoạt động, rèn luyện kỹ năng và trở thành một phần của cộng đồng."
+    }
+  },
+  "MethodologyPage": {
+    "metadata": {
+      "title": "Phương pháp của chúng tôi",
+      "description": "Tìm hiểu về phương pháp lấy cảm hứng từ Pháp của chúng tôi, tập trung vào nền tảng kỹ thuật, trí thông minh chiến thuật và phát triển cầu thủ lâu dài."
+    },
+    "hero_title": "Phương pháp của Pháp",
+    "hero_subtitle": "Chương trình đào tạo của chúng tôi được xây dựng trên các trụ cột của hệ thống giáo dục thể thao nổi tiếng của Pháp, nổi tiếng với việc đào tạo ra những cầu thủ có năng khiếu kỹ thuật và thông minh.",
+    "pillars": {
+      "technical_foundation.title": "Nền tảng kỹ thuật trước tiên",
+      "technical_foundation.description": "Chúng tôi tin rằng sự thành thạo bắt đầu từ những điều cơ bản. Cách tiếp cận lấy cảm hứng từ Pháp của chúng tôi ưu tiên kỹ thuật hoàn hảo ngay từ ngày đầu tiên, xây dựng một nền tảng vững chắc cho phép chơi sáng tạo và nâng cao hơn sau này. Mỗi bài tập được thiết kế để rèn luyện kỹ năng vận động và tạo trí nhớ cơ bắp để thực hiện hoàn hảo.",
+      "tactical_intelligence.title": "Trí thông minh chiến thuật & Ra quyết định",
+      "tactical_intelligence.description": "Một vận động viên giỏi không chỉ chơi; họ còn suy nghĩ. Chúng tôi dành thời gian đáng kể để phát triển 'trí thông minh trận đấu'. Người chơi học cách đọc trận đấu, dự đoán hành động của đối thủ và đưa ra quyết định thông minh, trong tích tắc dưới áp lực. Chúng tôi rèn luyện trí óc cũng như cơ thể.",
+      "long_term_development.title": "Phát triển cầu thủ lâu dài",
+      "long_term_development.description": "Chúng tôi không tìm kiếm những chiến thắng nhanh chóng, tạm thời. Phương pháp của chúng tôi được xây dựng dựa trên sự phát triển thể thao và cá nhân lâu dài của mỗi cầu thủ. Chúng tôi tập trung vào việc đào tạo phù hợp với lứa tuổi, phòng ngừa chấn thương và nuôi dưỡng tình yêu thể thao suốt đời, đảm bảo thành công và sức khỏe bền vững."
+    }
+  },
+  "WhyUsPage": {
+    "metadata": {
+      "title": "Tại sao chọn chúng tôi - Lợi thế của học viện",
+      "description": "Khám phá lý do tại sao YES ACADEMY là lựa chọn tối ưu cho các nhà vô địch đầy tham vọng với phương pháp huấn luyện đẳng cấp thế giới và phương pháp phát triển toàn diện của chúng tôi."
+    },
+    "hero_title": "Lợi thế của YES ACADEMY",
+    "hero_subtitle": "Đây là nơi tiềm năng gặp cơ hội. Khám phá lý do tại sao chương trình của chúng tôi là lựa chọn tối ưu cho các nhà vô địch đầy tham vọng.",
+    "benefits": {
+      "world_class_coaching.title": "Huấn luyện đẳng cấp thế giới",
+      "world_class_coaching.description": "Huấn luyện viên của chúng tôi không chỉ giàu kinh nghiệm; họ còn có các chứng chỉ ưu tú (UEFA, ATP, PGA). Nhận hướng dẫn chuyên nghiệp, được cá nhân hóa để khai phá tiềm năng thực sự của bạn.",
+      "holistic_development.title": "Phát triển vận động viên toàn diện",
+      "holistic_development.description": "Chúng tôi xây dựng những nhà vô địch trong cuộc sống, không chỉ trong thể thao. Các chương trình của chúng tôi thấm nhuần kỷ luật, sự kiên cường và khả năng lãnh đạo, tập trung vào tính cách cũng như kỹ năng kỹ thuật.",
+      "top_facilities.title": "Cơ sở vật chất hiện đại",
+      "top_facilities.description": "Tập luyện như một chuyên gia trong môi trường cao cấp, được trang bị đầy đủ. Cơ sở vật chất của chúng tôi được thiết kế để đạt hiệu suất tối ưu, an toàn và mang lại trải nghiệm đào tạo đẳng cấp thế giới.",
+      "pathway_to_competition.title": "Con đường đến với thi đấu",
+      "pathway_to_competition.description": "Vượt ra ngoài việc đào tạo. Chúng tôi cung cấp các con đường rõ ràng để thi đấu, từ các giải đấu địa phương đến các giải đấu quốc tế, mang đến cho bạn nền tảng để thể hiện kỹ năng của mình."
+    }
+  },
   "SportsPage": {
     "metadata": {
       "title": "Các môn thể thao của chúng tôi",
@@ -298,29 +362,6 @@
   },
   "SportDetailPage": {
     "about_program_title": "Về chương trình {sportName} của chúng tôi",
-    "key_benefits_title": "Lợi ích chính",
-    "key_benefits_subtitle": "Khám phá lý do tại sao chương trình của chúng tôi nổi bật.",
-    "benefits": {
-      "elite_coaching": {
-        "title": "Huấn luyện ưu tú",
-        "description": "Học hỏi từ những người giỏi nhất với các huấn luyện viên được chứng nhận và giàu kinh nghiệm của chúng tôi."
-      },
-      "holistic_development": {
-        "title": "Phát triển toàn diện",
-        "description": "Chúng tôi xây dựng những vận động viên toàn diện, tập trung vào cả kỹ thuật và tính cách."
-      },
-      "top_facilities": {
-        "title": "Cơ sở vật chất hàng đầu",
-        "description": "Tập luyện trong môi trường cao cấp được thiết kế để đạt hiệu suất cao."
-      }
-    },
-    "in_action_title": "Trong hành động",
-    "in_action_subtitle": "Một cái nhìn thoáng qua về cường độ và niềm đam mê trên sân.",
-    "athletes_say_title": "Vận động viên của chúng tôi nói gì",
-    "testimonials": {
-      "testimonial1_text": "Phương pháp huấn luyện đã hoàn toàn thay đổi lối chơi của con trai tôi. Các huấn luyện viên không chỉ dạy, họ còn truyền cảm hứng.",
-      "testimonial2_text": "Tôi đã tiến bộ nhiều hơn trong sáu tháng ở đây so với hai năm ở nơi khác. Sự quan tâm cá nhân và không khí cộng đồng là không thể so sánh được."
-    },
     "ready_to_start_title": "Sẵn sàng để bắt đầu?",
     "ready_to_start_subtitle": "Tham gia chương trình {sportName} của chúng tôi và bắt đầu hành trình đến với sự xuất sắc. Số lượng có hạn.",
     "enroll_button": "Ghi danh vào chương trình {sportName}"
