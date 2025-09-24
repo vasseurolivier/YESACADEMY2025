@@ -59,7 +59,7 @@ const methodologyPillars = [
     }
 ]
 
-const ageCategories = [
+const defaultAgeCategories = [
     {
         icon: Baby,
         title: "Kindergarten (Ages 3-5)",
@@ -85,7 +85,38 @@ const ageCategories = [
         title: "University & Adults",
         description: "Lifelong passion and performance. We offer elite training for collegiate athletes, competitive adult leagues, and recreational programs for those who want to stay active, refine their skills, and be part of a community."
     }
-]
+];
+
+const sportSpecificAgeCategories: {[key: string]: typeof defaultAgeCategories} = {
+  football: [
+    {
+        icon: Baby,
+        title: "Foot-Discovery (Ages 3-5)",
+        description: "A playful first touch with the ball. Our program focuses on motor skills, coordination, and fun through games. We awaken a love for football in a safe and positive environment."
+    },
+    {
+        icon: School,
+        title: "Youth Formation (Ages 6-10)",
+        description: "Building the fundamentals. We introduce core techniques like dribbling, passing, and shooting in a structured, fun way. Emphasis is on teamwork, fair play, and technical skill development."
+    },
+    {
+        icon: Backpack,
+        title: "Pre-Academy (Ages 11-14)",
+        description: "Developing the footballer. Training intensifies with tactical concepts (1v1, 2v2), position-specific drills, and conditioning. This is where 'football intelligence' starts to build."
+    },
+    {
+        icon: GraduationCap,
+        title: "Elite Academy (Ages 15-18)",
+        description: "Pathway to pro. For serious players aiming for a high level. Involves advanced tactical systems, intense strength and conditioning, video analysis, and guidance for university or pro pathways."
+    },
+    {
+        icon: Building2,
+        title: "Adult & Corporate Leagues",
+        description: "Passion for life. We offer elite training for university athletes, competitive adult leagues, and recreational programs for those who want to stay active, refine skills, and enjoy the beautiful game."
+    }
+  ]
+};
+
 
 const allTestimonials: {[key: string]: {name: string, role: string, avatar: string, image?: string, testimonial: string}[]} = {
   football: [
@@ -204,6 +235,8 @@ export default function SportDetailPage({ params }: Props) {
   }
 
   const testimonials = allTestimonials[sport.slug] || [];
+  const ageCategories = sportSpecificAgeCategories[sport.slug] || defaultAgeCategories;
+
 
   return (
     <div>
