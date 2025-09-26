@@ -45,7 +45,6 @@ const internationalCamp = {
   sports: ['Football', 'Climbing', 'Basketball', 'Horse-riding', 'Volley-ball', 'Golf', 'Tennis', 'Sailing', 'Skiing', 'Fencing'],
   images: [
     PlaceHolderImages.find(p => p.id === 'gallery-fencing'),
-    PlaceHolderImages.find(p => p.id === 'gallery-team-france'),
     PlaceHolderImages.find(p => p.id === 'gallery-skiing'),
     PlaceHolderImages.find(p => p.id === 'gallery-sailing'),
     PlaceHolderImages.find(p => p.id === 'gallery-football-kids'),
@@ -164,8 +163,8 @@ export default function CampsPage() {
                   key={img.id}
                   className={`relative aspect-[4/3] overflow-hidden rounded-lg shadow-lg
                     ${index === 0 ? 'row-span-2' : ''}
-                    ${index === 2 ? 'row-span-2' : ''}
-                    ${index === 7 ? 'col-span-2 md:col-span-4' : ''}
+                    ${index === 2 ? 'col-span-2' : ''}
+                    ${index === 6 ? 'col-span-2 md:col-span-4' : ''}
                   `}
                 >
                   <Image
