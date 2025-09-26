@@ -12,14 +12,18 @@ export default function UploadPage() {
     setStatus({ type: 'loading', message: 'Téléversement en cours...' });
 
     const formData = new FormData(event.currentTarget);
-    const result = await handleLogoUpload(formData);
+    try {
+      const result = await handleLogoUpload(formData);
 
-    if (result.success) {
-      setStatus({ type: 'success', message: 'Logo téléversé avec succès ! Le site va se rafraîchir.' });
-      // Attendre un peu pour que l'utilisateur voie le message, puis rafraîchir.
-      setTimeout(() => window.location.reload(), 2000);
-    } else {
-      setStatus({ type: 'error', message: result.message || 'Une erreur inconnue est survenue.' });
+      if (result.success) {
+        setStatus({ type: 'success', message: 'Logo téléversé avec succès ! Le site va se rafraîchir.' });
+        // Attendre un peu pour que l'utilisateur voie le message, puis rafraîchir.
+        setTimeout(() => window.location.reload(), 2000);
+      } else {
+        setStatus({ type: 'error', message: result.message || 'Une erreur inconnue est survenue.' });
+      }
+    } catch (e: any) {
+        setStatus({ type: 'error', message: e.message || 'Une erreur de communication est survenue.' });
     }
   };
 
