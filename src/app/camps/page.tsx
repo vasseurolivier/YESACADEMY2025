@@ -50,7 +50,6 @@ const internationalCamp = {
     PlaceHolderImages.find(p => p.id === 'gallery-football-kids'),
     PlaceHolderImages.find(p => p.id === 'gallery-tennis-kid'),
     PlaceHolderImages.find(p => p.id === 'gallery-horse-riding'),
-    PlaceHolderImages.find(p => p.id === 'gallery-golfers'),
   ]
 }
 
@@ -156,16 +155,12 @@ export default function CampsPage() {
               </Card>
             </div>
           </div>
-           <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-4">
+           <div className="mt-12 grid grid-cols-2 md:grid-cols-3 gap-4">
             {internationalCamp.images.map((img, index) => 
               img && (
                 <div 
                   key={img.id}
-                  className={`relative aspect-[4/3] overflow-hidden rounded-lg shadow-lg
-                    ${index === 0 ? 'row-span-2' : ''}
-                    ${index === 2 ? 'col-span-2' : ''}
-                    ${index === 6 ? 'col-span-2 md:col-span-4' : ''}
-                  `}
+                  className={`relative aspect-[4/3] overflow-hidden rounded-lg shadow-lg`}
                 >
                   <Image
                     src={img.imageUrl}
