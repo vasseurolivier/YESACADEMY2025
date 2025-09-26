@@ -49,7 +49,7 @@ const internationalCamp = {
     PlaceHolderImages.find(p => p.id === 'gallery-sailing'),
     PlaceHolderImages.find(p => p.id === 'gallery-football-kids'),
     PlaceHolderImages.find(p => p.id === 'gallery-tennis-kid'),
-    PlaceHolderImages.find(p => p.id === 'gallery-horse-riding'),
+    PlaceHolderImages.find(p => p.id === 'gallery-basketball'),
   ]
 }
 
@@ -70,7 +70,7 @@ const vipCamps = [
 
 const vipCampImages = {
   side1: PlaceHolderImages.find(p => p.id === 'gallery-sailing'),
-  side2: PlaceHolderImages.find(p => p.id === 'gallery-horse-riding'),
+  side2: PlaceHolderImages.find(p => p.id === 'gallery-basketball'),
   vip: PlaceHolderImages.find(p => p.id === 'vip-kids'),
 }
 
@@ -210,12 +210,7 @@ export default function CampsPage() {
             <div className="flex flex-col justify-center">
               <h2 className="font-headline text-4xl font-bold">SPECIAL EXPERIENCE</h2>
               <h3 className="font-headline text-2xl text-accent">PRIVATE AND VIP SPORTS</h3>
-              {vipCampImages.vip && (
-                <div className="relative my-4 h-24 w-40 overflow-hidden rounded-lg border-2 border-accent shadow-lg">
-                   <Image src={vipCampImages.vip.imageUrl} alt={vipCampImages.vip.description} fill data-ai-hint={vipCampImages.vip.imageHint} className="object-cover" />
-                </div>
-              )}
-              <p className="text-primary-foreground/80">
+              <p className="mt-4 text-primary-foreground/80">
                 To respond to numerous and increasing demands, we have been developing our elite sports camps programs. Often meant for a high society clientele, with sports such as skiing, horse riding or even sailing which are very popular with our VIPs.
               </p>
               <p className="mt-2 text-primary-foreground/80">
@@ -233,13 +228,17 @@ export default function CampsPage() {
                 ))}
               </div>
             </div>
-            <div className="flex flex-col justify-center space-y-4">
+            <div className="flex flex-col items-center justify-center space-y-4">
+              {vipCampImages.vip && (
+                <div className="relative my-4 h-24 w-40 overflow-hidden rounded-lg border-2 border-accent shadow-lg">
+                   <Image src={vipCampImages.vip.imageUrl} alt={vipCampImages.vip.description} fill data-ai-hint={vipCampImages.vip.imageHint} className="object-cover" />
+                </div>
+              )}
               {vipCampImages.side1 && (
                 <div className="relative aspect-[4/3] w-2/3 self-start overflow-hidden rounded-lg shadow-xl">
                   <Image src={vipCampImages.side1.imageUrl} alt={vipCampImages.side1.description} fill data-ai-hint={vipCampImages.side1.imageHint} className="object-cover" />
                 </div>
               )}
-              
                {vipCampImages.side2 && (
                 <div className="relative aspect-[4/3] w-2/3 self-end overflow-hidden rounded-lg shadow-xl">
                    <Image src={vipCampImages.side2.imageUrl} alt={vipCampImages.side2.description} fill data-ai-hint={vipCampImages.side2.imageHint} className="object-cover" />
