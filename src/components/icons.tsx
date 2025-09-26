@@ -7,8 +7,8 @@ export const Logo = () => (
     <Image
       src="/logo.png"
       alt="YES ACADEMY Logo"
-      width={40}
-      height={40}
+      width={50}
+      height={50}
       className="object-contain"
       unoptimized // Using a static image, but keeping unoptimized just in case to avoid Next.js image processing conflicts
     />
