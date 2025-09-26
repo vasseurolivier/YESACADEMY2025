@@ -98,8 +98,8 @@ export default function Home() {
       </section>
       
       <section className="bg-white py-16 md:py-24">
-        <div className="container grid gap-12 text-center md:grid-cols-2 md:items-center md:text-left">
-          <div className="md:order-2">
+        <div className="container grid gap-12 md:grid-cols-2 md:items-center">
+          <div className="order-2 md:order-1">
             <h2 className="font-headline text-3xl font-bold md:text-4xl">Why YES ACADEMY?</h2>
             <p className="mt-4 text-lg text-muted-foreground">Youth Elite Sports (YES ACADEMY) is an academy specializing in multi-sports. We operate in world-renowned sports such as Football, Basketball and Volleyball, but also in more confidential and private sports such as Golf, Fencing, Climbing, and even Scuba diving.                     Our sports programs are all based on French methodologies. Our experts (coaches) are all trained in our methods, with the sole objective being the children's development and progress.             A methodology that has proven itself over the last few years, and which has allowed the different French National teams to shine in the biggest competitions.             We are currently based in China, where we operate in many cities such as Shanghai, Hangzhou and Yiwu among others.</p>
             <ul className="mt-8 space-y-4 text-lg">
@@ -121,16 +121,18 @@ export default function Home() {
               </li>
             </ul>
           </div>
-           <div className="flex justify-center md:order-1">
+           <div className="order-1 flex justify-center md:order-2">
             {PlaceHolderImages.find(p => p.id === 'why-us-1') && 
-              <Image 
-                src={PlaceHolderImages.find(p => p.id === 'why-us-1')?.imageUrl!}
-                alt={PlaceHolderImages.find(p => p.id === 'why-us-1')?.description!}
-                data-ai-hint={PlaceHolderImages.find(p => p.id === 'why-us-1')?.imageHint!}
-                width={600}
-                height={400}
-                className="rounded-lg shadow-xl"
-              />
+              <div className="relative aspect-[4/3] w-full max-w-lg overflow-hidden rounded-lg shadow-xl">
+                <Image 
+                  src={PlaceHolderImages.find(p => p.id === 'why-us-1')?.imageUrl!}
+                  alt={PlaceHolderImages.find(p => p.id === 'why-us-1')?.description!}
+                  data-ai-hint={PlaceHolderImages.find(p => p.id === 'why-us-1')?.imageHint!}
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover"
+                />
+              </div>
             }
           </div>
         </div>
