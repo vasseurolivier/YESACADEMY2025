@@ -3,19 +3,19 @@
     {
       "id": "hero-football-match",
       "description": "An intense football match in a packed stadium.",
-      "imageUrl": "https://images.unsplash.com/photo-1579952363873-27f3bade9f55?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxmb290YmFsbHxlbnwwfHx8fDE3NTgzNjkxOTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1579952363873-27f3bade9f55?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxmb290YmFsbHxlbnwwfHx8fDE3NTgzNjkxOTJ8MA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "football match"
     },
     {
       "id": "hero-basketball-match",
       "description": "Dynamic action shot of a basketball player dunking.",
-      "imageUrl": "https://images.unsplash.com/photo-1577471488278-16eec37ffcc2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxiYXNrZXRiYWxsJTIwZHVua3xlbnwwfHx8fDE3NTg3MDQ2NTV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1577471488278-16eec37ffcc2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxiYXNrZXRiYWxsJTIwZHVua3xlbnwwfHx8fDE3NTg3MDQ2NTV8MA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "basketball dunk"
     },
     {
       "id": "hero-golfer",
       "description": "A golfer mid-swing on a beautiful course at sunset.",
-      "imageUrl": "https://images.unsplash.com/photo-1690288505715-977d41c653d3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxnb2xmZXIlMjBzd2luZ3xlbnwwfHx8fDE3NTg2NjU2MzZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1690288505715-977d41c653d3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxnb2xmZXIlMjBzd2luZ3xlbnwwfHx8fDE3NTg2NjU2MzZ8MA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "golfer swing"
     },
     {
@@ -27,7 +27,7 @@
     {
       "id": "testimonial-1",
       "description": "Portrait of a smiling Asian man.",
-      "imageUrl": "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxtYW4lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NTg1ODI4MTZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxtYW4lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NTg1ODI4MTZ8MA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "man portrait"
     },
     {
@@ -128,9 +128,9 @@
     },
     {
       "id": "gallery-basketball",
-      "description": "A basketball going through a hoop.",
-      "imageUrl": "https://images.unsplash.com/photo-1577471488278-16eec37ffcc2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxiYXNrZXRiYWxsfGVufDB8fHx8MTc1ODg2NTM4NXww&ixlib-rb-4.1.0&q=80&w=1080",
-      "imageHint": "basketball hoop"
+      "description": "A person skiing down a snowy slope.",
+      "imageUrl": "https://images.unsplash.com/photo-1575034441170-57c5bd416b26?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxza2lpfGVufDB8fHx8MTc1ODg2NDY1M3ww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageHint": "skiing"
     },
     {
       "id": "gallery-3",
@@ -315,7 +315,7 @@
     {
       "id": "vip-kids",
       "description": "A person on a horse, symbolizing equitation.",
-      "imageUrl": "https://images.unsplash.com/photo-1613085411234-9c83af5562d8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxlcXVpdGF0aW9ufGVufDB8fHx8MTc1ODg2Njg3OXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1613085411234-9c83af5562d8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxlcXVpdGF0aW9ufGVufDB8fHx8MTc1ODg2Njg3OXww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "equitation"
     }
   ]
