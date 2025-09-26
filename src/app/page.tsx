@@ -98,42 +98,44 @@ export default function Home() {
       </section>
       
       <section className="bg-white py-16 md:py-24">
-        <div className="container grid gap-12 md:grid-cols-2 md:items-center">
-          <div className="order-2 md:order-1">
+        <div className="container">
+          <div className="text-center">
             <h2 className="font-headline text-3xl font-bold md:text-4xl">Why YES ACADEMY?</h2>
-            <p className="mt-4 text-lg text-muted-foreground">Youth Elite Sports (YES ACADEMY) is an academy specializing in multi-sports. We operate in world-renowned sports such as Football, Basketball and Volleyball, but also in more confidential and private sports such as Golf, Fencing, Climbing, and even Scuba diving.                     Our sports programs are all based on French methodologies. Our experts (coaches) are all trained in our methods, with the sole objective being the children's development and progress.             A methodology that has proven itself over the last few years, and which has allowed the different French National teams to shine in the biggest competitions.             We are currently based in China, where we operate in many cities such as Shanghai, Hangzhou and Yiwu among others.</p>
-            <ul className="mt-8 space-y-4 text-lg">
-              <li className="flex items-start">
-                <CheckCircle className="mr-3 mt-1 h-6 w-6 shrink-0 text-primary" />
-                <span><span className="font-semibold">French-Inspired Methodology:</span> Our training is rooted in renowned French teaching methods, focusing on structured, technical, and tactical development from a young age.</span>
-              </li>
-              <li className="flex items-start">
-                <CheckCircle className="mr-3 mt-1 h-6 w-6 shrink-0 text-primary" />
-                <span><span className="font-semibold">Professionally Certified Coaches:</span> All our coaches hold top-tier professional diplomas (UEFA, ATP, PGA, etc.), ensuring the highest standard of expert instruction.</span>
-              </li>
-              <li className="flex items-start">
-                <CheckCircle className="mr-3 mt-1 h-6 w-6 shrink-0 text-primary" />
-                <span><span className="font-semibold">State-of-the-Art Facilities:</span> Train in premium, fully-equipped environments designed for optimal performance.</span>
-              </li>
-              <li className="flex items-start">
-                <CheckCircle className="mr-3 mt-1 h-6 w-6 shrink-0 text-primary" />
-                <span><span className="font-semibold">Holistic Development:</span> We focus on both athletic skills and personal growth, building resilient and confident individuals.</span>
-              </li>
-            </ul>
+            <p className="mt-4 text-lg text-muted-foreground max-w-4xl mx-auto">Youth Elite Sports (YES ACADEMY) is an academy specializing in multi-sports. We operate in world-renowned sports such as Football, Basketball and Volleyball, but also in more confidential and private sports such as Golf, Fencing, Climbing, and even Scuba diving. Our sports programs are all based on French methodologies. Our experts (coaches) are all trained in our methods, with the sole objective being the children's development and progress. A methodology that has proven itself over the last few years, and which has allowed the different French National teams to shine in the biggest competitions. We are currently based in China, where we operate in many cities such as Shanghai, Hangzhou and Yiwu among others.</p>
           </div>
-           <div className="order-1 flex justify-center md:order-2">
-            {PlaceHolderImages.find(p => p.id === 'why-us-1') && 
-              <div className="relative aspect-[4/3] w-full max-w-lg overflow-hidden rounded-lg shadow-xl">
-                <Image 
-                  src={PlaceHolderImages.find(p => p.id === 'why-us-1')?.imageUrl!}
-                  alt={PlaceHolderImages.find(p => p.id === 'why-us-1')?.description!}
-                  data-ai-hint={PlaceHolderImages.find(p => p.id === 'why-us-1')?.imageHint!}
-                  fill
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                  className="object-cover"
-                />
-              </div>
-            }
+          <div className="mt-12 grid gap-12 md:grid-cols-2 md:items-center">
+              <ul className="space-y-4 text-lg">
+                <li className="flex items-start">
+                  <CheckCircle className="mr-3 mt-1 h-6 w-6 shrink-0 text-primary" />
+                  <span><span className="font-semibold">French-Inspired Methodology:</span> Our training is rooted in renowned French teaching methods, focusing on structured, technical, and tactical development from a young age.</span>
+                </li>
+                <li className="flex items-start">
+                  <CheckCircle className="mr-3 mt-1 h-6 w-6 shrink-0 text-primary" />
+                  <span><span className="font-semibold">Professionally Certified Coaches:</span> All our coaches hold top-tier professional diplomas (UEFA, ATP, PGA, etc.), ensuring the highest standard of expert instruction.</span>
+                </li>
+                <li className="flex items-start">
+                  <CheckCircle className="mr-3 mt-1 h-6 w-6 shrink-0 text-primary" />
+                  <span><span className="font-semibold">State-of-the-Art Facilities:</span> Train in premium, fully-equipped environments designed for optimal performance.</span>
+                </li>
+                <li className="flex items-start">
+                  <CheckCircle className="mr-3 mt-1 h-6 w-6 shrink-0 text-primary" />
+                  <span><span className="font-semibold">Holistic Development:</span> We focus on both athletic skills and personal growth, building resilient and confident individuals.</span>
+                </li>
+              </ul>
+            <div className="flex justify-center">
+              {PlaceHolderImages.find(p => p.id === 'why-us-1') && 
+                <div className="relative aspect-[4/3] w-full max-w-lg overflow-hidden rounded-lg shadow-xl">
+                  <Image 
+                    src={PlaceHolderImages.find(p => p.id === 'why-us-1')?.imageUrl!}
+                    alt={PlaceHolderImages.find(p => p.id === 'why-us-1')?.description!}
+                    data-ai-hint={PlaceHolderImages.find(p => p.id === 'why-us-1')?.imageHint!}
+                    fill
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                    className="object-cover"
+                  />
+                </div>
+              }
+            </div>
           </div>
         </div>
       </section>
