@@ -70,7 +70,7 @@ export const sports: Sport[] = [
     slug: 'golf',
     icon: GolfIcon,
     description: 'Perfect your swing on the green.',
-    longDescription: "The best French golfers of all time have made significant contributions to the sport and left their indelible mark on thehistory of golf. From pioneers such as Arnaud Massy and Jean Garaïalde to contemporary figures like Grégory Havret, these players have inspired future generations and made French golf shine on an international scale. In this sport for the cultured and usually associated with high society, French golf has experienced remarkable progress in recent years, with the emergence of a new generation of talented golfers.  In 2023, France shines on the international professional courses thanks to its world-class players.",
+    longDescription: "",
     image: {
       url: PlaceHolderImages.find(p => p.id === 'sport-golf')?.imageUrl || '',
       alt: PlaceHolderImages.find(p => p.id === 'sport-golf')?.description || '',

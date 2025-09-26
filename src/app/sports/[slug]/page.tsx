@@ -41,6 +41,7 @@ export default function SportDetailPage({ params }: Props) {
   const isBasketball = sport.slug === 'basketball';
   const isVolleyball = sport.slug === 'volleyball';
   const isTennis = sport.slug === 'tennis';
+  const isGolf = sport.slug === 'golf';
 
   return (
     <div>
@@ -127,6 +128,15 @@ export default function SportDetailPage({ params }: Props) {
                         
                         <h3 className="font-headline text-xl font-semibold">Well-being and Positive Outlook</h3>
                         <p>Being in an open space for long periods of time relieves mental agitation and anxiety. This helps to develop an optimistic and positive spirit in our young athletes.</p>
+                      </>
+                    ) : isGolf ? (
+                      <>
+                        <p className="lead">
+                          From pioneers like Arnaud Massy to contemporary figures such as Grégory Havret, the best French golfers have made significant contributions to the sport, leaving an indelible mark on its history and inspiring future generations.
+                        </p>
+                        <p>
+                          In this sport, often associated with high society and culture, French golf has experienced remarkable progress in recent years with the emergence of a new generation of talented players. In 2023, France shines on the international professional courses, thanks to its world-class athletes.
+                        </p>
                       </>
                     ) : (
                       <>
