@@ -41,7 +41,7 @@ const camps = [
 
 const internationalCamp = {
   dates: ['Summer vacation', 'Winter vacation', 'Spring vacation'],
-  countries: ['France', 'China', 'Japan...'],
+  countries: ['France', 'China', 'Vietnam', 'Japan...'],
   sports: ['Football', 'Climbing', 'Basketball', 'Horse-riding', 'Volley-ball', 'Golf', 'Tennis', 'Sailing', 'Skiing', 'Fencing'],
   images: [
     PlaceHolderImages.find(p => p.id === 'gallery-fencing'),
