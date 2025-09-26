@@ -73,7 +73,7 @@ export default function CampsPage() {
                   An Adventure in Sport
                 </h2>
                 <p className="mt-4 text-lg text-muted-foreground">
-                  Our camps are far more than just training sessions; they are transformative life experiences. We believe that true athletic development goes hand-in-hand with personal growth. Participants step out of their comfort zones, fostering independence and resilience as they navigate new challenges. In our vibrant, international environment, they forge friendships with peers from diverse backgrounds, creating a global network of friends and future leaders bonded by a shared passion for sport.
+                  Youth Elite Sports Academy has served as a haven for children and their families since 2000.  Every summer, our caring and enthusiastic counselors dream up a wide range of creative programs for campers of all ages. Our activities and offerings are fun, challenging and accepting of everyone’s individual abilities. Above all, we are a down-to-earth Sports Camp dedicated to ensuring everyone have the time of their lives.
                 </p>
               </div>
         </div>
