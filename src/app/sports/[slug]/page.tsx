@@ -5,7 +5,6 @@ import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import type { Metadata, ResolvingMetadata } from 'next';
 import { Check, Medal } from 'lucide-react';
-import { Blockquote } from 'recharts';
 
 type Props = {
   params: { slug: string };
@@ -41,6 +40,7 @@ export default function SportDetailPage({ params }: Props) {
 
   const isBasketball = sport.slug === 'basketball';
   const isVolleyball = sport.slug === 'volleyball';
+  const isTennis = sport.slug === 'tennis';
 
   return (
     <div>
@@ -112,7 +112,21 @@ export default function SportDetailPage({ params }: Props) {
                         <blockquote className="border-l-4 border-primary pl-4 italic text-muted-foreground">
                             "On a physical level, it develops cardiovascular capacities, improves speed, and tones the body. At the psychomotor level, it significantly improves coordination and reflexes. And on a mental level, it builds concentration and anticipation."
                         </blockquote>
+                      </>
+                    ) : isTennis ? (
+                      <>
+                        <p className="lead">
+                          Tennis is a complete sport that builds a strong mind and body, fostering key life skills alongside athletic development.
+                        </p>
+                        
+                        <h3 className="font-headline text-xl font-semibold">Mental Fortitude and Strategy</h3>
+                        <p>Tennis builds resolve, a strategic mind, and a respectful competitive spirit. It teaches players to think ahead, adapt to changing situations, and maintain focus under pressure.</p>
 
+                        <h3 className="font-headline text-xl font-semibold">Psychomotor Development</h3>
+                        <p>The sport places great emphasis on physical co-ordination and responsiveness. Through repeated training, a child's spatial judgement and hand-brain co-ordination are strengthened to a great extent, leading to a more agile and responsive body.</p>
+                        
+                        <h3 className="font-headline text-xl font-semibold">Well-being and Positive Outlook</h3>
+                        <p>Being in an open space for long periods of time relieves mental agitation and anxiety. This helps to develop an optimistic and positive spirit in our young athletes.</p>
                       </>
                     ) : (
                       <>

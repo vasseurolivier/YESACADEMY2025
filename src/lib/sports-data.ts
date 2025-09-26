@@ -58,7 +58,7 @@ export const sports: Sport[] = [
     slug: 'tennis',
     icon: TennisIcon,
     description: 'Master your serve and backhand on our courts.',
-    longDescription: "Tennis is very much a sport the builds a resolve, a strategic mind and a respectful competitive spirit whilst developing all the necessary skills and muscles for a child's growth. Tennis is a sport that places great emphasis on physical co-ordination and responsiveness. Through repeated training, the child's spatial judgement and hand-brain co-ordination can be strengthened to a great extent, thus giving him/her an agile body. Being in open space for long periods of time relieves mental agitation and anxiety and helps to develop an optimistic spirit in children.",
+    longDescription: "",
     image: {
       url: PlaceHolderImages.find(p => p.id === 'sport-tennis')?.imageUrl || '',
       alt: PlaceHolderImages.find(p => p.id === 'sport-tennis')?.description || '',
