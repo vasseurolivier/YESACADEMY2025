@@ -101,7 +101,7 @@ export default function Home() {
         <div className="container grid gap-12 text-center md:grid-cols-2 md:items-center md:text-left">
           <div className="md:order-2">
             <h2 className="font-headline text-3xl font-bold md:text-4xl">Why YES ACADEMY?</h2>
-            <p className="mt-4 text-lg text-muted-foreground">We are more than just an academy. We are a community dedicated to excellence, growth, and passion for sport.</p>
+            <p className="mt-4 text-lg text-muted-foreground">Youth Elite Sports (YES ACADEMY) is an academy specializing in multi-sports. We operate in world-renowned sports such as Football, Basketball and Volleyball, but also in more confidential and private sports such as Golf, Fencing, Climbing, and even Scuba diving.                     Our sports programs are all based on French methodologies. Our experts (coaches) are all trained in our methods, with the sole objective being the children's development and progress.             A methodology that has proven itself over the last few years, and which has allowed the different French National teams to shine in the biggest competitions.             We are currently based in China, where we operate in many cities such as Shanghai, Hangzhou and Yiwu among others.</p>
             <ul className="mt-8 space-y-4 text-lg">
               <li className="flex items-start">
                 <CheckCircle className="mr-3 mt-1 h-6 w-6 shrink-0 text-primary" />
