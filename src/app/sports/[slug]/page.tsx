@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import type { Metadata, ResolvingMetadata } from 'next';
+import { Check } from 'lucide-react';
 
 type Props = {
   params: { slug: string };
@@ -37,6 +38,8 @@ export default function SportDetailPage({ params }: Props) {
     notFound();
   }
 
+  const isBasketball = sport.slug === 'basketball';
+
   return (
     <div>
       <section className="relative h-72 w-full">
@@ -62,10 +65,40 @@ export default function SportDetailPage({ params }: Props) {
             <div className="grid grid-cols-1 gap-12 md:grid-cols-2 md:items-center">
                 <div className="prose prose-lg dark:prose-invert">
                     <h2 className="font-headline text-3xl font-bold">About our {sport.name} program</h2>
-                    <p className="lead text-muted-foreground">
-                      {sport.description}
-                    </p>
-                    <p>{sport.longDescription}</p>
+                    
+                    {isBasketball ? (
+                      <>
+                        <p className="lead">
+                          The YES Basketball program focuses on our students' development as both players and individuals. Participants have access to three core types of training designed for holistic growth.
+                        </p>
+                        
+                        <h3 className="font-headline text-xl font-semibold">SKILLS DEVELOPMENT TRAINING</h3>
+                        <p>Enhances a student’s ability to perform and grow individually with more confidence on the court.</p>
+
+                        <h3 className="font-headline text-xl font-semibold">TEAM TRAINING</h3>
+                        <p>Fosters chemistry and collective performance, allowing the team to excel together on both offense and defense.</p>
+                        
+                        <h3 className="font-headline text-xl font-semibold">STRENGTH TRAINING</h3>
+                        <p>Boosts athletic abilities, enabling students to perform at a high intensity for longer periods with sustained focus.</p>
+
+                        <h3 className="font-headline text-xl font-semibold">Core Principles</h3>
+                        <p>The YES Basketball philosophy is built on principles that transcend the court. We aim to instill:</p>
+                        <ul className="list-none p-0">
+                          <li className="flex items-center gap-2"><Check className="text-primary h-5 w-5" /> Leadership</li>
+                          <li className="flex items-center gap-2"><Check className="text-primary h-5 w-5" /> Resilience</li>
+                          <li className="flex items-center gap-2"><Check className="text-primary h-5 w-5" /> Discipline</li>
+                          <li className="flex items-center gap-2"><Check className="text-primary h-5 w-5" /> Courage</li>
+                        </ul>
+                        <p>These are crucial values that each student will carry with them into the future.</p>
+                      </>
+                    ) : (
+                      <>
+                        <p className="lead text-muted-foreground">
+                          {sport.description}
+                        </p>
+                        <p>{sport.longDescription}</p>
+                      </>
+                    )}
                 </div>
                 <div>
                     <Image
