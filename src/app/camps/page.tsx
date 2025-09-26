@@ -16,7 +16,7 @@ const camps = [
     icon: Sun,
     title: 'Summer Champions Camp',
     location: 'China & Vietnam',
-    description: 'An action-packed summer of sports, friendship, and fun. Our multi-sport camps offer a chance to try new activities and master existing skills in a vibrant, international environment. Participants will benefit from professional coaching, competitive matches, and cultural excursions, creating lasting memories.',
+    description: 'An action-packed summer of sports, friendship, and fun. Our multi-sport camps offer a chance to try new activities and master existing skills in a vibrant, international environment. Participants will benefit from professional coaching, competitive matches, and cultural excursions, creating a lasting memories.',
     active: false,
     image: PlaceHolderImages.find(p => p.id === 'camps-hero'),
   },
@@ -97,90 +97,88 @@ export default function CampsPage() {
       
       <section className="bg-muted py-16 md:py-24">
         <div className="container mx-auto">
-          <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:items-center">
-            <div>
-              <h2 className="font-headline text-3xl font-bold md:text-4xl">
-                SPORTS CAMPS
-              </h2>
-              <p className="font-headline text-2xl text-primary">
-                INTERNATIONAL EXPERIENCE
+          <div>
+            <h2 className="font-headline text-3xl font-bold md:text-4xl">
+              SPORTS CAMPS
+            </h2>
+            <p className="font-headline text-2xl text-primary">
+              INTERNATIONAL EXPERIENCE
+            </p>
+            <div className="mt-4 space-y-3 text-muted-foreground">
+              <p>
+                Concerned about the development and the well-being of children, YES Academy offers numerous camps to its athletes during the various school holidays.
               </p>
-              <div className="mt-4 space-y-3 text-muted-foreground">
-                <p>
-                  Concerned about the development and the well-being of children, YES Academy offers numerous camps to its athletes during the various school holidays.
-                </p>
-                <p>
-                  In order to provide new experiences and introduce them to new sports, we organize, during certain school vacations, our sports camps in different countries. These boarding camps aim to cultivate a cultural diversity are highlighted and expand their horizons.
-                </p>
-                 <p>
-                  These camps can have different formats ranging from 5 days to 2 weeks, depending on the chosen activities. The camps also provides kids with many opportunities for cultural enrichment via diverse cultural activities (french courses, cultural centers visit, Go initiation, etc...).
-                </p>
-              </div>
-               <p className="mt-6 font-semibold text-lg">
-                A HUMAN AND SPORTS EXPERIENCE AVAILABLE TO EVERYONE!
+              <p>
+                In order to provide new experiences and introduce them to new sports, we organize, during certain school vacations, our sports camps in different countries. These boarding camps aim to cultivate a cultural diversity are highlighted and expand their horizons.
               </p>
-              <div className="mt-8 grid grid-cols-1 gap-8 sm:grid-cols-3">
-                <Card>
-                  <CardHeader>
-                    <CardTitle>DATES</CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <ul className="space-y-2 text-muted-foreground">
-                      {internationalCamp.dates.map(date => (
-                        <li key={date} className="flex items-center gap-2"><Check className="h-4 w-4 text-primary" /> {date}</li>
-                      ))}
-                    </ul>
-                  </CardContent>
-                </Card>
-                <Card>
-                  <CardHeader>
-                    <CardTitle>COUNTRIES</CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <ul className="space-y-2 text-muted-foreground">
-                      {internationalCamp.countries.map(country => (
-                        <li key={country} className="flex items-center gap-2"><Check className="h-4 w-4 text-primary" /> {country}</li>
-                      ))}
-                    </ul>
-                  </CardContent>
-                </Card>
-                <Card>
-                  <CardHeader>
-                    <CardTitle>SPORTS</CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <ul className="space-y-2 text-muted-foreground text-sm grid grid-cols-2">
-                       {internationalCamp.sports.map(sport => (
-                        <li key={sport} className="flex items-center gap-2"><Check className="h-4 w-4 text-primary" /> {sport}</li>
-                      ))}
-                    </ul>
-                  </CardContent>
-                </Card>
-              </div>
+               <p>
+                These camps can have different formats ranging from 5 days to 2 weeks, depending on the chosen activities. The camps also provides kids with many opportunities for cultural enrichment via diverse cultural activities (french courses, cultural centers visit, Go initiation, etc...).
+              </p>
             </div>
-             <div className="grid grid-cols-2 grid-rows-4 gap-4">
-              {internationalCamp.images.map((img, index) => 
-                img && (
-                  <div 
-                    key={img.id}
-                    className={`relative aspect-[4/3] overflow-hidden rounded-lg shadow-lg
-                      ${index === 0 ? 'row-span-2' : ''}
-                      ${index === 2 ? 'row-span-2' : ''}
-                      ${index === 7 ? 'col-span-2' : ''}
-                    `}
-                  >
-                    <Image
-                      src={img.imageUrl}
-                      alt={img.description}
-                      data-ai-hint={img.imageHint}
-                      fill
-                      sizes="(max-width: 768px) 50vw, 25vw"
-                      className="object-cover transition-transform hover:scale-105"
-                    />
-                  </div>
-                )
-              )}
+             <p className="mt-6 font-semibold text-lg">
+              A HUMAN AND SPORTS EXPERIENCE AVAILABLE TO EVERYONE!
+            </p>
+            <div className="mt-8 grid grid-cols-1 gap-8 sm:grid-cols-3">
+              <Card>
+                <CardHeader>
+                  <CardTitle>DATES</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <ul className="space-y-2 text-muted-foreground">
+                    {internationalCamp.dates.map(date => (
+                      <li key={date} className="flex items-center gap-2"><Check className="h-4 w-4 text-primary" /> {date}</li>
+                    ))}
+                  </ul>
+                </CardContent>
+              </Card>
+              <Card>
+                <CardHeader>
+                  <CardTitle>COUNTRIES</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <ul className="space-y-2 text-muted-foreground">
+                    {internationalCamp.countries.map(country => (
+                      <li key={country} className="flex items-center gap-2"><Check className="h-4 w-4 text-primary" /> {country}</li>
+                    ))}
+                  </ul>
+                </CardContent>
+              </Card>
+              <Card>
+                <CardHeader>
+                  <CardTitle>SPORTS</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <ul className="space-y-2 text-muted-foreground text-sm grid grid-cols-2">
+                     {internationalCamp.sports.map(sport => (
+                      <li key={sport} className="flex items-center gap-2"><Check className="h-4 w-4 text-primary" /> {sport}</li>
+                    ))}
+                  </ul>
+                </CardContent>
+              </Card>
             </div>
+          </div>
+           <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-4">
+            {internationalCamp.images.map((img, index) => 
+              img && (
+                <div 
+                  key={img.id}
+                  className={`relative aspect-[4/3] overflow-hidden rounded-lg shadow-lg
+                    ${index === 0 ? 'row-span-2' : ''}
+                    ${index === 2 ? 'row-span-2' : ''}
+                    ${index === 7 ? 'col-span-2 md:col-span-4' : ''}
+                  `}
+                >
+                  <Image
+                    src={img.imageUrl}
+                    alt={img.description}
+                    data-ai-hint={img.imageHint}
+                    fill
+                    sizes="(max-width: 768px) 50vw, (max-width: 1200px) 25vw, 25vw"
+                    className="object-cover transition-transform hover:scale-105"
+                  />
+                </div>
+              )
+            )}
           </div>
         </div>
       </section>
