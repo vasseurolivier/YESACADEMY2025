@@ -101,6 +101,19 @@ export default function CampsPage() {
         </div>
       </section>
 
+      <section className="bg-white py-16 md:py-24">
+        <div className="container mx-auto">
+            <div className="mx-auto max-w-3xl text-center">
+                <h2 className="font-headline text-3xl font-bold md:text-4xl">
+                  An Adventure in Sport
+                </h2>
+                <p className="mt-4 text-lg text-muted-foreground">
+                  Youth Elite Sports Academy has served as a haven for children and their families since 2000.  Every summer, our caring and enthusiastic counselors dream up a wide range of creative programs for campers of all ages. Our activities and offerings are fun, challenging and accepting of everyone’s individual abilities. Above all, we are a down-to-earth Sports Camp dedicated to ensuring everyone have the time of their lives.
+                </p>
+              </div>
+        </div>
+      </section>
+
       <section className="container mx-auto py-16 md:py-24">
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
             {camps.map(camp => (
@@ -144,19 +157,6 @@ export default function CampsPage() {
           </div>
       </section>
 
-      <section className="bg-white py-16 md:py-24">
-        <div className="container mx-auto">
-            <div className="mx-auto max-w-3xl text-center">
-                <h2 className="font-headline text-3xl font-bold md:text-4xl">
-                  An Adventure in Sport
-                </h2>
-                <p className="mt-4 text-lg text-muted-foreground">
-                  Youth Elite Sports Academy has served as a haven for children and their families since 2000.  Every summer, our caring and enthusiastic counselors dream up a wide range of creative programs for campers of all ages. Our activities and offerings are fun, challenging and accepting of everyone’s individual abilities. Above all, we are a down-to-earth Sports Camp dedicated to ensuring everyone have the time of their lives.
-                </p>
-              </div>
-        </div>
-      </section>
-      
       <section className="bg-muted py-16 md:py-24">
         <div className="container mx-auto">
           <div>
