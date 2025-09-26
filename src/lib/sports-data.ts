@@ -58,7 +58,7 @@ export const sports: Sport[] = [
     slug: 'tennis',
     icon: TennisIcon,
     description: 'Master your serve and backhand on our courts.',
-    longDescription: "Perfect your game on our premier courts with instruction from ATP & WTA experienced coaches. Our tennis program is a comprehensive experience that builds a powerful, all-court game. We focus on developing technically sound groundstrokes, a reliable and powerful serve, and a strategic net game. Through a combination of live-ball drills, match-play simulations, and personalized video analysis, players learn to construct points, exploit opponent weaknesses, and compete with mental toughness. Our curriculum covers singles and doubles strategy, advanced footwork patterns, and physical conditioning tailored to the demands of modern tennis. From the first forehand to the final match point, we guide players on a path to excellence.",
+    longDescription: "Tennis is very much a sport the builds a resolve, a strategic mind and a respectful competitive spirit whilst developing all the necessary skills and muscles for a child's growth. Tennis is a sport that places great emphasis on physical co-ordination and responsiveness. Through repeated training, the child's spatial judgement and hand-brain co-ordination can be strengthened to a great extent, thus giving him/her an agile body. Being in open space for long periods of time relieves mental agitation and anxiety and helps to develop an optimistic spirit in children.",
     image: {
       url: PlaceHolderImages.find(p => p.id === 'sport-tennis')?.imageUrl || '',
       alt: PlaceHolderImages.find(p => p.id === 'sport-tennis')?.description || '',
