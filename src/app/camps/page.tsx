@@ -214,11 +214,7 @@ export default function CampsPage() {
                   <Image src={vipCampImages.side1.imageUrl} alt={vipCampImages.side1.description} fill data-ai-hint={vipCampImages.side1.imageHint} className="object-cover" />
                 </div>
               )}
-              {vipCampImages.main && (
-                <div className="relative aspect-square w-full max-w-sm self-center overflow-hidden rounded-lg shadow-xl">
-                   <Image src={vipCampImages.main.imageUrl} alt={vipCampImages.main.description} fill data-ai-hint={vipCampImages.main.imageHint} className="object-cover" />
-                </div>
-              )}
+              
                {vipCampImages.side2 && (
                 <div className="relative aspect-[4/3] w-2/3 self-end overflow-hidden rounded-lg shadow-xl">
                    <Image src={vipCampImages.side2.imageUrl} alt={vipCampImages.side2.description} fill data-ai-hint={vipCampImages.side2.imageHint} className="object-cover" />
