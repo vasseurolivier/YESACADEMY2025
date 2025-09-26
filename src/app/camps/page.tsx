@@ -101,6 +101,49 @@ export default function CampsPage() {
         </div>
       </section>
 
+      <section className="container mx-auto py-16 md:py-24">
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+            {camps.map(camp => (
+              <Card key={camp.title} className="flex flex-col overflow-hidden transition-shadow hover:shadow-lg">
+                {camp.image && (
+                  <div className="aspect-video relative">
+                    <Image 
+                      src={camp.image.imageUrl}
+                      alt={camp.image.description}
+                      data-ai-hint={camp.image.imageHint}
+                      fill
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                      className="object-cover"
+                    />
+                  </div>
+                )}
+                <CardHeader>
+                  <div className="flex items-center gap-4">
+                    <camp.icon className="h-8 w-8 text-accent" />
+                    <CardTitle className="text-2xl">{camp.title}</CardTitle>
+                  </div>
+                  <CardDescription>{camp.location}</CardDescription>
+                </CardHeader>
+                <CardContent className="flex-grow">
+                  <p className="text-muted-foreground">{camp.description}</p>
+                </CardContent>
+                <CardFooter>
+                  {camp.active ? (
+                    <Button asChild className="w-full">
+                      <Link href="/contact">Learn More & Register</Link>
+                    </Button>
+                  ) : (
+                    <Button variant="secondary" disabled className="w-full">
+                      <Info className="mr-2 h-4 w-4" />
+                      Information Coming Soon
+                    </Button>
+                  )}
+                </CardFooter>
+              </Card>
+            ))}
+          </div>
+      </section>
+
       <section className="bg-white py-16 md:py-24">
         <div className="container mx-auto">
             <div className="mx-auto max-w-3xl text-center">
@@ -196,49 +239,6 @@ export default function CampsPage() {
             )}
           </div>
         </div>
-      </section>
-
-      <section className="container mx-auto py-16 md:py-24">
-          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-            {camps.map(camp => (
-              <Card key={camp.title} className="flex flex-col overflow-hidden transition-shadow hover:shadow-lg">
-                {camp.image && (
-                  <div className="aspect-video relative">
-                    <Image 
-                      src={camp.image.imageUrl}
-                      alt={camp.image.description}
-                      data-ai-hint={camp.image.imageHint}
-                      fill
-                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                      className="object-cover"
-                    />
-                  </div>
-                )}
-                <CardHeader>
-                  <div className="flex items-center gap-4">
-                    <camp.icon className="h-8 w-8 text-accent" />
-                    <CardTitle className="text-2xl">{camp.title}</CardTitle>
-                  </div>
-                  <CardDescription>{camp.location}</CardDescription>
-                </CardHeader>
-                <CardContent className="flex-grow">
-                  <p className="text-muted-foreground">{camp.description}</p>
-                </CardContent>
-                <CardFooter>
-                  {camp.active ? (
-                    <Button asChild className="w-full">
-                      <Link href="/contact">Learn More & Register</Link>
-                    </Button>
-                  ) : (
-                    <Button variant="secondary" disabled className="w-full">
-                      <Info className="mr-2 h-4 w-4" />
-                      Information Coming Soon
-                    </Button>
-                  )}
-                </CardFooter>
-              </Card>
-            ))}
-          </div>
       </section>
 
       <section className="relative overflow-hidden bg-primary py-16 text-primary-foreground md:py-24">
