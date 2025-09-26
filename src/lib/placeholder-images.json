@@ -21,7 +21,7 @@
     {
       "id": "why-us-1",
       "description": "A group of diverse athletes celebrating a victory on a court in France.",
-      "imageUrl": "https://images.unsplash.com/photo-1508100134119-f93388e60d95?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxOXx8ZnJhbmNlJTIwc3BvcnR8ZW58MHx8fHwxNzU4NzA0Nzk0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1508100134119-f93388e60d95?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxOXx8ZnJhbmNlJTIwc3BvcnR8ZW58MHx8fHwxNzU4NzA0Nzk0fDA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "France sport"
     },
     {
@@ -45,7 +45,7 @@
     {
       "id": "sport-football",
       "description": "A football on a lush green pitch.",
-      "imageUrl": "https://images.unsplash.com/photo-1629977007371-0ba395424741?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxzb2NjZXIlMjBmb290YmFsbHxlbnwwfHx8fDE3NTg4NjM3MjV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1629977007371-0ba395424741?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxzb2NjZXIlMjBmb290YmFsbHxlbnwwfHx8fDE3NTg4NjM3MjV8MA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "football pitch"
     },
     {
@@ -127,10 +127,10 @@
       "imageHint": "tennis court"
     },
     {
-      "id": "gallery-horse-riding",
-      "description": "A young girl riding a horse.",
-      "imageUrl": "https://images.unsplash.com/photo-1599057632349-9b6d85c57713?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxraWQlMjBob3JzZSUyMHJpZGluZ3xlbnwwfHx8fDE3NTk0MzQ5ODB8MA&ixlib-rb-4.1.0&q=80&w=1080",
-      "imageHint": "kid horse"
+      "id": "gallery-basketball",
+      "description": "A basketball going through a hoop.",
+      "imageUrl": "https://images.unsplash.com/photo-1577471488278-16eec37ffcc2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxiYXNrZXRiYWxsfGVufDB8fHx8MTc1ODg2NTM4NXww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageHint": "basketball hoop"
     },
     {
       "id": "gallery-3",
@@ -143,12 +143,6 @@
       "description": "Tennis player serving",
       "imageUrl": "https://images.unsplash.com/photo-1554068865-24cecd4e34b8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx0ZW5uaXMlMjBzZXJ2ZXxlbnwwfHx8fDE3NTg3MDQ2NTV8MA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "tennis serve"
-    },
-    {
-      "id": "gallery-5",
-      "description": "Golfer swinging club",
-      "imageUrl": "https://images.unsplash.com/photo-1535131749006-b7f58c99034b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxnb2xmJTIwc3dpbmd8ZW58MHx8fHwxNzU4NzA0NjU1fDA&ixlib-rb-4.1.0&q=80&w=1080",
-      "imageHint": "golf swing"
     },
     {
       "id": "gallery-6",
@@ -243,7 +237,7 @@
     {
       "id": "age-group-kindergarten",
       "description": "A young child kicking a soccer ball on a field.",
-      "imageUrl": "https://images.unsplash.com/photo-1662428135039-1a9e41e42187?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxiYWJ5JTIwc29jY2VyfGVufDB8fHx8MTc1ODcwOTQzMnww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1662428135039-1a9e41e42ic87?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxiYWJ5JTIwc29jY2VyfGVufDB8fHx8MTc1ODcwOTQzMnww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "kids soccer"
     },
     {
@@ -254,12 +248,6 @@
     },
     {
       "id": "age-group-middle-school",
-      "description": "A high school soccer player in action on the field.",
-      "imageUrl": "https://images.unsplash.com/photo-1728520508268-1766303e1ebb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxoaWdoJTIwc2Nob29sJTIwc29jY2VyfGVufDB8fHx8MTc1ODcwODQ0Nnww&ixlib-rb-4.1.0&q=80&w=1080",
-      "imageHint": "high school soccer"
-    },
-    {
-      "id": "age-group-high-school",
       "description": "A high school soccer player in action on the field.",
       "imageUrl": "https://images.unsplash.com/photo-1728520508268-1766303e1ebb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxoaWdoJTIwc2Nob29sJTIwc29jY2VyfGVufDB8fHx8MTc1ODcwODQ0Nnww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "high school soccer"
@@ -326,9 +314,9 @@
     },
     {
       "id": "vip-kids",
-      "description": "Three well-dressed young boys smiling.",
-      "imageUrl": "https://images.unsplash.com/photo-1620051912020-f55928639178?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxyaWNoJTIwa2lkc3xlbnwwfHx8fDE3NTk0Mzk0MDF8MA&ixlib-rb-4.1.0&q=80&w=1080",
-      "imageHint": "rich kids"
+      "description": "A person on a horse, symbolizing equitation.",
+      "imageUrl": "https://images.unsplash.com/photo-1613085411234-9c83af5562d8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxlcXVpdGF0aW9ufGVufDB8fHx8MTc1ODg2Njg3OXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "equitation"
     }
   ]
 }
