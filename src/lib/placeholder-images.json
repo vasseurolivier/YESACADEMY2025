@@ -21,37 +21,37 @@
     {
       "id": "why-us-1",
       "description": "A group of diverse athletes celebrating a victory on a court in France.",
-      "imageUrl": "https://images.unsplash.com/photo-1508100134119-f93388e60d95?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxOXx8ZnJhbmNlJTIwc3BvcnR8ZW58MHx8fHwxNzU4NzA0Nzk0fDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1508100134119-f93388e60d95?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxOXx8ZnJhbmNlJTIwc3BvcnR8ZW58MHx8fHwxNzU4NzA0Nzk0fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "France sport"
     },
     {
       "id": "testimonial-1",
       "description": "Portrait of a smiling Asian man.",
-      "imageUrl": "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxtYW4lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NTg1ODI4MTZ8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxtYW4lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NTg1ODI4MTZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "man portrait"
     },
     {
       "id": "testimonial-2",
       "description": "Portrait of a caucasian man.",
-      "imageUrl": "https://images.unsplash.com/photo-1624395213043-fa2e123b2656?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxtYW4lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NTg1ODI4MTZ8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1624395213043-fa2e123b2656?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxtYW4lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NTg1ODI4MTZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "man portrait"
     },
     {
       "id": "testimonial-3",
       "description": "Portrait of a young Vietnamese person.",
-      "imageUrl": "https://images.unsplash.com/photo-1520423465871-0866049020b7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHx0ZWVuYWdlciUyMHBvcnRyYWl0fGVufDB8fHx8MTc1ODYwMzY1MHww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1520423465871-0866049020b7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHx0ZWVuYWdlciUyMHBvcnRyYWl0fGVufDB8fHx8MTc1ODYwMzY1MHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "teenager portrait"
     },
     {
       "id": "sport-football",
       "description": "A football on a lush green pitch.",
-      "imageUrl": "https://images.unsplash.com/photo-1579952363873-27f3bade9f55?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxmb290YmFsbHxlbnwwfHx8fDE3NTgzNjkxOTJ8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1579952363873-27f3bade9f55?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxmb290YmFsbHxlbnwwfHx8fDE3NTgzNjkxOTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "football pitch"
     },
     {
       "id": "sport-basketball",
       "description": "A basketball court from a low angle.",
-      "imageUrl": "https://images.unsplash.com/photo-1515523110800-9415d13b84a8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxiYXNrZXRiYWxsfGVufDB8fHx8MTc1ODM2OTI3NXww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1515523110800-9415d13b84a8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxiYXNrZXRiYWxsfGVufDB8fHx8MTc1ODM2OTI3NXww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "basketball court"
     },
     {
@@ -63,7 +63,7 @@
     {
       "id": "sport-tennis",
       "description": "A tennis racket and ball on a clay court.",
-      "imageUrl": "https://images.unsplash.com/photo-1622163642998-1ea32b0bbc67?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8dGVubmlzfGVufDB8fHx8MTc1ODM3MDUxMXww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1622163642998-1ea32b0bbc67?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8dGVubmlzfGVufDB8fHx8MTc1ODM3MDUxMXww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "tennis court"
     },
     {
@@ -75,7 +75,7 @@
     {
       "id": "sport-scuba",
       "description": "A scuba diver exploring a coral reef.",
-      "imageUrl": "https://images.unsplash.com/photo-1514907283155-ea5f4094c70c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHhjb3JhbCUyMHJlZWZ8ZW58MHx8fHwxNzU4Njk1Njc4fDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1514907283155-ea5f4094c70c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHhjb3JhbCUyMHJlZWZ8ZW58MHx8fHwxNzU4Njk1Njc4fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "coral reef"
     },
     {
@@ -87,31 +87,31 @@
     {
       "id": "gallery-1",
       "description": "Children of different ages playing sports together.",
-      "imageUrl": "https://images.unsplash.com/photo-1723980856085-8f8e725329a7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxhZ2UlMjBncm91cCUyMHNwb3J0fGVufDB8fHx8MTc1ODcwNDU5MHww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1723980856085-8f8e725329a7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxhZ2UlMjBncm91cCUyMHNwb3J0fGVufDB8fHx8MTc1ODcwNDU5MHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "age group sport"
     },
     {
       "id": "gallery-2",
       "description": "The word 'Advantages' spelled out with scrabble tiles.",
-      "imageUrl": "https://images.unsplash.com/photo-1621929209241-3df9f6fa1743?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhZHZhbnRhZ2VzfGVufDB8fHx8MTc1ODcwNTA5NHww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1621929209241-3df9f6fa1743?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhZHZhbnRhZ2VzfGVufDB8fHx8MTc1ODcwNTA5NHww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "advantages"
     },
     {
       "id": "gallery-3",
       "description": "Volleyball team celebration",
-      "imageUrl": "https://images.unsplash.com/photo-1690192123455-6337e6db4179?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx0ZWFtJTIwY2VsZWJyYXRpb258ZW58MHx8fHwxNzU4NjMzNTI2fDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1690192123455-6337e6db4179?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx0ZWFtJTIwY2VsZWJyYXRpb258ZW58MHx8fHwxNzU4NjMzNTI2fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "team celebration"
     },
     {
       "id": "gallery-4",
       "description": "Tennis player serving",
-      "imageUrl": "https://images.unsplash.com/photo-1554068865-24cecd4e34b8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx0ZW5uaXMlMjBzZXJ2ZXxlbnwwfHx8fDE3NTg3MDQ2NTV8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1554068865-24cecd4e34b8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx0ZW5uaXMlMjBzZXJ2ZXxlbnwwfHx8fDE3NTg3MDQ2NTV8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "tennis serve"
     },
     {
       "id": "gallery-5",
       "description": "Golfer swinging club",
-      "imageUrl": "https://images.unsplash.com/photo-1535131749006-b7f58c99034b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxnb2xmJTIwc3dpbmd8ZW58MHx8fHwxNzU4NzA0NjU1fDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1535131749006-b7f58c99034b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxnb2xmJTIwc3dpbmd8ZW58MHx8fHwxNzU4NzA0NjU1fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "golf swing"
     },
     {
@@ -165,7 +165,7 @@
     {
       "id": "program-private",
       "description": "A coach giving one-on-one tennis instruction.",
-      "imageUrl": "https://images.unsplash.com/photo-1554686177-87b3c0e1a575?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxwcml2YXRlJTIwY29hY2hpbmd8ZW58MHx8fHwxNzU4MzczMzk5fDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1554686177-87b3c0e1a575?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxwcml2YXRlJTIwY29hY2hpbmd8ZW58MHx8fHwxNzU4MzczMzk5fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "tennis lesson"
     },
     {
@@ -201,7 +201,7 @@
     {
       "id": "france-camp",
       "description": "Eiffel tower in Paris, France.",
-      "imageUrl": "https://images.unsplash.com/photo-1549144511-f099e773c147?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxwYXJpc3xlbnwwfHx8fDE3NTg3MTQ1NTZ8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1549144511-f099e773c147?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxwYXJpc3xlbnwwfHx8fDE3NTg3MTQ1NTZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "Eiffel tower"
     },
     {
@@ -231,37 +231,37 @@
     {
       "id": "age-group-adults",
       "description": "A university soccer player scoring a goal during a match.",
-      "imageUrl": "https://images.unsplash.com/photo-1721441905204-ea1b56b9d7d3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMnx8dW5pdmVyc2l0eSUyMHNvY2NlcnxlbnwwfHx8fDE3NTg3MDg1NzZ8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1721441905204-ea1b56b9d7d3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMnx8dW5pdmVyc2l0eSUyMHNvY2NlcnxlbnwwfHx8fDE3NTg3MDg1NzZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "university soccer"
     },
     {
       "id": "methodology-philosophy",
       "description": "A coach drawing tactics on a whiteboard.",
-      "imageUrl": "https://images.unsplash.com/photo-1522778119026-d647f0596c20?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxzb2NjZXJ8ZW58MHx8fHwxNzU4NzEwNjM4fDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1522778119026-d647f0596c20?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxzb2NjZXJ8ZW58MHx8fHwxNzU4NzEwNjM4fDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "soccer"
     },
     {
       "id": "methodology-hero",
       "description": "A close-up shot of a soccer ball with a stadium in the background.",
-      "imageUrl": "https://images.unsplash.com/photo-1551958214-2d59cc7a36f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxzb2NjZXIlMjBzdGFkaXVtfGVufDB8fHx8MTczODQ0MDk0Mnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1551958214-2d59cc7a36f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxzb2NjZXIlMjBzdGFkaXVtfGVufDB8fHx8MTczODQ0MDk0Mnww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "soccer stadium"
     },
     {
       "id": "advantage-hero",
       "description": "A trophy being held up in victory.",
-      "imageUrl": "https://images.unsplash.com/photo-1598257006624-984f1314b1b3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx0cm9waHl8ZW58MHx8fHwxNzU5MjcyMTQyfDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1598257006624-984f1314b1b3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx0cm9waHl8ZW58MHx8fHwxNzU5MjcyMTQyfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "trophy"
     },
     {
       "id": "advantage-coaching",
       "description": "A dedicated coach giving instructions to young soccer players.",
-      "imageUrl": "https://images.unsplash.com/photo-1526232761682-d26e03ac148e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxjb2FjaCUyMHNvY2NlcnxlbnwwfHx8fDE3NTg3MTI2NTl8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1526232761682-d26e03ac148e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxjb2FjaCUyMHNvY2NlcnxlbnwwfHx8fDE3NTg3MTI2NTl8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "coach soccer"
     },
     {
       "id": "advantage-development",
       "description": "A coach giving advice to a young soccer player.",
-      "imageUrl": "https://images.unsplash.com/photo-1585757318177-0570a997dc3a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzb2NjZXIlMjBjb2FjaHxlbnwwfHx8fDE3NTg3MTE3Nzd8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1585757318177-0570a997dc3a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzb2NjZXIlMjBjb2FjaHxlbnwwfHx8fDE3NTg3MTE3Nzd8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "soccer coach"
     },
     {
@@ -273,8 +273,20 @@
     {
       "id": "advantage-competition",
       "description": "A youth football team during a match.",
-      "imageUrl": "https://images.unsplash.com/photo-1626248801379-51a0748a5f96?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxzb2NjZXIlMjBtYXRjaHxlbnwwfHx8fDE3NTg3MTI5MjZ8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1626248801379-51a0748a5f96?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxzb2NjZXIlMjBtYXRjaHxlbnwwfHx8fDE3NTg3MTI5MjZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "sports competition"
+    },
+    {
+      "id": "activity-local-camps",
+      "description": "A young girl on a tennis court, smiling.",
+      "imageUrl": "https://images.unsplash.com/photo-1594464125839-813a77610c1f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxraWQlMjB0ZW5uaXN8ZW58MHx8fHwxNzU5Mzk3NTc1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "kid tennis"
+    },
+    {
+      "id": "activity-international-camps",
+      "description": "Children learning to sail on small sailboats.",
+      "imageUrl": "https://images.unsplash.com/photo-1632763321528-2a135a15324d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxjaGlsZHJlbiUyMHNhaWxpbmd8ZW58MHx8fHwxNzU5Mzk3NjQyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "children sailing"
     }
   ]
 }

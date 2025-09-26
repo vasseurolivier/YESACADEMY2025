@@ -31,6 +31,24 @@ const testimonials = [
   },
 ];
 
+const activities = [
+    {
+        title: 'Yearly Academies',
+        description: "Operated throughout the year and offering a wide selection of sports focusing on the fundamental values of sportive development but also on the discovery and mastery of elite sports, our yearly academy's sports programs are all based on French methodologies. Our experts (coaches) are all trained in our methods, with the sole objective being the children's development and progress.",
+        image: PlaceHolderImages.find(p => p.id === 'sport-football')
+    },
+    {
+        title: 'Local Camps',
+        description: "Concerned about the development and the well-being of children, YES Academy offers numerous camps to its athletes during the various school holidays. These camps can have different formats ranging from 5 days to 2 weeks, and also provides kids with many opportunities for cultural enrichment via diverse cultural activities.",
+        image: PlaceHolderImages.find(p => p.id === 'activity-local-camps')
+    },
+    {
+        title: 'International Camps',
+        description: "Concerned about the development and the well-being of children, YES Academy offers numerous camps to its athletes during the various school holidays. These camps can have different formats ranging from 5 days to 2 weeks, and provide kids with many opportunities for cultural enrichment via diverse cultural activities.",
+        image: PlaceHolderImages.find(p => p.id === 'activity-international-camps')
+    }
+]
+
 export default function Home() {
   const heroImage = PlaceHolderImages.find(p => p.id === 'hero-football-match');
 
@@ -62,7 +80,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bg-white py-16 md:py-24">
+      <section className="py-16 md:py-24">
         <div className="container">
           <div className="text-center">
             <h2 className="font-headline text-3xl font-bold md:text-4xl">Why YES ACADEMY?</h2>
@@ -136,6 +154,36 @@ export default function Home() {
                 </Link>
                 ))}
             </div>
+          </div>
+        </div>
+      </section>
+
+       <section className="bg-white py-16 md:py-24">
+        <div className="container mx-auto">
+          <div className="mx-auto max-w-3xl text-center">
+            <h2 className="font-headline text-3xl font-bold md:text-4xl">
+              YES Academy Activities
+            </h2>
+          </div>
+          <div className="mt-12 grid grid-cols-1 gap-12 text-center md:grid-cols-3">
+            {activities.map(activity => (
+              <div key={activity.title} className="flex flex-col items-center">
+                {activity.image && (
+                  <div className="relative h-32 w-32 overflow-hidden rounded-full">
+                    <Image
+                      src={activity.image.imageUrl}
+                      alt={activity.image.description}
+                      data-ai-hint={activity.image.imageHint}
+                      fill
+                      sizes="128px"
+                      className="object-cover"
+                    />
+                  </div>
+                )}
+                <h3 className="mt-6 text-xl font-semibold">{activity.title}</h3>
+                <p className="mt-2 text-muted-foreground">{activity.description}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
