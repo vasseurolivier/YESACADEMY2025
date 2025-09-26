@@ -1,7 +1,7 @@
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
-import { Sun, Snowflake, Flag, Info, Check } from 'lucide-react';
+import { Sun, Snowflake, Flag, Info, Check, Square } from 'lucide-react';
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
@@ -51,6 +51,28 @@ const internationalCamp = {
     PlaceHolderImages.find(p => p.id === 'gallery-tennis-kid'),
     PlaceHolderImages.find(p => p.id === 'gallery-horse-riding'),
   ]
+}
+
+const vipCamps = [
+  {
+    title: 'Skiing Camp',
+    description: "France is a country with many mountains where you can practice SNOW sports, especially skiing. It is therefore not surprising that our athletes obtain very good results during world competitions."
+  },
+  {
+    title: 'Sailing Camp',
+    description: "France has been training exceptional navigators for decades. From Eric Tabarly to François Gabart, the country has established itself as a nation with a strong sailing culture. Sailing courses for children are designed to be both fun and educational. While sailing, young sailors learn the basics of sailing, equipment management, and develop a strong sense of direction and responsibility. These courses are also an excellent opportunity for children to develop their self-confidence."
+  },
+  {
+    title: 'Horse Riding Camp',
+    description: "The question of France's reputation in the equestrian sector no longer arises since the country has become a demographically essential country for horse riding. France also hosts the largest equestrian gathering in the world in Sologne. A record officially validated by the Guinness World Records. It is a gentle sport which promotes awareness in young people, gives muscle tone and improves balance and longevity of the body."
+  }
+];
+
+const vipCampImages = {
+  main: PlaceHolderImages.find(p => p.id === 'gallery-skiing'),
+  side1: PlaceHolderImages.find(p => p.id === 'gallery-sailing'),
+  side2: PlaceHolderImages.find(p => p.id === 'gallery-horse-riding'),
+  vip: PlaceHolderImages.find(p => p.id === 'vip-kids'),
 }
 
 export default function CampsPage() {
@@ -173,6 +195,62 @@ export default function CampsPage() {
                 </div>
               )
             )}
+          </div>
+        </div>
+      </section>
+
+      <section className="relative overflow-hidden bg-primary py-16 text-primary-foreground md:py-24">
+        <div 
+          className="absolute inset-0 bg-primary-foreground/10"
+          style={{
+            clipPath: 'polygon(0 0, 100% 0, 100% 80%, 0% 100%)',
+          }}
+        />
+        <div className="container relative z-10 mx-auto">
+          <div className="grid grid-cols-1 gap-12 md:grid-cols-2">
+            <div className="flex flex-col justify-center space-y-4">
+              {vipCampImages.side1 && (
+                <div className="relative aspect-[4/3] w-2/3 self-start overflow-hidden rounded-lg shadow-xl">
+                  <Image src={vipCampImages.side1.imageUrl} alt={vipCampImages.side1.description} fill data-ai-hint={vipCampImages.side1.imageHint} className="object-cover" />
+                </div>
+              )}
+              {vipCampImages.main && (
+                <div className="relative aspect-square w-full max-w-sm self-center overflow-hidden rounded-lg shadow-xl">
+                   <Image src={vipCampImages.main.imageUrl} alt={vipCampImages.main.description} fill data-ai-hint={vipCampImages.main.imageHint} className="object-cover" />
+                </div>
+              )}
+               {vipCampImages.side2 && (
+                <div className="relative aspect-[4/3] w-2/3 self-end overflow-hidden rounded-lg shadow-xl">
+                   <Image src={vipCampImages.side2.imageUrl} alt={vipCampImages.side2.description} fill data-ai-hint={vipCampImages.side2.imageHint} className="object-cover" />
+                </div>
+              )}
+            </div>
+            <div className="flex flex-col justify-center">
+              <h2 className="font-headline text-4xl font-bold">SPECIAL EXPERIENCE</h2>
+              <h3 className="font-headline text-2xl text-accent">PRIVATE AND VIP SPORTS</h3>
+              {vipCampImages.vip && (
+                <div className="relative my-4 h-24 w-40 overflow-hidden rounded-lg border-2 border-accent shadow-lg">
+                   <Image src={vipCampImages.vip.imageUrl} alt={vipCampImages.vip.description} fill data-ai-hint={vipCampImages.vip.imageHint} className="object-cover" />
+                </div>
+              )}
+              <p className="text-primary-foreground/80">
+                To respond to numerous and increasing demands, we have been developing our elite sports camps programs. Often meant for a high society clientele, with sports such as skiing, horse riding or even sailing which are very popular with our VIPs.
+              </p>
+              <p className="mt-2 text-primary-foreground/80">
+                These sports are exclusively offered during our camps since they are only accessible in specific countries.
+              </p>
+              <div className="mt-8 space-y-6">
+                {vipCamps.map(camp => (
+                  <div key={camp.title}>
+                    <h4 className="flex items-center gap-2 font-headline text-lg font-semibold text-accent">
+                      <Square className="h-4 w-4" />
+                      {camp.title.toUpperCase()}
+                    </h4>
+                    <p className="mt-1 text-sm text-primary-foreground/80">{camp.description}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </section>
