@@ -69,7 +69,6 @@ const vipCamps = [
 ];
 
 const vipCampImages = {
-  main: PlaceHolderImages.find(p => p.id === 'gallery-skiing'),
   side1: PlaceHolderImages.find(p => p.id === 'gallery-sailing'),
   side2: PlaceHolderImages.find(p => p.id === 'gallery-horse-riding'),
   vip: PlaceHolderImages.find(p => p.id === 'vip-kids'),
@@ -208,19 +207,6 @@ export default function CampsPage() {
         />
         <div className="container relative z-10 mx-auto">
           <div className="grid grid-cols-1 gap-12 md:grid-cols-2">
-            <div className="flex flex-col justify-center space-y-4">
-              {vipCampImages.side1 && (
-                <div className="relative aspect-[4/3] w-2/3 self-start overflow-hidden rounded-lg shadow-xl">
-                  <Image src={vipCampImages.side1.imageUrl} alt={vipCampImages.side1.description} fill data-ai-hint={vipCampImages.side1.imageHint} className="object-cover" />
-                </div>
-              )}
-              
-               {vipCampImages.side2 && (
-                <div className="relative aspect-[4/3] w-2/3 self-end overflow-hidden rounded-lg shadow-xl">
-                   <Image src={vipCampImages.side2.imageUrl} alt={vipCampImages.side2.description} fill data-ai-hint={vipCampImages.side2.imageHint} className="object-cover" />
-                </div>
-              )}
-            </div>
             <div className="flex flex-col justify-center">
               <h2 className="font-headline text-4xl font-bold">SPECIAL EXPERIENCE</h2>
               <h3 className="font-headline text-2xl text-accent">PRIVATE AND VIP SPORTS</h3>
@@ -246,6 +232,19 @@ export default function CampsPage() {
                   </div>
                 ))}
               </div>
+            </div>
+            <div className="flex flex-col justify-center space-y-4">
+              {vipCampImages.side1 && (
+                <div className="relative aspect-[4/3] w-2/3 self-start overflow-hidden rounded-lg shadow-xl">
+                  <Image src={vipCampImages.side1.imageUrl} alt={vipCampImages.side1.description} fill data-ai-hint={vipCampImages.side1.imageHint} className="object-cover" />
+                </div>
+              )}
+              
+               {vipCampImages.side2 && (
+                <div className="relative aspect-[4/3] w-2/3 self-end overflow-hidden rounded-lg shadow-xl">
+                   <Image src={vipCampImages.side2.imageUrl} alt={vipCampImages.side2.description} fill data-ai-hint={vipCampImages.side2.imageHint} className="object-cover" />
+                </div>
+              )}
             </div>
           </div>
         </div>
