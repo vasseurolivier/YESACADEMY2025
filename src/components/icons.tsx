@@ -5,12 +5,12 @@ import Image from 'next/image';
 export const Logo = () => (
   <div className="flex items-center gap-2" style={{ height: 'auto' }}>
     <Image
-      src={`/logo.png?t=${new Date().getTime()}`}
+      src="/logo.png"
       alt="YES ACADEMY Logo"
       width={40}
       height={40}
       className="object-contain"
-      unoptimized // Important for cache busting with query params
+      unoptimized // Using a static image, but keeping unoptimized just in case to avoid Next.js image processing conflicts
     />
     <span className="font-bold text-lg text-foreground">YES ACADEMY</span>
   </div>
