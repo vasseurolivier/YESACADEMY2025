@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Legal & Privacy',
-  description: 'Read the legal mentions, privacy policy, and terms of service for YES ACADEMY.',
+    title: "Legal & Privacy",
+    description: "Read the legal mentions, privacy policy, and terms of service for YES ACADEMY.",
 };
 
 export default function LegalPage() {

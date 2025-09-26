@@ -5,8 +5,8 @@ import type { Metadata } from 'next';
 import Image from 'next/image';
 
 export const metadata: Metadata = {
-  title: 'Our Sports',
-  description: 'Explore the wide range of sports offered at YES ACADEMY, from football and basketball to climbing and scuba diving.',
+    title: "Our Sports",
+    description: "Explore the wide range of sports offered at YES ACADEMY, from football and basketball to climbing and scuba diving.",
 };
 
 export default function SportsPage() {
@@ -22,7 +22,7 @@ export default function SportsPage() {
       </section>
 
       <section className="py-16 md:py-24">
-        <div className="container mx-auto">
+        <div className="container">
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
             {sports.map(sport => (
               <Link href={`/sports/${sport.slug}`} key={sport.name} className="group">
@@ -37,7 +37,8 @@ export default function SportsPage() {
                       className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
                     />
                   </div>
-                  <CardHeader>
+                  <CardHeader className="flex-row items-center gap-4">
+                    <sport.icon className="h-10 w-10 shrink-0 text-primary" />
                     <div>
                       <CardTitle>{sport.name}</CardTitle>
                     </div>

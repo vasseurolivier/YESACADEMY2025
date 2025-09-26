@@ -7,8 +7,8 @@ import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 export const metadata: Metadata = {
-  title: 'Camps',
-  description: 'Join our exciting summer and winter sports camps in China and Vietnam for an unforgettable experience of growth and fun.',
+    title: "Camps",
+    description: "Join our exciting summer and winter sports camps in China and Vietnam for an unforgettable experience of growth and fun.",
 };
 
 const camps = [
@@ -16,7 +16,7 @@ const camps = [
     icon: Sun,
     title: 'Summer Champions Camp',
     location: 'China & Vietnam',
-    description: "An action-packed summer of sports, friendship, and fun. Our multi-sport camps offer a chance to try new activities and master existing skills in a vibrant, international environment. Participants will benefit from professional coaching, competitive matches, and cultural excursions, creating lasting memories.",
+    description: 'An action-packed summer of sports, friendship, and fun. Our multi-sport camps offer a chance to try new activities and master existing skills in a vibrant, international environment. Participants will benefit from professional coaching, competitive matches, and cultural excursions, creating lasting memories.',
     active: false,
     image: PlaceHolderImages.find(p => p.id === 'camps-hero'),
   },
@@ -24,15 +24,16 @@ const camps = [
     icon: Snowflake,
     title: 'Winter Intensive Camp',
     location: 'China & Vietnam',
-    description: "Use the winter break to gain a competitive edge. These intensive camps focus on deep skill development, advanced tactical training, and strategic gameplay analysis to prepare athletes for the upcoming season. It's a perfect opportunity for dedicated players to elevate their game.",
+    description: 'Use the winter break to gain a competitive edge. These intensive camps focus on deep skill development, advanced tactical training, and strategic gameplay analysis to prepare athletes for the upcoming season. It\'s a perfect opportunity for dedicated players to elevate their game.',
     active: false,
+
     image: PlaceHolderImages.find(p => p.id === 'program-intensive'),
   },
    {
     icon: Flag,
     title: 'France 2026 Special Camp',
     location: 'France',
-    description: "A unique opportunity to train in France, immersing yourself in a country renowned for sporting excellence. This special camp will offer specialized coaching, participation in local tournaments, and a rich cultural experience. More information will be available soon.",
+    description: 'A unique opportunity to train in France, immersing yourself in a country renowned for sporting excellence. This special camp will offer specialized coaching, participation in local tournaments, and a rich cultural experience. More information will be available soon.',
     active: false,
     image: PlaceHolderImages.find(p => p.id === 'france-camp'),
   },
@@ -44,6 +45,7 @@ export default function CampsPage() {
   return (
     <div>
        <section className="relative h-64 w-full bg-primary">
+         <div className="container">
          {heroImage && (
              <Image
              src={heroImage.imageUrl}
@@ -60,6 +62,7 @@ export default function CampsPage() {
             Academy Camps
           </h1>
           <p className="mt-2 max-w-2xl text-lg">Unforgettable Experiences, Lifelong Skills</p>
+        </div>
         </div>
       </section>
 

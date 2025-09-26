@@ -13,21 +13,21 @@ const testimonials = [
     role: 'Parent of a U12 Player',
     avatar: 'LW',
     image: PlaceHolderImages.find(p => p.id === 'testimonial-1')?.imageUrl,
-    testimonial: "The coaching at YES ACADEMY is world-class. My son's confidence and skills have skyrocketed since he joined the football program. The facilities are top-notch and the community is so welcoming.",
+    testimonial: 'The coaching at YES ACADEMY is world-class. My son\'s confidence and skills have skyrocketed since he joined the football program. The facilities are top-notch and the community is so welcoming.',
   },
   {
     name: 'Alex Johnson',
     role: 'Adult Tennis Member',
     avatar: 'AJ',
     image: PlaceHolderImages.find(p => p.id === 'testimonial-2')?.imageUrl,
-    testimonial: "As an expat, finding a premium sports community was key. YES ACADEMY exceeded my expectations. The tennis coaches are fantastic and I've met so many great people here.",
+    testimonial: 'As an expat, finding a premium sports community was key. YES ACADEMY exceeded my expectations. The tennis coaches are fantastic and I\'ve met so many great people here.',
   },
   {
     name: 'Trần Minh',
     role: 'Teenage Basketball Player',
     avatar: 'TM',
     image: PlaceHolderImages.find(p => p.id === 'testimonial-3')?.imageUrl,
-    testimonial: "The summer camp was the best experience of my life! I learned so much, improved my game, and made friends from all over the world. I can't wait for the next one.",
+    testimonial: 'The summer camp was the best experience of my life! I learned so much, improved my game, and made friends from all over the world. I can\'t wait for the next one.',
   },
 ];
 
@@ -43,6 +43,7 @@ export default function Home() {
                 alt={heroImage.description}
                 data-ai-hint={heroImage.imageHint}
                 fill
+                sizes="100vw"
                 className="object-cover"
                 priority
             />
@@ -81,6 +82,7 @@ export default function Home() {
                             alt={sport.image.alt}
                             data-ai-hint={sport.image.hint}
                             fill
+                            sizes="(max-width: 640px) 50vw, (max-width: 768px) 33vw, (max-width: 1024px) 25vw, 14vw"
                             className="object-cover transition-transform duration-300 group-hover:scale-110"
                         />
                         <div className="absolute inset-0 bg-black/40 transition-colors duration-300 group-hover:bg-black/20" />

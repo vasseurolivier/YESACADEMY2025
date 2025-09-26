@@ -3,8 +3,8 @@ import type { Metadata } from 'next';
 import { ContactForm } from '@/components/contact-form';
 
 export const metadata: Metadata = {
-  title: 'Enroll Now',
-  description: 'Join YES ACADEMY today. Fill out our enrollment form to start your journey to sporting excellence in China or Vietnam.',
+    title: "Enroll Now",
+    description: "Join YES ACADEMY today. Fill out our enrollment form to start your journey to sporting excellence in China or Vietnam.",
 };
 
 const enrollmentSteps = [
@@ -37,81 +37,76 @@ export default function ContactPage() {
         </div>
       </section>
 
-      <div className="container mx-auto">
-        <section className="py-16 md:py-24">
-          <div className="container mx-auto max-w-7xl">
-            <div className="grid grid-cols-1 gap-16 lg:grid-cols-5">
-              <div className="lg:col-span-3">
-                <h2 className="font-headline text-3xl font-bold">Start Your Enrollment</h2>
-                  <p className="mt-4 text-muted-foreground mb-8">
-                  Tell us about yourself or your child, and which program you're interested in. Our team will get back to you shortly to finalize the details.
-                  </p>
-                  <ContactForm />
-              </div>
-
-              <div className="lg:col-span-2">
-                <h2 className="font-headline text-3xl font-bold">A Simple Process</h2>
+      <section className="py-16 md:py-24">
+        <div className="container mx-auto max-w-7xl">
+          <div className="grid grid-cols-1 gap-16 lg:grid-cols-5">
+            <div className="lg:col-span-3">
+              <h2 className="font-headline text-3xl font-bold">Start Your Enrollment</h2>
                 <p className="mt-4 text-muted-foreground mb-8">
-                  Joining our community is straightforward. Here’s how it works.
+                 Tell us about yourself or your child, and which program you're interested in. Our team will get back to you shortly to finalize the details.
                 </p>
-                <div className="space-y-6">
-                    {enrollmentSteps.map(step => (
-                        <div key={step.title} className="flex items-start gap-4">
-                            <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10 text-primary">
-                                <step.icon className="h-6 w-6" />
-                            </div>
-                            <div>
-                                <h3 className="font-semibold">{step.title}</h3>
-                                <p className="text-sm text-muted-foreground">{step.description}</p>
-                            </div>
-                        </div>
-                    ))}
-                </div>
+                <ContactForm />
+            </div>
+
+            <div className="lg:col-span-2">
+              <h2 className="font-headline text-3xl font-bold">A Simple Process</h2>
+              <p className="mt-4 text-muted-foreground mb-8">
+                Joining our community is straightforward. Here’s how it works.
+              </p>
+              <div className="space-y-6">
+                  {enrollmentSteps.map(step => (
+                      <div key={step.title} className="flex items-start gap-4">
+                          <div className="flex h-12 w-12 items-center justify-center rounded-full bg-primary/10 text-primary">
+                              <step.icon className="h-6 w-6" />
+                          </div>
+                          <div>
+                              <h3 className="font-semibold">{step.title}</h3>
+                              <p className="text-sm text-muted-foreground">{step.description}</p>
+                          </div>
+                      </div>
+                  ))}
               </div>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <section className="bg-white py-16 md:py-24">
-          <div className="container mx-auto">
-            <h2 className="text-center font-headline text-3xl font-bold">Our Locations</h2>
-            <p className="text-center mt-4 text-muted-foreground max-w-2xl mx-auto">
-              Our teams are ready to welcome you at our state-of-the-art facilities in both China and Vietnam.
-            </p>
-            <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-center">
-                <div className="rounded-lg border p-6">
-                  <h3 className="text-xl font-semibold">YES ACADEMY - Shanghai</h3>
-                  <div className="mt-4 space-y-2 text-muted-foreground">
-                    <p className="flex items-center justify-center"><MapPin className="mr-2 h-4 w-4" /> 345 Huangyang Road Pudong, Shanghai China 201206</p>
-                    <p className="flex items-center justify-center"><Phone className="mr-2 h-4 w-4" /> +86 138 1738 9758</p>
-                    <p className="flex items-center justify-center"><Mail className="mr-2 h-4 w-4" /> contact@yesacademies.org</p>
-                  </div>
-                </div>
-
-                <div className="rounded-lg border p-6">
-                  <h3 className="text-xl font-semibold">YES ACADEMY - Vietnam</h3>
-                  <div className="mt-4 space-y-2 text-muted-foreground">
-                    <p className="flex items-center justify-center"><MapPin className="mr-2 h-4 w-4" /> Hoa Lan Road, Vinhomes Riverside Phuc Loi Ward Hanoi 100000</p>
-                    <p className="flex items-center justify-center"><Phone className="mr-2 h-4 w-4" /> +84 32 603 0993</p>
-                    <p className="flex items-center justify-center"><Mail className="mr-2 h-4 w-4" /> contact@yesacademies.org</p>
-                  </div>
-                </div>
-                
-                <div className="rounded-lg border p-6 md:col-span-2 lg:col-span-1">
-                  <h3 className="text-xl font-semibold">YES ACADEMY - Yiwu</h3>
-                  <div className="mt-4 space-y-2 text-muted-foreground">
-                    <p className="flex items-center justify-center"><MapPin className="mr-2 h-4 w-4" /> Wanda Riverside Football Stadium, Xijiang Road, Yiwu</p>
-                    <p className="flex items-center justify-center"><Phone className="mr-2 h-4 w-4" /> +86 138 1738 9758</p>
-                    <p className="flex items-center justify-center"><Mail className="mr-2 h-4 w-4" /> contact@yesacademies.org</p>
-                  </div>
+      <section className="bg-white py-16 md:py-24">
+        <div className="container mx-auto">
+          <h2 className="text-center font-headline text-3xl font-bold">Our Locations</h2>
+          <p className="text-center mt-4 text-muted-foreground max-w-2xl mx-auto">
+            Our teams are ready to welcome you at our state-of-the-art facilities in both China and Vietnam.
+          </p>
+           <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-center">
+              <div className="rounded-lg border p-6">
+                <h3 className="text-xl font-semibold">YES ACADEMY - Shanghai</h3>
+                <div className="mt-4 space-y-2 text-muted-foreground">
+                  <p className="flex items-center justify-center"><MapPin className="mr-2 h-4 w-4" /> 345 Huangyang Road Pudong, Shanghai China 201206</p>
+                  <p className="flex items-center justify-center"><Phone className="mr-2 h-4 w-4" /> +86 138 1738 9758</p>
+                  <p className="flex items-center justify-center"><Mail className="mr-2 h-4 w-4" /> contact@yesacademies.org</p>
                 </div>
               </div>
-          </div>
-        </section>
-      </div>
+
+              <div className="rounded-lg border p-6">
+                <h3 className="text-xl font-semibold">YES ACADEMY - Vietnam</h3>
+                <div className="mt-4 space-y-2 text-muted-foreground">
+                  <p className="flex items-center justify-center"><MapPin className="mr-2 h-4 w-4" /> Hoa Lan Road, Vinhomes Riverside Phuc Loi Ward Hanoi 100000</p>
+                  <p className="flex items-center justify-center"><Phone className="mr-2 h-4 w-4" /> +84 32 603 0993</p>
+                  <p className="flex items-center justify-center"><Mail className="mr-2 h-4 w-4" /> contact@yesacademies.org</p>
+                </div>
+              </div>
+              
+              <div className="rounded-lg border p-6 md:col-span-2 lg:col-span-1">
+                <h3 className="text-xl font-semibold">YES ACADEMY - Yiwu</h3>
+                <div className="mt-4 space-y-2 text-muted-foreground">
+                  <p className="flex items-center justify-center"><MapPin className="mr-2 h-4 w-4" /> Wanda Riverside Football Stadium, Xijiang Road, Yiwu</p>
+                  <p className="flex items-center justify-center"><Phone className="mr-2 h-4 w-4" /> +86 138 1738 9758</p>
+                  <p className="flex items-center justify-center"><Mail className="mr-2 h-4 w-4" /> contact@yesacademies.org</p>
+                </div>
+              </div>
+            </div>
+        </div>
+      </section>
     </div>
   );
 }
-
-    
-    

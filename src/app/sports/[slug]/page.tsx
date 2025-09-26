@@ -63,7 +63,7 @@ export default function SportDetailPage({ params }: Props) {
                 <div className="prose prose-lg dark:prose-invert">
                     <h2 className="font-headline text-3xl font-bold">About our {sport.name} program</h2>
                     <p className="lead text-muted-foreground">
-                    {sport.description}
+                      {sport.description}
                     </p>
                     <p>{sport.longDescription}</p>
                 </div>

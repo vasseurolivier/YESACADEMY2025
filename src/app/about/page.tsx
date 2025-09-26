@@ -7,7 +7,7 @@ import { FutbolIcon } from '@/components/icons';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'About Us',
+    title: "About Us",
     description: "Learn about YES ACADEMY's mission, values, and the expert team dedicated to fostering champions.",
 };
 
@@ -31,6 +31,7 @@ export default function AboutPage() {
   return (
     <div>
       <section className="relative h-64 w-full bg-primary">
+        <div className="container">
         {aboutHeroImage && (
              <Image
              src={aboutHeroImage.imageUrl}
@@ -47,6 +48,7 @@ export default function AboutPage() {
             About YES ACADEMY
           </h1>
           <p className="mt-2 max-w-2xl text-lg">Pioneering Sports Excellence in Asia</p>
+        </div>
         </div>
       </section>
 

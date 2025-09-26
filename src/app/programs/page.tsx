@@ -7,9 +7,10 @@ import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 export const metadata: Metadata = {
-  title: 'Our Programs',
-  description: 'Discover the variety of programs at YES ACADEMY, including private lessons, group classes, school programs, and corporate events.',
+    title: "Our Programs",
+    description: "Discover the variety of programs at YES ACADEMY, including private lessons, group classes, school programs, and corporate events.",
 };
+
 
 const programCategories = [
   {
@@ -79,7 +80,8 @@ export default function ProgramsPage() {
   return (
     <div>
       <section className="relative h-64 w-full bg-primary">
-        {heroImage && (
+        <div className="container">
+         {heroImage && (
              <Image
              src={heroImage.imageUrl}
              alt={heroImage.description}
@@ -89,6 +91,7 @@ export default function ProgramsPage() {
              className="object-cover"
            />
         )}
+        </div>
         <div className="absolute inset-0 bg-black/50" />
         <div className="relative z-10 flex h-full flex-col items-center justify-center text-center text-white container">
           <h1 className="font-headline text-4xl font-extrabold tracking-tight md:text-5xl">
