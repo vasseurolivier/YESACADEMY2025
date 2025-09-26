@@ -104,8 +104,8 @@ export default function SportDetailPage({ params }: Props) {
                     <Image
                         src={sport.image.url}
                         alt={sport.image.alt}
-                        width={600}
-                        height={400}
+                        width={500}
+                        height={333}
                         className="rounded-lg shadow-xl"
                     />
                 </div>
