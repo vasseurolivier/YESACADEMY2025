@@ -42,6 +42,7 @@ export default function SportDetailPage({ params }: Props) {
   const isVolleyball = sport.slug === 'volleyball';
   const isTennis = sport.slug === 'tennis';
   const isGolf = sport.slug === 'golf';
+  const isScubaDiving = sport.slug === 'scuba-diving';
 
   return (
     <div>
@@ -137,6 +138,20 @@ export default function SportDetailPage({ params }: Props) {
                         <p>
                           In this sport, often associated with high society and culture, French golf has experienced remarkable progress in recent years with the emergence of a new generation of talented players. In 2023, France shines on the international professional courses, thanks to its world-class athletes.
                         </p>
+                      </>
+                    ) : isScubaDiving ? (
+                      <>
+                        <h3 className="font-headline text-xl font-semibold">Effective Teaching Program</h3>
+                        <p>We follow the proven and effective PADI (Professional Association of Diving Instructors) methodology. We aim to be efficient, fun, healthy and safe. We uphold sportsmanship and approach diving with scientific rigor. We will stimulate your child's interest in diving with a lively and interesting teaching method, train your child's diving skills in a serious and responsible manner, and cultivate your child's respect and love for nature through a hands-on experience.</p>
+                        
+                        <h3 className="font-headline text-xl font-semibold">Professional Coaching Team</h3>
+                        <p>Our coaches are from PADI, they have received rigorous training, have a high professional level, and they love children and love coaching work, they will teach with enthusiasm and a serious and responsible attitude.</p>
+                        
+                        <h3 className="font-headline text-xl font-semibold">Excellent Diving Experience</h3>
+                        <p>In addition to indoor diving training, we will also have outdoor field diving. The waters we choose for diving will be beautiful, pollution-free and safe. Comfortable water temperature and water pressure, amazingly beautiful landscapes, and fascinating biodiversity will give your children a wonderful, comfortable and unforgettable diving experience.</p>
+                        
+                        <h3 className="font-headline text-xl font-semibold">Concerned and Guaranteed Safety</h3>
+                        <p>For a passionate outdoor sport, safety has always been our priority. Our staff are trained in safety and medical first aid, and our facilities are strictly enforced to the highest level of safety standards, from pre-training to field experience, we will provide you with a safe training environment.</p>
                       </>
                     ) : (
                       <>
