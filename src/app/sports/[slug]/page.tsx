@@ -4,7 +4,8 @@ import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import type { Metadata, ResolvingMetadata } from 'next';
-import { Check } from 'lucide-react';
+import { Check, Medal } from 'lucide-react';
+import { Blockquote } from 'recharts';
 
 type Props = {
   params: { slug: string };
@@ -39,6 +40,7 @@ export default function SportDetailPage({ params }: Props) {
   }
 
   const isBasketball = sport.slug === 'basketball';
+  const isVolleyball = sport.slug === 'volleyball';
 
   return (
     <div>
@@ -90,6 +92,27 @@ export default function SportDetailPage({ params }: Props) {
                           <li className="flex items-center gap-2"><Check className="text-primary h-5 w-5" /> Courage</li>
                         </ul>
                         <p>These are crucial values that each student will carry with them into the future.</p>
+                      </>
+                    ) : isVolleyball ? (
+                      <>
+                        <p className="lead">
+                          Our volleyball program is built on the world-renowned French training methodology, which has consistently produced elite international players like Earvin N'Gapeth, Jenia Grebennikov, and Benjamin Toniutti.
+                        </p>
+                        
+                        <h3 className="font-headline text-xl font-semibold">A Legacy of Excellence</h3>
+                        <p>The success of the French national teams is a testament to this methodology:</p>
+                         <ul className="list-none p-0">
+                          <li className="flex items-center gap-2"><Medal className="text-yellow-500 h-5 w-5" /> Gold Medal, Olympic Games (2020)</li>
+                          <li className="flex items-center gap-2"><Medal className="text-yellow-500 h-5 w-5" /> Gold Medal, Europe (2015)</li>
+                          <li className="flex items-center gap-2"><Medal className="text-amber-700 h-5 w-5" /> Bronze Medal, World Championship (2002)</li>
+                        </ul>
+                        
+                        <h3 className="font-headline text-xl font-semibold">The Benefits of Volleyball</h3>
+                        <p>As our head coach explains, volleyball is a uniquely complete sport:</p>
+                        <blockquote className="border-l-4 border-primary pl-4 italic text-muted-foreground">
+                            "On a physical level, it develops cardiovascular capacities, improves speed, and tones the body. At the psychomotor level, it significantly improves coordination and reflexes. And on a mental level, it builds concentration and anticipation."
+                        </blockquote>
+
                       </>
                     ) : (
                       <>

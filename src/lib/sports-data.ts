@@ -46,7 +46,7 @@ export const sports: Sport[] = [
     slug: 'volleyball',
     icon: Volleyball,
     description: 'Serve, set, and spike your way to victory.',
-    longDescription: "France is ranked 3rd in the FIVB as of September 12, 2022. The results of the women's and men's national teams on the European, World or Olympic scene show the extent to which the French training methodology makes it possible to train the best players in the world (NGAPETH Earvin, GREBENNIKOV Jenia or TONIUTTI Benjamin) Gold medal, Olympic Games (2020) Bronze medal, world (2002) Gold medal, Europe (2015) Silver medal, Europe (1948, 1987, 2003, 2009) Bronze medal, Europe (1951, 1985) The benefits of Volleyball told by our coach: “Volleyball is a particularly complete sport: On a physical level, it will develop cardiovascular and cardio-respiratory capacities, improve speed, tone and harmoniously sculpt the body by working both the leg muscles, glutes, arms and abs. At the psychomotor level, it will significantly improve the child's coordination, skills and reflexes. And on a mental level, it will work enormously on concentration and the sense of anticipation.”",
+    longDescription: "",
     image: {
       url: PlaceHolderImages.find(p => p.id === 'sport-volleyball')?.imageUrl || '',
       alt: PlaceHolderImages.find(p => p.id === 'sport-volleyball')?.description || '',
