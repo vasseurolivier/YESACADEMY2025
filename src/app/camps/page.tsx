@@ -1,7 +1,7 @@
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
-import { Sun, Snowflake, Flag, Info } from 'lucide-react';
+import { Sun, Snowflake, Flag, Info, Check } from 'lucide-react';
 import type { Metadata } from 'next';
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
@@ -38,6 +38,22 @@ const camps = [
     image: PlaceHolderImages.find(p => p.id === 'france-camp'),
   },
 ];
+
+const internationalCamp = {
+  dates: ['Summer vacation', 'Winter vacation', 'Spring vacation'],
+  countries: ['France', 'China', 'Japan...'],
+  sports: ['Football', 'Climbing', 'Basketball', 'Horse-riding', 'Volley-ball', 'Golf', 'Tennis', 'Sailing', 'Skiing', 'Fencing'],
+  images: [
+    PlaceHolderImages.find(p => p.id === 'gallery-fencing'),
+    PlaceHolderImages.find(p => p.id === 'gallery-team-france'),
+    PlaceHolderImages.find(p => p.id === 'gallery-skiing'),
+    PlaceHolderImages.find(p => p.id === 'gallery-sailing'),
+    PlaceHolderImages.find(p => p.id === 'gallery-football-kids'),
+    PlaceHolderImages.find(p => p.id === 'gallery-tennis-kid'),
+    PlaceHolderImages.find(p => p.id === 'gallery-horse-riding'),
+    PlaceHolderImages.find(p => p.id === 'gallery-golfers'),
+  ]
+}
 
 export default function CampsPage() {
     const heroImage = PlaceHolderImages.find(p => p.id === 'hero-football-match');
@@ -76,6 +92,96 @@ export default function CampsPage() {
                   Youth Elite Sports Academy has served as a haven for children and their families since 2000.  Every summer, our caring and enthusiastic counselors dream up a wide range of creative programs for campers of all ages. Our activities and offerings are fun, challenging and accepting of everyone’s individual abilities. Above all, we are a down-to-earth Sports Camp dedicated to ensuring everyone have the time of their lives.
                 </p>
               </div>
+        </div>
+      </section>
+      
+      <section className="bg-muted py-16 md:py-24">
+        <div className="container mx-auto">
+          <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:items-center">
+            <div>
+              <h2 className="font-headline text-3xl font-bold md:text-4xl">
+                SPORTS CAMPS
+              </h2>
+              <p className="font-headline text-2xl text-primary">
+                INTERNATIONAL EXPERIENCE
+              </p>
+              <div className="mt-4 space-y-3 text-muted-foreground">
+                <p>
+                  Concerned about the development and the well-being of children, YES Academy offers numerous camps to its athletes during the various school holidays.
+                </p>
+                <p>
+                  In order to provide new experiences and introduce them to new sports, we organize, during certain school vacations, our sports camps in different countries. These boarding camps aim to cultivate a cultural diversity are highlighted and expand their horizons.
+                </p>
+                 <p>
+                  These camps can have different formats ranging from 5 days to 2 weeks, depending on the chosen activities. The camps also provides kids with many opportunities for cultural enrichment via diverse cultural activities (french courses, cultural centers visit, Go initiation, etc...).
+                </p>
+              </div>
+               <p className="mt-6 font-semibold text-lg">
+                A HUMAN AND SPORTS EXPERIENCE AVAILABLE TO EVERYONE!
+              </p>
+              <div className="mt-8 grid grid-cols-1 gap-8 sm:grid-cols-3">
+                <Card>
+                  <CardHeader>
+                    <CardTitle>DATES</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <ul className="space-y-2 text-muted-foreground">
+                      {internationalCamp.dates.map(date => (
+                        <li key={date} className="flex items-center gap-2"><Check className="h-4 w-4 text-primary" /> {date}</li>
+                      ))}
+                    </ul>
+                  </CardContent>
+                </Card>
+                <Card>
+                  <CardHeader>
+                    <CardTitle>COUNTRIES</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <ul className="space-y-2 text-muted-foreground">
+                      {internationalCamp.countries.map(country => (
+                        <li key={country} className="flex items-center gap-2"><Check className="h-4 w-4 text-primary" /> {country}</li>
+                      ))}
+                    </ul>
+                  </CardContent>
+                </Card>
+                <Card>
+                  <CardHeader>
+                    <CardTitle>SPORTS</CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <ul className="space-y-2 text-muted-foreground text-sm grid grid-cols-2">
+                       {internationalCamp.sports.map(sport => (
+                        <li key={sport} className="flex items-center gap-2"><Check className="h-4 w-4 text-primary" /> {sport}</li>
+                      ))}
+                    </ul>
+                  </CardContent>
+                </Card>
+              </div>
+            </div>
+             <div className="grid grid-cols-2 grid-rows-4 gap-4">
+              {internationalCamp.images.map((img, index) => 
+                img && (
+                  <div 
+                    key={img.id}
+                    className={`relative aspect-[4/3] overflow-hidden rounded-lg shadow-lg
+                      ${index === 0 ? 'row-span-2' : ''}
+                      ${index === 2 ? 'row-span-2' : ''}
+                      ${index === 7 ? 'col-span-2' : ''}
+                    `}
+                  >
+                    <Image
+                      src={img.imageUrl}
+                      alt={img.description}
+                      data-ai-hint={img.imageHint}
+                      fill
+                      sizes="(max-width: 768px) 50vw, 25vw"
+                      className="object-cover transition-transform hover:scale-105"
+                    />
+                  </div>
+                )
+              )}
+            </div>
+          </div>
         </div>
       </section>
 
