@@ -94,7 +94,7 @@ export const sports: Sport[] = [
     slug: 'climbing',
     icon: ClimbingIcon,
     description: 'Conquer new heights on our climbing walls.',
-    longDescription: "A global reference in rock climbing, France was able to count on numerous pioneers in the 20th century to promote the discipline such as Pierre Allain (1904-2000), Georges Livanos (1923-2004), Patrick Edlinger (1960-2012) and Catherine Destivelle (1960). As the sports’ world leader, it has the most structured network in the world with 250 climbing gyms for 2 million practitioners. Due to its safety relatively to outdoor climbing, indoor climbing is today a very popular sport in France which affects young and old alike. The benefits of rock climbing told by our coach:         “The practice of climbing has many virtues, both physical and psychological. First of all, it gently develops the muscles of children's arms, thighs, shoulders and back. This activity is essential for allowing them to develop their balance, flexibility and agility. Above all, this sport allows children to develop their autonomy but also their confidence in themselves and in their abilities!”",
+    longDescription: "",
     image: {
       url: PlaceHolderImages.find(p => p.id === 'sport-climbing')?.imageUrl || '',
       alt: PlaceHolderImages.find(p => p.id === 'sport-climbing')?.description || '',

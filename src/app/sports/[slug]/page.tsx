@@ -43,6 +43,7 @@ export default function SportDetailPage({ params }: Props) {
   const isTennis = sport.slug === 'tennis';
   const isGolf = sport.slug === 'golf';
   const isScubaDiving = sport.slug === 'scuba-diving';
+  const isClimbing = sport.slug === 'climbing';
 
   return (
     <div>
@@ -152,6 +153,20 @@ export default function SportDetailPage({ params }: Props) {
                         
                         <h3 className="font-headline text-xl font-semibold">Concerned and Guaranteed Safety</h3>
                         <p>For a passionate outdoor sport, safety has always been our priority. Our staff are trained in safety and medical first aid, and our facilities are strictly enforced to the highest level of safety standards, from pre-training to field experience, we will provide you with a safe training environment.</p>
+                      </>
+                    ) : isClimbing ? (
+                      <>
+                        <p className="lead">
+                            A global reference in rock climbing, France was able to count on numerous pioneers in the 20th century to promote the discipline such as Pierre Allain (1904-2000), Georges Livanos (1923-2004), Patrick Edlinger (1960-2012) and Catherine Destivelle (1960).
+                        </p>
+                        <p>
+                            As the sport's world leader, it has the most structured network in the world with 250 climbing gyms for 2 million practitioners. Due to its safety relative to outdoor climbing, indoor climbing is today a very popular sport in France which affects young and old alike.
+                        </p>
+                        <h3 className="font-headline text-xl font-semibold">The Benefits of Rock Climbing</h3>
+                        <p>As told by our coach:</p>
+                        <blockquote className="border-l-4 border-primary pl-4 italic text-muted-foreground">
+                            “The practice of climbing has many virtues, both physical and psychological. First of all, it gently develops the muscles of children's arms, thighs, shoulders and back. This activity is essential for allowing them to develop their balance, flexibility and agility. Above all, this sport allows children to develop their autonomy but also their confidence in themselves and in their abilities!”
+                        </blockquote>
                       </>
                     ) : (
                       <>
