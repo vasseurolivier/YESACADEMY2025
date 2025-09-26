@@ -10,7 +10,7 @@ export const Logo = () => (
       width={60}
       height={60}
       className="object-contain"
-      unoptimized // Using a static image, but keeping unoptimized just in case to avoid Next.js image processing conflicts
+      unoptimized
     />
     <span className="font-bold text-lg text-foreground">YES ACADEMY</span>
   </div>
