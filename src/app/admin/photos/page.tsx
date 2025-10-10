@@ -21,6 +21,9 @@ export default function ManagePhotosPage() {
                         <CardHeader>
                             <CardTitle className="text-lg">{image.id}</CardTitle>
                             <CardDescription>{image.description}</CardDescription>
+                            {image.location && (
+                                <p className="text-sm font-semibold text-primary pt-2">{image.location}</p>
+                            )}
                         </CardHeader>
                         <CardContent>
                             <div className="relative aspect-video mb-4 overflow-hidden rounded-md">

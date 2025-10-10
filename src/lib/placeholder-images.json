@@ -4,319 +4,372 @@
       "id": "hero-football-match",
       "description": "An intense football match in a packed stadium.",
       "imageUrl": "https://images.unsplash.com/photo-1579952363873-27f3bade9f55?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxmb290YmFsbHxlbnwwfHx8fDE3NTgzNjkxOTJ8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "football match"
+      "imageHint": "football match",
+      "location": "Page d'accueil - Section Hero, Page Camps - Section Hero"
     },
     {
       "id": "hero-basketball-match",
       "description": "Dynamic action shot of a basketball player dunking.",
-      "imageUrl": "https://images.unsplash.com/photo-1577471488278-16eec37ffcc2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxiYXNrZXRiYWxsJTIwZHVua3xlbnwwfHx8fDE3NTg3MDQ2NTV8MA&ixlib-rb-4.1.0&q=80&w=1080",
-      "imageHint": "basketball dunk"
+      "imageUrl": "https://images.unsplash.com/photo-1577471488278-16eec37ffcc2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxiYXNrZXRiYWxsJTIwZHVua3xlbnwwfHx8fDE3NTg3MDQ2NTV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "basketball dunk",
+      "location": "Image non utilisée"
     },
     {
       "id": "hero-golfer",
       "description": "A golfer mid-swing on a beautiful course at sunset.",
-      "imageUrl": "https://images.unsplash.com/photo-1690288505715-977d41c653d3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxnb2xmZXIlMjBzd2luZ3xlbnwwfHx8fDE3NTg2NjU2MzZ8MA&ixlib-rb-4.1.0&q=80&w=1080",
-      "imageHint": "golfer swing"
+      "imageUrl": "https://images.unsplash.com/photo-1690288505715-977d41c653d3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxnb2xmZXIlMjBzd2luZ3xlbnwwfHx8fDE3NTg2NjU2MzZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "golfer swing",
+      "location": "Image non utilisée"
     },
     {
       "id": "why-us-1",
       "description": "A group of diverse athletes celebrating a victory on a court in France.",
-      "imageUrl": "https://images.unsplash.com/photo-1508100134119-f93388e60d95?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxOXx8ZnJhbmNlJTIwc3BvcnR8ZW58MHx8fHwxNzU4NzA0Nzk0fDA&ixlib-rb-4.1.0&q=80&w=1080",
-      "imageHint": "France sport"
+      "imageUrl": "https://images.unsplash.com/photo-1508100134119-f93388e60d95?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxOXx8ZnJhbmNlJTIwc3BvcnR8ZW58MHx8fHwxNzU4NzA0Nzk0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "France sport",
+      "location": "Page d'accueil - Section 'Pourquoi nous', Page Programmes - Carte 'Notre méthodologie'"
     },
     {
       "id": "testimonial-1",
       "description": "Portrait of a smiling Asian man.",
-      "imageUrl": "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxtYW4lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NTg1ODI4MTZ8MA&ixlib-rb-4.1.0&q=80&w=1080",
-      "imageHint": "man portrait"
+      "imageUrl": "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxtYW4lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NTg1ODI4MTZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "man portrait",
+      "location": "Page d'accueil - Section témoignages"
     },
     {
       "id": "testimonial-2",
       "description": "Portrait of a caucasian man.",
       "imageUrl": "https://images.unsplash.com/photo-1624395213043-fa2e123b2656?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxtYW4lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NTg1ODI4MTZ8MA&ixlib-rb-4.1.0&q=80&w=1080",
-      "imageHint": "man portrait"
+      "imageHint": "man portrait",
+      "location": "Page d'accueil - Section témoignages"
     },
     {
       "id": "testimonial-3",
       "description": "Portrait of a young Vietnamese person.",
-      "imageUrl": "https://images.unsplash.com/photo-1520423465871-0866049020b7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHx0ZWVuYWdlciUyMHBvcnRyYWl0fGVufDB8fHx8MTc1ODYwMzY1MHww&ixlib-rb-4.1.0&q=80&w=1080",
-      "imageHint": "teenager portrait"
+      "imageUrl": "https://images.unsplash.com/photo-1520423465871-0866049020b7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHx0ZWVuYWdlciUyMHBvcnRyYWl0fGVufDB8fHx8MTc1ODYwMzY1MHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "teenager portrait",
+      "location": "Page d'accueil - Section témoignages"
     },
     {
       "id": "sport-football",
       "description": "A football on a lush green pitch.",
-      "imageUrl": "https://images.unsplash.com/photo-1629977007371-0ba395424741?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxzb2NjZXIlMjBmb290YmFsbHxlbnwwfHx8fDE3NTg4NjM3MjV8MA&ixlib-rb-4.1.0&q=80&w=1080",
-      "imageHint": "football pitch"
+      "imageUrl": "https://images.unsplash.com/photo-1629977007371-0ba395424741?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxzb2NjZXIlMjBmb290YmFsbHxlbnwwfHx8fDE3NTg4NjM3MjV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "football pitch",
+      "location": "Page d'accueil - Section 'Découvrez votre passion', Page Sports"
     },
     {
       "id": "sport-basketball",
       "description": "A basketball court from a low angle.",
-      "imageUrl": "https://images.unsplash.com/photo-1515523110800-9415d13b84a8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxiYXNrZXRiYWxsfGVufDB8fHx8MTc1ODM2OTI3NXww&ixlib-rb-4.1.0&q=80&w=1080",
-      "imageHint": "basketball court"
+      "imageUrl": "https://images.unsplash.com/photo-1515523110800-9415d13b84a8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxiYXNrZXRiYWxsfGVufDB8fHx8MTc1ODM2OTI3NXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "basketball court",
+      "location": "Page d'accueil - Section 'Découvrez votre passion', Page Sports"
     },
     {
       "id": "sport-volleyball",
       "description": "A volleyball net on a sandy beach.",
-      "imageUrl": "https://images.unsplash.com/photo-1728971124745-423b12df446d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyMHx8dm9sbGV5YmFsbHxlbnwwfHx8fDE3NTgzNzAzMDV8MA&ixlib-rb-4.1.0&q=80&w=1080",
-      "imageHint": "beach volleyball"
+      "imageUrl": "https://images.unsplash.com/photo-1728971124745-423b12df446d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyMHx8dm9sbGV5YmFsbHxlbnwwfHx8fDE3NTgzNzAzMDV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "beach volleyball",
+      "location": "Page d'accueil - Section 'Découvrez votre passion', Page Sports"
     },
     {
       "id": "sport-tennis",
       "description": "A tennis racket and ball on a clay court.",
-      "imageUrl": "https://images.unsplash.com/photo-1622163642998-1ea32b0bbc67?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8dGVubmlzfGVufDB8fHx8MTc1ODM3MDUxMXww&ixlib-rb-4.1.0&q=80&w=1080",
-      "imageHint": "tennis court"
+      "imageUrl": "https://images.unsplash.com/photo-1622163642998-1ea32b0bbc67?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8dGVubmlzfGVufDB8fHx8MTc1ODM3MDUxMXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "tennis court",
+      "location": "Page d'accueil - Section 'Découvrez votre passion', Page Sports"
     },
     {
       "id": "sport-golf",
       "description": "A golf ball on a pristine green near the hole.",
       "imageUrl": "https://images.unsplash.com/photo-1562204320-31975a5e09ce?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxnb2xmfGVufDB8fHx8MTc1ODM3MDU3NXww&ixlib-rb-4.1.0&q=80&w=1080",
-      "imageHint": "golf course"
+      "imageHint": "golf course",
+      "location": "Page d'accueil - Section 'Découvrez votre passion', Page Sports"
     },
     {
       "id": "sport-scuba",
       "description": "A scuba diver exploring a coral reef.",
       "imageUrl": "https://images.unsplash.com/photo-1514907283155-ea5f4094c70c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHhjb3JhbCUyMHJlZWZ8ZW58MHx8fHwxNzU4Njk1Njc4fDA&ixlib-rb-4.1.0&q=80&w=1080",
-      "imageHint": "coral reef"
+      "imageHint": "coral reef",
+      "location": "Page d'accueil - Section 'Découvrez votre passion', Page Sports"
     },
     {
       "id": "sport-climbing",
       "description": "A climber scaling a steep rock face.",
       "imageUrl": "https://images.unsplash.com/photo-1577434150790-3bfe143fe4f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxyb2NrJTIwY2xpbWJpbmd8ZW58MHx8fHwxNzU4MzcwNzk0fDA&ixlibrb-4.1.0&q=80&w=1080",
-      "imageHint": "rock climbing"
+      "imageHint": "rock climbing",
+      "location": "Page d'accueil - Section 'Découvrez votre passion', Page Sports"
     },
     {
       "id": "gallery-1",
       "description": "Children of different ages playing sports together.",
       "imageUrl": "https://images.unsplash.com/photo-1723980856085-8f8e725329a7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxhZ2UlMjBncm91cCUyMHNwb3J0fGVufDB8fHx8MTc1ODcwNDU5MHww&ixlib-rb-4.1.0&q=80&w=1080",
-      "imageHint": "age group sport"
+      "imageHint": "age group sport",
+      "location": "Page Programmes par âge - Hero, Page Programmes - Carte 'Par âge'"
     },
     {
       "id": "gallery-2",
       "description": "The word 'Advantages' spelled out with scrabble tiles.",
       "imageUrl": "https://images.unsplash.com/photo-1621929209241-3df9f6fa1743?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhZHZhbnRhZ2VzfGVufDB8fHx8MTc1ODcwNTA5NHww&ixlib-rb-4.1.0&q=80&w=1080",
-      "imageHint": "advantages"
+      "imageHint": "advantages",
+      "location": "Page Programmes - Carte 'Avantages'"
     },
     {
       "id": "gallery-fencing",
       "description": "Two fencers engaged in a match.",
-      "imageUrl": "https://images.unsplash.com/photo-1505619656705-59ebc350b547?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxlc2NyaW1lfGVufDB8fHx8MTc1ODg2NTc4Mnww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "fencing match"
+      "imageUrl": "https://images.unsplash.com/photo-1505619656705-59ebc350b547?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxlc2NyaW1lfGVufDB8fHx8MTc1ODg2NTc4Mnww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageHint": "fencing match",
+      "location": "Page Camps - Galerie camps internationaux"
     },
     {
       "id": "gallery-skiing",
-      "description": "A skier in mid-air against a snowy mountain backdrop.",
-      "imageUrl": "https://images.unsplash.com/photo-1610222652439-74d502c89763?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxza2lpfGVufDB8fHx8MTc1ODg2NDY1M3ww&ixlib-rb-4.1.0&q=80&w=1080",
-      "imageHint": "ski"
+      "description": "A person skiing down a snowy slope.",
+      "imageUrl": "https://images.unsplash.com/photo-1575034441170-57c5bd416b26?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxza2lpfGVufDB8fHx8MTc1ODg2NDY1M3ww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageHint": "skiing",
+      "location": "Page Camps - Galerie camps internationaux, Section VIP"
     },
     {
       "id": "gallery-sailing",
       "description": "A sailboat on the water at sunset.",
-      "imageUrl": "https://images.unsplash.com/photo-1506527240747-720a3e17b910?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMnx8c2FpbGluZ3xlbnwwfHx8fDE3NTg4NjY5OTd8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "children sailing"
+      "imageUrl": "https://images.unsplash.com/photo-1506527240747-720a3e17b910?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMnx8c2FpbGluZ3xlbnwwfHx8fDE3NTg4NjY5OTd8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageHint": "children sailing",
+      "location": "Page Camps - Galerie camps internationaux, Section VIP"
     },
     {
       "id": "gallery-football-kids",
       "description": "A coach giving instructions to a group of young football players.",
       "imageUrl": "https://images.unsplash.com/photo-1526232761682-d26e03ac148e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxzb2NjZXIlMjBjb2FjaHxlbnwwfHx8fDE3NTg3MTI2NTl8MA&ixlib-rb-4.1.0&q=80&w=1080",
-      "imageHint": "soccer coach"
+      "imageHint": "soccer coach",
+      "location": "Page Camps - Galerie camps internationaux"
     },
     {
       "id": "gallery-tennis-kid",
       "description": "A tennis ball on the court.",
       "imageUrl": "https://images.unsplash.com/photo-1595435742656-5272d0b3fa82?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMnx8dGVubmlzfGVufDB8fHx8MTc1ODg2Mzg2OHww&ixlib-rb-4.1.0&q=80&w=1080",
-      "imageHint": "tennis court"
+      "imageHint": "tennis court",
+      "location": "Page Camps - Galerie camps internationaux"
     },
     {
       "id": "gallery-basketball",
       "description": "A person skiing down a snowy slope.",
       "imageUrl": "https://images.unsplash.com/photo-1575034441170-57c5bd416b26?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxza2lpfGVufDB8fHx8MTc1ODg2NDY1M3ww&ixlib-rb-4.1.0&q=80&w=1080",
-      "imageHint": "skiing"
+      "imageHint": "skiing",
+      "location": "Page Camps - Galerie camps internationaux"
     },
     {
       "id": "gallery-3",
       "description": "Volleyball team celebration",
       "imageUrl": "https://images.unsplash.com/photo-1690192123455-6337e6db4179?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx0ZWFtJTIwY2VsZWJyYXRpb258ZW58MHx8fHwxNzU4NjMzNTI2fDA&ixlib-rb-4.1.0&q=80&w=1080",
-      "imageHint": "team celebration"
+      "imageHint": "team celebration",
+      "location": "Image non utilisée"
     },
     {
       "id": "gallery-4",
       "description": "Tennis player serving",
       "imageUrl": "https://images.unsplash.com/photo-1554068865-24cecd4e34b8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx0ZW5uaXMlMjBzZXJ2ZXxlbnwwfHx8fDE3NTg3MDQ2NTV8MA&ixlib-rb-4.1.0&q=80&w=1080",
-      "imageHint": "tennis serve"
+      "imageHint": "tennis serve",
+      "location": "Image non utilisée"
     },
     {
       "id": "gallery-6",
       "description": "Scuba divers underwater",
       "imageUrl": "https://images.unsplash.com/photo-1517627043994-b991abb62fc8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxzY3ViYSUyMGRpdmluZ3xlbnwwfHx8fDE3NTg2NDEzOTd8MA&ixlibrb-4.1.0&q=80&w=1080",
-      "imageHint": "scuba diving"
+      "imageHint": "scuba diving",
+      "location": "Image non utilisée"
     },
     {
       "id": "gallery-7",
       "description": "Climber on an indoor wall",
       "imageUrl": "https://images.unsplash.com/photo-1564769662533-4f00a87b4056?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxpbmRvb3IlMjBjbGltYmluZ3xlbnwwfHx8fDE3NTg3MDQ2NTR8MA&ixlib-rb-4.1.0&q=80&w=1080",
-      "imageHint": "indoor climbing"
+      "imageHint": "indoor climbing",
+      "location": "Image non utilisée"
     },
     {
       "id": "gallery-8",
       "description": "Kids in a swimming class",
       "imageUrl": "https://images.unsplash.com/photo-1519315901367-f34ff9154487?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxzc2ltbWluZyUyMGxlc3NvbnxlbnwwfHx8fDE3NTg3MDQ2NTR8MA&ixlibrb-4.1.0&q=80&w=1080",
-      "imageHint": "swimming lesson"
+      "imageHint": "swimming lesson",
+      "location": "Image non utilisée"
     },
     {
       "id": "coach-1",
       "description": "Portrait of a male coach",
       "imageUrl": "https://images.unsplash.com/photo-1522556189639-b150ed9c4330?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxtYW4lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NTg1ODI4MTZ8MA&ixlib-rb-4.1.0&q=80&w=1080",
-      "imageHint": "man portrait"
+      "imageHint": "man portrait",
+      "location": "Image non utilisée"
     },
     {
       "id": "coach-2",
       "description": "Portrait of a female coach",
       "imageUrl": "https://images.unsplash.com/photo-1593351799227-75df2026356b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHx3b21hbiUyMHBvcnRyYWl0fGVufDB8fHx8MTc1ODY0MDczOHww&ixlib-rb-4.1.0&q=80&w=1080",
-      "imageHint": "woman portrait"
+      "imageHint": "woman portrait",
+      "location": "Image non utilisée"
     },
     {
       "id": "coach-3",
       "description": "Portrait of a senior coach",
       "imageUrl": "https://images.unsplash.com/photo-1715029005043-e88d219a3c48?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxtYW4lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NTg1ODI4MTZ8MA&ixlib-rb-4.1.0&q=80&w=1080",
-      "imageHint": "man portrait"
+      "imageHint": "man portrait",
+      "location": "Image non utilisée"
     },
     {
       "id": "about-hero",
       "description": "A close-up shot of a soccer ball with a stadium in the background.",
       "imageUrl": "https://images.unsplash.com/photo-1551958214-2d59cc7a36f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxzb2NjZXIlMjBzdGFkaXVtfGVufDB8fHx8MTc1OTI5MjY4NHww&ixlib-rb-4.1.0&q=80&w=1080",
-      "imageHint": "soccer stadium"
+      "imageHint": "soccer stadium",
+      "location": "Page 'À propos' - Section Hero"
     },
     {
       "id": "programs-hero",
       "description": "An overhead shot of various sports happening at once.",
       "imageUrl": "https://images.unsplash.com/photo-1531085587519-0210270e7cda?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxzcG9ydHMlMjBjb21wbGV4fGVufDB8fHx8MTc1ODYxODI0OHww&ixlib-rb-4.1.0&q=80&w=1080",
-      "imageHint": "sports complex"
+      "imageHint": "sports complex",
+      "location": "Page Programmes - Section Hero"
     },
     {
       "id": "program-private",
       "description": "A coach giving one-on-one tennis instruction.",
       "imageUrl": "https://images.unsplash.com/photo-1554686177-87b3c0e1a575?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxwcml2YXRlJTIwY29hY2hpbmd8ZW58MHx8fHwxNzU4MzczMzk5fDA&ixlib-rb-4.1.0&q=80&w=1080",
-      "imageHint": "tennis lesson"
+      "imageHint": "tennis lesson",
+      "location": "Page Programmes - Section 'Trouvez votre programme'"
     },
     {
       "id": "program-group",
       "description": "A group of kids in a football training session.",
       "imageUrl": "https://images.unsplash.com/photo-1626248801379-51a0748a5f96?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxmb290YmFsbCUyMG1hdGNofGVufDB8fHx8MTc1ODM3MzUzN3ww&ixlib-rb-4.1.0&q=80&w=1080",
-      "imageHint": "basketball training"
+      "imageHint": "basketball training",
+      "location": "Page Programmes - Section 'Trouvez votre programme'"
     },
     {
       "id": "program-intensive",
       "description": "Athletes training hard during a sports camp.",
       "imageUrl": "https://images.unsplash.com/photo-1571080096581-53aefc318ac3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxNXx8Zm9vdGJhbGwlMjBtYXRjaHxlbnwwfHx8fDE3NTgzNzM1Mzd8MA&ixlibrb-4.1.0&q=80&w=1080",
-      "imageHint": "sports camp"
+      "imageHint": "sports camp",
+      "location": "Page Programmes - Section 'Trouvez votre programme', Page Camps - Carte 'Winter Intensive'"
     },
     {
       "id": "program-corporate",
       "description": "Colleagues high-fiving during a team-building sport event.",
       "imageUrl": "https://images.unsplash.com/photo-1739675155042-dae546a50558?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxjb3Jwb3JhdGUlMjBzcG9ydHN8ZW58MHx8fHwxNzU4MzgyMTQxfDA&ixlib-rb-4.1.0&q=80&w=1080",
-      "imageHint": "team building"
+      "imageHint": "team building",
+      "location": "Page Programmes - Section 'Trouvez votre programme'"
     },
     {
       "id": "program-schools",
       "description": "A modern school building exterior.",
       "imageUrl": "https://images.unsplash.com/photo-1633095975779-fd354aa0dc95?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxM3x8ZWNvbGUlMjBpbnRlcm5hdGlvbmFsZXxlbnwwfHx8fDE3NTgzODIwODJ8MA&ixlib-rb-4.1.0&q=80&w=1080",
-      "imageHint": "international school"
+      "imageHint": "international school",
+      "location": "Page Programmes - Section 'Trouvez votre programme'"
     },
     {
       "id": "camps-hero",
       "description": "A group of diverse kids at a sports camp, huddled together and cheering.",
       "imageUrl": "https://images.unsplash.com/photo-1612872087720-bb876e2e67d1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHlvdXRoJTIwc3BvcnRzJTIwY2FtcHxlbnwwfHx8fDE3NTg0MDQxODd8MA&ixlib-rb-4.1.0&q=80&w=1080",
-      "imageHint": "sports camp"
+      "imageHint": "sports camp",
+      "location": "Page Camps - Carte 'Summer Champions'"
     },
     {
       "id": "france-camp",
       "description": "Eiffel tower in Paris, France.",
       "imageUrl": "https://images.unsplash.com/photo-1549144511-f099e773c147?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxwYXJpc3xlbnwwfHx8fDE3NTg3MTQ1NTZ8MA&ixlib-rb-4.1.0&q=80&w=1080",
-      "imageHint": "Eiffel tower"
+      "imageHint": "Eiffel tower",
+      "location": "Page Camps - Carte 'France 2026'"
     },
     {
       "id": "age-group-kindergarten",
       "description": "A young child kicking a soccer ball on a field.",
       "imageUrl": "https://images.unsplash.com/photo-1662428135039-1a9e41e42ic87?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxiYWJ5JTIwc29jY2VyfGVufDB8fHx8MTc1ODcwOTQzMnww&ixlib-rb-4.1.0&q=80&w=1080",
-      "imageHint": "kids soccer"
+      "imageHint": "kids soccer",
+      "location": "Page Programmes par âge - Carte 'Maternelle'"
     },
     {
       "id": "age-group-elementary",
       "description": "A youth football team huddling with their coach.",
       "imageUrl": "https://images.unsplash.com/photo-1526495959496-614af90aec86?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxmb290YmFsbCUyMGVuZmFudHxlbnwwfHx8fDE3NTg3MDgwMjJ8MA&ixlib-rb-4.1.0&q=80&w=1080",
-      "imageHint": "youth sports"
+      "imageHint": "youth sports",
+      "location": "Page Programmes par âge - Carte 'École primaire'"
     },
     {
       "id": "age-group-middle-school",
       "description": "A high school soccer player in action on the field.",
       "imageUrl": "https://images.unsplash.com/photo-1728520508268-1766303e1ebb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxoaWdoJTIwc2Nob29sJTIwc29jY2VyfGVufDB8fHx8MTc1ODcwODQ0Nnww&ixlib-rb-4.1.0&q=80&w=1080",
-      "imageHint": "high school soccer"
+      "imageHint": "high school soccer",
+      "location": "Page Programmes par âge - Carte 'Collège'"
     },
     {
       "id": "age-group-adults",
       "description": "A university soccer player scoring a goal during a match.",
       "imageUrl": "https://images.unsplash.com/photo-1721441905204-ea1b56b9d7d3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMnx8dW5pdmVyc2l0eSUyMHNvY2NlcnxlbnwwfHx8fDE3NTg3MDg1NzZ8MA&ixlib-rb-4.1.0&q=80&w=1080",
-      "imageHint": "university soccer"
+      "imageHint": "university soccer",
+      "location": "Page Programmes par âge - Carte 'Lycée & Adultes'"
     },
     {
       "id": "methodology-philosophy",
       "description": "A coach drawing tactics on a whiteboard.",
       "imageUrl": "https://images.unsplash.com/photo-1522778119026-d647f0596c20?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxzb2NjZXJ8ZW58MHx8fHwxNzU4NzEwNjM4fDA&ixlib-rb-4.1.0&q=80&w=1080",
-      "imageHint": "soccer"
+      "imageHint": "soccer",
+      "location": "Image non utilisée"
     },
     {
       "id": "methodology-hero",
       "description": "A close-up shot of a soccer ball with a stadium in the background.",
       "imageUrl": "https://images.unsplash.com/photo-1551958214-2d59cc7a36f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxzb2NjZXIlMjBzdGFkaXVtfGVufDB8fHx8MTczODQ0MDk0Mnww&ixlib-rb-4.1.0&q=80&w=1080",
-      "imageHint": "soccer stadium"
+      "imageHint": "soccer stadium",
+      "location": "Image non utilisée"
     },
     {
       "id": "advantage-hero",
       "description": "A trophy being held up in victory.",
       "imageUrl": "https://images.unsplash.com/photo-1598257006624-984f1314b1b3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx0cm9waHl8ZW58MHx8fHwxNzU5MjcyMTQyfDA&ixlib-rb-4.1.0&q=80&w=1080",
-      "imageHint": "trophy"
+      "imageHint": "trophy",
+      "location": "Image non utilisée"
     },
     {
       "id": "advantage-coaching",
       "description": "A dedicated coach giving instructions to young soccer players.",
       "imageUrl": "https://images.unsplash.com/photo-1526232761682-d26e03ac148e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHhjY29hY2glMjBzb2NjZXJ8ZW58MHx8fHwxNzU4NzEyNjU5fDA&ixlib-rb-4.1.0&q=80&w=1080",
-      "imageHint": "coach soccer"
+      "imageHint": "coach soccer",
+      "location": "Image non utilisée"
     },
     {
       "id": "advantage-development",
       "description": "A coach giving advice to a young soccer player.",
       "imageUrl": "https://images.unsplash.com/photo-1585757318177-0570a997dc3a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzb2NjZXIlMjBjb2FjaHxlbnwwfHx8fDE3NTg3MTE3Nzd8MA&ixlib-rb-4.1.0&q=80&w=1080",
-      "imageHint": "soccer coach"
+      "imageHint": "soccer coach",
+      "location": "Image non utilisée"
     },
     {
       "id": "advantage-facilities",
       "description": "A state-of-the-art sports stadium.",
       "imageUrl": "https://images.unsplash.com/photo-1531085587519-0210270e7cda?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxzcG9ydHMlMjBjb21wbGV4fGVufDB8fHx8MTc1ODYxODI0OHww&ixlibrb-4.1.0&q=80&w=1080",
-      "imageHint": "sports complex"
+      "imageHint": "sports complex",
+      "location": "Image non utilisée"
     },
     {
       "id": "advantage-competition",
       "description": "A youth football team during a match.",
       "imageUrl": "https://images.unsplash.com/photo-1626248801379-51a0748a5f96?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxzb2NjZXIlMjBtYXRjaHxlbnwwfHx8fDE3NTg3MTI5MjZ8MA&ixlib-rb-4.1.0&q=80&w=1080",
-      "imageHint": "sports competition"
+      "imageHint": "sports competition",
+      "location": "Image non utilisée"
     },
     {
       "id": "activity-local-camps",
       "description": "Tennis player serving the ball.",
       "imageUrl": "https://images.unsplash.com/photo-1554068865-24cecd4e34b8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx0ZW5uaXN8ZW58MHx8fHwxNzU4ODYzODY4fDA&ixlib-rb-4.1.0&q=80&w=1080",
-      "imageHint": "tennis serve"
+      "imageHint": "tennis serve",
+      "location": "Page d'accueil - Activités de l'académie"
     },
     {
       "id": "activity-international-camps",
       "description": "Kids at a sports camp",
       "imageUrl": "https://images.unsplash.com/photo-1659468551117-8255d708e197?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxzcG9ydHMlMjBjYW1wfGVufDB8fHx8MTc1ODg2Mzk4N3ww&ixlib-rb-4.1.0&q=80&w=1080",
-      "imageHint": "sports camp"
+      "imageHint": "sports camp",
+      "location": "Page d'accueil - Activités de l'académie"
     },
     {
       "id": "vip-kids",
       "description": "A person on a horse, symbolizing equitation.",
       "imageUrl": "https://images.unsplash.com/photo-1613085411234-9c83af5562d8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxlcXVpdGF0aW9ufGVufDB8fHx8MTc1ODg2Njg3OXww&ixlib-rb-4.1.0&q=80&w=1080",
-      "imageHint": "equitation"
+      "imageHint": "equitation",
+      "location": "Page Camps - Section 'Expérience Spéciale'"
     }
   ]
 }
