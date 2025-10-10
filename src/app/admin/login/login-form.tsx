@@ -1,8 +1,6 @@
-
 'use client';
 
 import { useState } from 'react';
-import { useRouter, useSearchParams } from 'next/navigation';
 import { handleAdminLogin } from './actions';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -11,8 +9,6 @@ import { Loader2, Eye, EyeOff } from 'lucide-react';
 import { Card, CardContent, CardFooter } from '@/components/ui/card';
 
 export function LoginForm() {
-  const router = useRouter();
-  const searchParams = useSearchParams();
   const { toast } = useToast();
   const [isPending, setIsPending] = useState(false);
   const [showPassword, setShowPassword] = useState(false);
@@ -20,36 +16,32 @@ export function LoginForm() {
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     const formData = new FormData(event.currentTarget);
-
+    
     setIsPending(true);
+
     try {
+      // The server action will handle redirection on success.
+      // We only need to handle the error case here.
       const result = await handleAdminLogin(formData);
 
-      if (result.success) {
-        toast({
-          title: 'Succès !',
-          description: 'Connexion réussie. Redirection en cours...',
-        });
-        
-        // Use a timeout and reload to ensure middleware re-evaluates correctly
-        setTimeout(() => {
-            window.location.reload();
-        }, 1500);
-
-      } else {
+      if (result?.success === false) {
         toast({
           variant: 'destructive',
           title: 'Erreur',
           description: result.message,
         });
-        setIsPending(false);
       }
+      // If successful, the `redirect` in the action will navigate away,
+      // so no further client-side logic is needed for success.
     } catch (e: any) {
-      toast({
+       toast({
           variant: 'destructive',
           title: 'Erreur de communication',
-          description: e.message || 'An error occurred.',
+          description: e.message || 'Une erreur est survenue.',
       });
+    } finally {
+      // It's possible the component unmounts on redirect,
+      // but this is good practice in case of error.
       setIsPending(false);
     }
   };
