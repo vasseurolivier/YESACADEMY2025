@@ -54,7 +54,7 @@ export default function Home() {
 
   return (
     <div className="flex flex-col">
-       <section className="relative h-[80vh] min-h-[600px] w-full">
+       <section className="relative h-screen w-full">
         {heroImage && (
             <Image
                 src={heroImage.imageUrl}
