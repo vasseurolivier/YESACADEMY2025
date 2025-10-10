@@ -1,3 +1,4 @@
+
 import Image from 'next/image';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
@@ -42,7 +43,7 @@ export default function AboutPage() {
            />
         )}
         <div className="absolute inset-0 bg-black/50" />
-        <div className="container relative z-10 flex h-full flex-col items-center justify-center text-center text-white">
+        <div className="container relative z-10 flex h-full flex-col items-center justify-center text-center text-white w-full">
           <h1 className="font-headline text-4xl font-extrabold tracking-tight md:text-5xl">
             About YES ACADEMY
           </h1>
