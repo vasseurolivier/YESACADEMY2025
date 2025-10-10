@@ -12,7 +12,7 @@ export default function AdminLayout({ children }: { children: ReactNode }) {
             <Link href="/admin/photos">Gérer les images</Link>
           </Button>
           <Button variant="ghost" asChild className="justify-start">
-            <Link href="/upload">Gérer le logo</Link>
+            <Link href="/admin/logo">Gérer le logo</Link>
           </Button>
         </nav>
       </aside>
