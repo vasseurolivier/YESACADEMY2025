@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { Logo } from '@/components/icons';
 import { Button } from '@/components/ui/button';
-import { Facebook, Instagram, Twitter, Youtube } from 'lucide-react';
+import { Facebook, Instagram, Shield, Twitter, Youtube } from 'lucide-react';
 
 const navLinks = [
   { href: '/about', label: 'About' },
@@ -75,9 +75,12 @@ export function Footer() {
 
         <div className="mt-8 border-t pt-8 text-center text-sm text-muted-foreground sm:flex sm:justify-between">
           <p>© {new Date().getFullYear()} YES ACADEMY. All rights reserved.</p>
-          <div className="mt-4 sm:mt-0">
-            <Link href="/legal" className="hover:text-primary">
+          <div className="mt-4 flex items-center justify-center gap-4 sm:mt-0">
+             <Link href="/legal" className="hover:text-primary">
               Legal & Privacy
+            </Link>
+            <Link href="/admin/photos" className="hover:text-primary flex items-center gap-1">
+              <Shield className="h-4 w-4" /> Admin
             </Link>
           </div>
         </div>
