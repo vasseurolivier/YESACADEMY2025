@@ -19,7 +19,9 @@ export function middleware(request: NextRequest) {
   if (pathname.startsWith('/admin')) {
     const isAuthenticated = request.cookies.get('admin-auth')?.value === 'true';
     if (!isAuthenticated) {
-      return NextResponse.redirect(new URL('/admin/login', request.url));
+      const loginUrl = new URL('/admin/login', request.url)
+      loginUrl.searchParams.set('redirect', pathname);
+      return NextResponse.redirect(loginUrl);
     }
   }
 

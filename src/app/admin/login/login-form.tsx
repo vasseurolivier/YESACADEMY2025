@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useTransition } from 'react';
-import { useRouter } from 'next/navigation';
+import { useRouter, useSearchParams } from 'next/navigation';
 import { handleAdminLogin } from './actions';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -11,6 +11,7 @@ import { Card, CardContent, CardFooter } from '@/components/ui/card';
 
 export function LoginForm() {
   const router = useRouter();
+  const searchParams = useSearchParams();
   const { toast } = useToast();
   const [isPending, startTransition] = useTransition();
   const [showPassword, setShowPassword] = useState(false);
@@ -28,7 +29,9 @@ export function LoginForm() {
             title: 'Success!',
             description: 'Login successful. Redirecting...',
           });
-          router.push('/admin/photos');
+          const redirectUrl = searchParams.get('redirect') || '/admin/photos';
+          router.push(redirectUrl);
+          router.refresh(); // To ensure layout changes apply
         } else {
           toast({
             variant: 'destructive',

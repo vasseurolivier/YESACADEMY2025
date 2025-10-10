@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useTransition } from 'react';
+import { useState } from 'react';
 import { handleImageUpload } from "./actions";
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -9,38 +9,39 @@ import { Loader2 } from 'lucide-react';
 
 export function UploadForm({ imageId }: { imageId: string }) {
   const { toast } = useToast();
-  const [isPending, startTransition] = useTransition();
+  const [isPending, startTransition] = useState(false);
 
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     const formData = new FormData(event.currentTarget);
 
-    startTransition(async () => {
-      try {
-        const result = await handleImageUpload(formData);
+    startTransition(true);
+    try {
+      const result = await handleImageUpload(formData);
 
-        if (result.success) {
-          toast({
-            title: 'Succès !',
-            description: result.message,
-          });
-          // Reload to see changes. A more advanced implementation could re-fetch data.
-          window.location.reload();
-        } else {
-          toast({
-            variant: 'destructive',
-            title: 'Erreur',
-            description: result.message,
-          });
-        }
-      } catch (e: any) {
+      if (result.success) {
+        toast({
+          title: 'Succès !',
+          description: result.message,
+        });
+        // Reload to see changes. A more advanced implementation could re-fetch data.
+        window.location.reload();
+      } else {
+        toast({
+          variant: 'destructive',
+          title: 'Erreur',
+          description: result.message,
+        });
+      }
+    } catch (e: any) {
         toast({
             variant: 'destructive',
             title: 'Erreur de communication',
             description: e.message || 'Une erreur est survenue.',
         });
-      }
-    });
+    } finally {
+        startTransition(false);
+    }
   };
 
   return (
