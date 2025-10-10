@@ -31,8 +31,10 @@ export function LoginForm() {
           description: 'Login successful. Redirecting...',
         });
         const redirectUrl = searchParams.get('redirect') || '/admin/photos';
+        // Use router.push which is more reliable for client-side navigation
+        // and then refresh to ensure the server-side middleware re-evaluates the cookie.
         router.push(redirectUrl);
-        router.refresh(); // To ensure layout changes apply
+        router.refresh(); 
       } else {
         toast({
           variant: 'destructive',
