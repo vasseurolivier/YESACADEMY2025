@@ -31,11 +31,11 @@ export function LoginForm() {
           description: 'Connexion réussie. Redirection en cours...',
         });
         
+        // Use a timeout and reload to ensure middleware re-evaluates correctly
         setTimeout(() => {
-            const redirectUrl = searchParams.get('redirect') || '/admin/photos';
-            router.push(redirectUrl);
-            router.refresh(); // Important to re-evaluate middleware state
+            window.location.reload();
         }, 1500);
+
       } else {
         toast({
           variant: 'destructive',
