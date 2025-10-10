@@ -139,9 +139,9 @@ export default function Home() {
                 <Link href={`/sports/${sport.slug}`} key={sport.name} className="group mx-auto">
                     <div className="relative aspect-square w-36 overflow-hidden rounded-lg">
                         <Image 
-                            src={sport.image.url}
-                            alt={sport.image.alt}
-                            data-ai-hint={sport.image.hint}
+                            src={sport.heroImage.url}
+                            alt={sport.heroImage.alt}
+                            data-ai-hint={sport.heroImage.hint}
                             fill
                             sizes="(max-width: 640px) 50vw, (max-width: 768px) 33vw, (max-width: 1024px) 25vw, 14vw"
                             className="object-cover transition-transform duration-300 group-hover:scale-110"

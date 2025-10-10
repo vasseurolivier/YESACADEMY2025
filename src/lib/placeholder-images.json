@@ -38,14 +38,14 @@
     {
       "id": "testimonial-2",
       "description": "Portrait of a caucasian man.",
-      "imageUrl": "https://images.unsplash.com/photo-1624395213043-fa2e123b2656?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxtYW4lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NTg1ODI4MTZ8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1624395213043-fa2e123b2656?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxtYW4lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NTg1ODI4MTZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "man portrait",
       "location": "Page d'accueil - Section témoignages"
     },
     {
       "id": "testimonial-3",
       "description": "Portrait of a young Vietnamese person.",
-      "imageUrl": "https://images.unsplash.com/photo-1520423465871-0866049020b7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHx0ZWVuYWdlciUyMHBvcnRyYWl0fGVufDB8fHx8MTc1ODYwMzY1MHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1520423465871-0866049020b7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHx0ZWVuYWdlciUyMHBvcnRyYWl0fGVufDB8fHx8MTc1ODYwMzY1MHww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "teenager portrait",
       "location": "Page d'accueil - Section témoignages"
     },
@@ -54,49 +54,98 @@
       "description": "A football on a lush green pitch.",
       "imageUrl": "/images/sport-football.png",
       "imageHint": "football pitch",
-      "location": "Page d'accueil - Section 'Découvrez votre passion', Page Sports"
+      "location": "Page d'accueil - Section 'Découvrez votre passion', Page Sports, Page Sport (Football) - Hero"
+    },
+    {
+      "id": "sport-football-content",
+      "description": "Coach explaining strategy to youth football team.",
+      "imageUrl": "https://images.unsplash.com/photo-1526232761682-d26e03ac148e?ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxzb2NjZXIlMjBjb2FjaHxlbnwwfHx8fDE3NTg3MTI2NTl8MA&ixlib=rb-4.1.0&w=1080&fit=max&q=80&fm=jpg&crop=entropy&cs=tinysrgb",
+      "imageHint": "soccer coach",
+      "location": "Page Sport (Football) - Contenu"
     },
     {
       "id": "sport-basketball",
       "description": "A basketball court from a low angle.",
       "imageUrl": "/images/sport-basketball.png",
       "imageHint": "basketball court",
-      "location": "Page d'accueil - Section 'Découvrez votre passion', Page Sports"
+      "location": "Page d'accueil - Section 'Découvrez votre passion', Page Sports, Page Sport (Basketball) - Hero"
+    },
+    {
+      "id": "sport-basketball-content",
+      "description": "Basketball player about to shoot.",
+      "imageUrl": "https://images.unsplash.com/photo-1546519638-68e109498ffc?ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxiYXNrZXRiYWxsfGVufDB8fHx8MTc1ODg2NTM4NXww&ixlib=rb-4.1.0&w=1080&fit=max&q=80&fm=jpg&crop=entropy&cs=tinysrgb",
+      "imageHint": "basketball player",
+      "location": "Page Sport (Basketball) - Contenu"
     },
     {
       "id": "sport-volleyball",
       "description": "A volleyball net on a sandy beach.",
       "imageUrl": "/images/sport-volleyball.png",
       "imageHint": "beach volleyball",
-      "location": "Page d'accueil - Section 'Découvrez votre passion', Page Sports"
+      "location": "Page d'accueil - Section 'Découvrez votre passion', Page Sports, Page Sport (Volleyball) - Hero"
+    },
+    {
+      "id": "sport-volleyball-content",
+      "description": "Volleyball player spiking the ball.",
+      "imageUrl": "https://images.unsplash.com/photo-1599481238640-4c12727c298a?ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx2b2xsZXliYWxsfGVufDB8fHx8MTc1ODg2NTM4NXww&ixlib=rb-4.1.0&w=1080&fit=max&q=80&fm=jpg&crop=entropy&cs=tinysrgb",
+      "imageHint": "volleyball spike",
+      "location": "Page Sport (Volleyball) - Contenu"
     },
     {
       "id": "sport-tennis",
       "description": "A tennis racket and ball on a clay court.",
       "imageUrl": "/images/sport-tennis.png",
       "imageHint": "tennis court",
-      "location": "Page d'accueil - Section 'Découvrez votre passion', Page Sports"
+      "location": "Page d'accueil - Section 'Découvrez votre passion', Page Sports, Page Sport (Tennis) - Hero"
+    },
+    {
+      "id": "sport-tennis-content",
+      "description": "Tennis player serving.",
+      "imageUrl": "https://images.unsplash.com/photo-1554068865-24cecd4e34b8?ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx0ZW5uaXMlMjBzZXJ2ZXxlbnwwfHx8fDE3NTg3MDQ2NTV8MA&ixlib=rb-4.1.0&w=1080&fit=max&q=80&fm=jpg&crop=entropy&cs=tinysrgb",
+      "imageHint": "tennis serve",
+      "location": "Page Sport (Tennis) - Contenu"
     },
     {
       "id": "sport-golf",
       "description": "A golf ball on a pristine green near the hole.",
       "imageUrl": "/images/sport-golf.png",
       "imageHint": "golf course",
-      "location": "Page d'accueil - Section 'Découvrez votre passion', Page Sports"
+      "location": "Page d'accueil - Section 'Découvrez votre passion', Page Sports, Page Sport (Golf) - Hero"
+    },
+    {
+      "id": "sport-golf-content",
+      "description": "Golfer swinging on a course.",
+      "imageUrl": "https://images.unsplash.com/photo-1500932334428-e7ab44b6aa62?ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxnb2xmfGVufDB8fHx8MTc1ODg2NTM4NXww&ixlib=rb-4.1.0&w=1080&fit=max&q=80&fm=jpg&crop=entropy&cs=tinysrgb",
+      "imageHint": "golf swing",
+      "location": "Page Sport (Golf) - Contenu"
     },
     {
       "id": "sport-scuba",
       "description": "A scuba diver exploring a coral reef.",
       "imageUrl": "/images/sport-scuba.png",
       "imageHint": "coral reef",
-      "location": "Page d'accueil - Section 'Découvrez votre passion', Page Sports"
+      "location": "Page d'accueil - Section 'Découvrez votre passion', Page Sports, Page Sport (Scuba Diving) - Hero"
+    },
+    {
+      "id": "sport-scuba-content",
+      "description": "A scuba diver with a sea turtle.",
+      "imageUrl": "https://images.unsplash.com/photo-1595152702581-267823302919?ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxzY3ViYSUyMGRpdmluZ3xlbnwwfHx8fDE3NTg2NDEzOTd8MA&ixlib=rb-4.1.0&w=1080&fit=max&q=80&fm=jpg&crop=entropy&cs=tinysrgb",
+      "imageHint": "scuba turtle",
+      "location": "Page Sport (Scuba Diving) - Contenu"
     },
     {
       "id": "sport-climbing",
       "description": "A climber scaling a steep rock face.",
       "imageUrl": "https://images.unsplash.com/photo-1577434150790-3bfe143fe4f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxyb2NrJTIwY2xpbWJpbmd8ZW58MHx8fHwxNzU4MzcwNzk0fDA&ixlibrb-4.1.0&q=80&w=1080",
       "imageHint": "rock climbing",
-      "location": "Page d'accueil - Section 'Découvrez votre passion', Page Sports"
+      "location": "Page d'accueil - Section 'Découvrez votre passion', Page Sports, Page Sport (Climbing) - Hero"
+    },
+    {
+      "id": "sport-climbing-content",
+      "description": "Climber on an outdoor bouldering rock.",
+      "imageUrl": "https://images.unsplash.com/photo-1533658249826-fad941e11e58?ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxyb2NrJTIwY2xpbWJpbmd8ZW58MHx8fHwxNzU4MzcwNzk0fDA&ixlib=rb-4.1.0&w=1080&fit=max&q=80&fm=jpg&crop=entropy&cs=tinysrgb",
+      "imageHint": "bouldering",
+      "location": "Page Sport (Climbing) - Contenu"
     },
     {
       "id": "gallery-1",
@@ -122,21 +171,21 @@
     {
       "id": "gallery-skiing",
       "description": "A person skiing down a snowy slope.",
-      "imageUrl": "/images/gallery-skiing.png",
+      "imageUrl": "https://images.unsplash.com/photo-1575034441170-57c5bd416b26?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxza2lpfGVufDB8fHx8MTc1ODg2NDY1M3ww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "skiing",
       "location": "Page Camps - Galerie camps internationaux, Section VIP"
     },
     {
       "id": "gallery-sailing",
       "description": "A sailboat on the water at sunset.",
-      "imageUrl": "/images/gallery-sailing.png",
+      "imageUrl": "https://images.unsplash.com/photo-1506527240747-720a3e17b910?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMnx8c2FpbGluZ3xlbnwwfHx8fDE3NTg4NjY5OTd8MA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "children sailing",
       "location": "Page Camps - Galerie camps internationaux, Section VIP"
     },
     {
       "id": "gallery-football-kids",
       "description": "A coach giving instructions to a group of young football players.",
-      "imageUrl": "https://images.unsplash.com/photo-1526232761682-d26e03ac148e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxzb2NjZXIlMjBjb2FjaHxlbnwwfHx8fDE3NTg3MTI2NTl8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1526232761682-d26e03ac148e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxzb2NjZXIlMjBjb2FjaHxlbnwwfHx8fDE3NTg3MTI2NTl8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "soccer coach",
       "location": "Page Camps - Galerie camps internationaux"
     },
@@ -150,7 +199,7 @@
     {
       "id": "gallery-basketball",
       "description": "A person skiing down a snowy slope.",
-      "imageUrl": "/images/gallery-basketball.png",
+      "imageUrl": "https://images.unsplash.com/photo-1575034441170-57c5bd416b26?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxza2lpfGVufDB8fHx8MTc1ODg2NDY1M3ww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "skiing",
       "location": "Page Camps - Galerie camps internationaux"
     },
@@ -185,7 +234,7 @@
     {
       "id": "gallery-8",
       "description": "Kids in a swimming class",
-      "imageUrl": "https://images.unsplash.com/photo-1519315901367-f34ff9154487?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxzc2ltbWluZyUyMGxlc3NvbnxlbnwwfHx8fDE3NTg3MDQ2NTR8MA&ixlibrb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1519315901367-f34ff9154487?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxzc2ltbWluZyUyMGxlc3NvbnxlbnwwfHx8fDE3NTg3MDQ2NTR8MA&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "swimming lesson",
       "location": "Image non utilisée"
     },

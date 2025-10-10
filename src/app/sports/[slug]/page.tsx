@@ -49,9 +49,9 @@ export default function SportDetailPage({ params }: Props) {
     <div>
       <section className="relative h-72 w-full">
         <Image
-          src={sport.image.url}
-          alt={sport.image.alt}
-          data-ai-hint={sport.image.hint}
+          src={sport.heroImage.url}
+          alt={sport.heroImage.alt}
+          data-ai-hint={sport.heroImage.hint}
           fill
           priority
           sizes="100vw"
@@ -179,8 +179,9 @@ export default function SportDetailPage({ params }: Props) {
                 </div>
                 <div>
                     <Image
-                        src={sport.image.url}
-                        alt={sport.image.alt}
+                        src={sport.contentImage.url}
+                        alt={sport.contentImage.alt}
+                        data-ai-hint={sport.contentImage.hint}
                         width={500}
                         height={333}
                         className="rounded-lg shadow-xl"
