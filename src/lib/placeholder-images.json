@@ -10,14 +10,14 @@
     {
       "id": "hero-basketball-match",
       "description": "Dynamic action shot of a basketball player dunking.",
-      "imageUrl": "https://images.unsplash.com/photo-1577471488278-16eec37ffcc2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxiYXNrZXRiYWxsJTIwZHVua3xlbnwwfHx8fDE3NTg3MDQ2NTV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/images/hero-basketball-match.png",
       "imageHint": "basketball dunk",
       "location": "Image non utilisée"
     },
     {
       "id": "hero-golfer",
       "description": "A golfer mid-swing on a beautiful course at sunset.",
-      "imageUrl": "https://images.unsplash.com/photo-1690288505715-977d41c653d3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxnb2xmZXIlMjBzd2luZ3xlbnwwfHx8fDE3NTg2NjU2MzZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/images/hero-golfer.png",
       "imageHint": "golfer swing",
       "location": "Image non utilisée"
     },
@@ -52,42 +52,42 @@
     {
       "id": "sport-football",
       "description": "A football on a lush green pitch.",
-      "imageUrl": "https://images.unsplash.com/photo-1629977007371-0ba395424741?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxzb2NjZXIlMjBmb290YmFsbHxlbnwwfHx8fDE3NTg4NjM3MjV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/images/sport-football.png",
       "imageHint": "football pitch",
       "location": "Page d'accueil - Section 'Découvrez votre passion', Page Sports"
     },
     {
       "id": "sport-basketball",
       "description": "A basketball court from a low angle.",
-      "imageUrl": "https://images.unsplash.com/photo-1515523110800-9415d13b84a8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxiYXNrZXRiYWxsfGVufDB8fHx8MTc1ODM2OTI3NXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/images/sport-basketball.png",
       "imageHint": "basketball court",
       "location": "Page d'accueil - Section 'Découvrez votre passion', Page Sports"
     },
     {
       "id": "sport-volleyball",
       "description": "A volleyball net on a sandy beach.",
-      "imageUrl": "https://images.unsplash.com/photo-1728971124745-423b12df446d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyMHx8dm9sbGV5YmFsbHxlbnwwfHx8fDE3NTgzNzAzMDV8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/images/sport-volleyball.png",
       "imageHint": "beach volleyball",
       "location": "Page d'accueil - Section 'Découvrez votre passion', Page Sports"
     },
     {
       "id": "sport-tennis",
       "description": "A tennis racket and ball on a clay court.",
-      "imageUrl": "https://images.unsplash.com/photo-1622163642998-1ea32b0bbc67?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8dGVubmlzfGVufDB8fHx8MTc1ODM3MDUxMXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/images/sport-tennis.png",
       "imageHint": "tennis court",
       "location": "Page d'accueil - Section 'Découvrez votre passion', Page Sports"
     },
     {
       "id": "sport-golf",
       "description": "A golf ball on a pristine green near the hole.",
-      "imageUrl": "https://images.unsplash.com/photo-1562204320-31975a5e09ce?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxnb2xmfGVufDB8fHx8MTc1ODM3MDU3NXww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/images/sport-golf.png",
       "imageHint": "golf course",
       "location": "Page d'accueil - Section 'Découvrez votre passion', Page Sports"
     },
     {
       "id": "sport-scuba",
       "description": "A scuba diver exploring a coral reef.",
-      "imageUrl": "https://images.unsplash.com/photo-1514907283155-ea5f4094c70c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHhjb3JhbCUyMHJlZWZ8ZW58MHx8fHwxNzU4Njk1Njc4fDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/images/sport-scuba.png",
       "imageHint": "coral reef",
       "location": "Page d'accueil - Section 'Découvrez votre passion', Page Sports"
     },
@@ -115,21 +115,21 @@
     {
       "id": "gallery-fencing",
       "description": "Two fencers engaged in a match.",
-      "imageUrl": "https://images.unsplash.com/photo-1505619656705-59ebc350b547?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxlc2NyaW1lfGVufDB8fHx8MTc1ODg2NTc4Mnww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/images/gallery-fencing.png",
       "imageHint": "fencing match",
       "location": "Page Camps - Galerie camps internationaux"
     },
     {
       "id": "gallery-skiing",
       "description": "A person skiing down a snowy slope.",
-      "imageUrl": "https://images.unsplash.com/photo-1575034441170-57c5bd416b26?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxza2lpfGVufDB8fHx8MTc1ODg2NDY1M3ww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/images/gallery-skiing.png",
       "imageHint": "skiing",
       "location": "Page Camps - Galerie camps internationaux, Section VIP"
     },
     {
       "id": "gallery-sailing",
       "description": "A sailboat on the water at sunset.",
-      "imageUrl": "https://images.unsplash.com/photo-1506527240747-720a3e17b910?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMnx8c2FpbGluZ3xlbnwwfHx8fDE3NTg4NjY5OTd8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/images/gallery-sailing.png",
       "imageHint": "children sailing",
       "location": "Page Camps - Galerie camps internationaux, Section VIP"
     },
@@ -143,21 +143,21 @@
     {
       "id": "gallery-tennis-kid",
       "description": "A tennis ball on the court.",
-      "imageUrl": "https://images.unsplash.com/photo-1595435742656-5272d0b3fa82?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMnx8dGVubmlzfGVufDB8fHx8MTc1ODg2Mzg2OHww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/images/gallery-tennis-kid.png",
       "imageHint": "tennis court",
       "location": "Page Camps - Galerie camps internationaux"
     },
     {
       "id": "gallery-basketball",
       "description": "A person skiing down a snowy slope.",
-      "imageUrl": "https://images.unsplash.com/photo-1575034441170-57c5bd416b26?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxza2lpfGVufDB8fHx8MTc1ODg2NDY1M3ww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/images/gallery-basketball.png",
       "imageHint": "skiing",
       "location": "Page Camps - Galerie camps internationaux"
     },
     {
       "id": "gallery-3",
       "description": "Volleyball team celebration",
-      "imageUrl": "https://images.unsplash.com/photo-1690192123455-6337e6db4179?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx0ZWFtJTIwY2VsZWJyYXRpb258ZW58MHx8fHwxNzU4NjMzNTI2fDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/images/gallery-3.png",
       "imageHint": "team celebration",
       "location": "Image non utilisée"
     },
