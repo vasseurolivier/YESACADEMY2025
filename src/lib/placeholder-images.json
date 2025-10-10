@@ -59,7 +59,7 @@
     {
       "id": "sport-football-content",
       "description": "Coach explaining strategy to youth football team.",
-      "imageUrl": "https://images.unsplash.com/photo-1526232761682-d26e03ac148e?ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxzb2NjZXIlMjBjb2FjaHxlbnwwfHx8fDE3NTg3MTI2NTl8MA&ixlib=rb-4.1.0&w=1080&fit=max&q=80&fm=jpg&crop=entropy&cs=tinysrgb",
+      "imageUrl": "/images/sport-football-content.png",
       "imageHint": "soccer coach",
       "location": "Page Sport (Football) - Contenu"
     },
@@ -73,7 +73,7 @@
     {
       "id": "sport-basketball-content",
       "description": "Basketball player about to shoot.",
-      "imageUrl": "https://images.unsplash.com/photo-1546519638-68e109498ffc?ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxiYXNrZXRiYWxsfGVufDB8fHx8MTc1ODg2NTM4NXww&ixlib=rb-4.1.0&w=1080&fit=max&q=80&fm=jpg&crop=entropy&cs=tinysrgb",
+      "imageUrl": "/images/sport-basketball-content.png",
       "imageHint": "basketball player",
       "location": "Page Sport (Basketball) - Contenu"
     },
@@ -87,7 +87,7 @@
     {
       "id": "sport-volleyball-content",
       "description": "Volleyball player spiking the ball.",
-      "imageUrl": "https://images.unsplash.com/photo-1599481238640-4c12727c298a?ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx2b2xsZXliYWxsfGVufDB8fHx8MTc1ODg2NTM4NXww&ixlib=rb-4.1.0&w=1080&fit=max&q=80&fm=jpg&crop=entropy&cs=tinysrgb",
+      "imageUrl": "/images/sport-volleyball-content.png",
       "imageHint": "volleyball spike",
       "location": "Page Sport (Volleyball) - Contenu"
     },
@@ -115,7 +115,7 @@
     {
       "id": "sport-golf-content",
       "description": "Golfer swinging on a course.",
-      "imageUrl": "https://images.unsplash.com/photo-1500932334428-e7ab44b6aa62?ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxnb2xmfGVufDB8fHx8MTc1ODg2NTM4NXww&ixlib=rb-4.1.0&w=1080&fit=max&q=80&fm=jpg&crop=entropy&cs=tinysrgb",
+      "imageUrl": "/images/sport-golf-content.png",
       "imageHint": "golf swing",
       "location": "Page Sport (Golf) - Contenu"
     },
@@ -129,35 +129,35 @@
     {
       "id": "sport-scuba-content",
       "description": "A scuba diver with a sea turtle.",
-      "imageUrl": "https://images.unsplash.com/photo-1595152702581-267823302919?ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxzY3ViYSUyMGRpdmluZ3xlbnwwfHx8fDE3NTg2NDEzOTd8MA&ixlib=rb-4.1.0&w=1080&fit=max&q=80&fm=jpg&crop=entropy&cs=tinysrgb",
+      "imageUrl": "/images/sport-scuba-content.png",
       "imageHint": "scuba turtle",
       "location": "Page Sport (Scuba Diving) - Contenu"
     },
     {
       "id": "sport-climbing",
       "description": "A climber scaling a steep rock face.",
-      "imageUrl": "https://images.unsplash.com/photo-1577434150790-3bfe143fe4f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxyb2NrJTIwY2xpbWJpbmd8ZW58MHx8fHwxNzU4MzcwNzk0fDA&ixlibrb-4.1.0&q=80&w=1080",
+      "imageUrl": "/images/sport-climbing.png",
       "imageHint": "rock climbing",
       "location": "Page d'accueil - Section 'Découvrez votre passion', Page Sports, Page Sport (Climbing) - Hero"
     },
     {
       "id": "sport-climbing-content",
       "description": "Climber on an outdoor bouldering rock.",
-      "imageUrl": "https://images.unsplash.com/photo-1533658249826-fad941e11e58?ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxyb2NrJTIwY2xpbWJpbmd8ZW58MHx8fHwxNzU4MzcwNzk0fDA&ixlib=rb-4.1.0&w=1080&fit=max&q=80&fm=jpg&crop=entropy&cs=tinysrgb",
+      "imageUrl": "/images/sport-climbing-content.png",
       "imageHint": "bouldering",
       "location": "Page Sport (Climbing) - Contenu"
     },
     {
       "id": "gallery-1",
       "description": "Children of different ages playing sports together.",
-      "imageUrl": "https://images.unsplash.com/photo-1723980856085-8f8e725329a7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxhZ2UlMjBncm91cCUyMHNwb3J0fGVufDB8fHx8MTc1ODcwNDU5MHww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/images/gallery-1.png",
       "imageHint": "age group sport",
       "location": "Page Programmes par âge - Hero, Page Programmes - Carte 'Par âge'"
     },
     {
       "id": "gallery-2",
       "description": "The word 'Advantages' spelled out with scrabble tiles.",
-      "imageUrl": "https://images.unsplash.com/photo-1621929209241-3df9f6fa1743?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhZHZhbnRhZ2VzfGVufDB8fHx8MTc1ODcwNTA5NHww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/images/gallery-2.png",
       "imageHint": "advantages",
       "location": "Page Programmes - Carte 'Avantages'"
     },
@@ -171,14 +171,14 @@
     {
       "id": "gallery-skiing",
       "description": "A person skiing down a snowy slope.",
-      "imageUrl": "https://images.unsplash.com/photo-1575034441170-57c5bd416b26?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxza2lpfGVufDB8fHx8MTc1ODg2NDY1M3ww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/images/gallery-skiing.png",
       "imageHint": "skiing",
       "location": "Page Camps - Galerie camps internationaux, Section VIP"
     },
     {
       "id": "gallery-sailing",
       "description": "A sailboat on the water at sunset.",
-      "imageUrl": "https://images.unsplash.com/photo-1506527240747-720a3e17b910?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMnx8c2FpbGluZ3xlbnwwfHx8fDE3NTg4NjY5OTd8MA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/images/gallery-sailing.png",
       "imageHint": "children sailing",
       "location": "Page Camps - Galerie camps internationaux, Section VIP"
     },
@@ -199,7 +199,7 @@
     {
       "id": "gallery-basketball",
       "description": "A person skiing down a snowy slope.",
-      "imageUrl": "https://images.unsplash.com/photo-1575034441170-57c5bd416b26?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxza2lpfGVufDB8fHx8MTc1ODg2NDY1M3ww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/images/gallery-basketball.png",
       "imageHint": "skiing",
       "location": "Page Camps - Galerie camps internationaux"
     },
@@ -262,7 +262,7 @@
     {
       "id": "about-hero",
       "description": "A close-up shot of a soccer ball with a stadium in the background.",
-      "imageUrl": "https://images.unsplash.com/photo-1551958214-2d59cc7a36f2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxzb2NjZXIlMjBzdGFkaXVtfGVufDB8fHx8MTc1OTI5MjY4NHww&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/images/about-hero.png",
       "imageHint": "soccer stadium",
       "location": "Page 'À propos' - Section Hero"
     },
@@ -367,7 +367,7 @@
     {
       "id": "advantage-hero",
       "description": "A trophy being held up in victory.",
-      "imageUrl": "https://images.unsplash.com/photo-1598257006624-984f1314b1b3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx0cm9waHl8ZW58MHx8fHwxNzU5MjcyMTQyfDA&ixlib-rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/images/advantage-hero.png",
       "imageHint": "trophy",
       "location": "Image non utilisée"
     },
