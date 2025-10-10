@@ -30,12 +30,11 @@ export function LoginForm() {
           title: 'Succès !',
           description: 'Connexion réussie. Redirection en cours...',
         });
-        // Reload the page to let the middleware handle the redirect.
-        // This is more reliable than client-side navigation in this context.
+        
         setTimeout(() => {
             const redirectUrl = searchParams.get('redirect') || '/admin/photos';
             router.push(redirectUrl);
-            router.refresh();
+            router.refresh(); // Important to re-evaluate middleware state
         }, 1500);
       } else {
         toast({

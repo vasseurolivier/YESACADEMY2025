@@ -1,3 +1,4 @@
+
 // src/app/admin/logo/page.tsx
 'use client';
 
@@ -12,7 +13,7 @@ import Image from 'next/image';
 
 export default function UploadPage() {
   const { toast } = useToast();
-  const [isPending, startTransition] = useState(false);
+  const [isPending, setIsPending] = useState(false);
   const [logoPreview, setLogoPreview] = useState<string | null>('/logo.png');
   
   const handleFileChange = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -26,7 +27,7 @@ export default function UploadPage() {
     event.preventDefault();
     const formData = new FormData(event.currentTarget);
 
-    startTransition(true);
+    setIsPending(true);
     try {
       const result = await handleLogoUpload(formData);
 
@@ -50,7 +51,7 @@ export default function UploadPage() {
             description: e.message || 'Une erreur est survenue.',
         });
     } finally {
-        startTransition(false);
+        setIsPending(false);
     }
   };
 
