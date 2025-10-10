@@ -1,6 +1,7 @@
+
 'use client';
 
-import { useState, useTransition } from 'react';
+import { useState } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import { handleAdminLogin } from './actions';
 import { Button } from '@/components/ui/button';
@@ -13,40 +14,41 @@ export function LoginForm() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const { toast } = useToast();
-  const [isPending, startTransition] = useTransition();
+  const [isPending, setIsPending] = useState(false);
   const [showPassword, setShowPassword] = useState(false);
 
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     const formData = new FormData(event.currentTarget);
 
-    startTransition(async () => {
-      try {
-        const result = await handleAdminLogin(formData);
+    setIsPending(true);
+    try {
+      const result = await handleAdminLogin(formData);
 
-        if (result.success) {
-          toast({
-            title: 'Success!',
-            description: 'Login successful. Redirecting...',
-          });
-          const redirectUrl = searchParams.get('redirect') || '/admin/photos';
-          router.push(redirectUrl);
-          router.refresh(); // To ensure layout changes apply
-        } else {
-          toast({
-            variant: 'destructive',
-            title: 'Error',
-            description: result.message,
-          });
-        }
-      } catch (e: any) {
+      if (result.success) {
         toast({
-            variant: 'destructive',
-            title: 'Communication Error',
-            description: e.message || 'An error occurred.',
+          title: 'Success!',
+          description: 'Login successful. Redirecting...',
+        });
+        const redirectUrl = searchParams.get('redirect') || '/admin/photos';
+        router.push(redirectUrl);
+        router.refresh(); // To ensure layout changes apply
+      } else {
+        toast({
+          variant: 'destructive',
+          title: 'Error',
+          description: result.message,
         });
       }
-    });
+    } catch (e: any) {
+      toast({
+          variant: 'destructive',
+          title: 'Communication Error',
+          description: e.message || 'An error occurred.',
+      });
+    } finally {
+        setIsPending(false);
+    }
   };
 
   return (
