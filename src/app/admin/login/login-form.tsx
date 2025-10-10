@@ -27,29 +27,31 @@ export function LoginForm() {
 
       if (result.success) {
         toast({
-          title: 'Success!',
-          description: 'Login successful. Redirecting...',
+          title: 'Succès !',
+          description: 'Connexion réussie. Redirection en cours...',
         });
-        const redirectUrl = searchParams.get('redirect') || '/admin/photos';
-        // Use router.push which is more reliable for client-side navigation
-        // and then refresh to ensure the server-side middleware re-evaluates the cookie.
-        router.push(redirectUrl);
-        router.refresh(); 
+        // Reload the page to let the middleware handle the redirect.
+        // This is more reliable than client-side navigation in this context.
+        setTimeout(() => {
+            const redirectUrl = searchParams.get('redirect') || '/admin/photos';
+            router.push(redirectUrl);
+            router.refresh();
+        }, 1500);
       } else {
         toast({
           variant: 'destructive',
-          title: 'Error',
+          title: 'Erreur',
           description: result.message,
         });
+        setIsPending(false);
       }
     } catch (e: any) {
       toast({
           variant: 'destructive',
-          title: 'Communication Error',
+          title: 'Erreur de communication',
           description: e.message || 'An error occurred.',
       });
-    } finally {
-        setIsPending(false);
+      setIsPending(false);
     }
   };
 
