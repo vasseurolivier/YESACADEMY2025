@@ -1,7 +1,6 @@
-
 'use client';
 
-import { useState, useTransition } from 'react';
+import { useState } from 'react';
 import { handleImageUpload } from "./actions";
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -10,38 +9,40 @@ import { Loader2 } from 'lucide-react';
 
 export function UploadForm({ imageId }: { imageId: string }) {
   const { toast } = useToast();
-  const [isPending, startTransition] = useTransition();
+  const [isPending, setIsPending] = useState(false);
 
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     const formData = new FormData(event.currentTarget);
 
-    startTransition(async () => {
-      try {
-        const result = await handleImageUpload(formData);
+    setIsPending(true);
+    try {
+      const result = await handleImageUpload(formData);
 
-        if (result.success) {
-          toast({
-            title: 'Succès !',
-            description: result.message,
-          });
-          // Recharger pour voir les changements.
-          window.location.reload();
-        } else {
-          toast({
-            variant: 'destructive',
-            title: 'Erreur',
-            description: result.message,
-          });
-        }
-      } catch (e: any) {
-          toast({
-              variant: 'destructive',
-              title: 'Erreur de communication',
-              description: e.message || 'Une erreur est survenue.',
-          });
+      if (result.success) {
+        toast({
+          title: 'Succès !',
+          description: result.message,
+        });
+        // Recharger pour voir les changements. C'est la méthode la plus fiable ici.
+        setTimeout(() => window.location.reload(), 1500);
+      } else {
+        toast({
+          variant: 'destructive',
+          title: 'Erreur',
+          description: result.message,
+        });
       }
-    });
+    } catch (e: any) {
+        toast({
+            variant: 'destructive',
+            title: 'Erreur de communication',
+            description: e.message || 'Une erreur est survenue lors du téléversement.',
+        });
+    } finally {
+        // Ne remet pas isPending à false immédiatement pour éviter un double clic pendant le rechargement.
+        // La page va de toute façon se recharger.
+    }
   };
 
   return (
