@@ -3,7 +3,6 @@
 import { writeFile, readFile, mkdir } from 'fs/promises';
 import { join } from 'path';
 import { revalidatePath } from 'next/cache';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 const imagesFilePath = join(process.cwd(), 'src', 'lib', 'placeholder-images.json');
 const publicImagesDir = join(process.cwd(), 'public', 'images');
@@ -29,7 +28,6 @@ export async function handleImageUpload(formData: FormData) {
 
     // Write the file to /public/images/
     await writeFile(path, buffer);
-    console.log(`Image successfully uploaded to ${path}`);
 
     // Update placeholder-images.json
     const imagesDataRaw = await readFile(imagesFilePath, 'utf-8');
@@ -39,22 +37,20 @@ export async function handleImageUpload(formData: FormData) {
 
     if (imageIndex !== -1) {
       imagesData.placeholderImages[imageIndex].imageUrl = `/images/${filename}`;
-      // You might want to update description and hint as well if fields are provided in the form
-      // For now, we just update the URL.
       await writeFile(imagesFilePath, JSON.stringify(imagesData, null, 2), 'utf-8');
-      console.log(`Updated ${imagesFilePath} for image ID ${imageId}`);
     } else {
         throw new Error(`Image with ID ${imageId} not found in JSON file.`);
     }
 
-    // Invalidate cache for all relevant paths
-    revalidatePath('/');
-    revalidatePath('/(.)', 'layout');
-    
-    return { success: true, message: 'Image téléversée et mise à jour avec succès !' };
+    // Invalidate cache for all relevant paths.
+    // This is what was causing issues with the return value.
+    // We can still call it, but we won't return a value from this function.
+    revalidatePath('/', 'layout');
+
   } catch (error) {
     console.error('Error uploading image:', error);
     const errorMessage = error instanceof Error ? error.message : 'Erreur lors du téléversement de l\'image.';
-    return { success: false, message: errorMessage };
+    // Throw error to be caught by the client-side try/catch block
+    throw new Error(errorMessage);
   }
 }

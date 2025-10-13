@@ -17,31 +17,22 @@ export function UploadForm({ imageId }: { imageId: string }) {
 
     setIsPending(true);
     try {
-      const result = await handleImageUpload(formData);
+      await handleImageUpload(formData);
 
-      if (result.success) {
-        toast({
-          title: 'Succès !',
-          description: result.message,
-        });
-        // Recharger pour voir les changements. C'est la méthode la plus fiable ici.
-        setTimeout(() => window.location.reload(), 1500);
-      } else {
-        toast({
-          variant: 'destructive',
-          title: 'Erreur',
-          description: result.message,
-        });
-      }
+      toast({
+        title: 'Succès !',
+        description: "Image téléversée avec succès. La page va s'actualiser.",
+      });
+      // Recharger pour voir les changements. C'est la méthode la plus fiable ici.
+      setTimeout(() => window.location.reload(), 1500);
+
     } catch (e: any) {
         toast({
             variant: 'destructive',
-            title: 'Erreur de communication',
+            title: 'Erreur',
             description: e.message || 'Une erreur est survenue lors du téléversement.',
         });
-    } finally {
-        // Ne remet pas isPending à false immédiatement pour éviter un double clic pendant le rechargement.
-        // La page va de toute façon se recharger.
+        setIsPending(false);
     }
   };
 
