@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { handleImageUpload } from "./actions";
+import { handleImageUpload } from "../actions";
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { useToast } from '@/hooks/use-toast';
