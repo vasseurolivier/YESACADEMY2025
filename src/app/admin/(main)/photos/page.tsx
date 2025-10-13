@@ -22,7 +22,7 @@ export default function ManagePhotosPage() {
                         <CardHeader>
                             <CardTitle className="text-lg">{image.id}</CardTitle>
                             <CardDescription>{image.description}</CardDescription>
-                            {image.location && (
+                             {image.location && (
                                 <p className="text-sm font-semibold text-primary pt-2">{image.location}</p>
                             )}
                         </CardHeader>
@@ -45,4 +45,3 @@ export default function ManagePhotosPage() {
         </div>
     );
 }
-
