@@ -1,7 +1,8 @@
+
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import Image from 'next/image';
-import { UploadForm } from './(components)/upload-form';
+import { UploadForm } from './upload-form';
 
 export const metadata = {
     title: 'Gérer les images du site',

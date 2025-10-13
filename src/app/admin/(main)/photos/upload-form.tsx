@@ -1,0 +1,68 @@
+
+'use client';
+
+import { useState } from 'react';
+import { handleImageUpload } from "./actions";
+import { Button } from '@/components/ui/button';
+import { Input } from '@/components/ui/input';
+import { useToast } from '@/hooks/use-toast';
+import { Loader2 } from 'lucide-react';
+
+export function UploadForm({ imageId }: { imageId: string }) {
+  const { toast } = useToast();
+  const [isPending, setIsPending] = useState(false);
+
+  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    const formData = new FormData(event.currentTarget);
+
+    setIsPending(true);
+    try {
+      const result = await handleImageUpload(formData);
+
+      if (result.success) {
+        toast({
+          title: 'Succès !',
+          description: result.message,
+        });
+        // A short delay before reloading to allow the user to see the toast.
+        setTimeout(() => window.location.reload(), 2000);
+      } else {
+        toast({
+          variant: 'destructive',
+          title: 'Erreur',
+          description: result.message,
+        });
+      }
+    } catch (e: any) {
+        toast({
+            variant: 'destructive',
+            title: 'Erreur de communication',
+            description: e.message || 'Une erreur est survenue.',
+        });
+    } finally {
+        setIsPending(false);
+    }
+  };
+
+  return (
+    <form onSubmit={handleSubmit} className="space-y-4">
+      <input type="hidden" name="imageId" value={imageId} />
+      <Input 
+        type="file" 
+        name="image" 
+        accept="image/*" 
+        required 
+        disabled={isPending}
+      />
+      <Button 
+        type="submit" 
+        disabled={isPending}
+        className="w-full"
+      >
+        {isPending && <Loader2 className="mr-2 h-4 w-4 animate-spin" />}
+        Remplacer l'image
+      </Button>
+    </form>
+  );
+}
