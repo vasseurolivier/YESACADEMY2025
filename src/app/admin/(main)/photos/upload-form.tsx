@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useTransition } from 'react';
 import { handleImageUpload } from "./actions";
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -9,39 +9,40 @@ import { Loader2 } from 'lucide-react';
 
 export function UploadForm({ imageId }: { imageId: string }) {
   const { toast } = useToast();
-  const [isPending, setIsPending] = useState(false);
+  const [isPending, startTransition] = useTransition();
 
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     const formData = new FormData(event.currentTarget);
 
-    setIsPending(true);
-    try {
-      const result = await handleImageUpload(formData);
+    startTransition(async () => {
+      try {
+        const result = await handleImageUpload(formData);
 
-      if (result.success) {
-        toast({
-          title: 'Succès !',
-          description: result.message,
-        });
-        // Reload to see changes. This is the most reliable way.
-        window.location.reload();
-      } else {
-        toast({
-          variant: 'destructive',
-          title: 'Erreur',
-          description: result.message,
-        });
-      }
-    } catch (e: any) {
-        toast({
+        if (result.success) {
+          toast({
+            title: 'Succès !',
+            description: result.message,
+          });
+          // Use a timeout to allow the user to see the toast before reload
+          setTimeout(() => {
+            window.location.reload();
+          }, 1500);
+        } else {
+          toast({
             variant: 'destructive',
-            title: 'Erreur de communication',
-            description: e.message || 'Une erreur est survenue.',
-        });
-    } finally {
-        setIsPending(false);
-    }
+            title: 'Erreur',
+            description: result.message,
+          });
+        }
+      } catch (e: any) {
+          toast({
+              variant: 'destructive',
+              title: 'Erreur de communication',
+              description: e.message || 'Une erreur est survenue.',
+          });
+      }
+    });
   };
 
   return (

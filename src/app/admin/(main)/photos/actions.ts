@@ -2,6 +2,7 @@
 
 import { writeFile, readFile, mkdir } from 'fs/promises';
 import { join } from 'path';
+import { revalidatePath } from 'next/cache';
 
 const imagesFilePath = join(process.cwd(), 'src', 'lib', 'placeholder-images.json');
 const publicImagesDir = join(process.cwd(), 'public', 'images');
@@ -21,7 +22,8 @@ export async function handleImageUpload(formData: FormData): Promise<{ success: 
     const bytes = await file.arrayBuffer();
     const buffer = Buffer.from(bytes);
     
-    const filename = `${imageId}.png`;
+    // Create a unique filename to avoid caching issues, but link it to the static ID
+    const filename = `${imageId}-${Date.now()}.png`;
     const path = join(publicImagesDir, filename);
 
     await writeFile(path, buffer);
@@ -32,12 +34,18 @@ export async function handleImageUpload(formData: FormData): Promise<{ success: 
     const imageIndex = imagesData.placeholderImages.findIndex((img: { id: string }) => img.id === imageId);
 
     if (imageIndex !== -1) {
+      // Update the URL to the new file
       imagesData.placeholderImages[imageIndex].imageUrl = `/images/${filename}`;
       await writeFile(imagesFilePath, JSON.stringify(imagesData, null, 2), 'utf-8');
     } else {
         return { success: false, message: `Image with ID ${imageId} not found in JSON file.`};
     }
     
+    // Revalidate the path to ensure the new JSON data is loaded on the server
+    revalidatePath('/admin/(main)/photos', 'page');
+    revalidatePath('/', 'layout');
+
+
     return { success: true, message: "Image téléversée avec succès." };
 
   } catch (error) {
