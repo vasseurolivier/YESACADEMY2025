@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useTransition } from 'react';
+import { useState } from 'react';
 import { handleImageUpload } from "./actions";
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -9,40 +9,35 @@ import { Loader2 } from 'lucide-react';
 
 export function UploadForm({ imageId }: { imageId: string }) {
   const { toast } = useToast();
-  const [isPending, startTransition] = useTransition();
+  const [isPending, setIsPending] = useState(false);
 
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     const formData = new FormData(event.currentTarget);
 
-    startTransition(async () => {
-      try {
-        const result = await handleImageUpload(formData);
+    setIsPending(true);
+    try {
+      await handleImageUpload(formData);
 
-        if (result.success) {
-          toast({
-            title: 'Succès !',
-            description: result.message,
-          });
-          // Use a timeout to allow the user to see the toast before reload
-          setTimeout(() => {
-            window.location.reload();
-          }, 1500);
-        } else {
-          toast({
+      toast({
+        title: 'Succès !',
+        description: "Image téléversée avec succès. La page va se rafraîchir.",
+      });
+      
+      // Force a reload to ensure the new image is displayed
+      setTimeout(() => {
+        window.location.reload();
+      }, 1500);
+
+    } catch (e: any) {
+        toast({
             variant: 'destructive',
             title: 'Erreur',
-            description: result.message,
-          });
-        }
-      } catch (e: any) {
-          toast({
-              variant: 'destructive',
-              title: 'Erreur de communication',
-              description: e.message || 'Une erreur est survenue.',
-          });
-      }
-    });
+            description: e.message || 'Une erreur est survenue lors du téléversement.',
+        });
+    } finally {
+        // Don't set isPending to false immediately to prevent re-submission before reload
+    }
   };
 
   return (

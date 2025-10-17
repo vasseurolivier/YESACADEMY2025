@@ -7,22 +7,20 @@ import { revalidatePath } from 'next/cache';
 const imagesFilePath = join(process.cwd(), 'src', 'lib', 'placeholder-images.json');
 const publicImagesDir = join(process.cwd(), 'public', 'images');
 
-export async function handleImageUpload(formData: FormData): Promise<{ success: boolean; message: string; }> {
+export async function handleImageUpload(formData: FormData) {
   const file = formData.get('image') as File;
   const imageId = formData.get('imageId') as string;
 
   if (!file || file.size === 0 || !imageId) {
-    return { success: false, message: 'Fichier ou ID d\'image manquant.' };
+    throw new Error('Fichier ou ID d\'image manquant.');
   }
 
   try {
-    // Ensure the /public/images directory exists
     await mkdir(publicImagesDir, { recursive: true });
 
     const bytes = await file.arrayBuffer();
     const buffer = Buffer.from(bytes);
     
-    // Create a unique filename to avoid caching issues, but link it to the static ID
     const filename = `${imageId}-${Date.now()}.png`;
     const path = join(publicImagesDir, filename);
 
@@ -34,23 +32,15 @@ export async function handleImageUpload(formData: FormData): Promise<{ success: 
     const imageIndex = imagesData.placeholderImages.findIndex((img: { id: string }) => img.id === imageId);
 
     if (imageIndex !== -1) {
-      // Update the URL to the new file
       imagesData.placeholderImages[imageIndex].imageUrl = `/images/${filename}`;
       await writeFile(imagesFilePath, JSON.stringify(imagesData, null, 2), 'utf-8');
     } else {
-        return { success: false, message: `Image with ID ${imageId} not found in JSON file.`};
+        throw new Error(`Image with ID ${imageId} not found in JSON file.`);
     }
-    
-    // Revalidate the path to ensure the new JSON data is loaded on the server
-    revalidatePath('/admin/(main)/photos', 'page');
-    revalidatePath('/', 'layout');
-
-
-    return { success: true, message: "Image téléversée avec succès." };
 
   } catch (error) {
     console.error('Error uploading image:', error);
     const errorMessage = error instanceof Error ? error.message : 'Erreur lors du téléversement de l\'image.';
-    return { success: false, message: errorMessage };
+    throw new Error(errorMessage);
   }
 }
