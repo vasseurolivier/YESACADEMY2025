@@ -7,12 +7,12 @@ import { revalidatePath } from 'next/cache';
 const imagesFilePath = join(process.cwd(), 'src', 'lib', 'placeholder-images.json');
 const publicImagesDir = join(process.cwd(), 'public', 'images');
 
-export async function handleImageUpload(formData: FormData) {
+export async function handleImageUpload(formData: FormData): Promise<{ success: boolean; message: string }> {
   const file = formData.get('image') as File;
   const imageId = formData.get('imageId') as string;
 
   if (!file || file.size === 0 || !imageId) {
-    throw new Error('Fichier ou ID d\'image manquant.');
+    return { success: false, message: 'Fichier ou ID d\'image manquant.' };
   }
 
   try {
@@ -33,14 +33,20 @@ export async function handleImageUpload(formData: FormData) {
 
     if (imageIndex !== -1) {
       imagesData.placeholderImages[imageIndex].imageUrl = `/images/${filename}`;
+      // This line was missing, it saves the changes to the file system.
       await writeFile(imagesFilePath, JSON.stringify(imagesData, null, 2), 'utf-8');
     } else {
-        throw new Error(`Image with ID ${imageId} not found in JSON file.`);
+        return { success: false, message: `Image with ID ${imageId} not found in JSON file.`};
     }
 
+    // Revalidate paths to ensure new images are shown
+    revalidatePath('/admin/photos');
+    revalidatePath('/'); // Revalidate home and other pages that might use the image
+
+    return { success: true, message: 'Image téléversée avec succès !' };
   } catch (error) {
     console.error('Error uploading image:', error);
     const errorMessage = error instanceof Error ? error.message : 'Erreur lors du téléversement de l\'image.';
-    throw new Error(errorMessage);
+    return { success: false, message: errorMessage };
   }
 }

@@ -17,26 +17,32 @@ export function UploadForm({ imageId }: { imageId: string }) {
 
     setIsPending(true);
     try {
-      await handleImageUpload(formData);
+      const result = await handleImageUpload(formData);
 
-      toast({
-        title: 'Succès !',
-        description: "Image téléversée avec succès. La page va se rafraîchir.",
-      });
-      
-      // Force a reload to ensure the new image is displayed
-      setTimeout(() => {
-        window.location.reload();
-      }, 1500);
-
+      if (result.success) {
+        toast({
+          title: 'Succès !',
+          description: result.message,
+        });
+        // Force a reload to ensure the new image is displayed everywhere
+        setTimeout(() => {
+          window.location.reload();
+        }, 1500);
+      } else {
+        toast({
+          variant: 'destructive',
+          title: 'Erreur',
+          description: result.message,
+        });
+        setIsPending(false);
+      }
     } catch (e: any) {
         toast({
             variant: 'destructive',
-            title: 'Erreur',
+            title: 'Erreur de communication',
             description: e.message || 'Une erreur est survenue lors du téléversement.',
         });
-    } finally {
-        // Don't set isPending to false immediately to prevent re-submission before reload
+        setIsPending(false);
     }
   };
 
