@@ -45,7 +45,7 @@
     {
       "id": "testimonial-3",
       "description": "Portrait of a young Vietnamese person.",
-      "imageUrl": "https://images.unsplash.com/photo-1520423465871-0866049020b7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHx0ZWVuYWdlciUyMHBvcnRyYWl0fGVufDB8fHx8MTc1ODYwMzY1MHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1520423465871-0866049020b7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHx0ZWVuYWdlciUyMHBvcnRyYWl0fGVufDB8fHx8MTc1ODYwMzY1MHww&ixlib-rb-4.1.0&q=80&w=1080",
       "imageHint": "teenager portrait",
       "location": "Page d'accueil - Section témoignages"
     },
@@ -213,7 +213,7 @@
     {
       "id": "gallery-4",
       "description": "Tennis player serving",
-      "imageUrl": "https://images.unsplash.com/photo-1554068865-24cecd4e34b8?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx0ZW5uaXMlMjBzZXJ2ZXxlbnwwfHx8fDE3NTg3MDQ2NTV8MA&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1554068865-24cecd4e34b8?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx0ZW5uaXMlMjBzZXJ2ZXxlbnwwfHx8fDE3NTg3MDQ2NTV8MA&amp;ixlib-rb-4.1.0&amp;q=80&amp;w=1080",
       "imageHint": "tennis serve",
       "location": "Image non utilisée"
     },
@@ -318,7 +318,7 @@
     {
       "id": "france-camp",
       "description": "Vue sur les toits de Paris avec la Tour Eiffel en arrière-plan.",
-      "imageUrl": "https://images.unsplash.com/photo-1502602898657-3e91760c0337?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxwYXJpc3xlbnwwfHx8fDE3NTg3MTQ1NTZ8MA&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1502602898657-3e91760c0337?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxwYXJpc3xlbnwwfHx8fDE3NTg3MTQ1NTZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "Paris rooftops",
       "location": "Page Camps - Carte 'France 2026'"
     },
@@ -332,21 +332,21 @@
     {
       "id": "age-group-elementary",
       "description": "A youth football team huddling with their coach.",
-      "imageUrl": "https://images.unsplash.com/photo-1526495959496-614af90aec86?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxmb290YmFsbCUyMGVuZmFudHxlbnwwfHx8fDE3NTg3MDgwMjJ8MA&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1526495959496-614af90aec86?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxmb290YmFsbCUyMGVuZmFudHxlbnwwfHx8fDE3NTg3MDgwMjJ8MA&amp;ixlib-rb-4.1.0&amp;q=80&amp;w=1080",
       "imageHint": "youth sports",
       "location": "Page Programmes par âge - Carte 'École primaire'"
     },
     {
       "id": "age-group-middle-school",
       "description": "A high school soccer player in action on the field.",
-      "imageUrl": "https://images.unsplash.com/photo-1728520508268-1766303e1ebb?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxoaWdoJTIwc2Nob29sJTIwc29jY2VyfGVufDB8fHx8MTc1ODcwODQ0Nnww&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1728520508268-1766303e1ebb?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxoaWdoJTIwc2Nob29sJTIwc29jY2VyfGVufDB8fHx8MTc1ODcwODQ0Nnww&amp;ixlib-rb-4.1.0&amp;q=80&amp;w=1080",
       "imageHint": "high school soccer",
       "location": "Page Programmes par âge - Carte 'Collège'"
     },
     {
       "id": "age-group-adults",
       "description": "A university soccer player scoring a goal during a match.",
-      "imageUrl": "https://images.unsplash.com/photo-1721441905204-ea1b56b9d7d3?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMnx8dW5pdmVyc2l0eSUyMHNvY2NlcnxlbnwwfHx8fDE3NTg3MDg1NzZ8MA&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1721441905204-ea1b56b9d7d3?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMnx8dW5pdmVyc2l0eSUyMHNvY2NlcnxlbnwwfHx8fDE3NTg3MDg1NzZ8MA&amp;ixlib-rb-4.1.0&amp;q=80&amp;w=1080",
       "imageHint": "university soccer",
       "location": "Page Programmes par âge - Carte 'Lycée &amp; Adultes'"
     },

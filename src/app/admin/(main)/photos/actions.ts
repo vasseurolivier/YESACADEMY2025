@@ -2,7 +2,6 @@
 
 import { writeFile, readFile, mkdir } from 'fs/promises';
 import { join } from 'path';
-import { revalidatePath } from 'next/cache';
 
 const imagesFilePath = join(process.cwd(), 'src', 'lib', 'placeholder-images.json');
 const publicImagesDir = join(process.cwd(), 'public', 'images');
@@ -38,8 +37,6 @@ export async function handleImageUpload(formData: FormData): Promise<{ success: 
     } else {
         return { success: false, message: `Image with ID ${imageId} not found in JSON file.`};
     }
-
-    revalidatePath('/', 'layout');
     
     return { success: true, message: "Image téléversée avec succès." };
 
