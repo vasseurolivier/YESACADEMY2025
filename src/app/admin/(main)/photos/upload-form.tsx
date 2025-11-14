@@ -15,7 +15,8 @@ export function UploadForm({ imageId }: { imageId: string }) {
     event.preventDefault();
     const formData = new FormData(event.currentTarget);
 
-    if (!formData.get('image') || (formData.get('image') as File).size === 0) {
+    const file = formData.get('image') as File;
+    if (!file || file.size === 0) {
         toast({
             variant: 'destructive',
             title: 'Aucun fichier sélectionné',
@@ -32,7 +33,7 @@ export function UploadForm({ imageId }: { imageId: string }) {
       if (result.success) {
         toast({
           title: 'Succès !',
-          description: result.message,
+          description: "L'image a été remplacée. La page va se rafraîchir.",
         });
         // Force a reload to ensure the new image is displayed everywhere
         setTimeout(() => {

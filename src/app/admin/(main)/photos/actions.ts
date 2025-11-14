@@ -43,8 +43,8 @@ export async function handleImageUpload(formData: FormData): Promise<{ success: 
     await writeFile(imagesFilePath, JSON.stringify(imagesData, null, 2), 'utf-8');
 
     // 6. Revalidate paths to ensure new images are shown across the site
-    revalidatePath('/admin/photos');
-    revalidatePath('/', 'layout'); // Revalidate all pages that might use the images
+    // This is now safe to call as it's the last step before returning.
+    revalidatePath('/', 'layout');
 
     return { success: true, message: 'Image téléversée avec succès !' };
   } catch (error) {
