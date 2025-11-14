@@ -1,4 +1,3 @@
-
 // src/app/admin/logo/page.tsx
 'use client';
 
@@ -27,30 +26,30 @@ export default function UploadPage() {
     event.preventDefault();
     const formData = new FormData(event.currentTarget);
 
+    const file = formData.get('logo') as File;
+    if (!file || file.size === 0) {
+        toast({
+            variant: 'destructive',
+            title: 'Aucun fichier sélectionné',
+        });
+        return;
+    }
+
     setIsPending(true);
     try {
-      const result = await handleLogoUpload(formData);
+      await handleLogoUpload(formData);
+      toast({
+          title: 'Succès !',
+          description: 'Logo téléversé avec succès ! Le site va se rafraîchir.',
+      });
+      setTimeout(() => window.location.reload(), 2000);
 
-      if (result.success) {
-        toast({
-            title: 'Succès !',
-            description: 'Logo téléversé avec succès ! Le site va se rafraîchir.',
-        });
-        setTimeout(() => window.location.reload(), 2000);
-      } else {
-         toast({
-            variant: 'destructive',
-            title: 'Erreur',
-            description: result.message || 'Une erreur inconnue est survenue.',
-        });
-      }
     } catch (e: any) {
         toast({
             variant: 'destructive',
             title: 'Erreur de communication',
             description: e.message || 'Une erreur est survenue.',
         });
-    } finally {
         setIsPending(false);
     }
   };
