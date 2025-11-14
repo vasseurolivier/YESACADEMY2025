@@ -28,32 +28,28 @@ export function UploadForm({ imageId }: { imageId: string }) {
     setIsPending(true);
 
     try {
-      const result = await handleImageUpload(formData);
+      // The server action will throw an error on failure.
+      await handleImageUpload(formData);
 
-      if (result.success) {
-        toast({
-          title: 'Succès !',
-          description: "L'image a été remplacée. La page va se rafraîchir.",
-        });
-        // Force a reload to ensure the new image is displayed everywhere
-        setTimeout(() => {
-          window.location.reload();
-        }, 1500);
-      } else {
-        toast({
-          variant: 'destructive',
-          title: 'Erreur',
-          description: result.message,
-        });
-        setIsPending(false);
-      }
+      // If it reaches here, it was successful.
+      toast({
+        title: 'Succès !',
+        description: "L'image a été remplacée. La page va se rafraîchir.",
+      });
+
+      // Force a reload to ensure the new image is displayed everywhere
+      setTimeout(() => {
+        window.location.reload();
+      }, 1500);
+
     } catch (e: any) {
-        toast({
-            variant: 'destructive',
-            title: 'Erreur de communication',
-            description: e.message || 'Une erreur est survenue lors du téléversement.',
-        });
-        setIsPending(false);
+      // Catch any error thrown by the server action.
+      toast({
+          variant: 'destructive',
+          title: 'Erreur de téléversement',
+          description: e.message || 'Une erreur est survenue lors du téléversement.',
+      });
+      setIsPending(false);
     }
   };
 
