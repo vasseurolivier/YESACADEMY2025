@@ -21,10 +21,10 @@ export function LoginForm() {
 
     try {
       // The server action will handle redirection on success.
-      // We only need to handle the error case here.
+      // We only need to handle the error case here, which is returned by the action.
       const result = await handleAdminLogin(formData);
 
-      if (result?.success === false) {
+      if (result && result.success === false) {
         toast({
           variant: 'destructive',
           title: 'Erreur',
@@ -34,10 +34,12 @@ export function LoginForm() {
       // If successful, the `redirect` in the action will navigate away,
       // so no further client-side logic is needed for success.
     } catch (e: any) {
+       // This catch block will now primarily handle unexpected server errors,
+       // not the NEXT_REDIRECT error.
        toast({
           variant: 'destructive',
           title: 'Erreur de communication',
-          description: e.message || 'Une erreur est survenue.',
+          description: 'Une erreur inattendue est survenue.',
       });
     } finally {
       // It's possible the component unmounts on redirect,

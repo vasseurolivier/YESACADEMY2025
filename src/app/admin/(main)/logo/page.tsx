@@ -1,4 +1,3 @@
-// src/app/admin/logo/page.tsx
 'use client';
 
 import { useState } from 'react';
@@ -42,6 +41,7 @@ export default function UploadPage() {
           title: 'Succès !',
           description: 'Logo téléversé avec succès ! Le site va se rafraîchir.',
       });
+      // Force a reload to ensure the new logo is displayed everywhere
       setTimeout(() => window.location.reload(), 2000);
 
     } catch (e: any) {
