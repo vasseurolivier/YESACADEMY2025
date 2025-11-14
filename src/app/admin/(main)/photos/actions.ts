@@ -16,32 +16,35 @@ export async function handleImageUpload(formData: FormData): Promise<{ success: 
   }
 
   try {
+    // 1. Ensure the public/images directory exists
     await mkdir(publicImagesDir, { recursive: true });
 
+    // 2. Create a unique filename and write the file
     const bytes = await file.arrayBuffer();
     const buffer = Buffer.from(bytes);
-    
-    const filename = `${imageId}-${Date.now()}.png`;
+    const filename = `${imageId}-${Date.now()}.${file.name.split('.').pop()}`;
     const path = join(publicImagesDir, filename);
-
     await writeFile(path, buffer);
 
+    // 3. Read the JSON file
     const imagesDataRaw = await readFile(imagesFilePath, 'utf-8');
     const imagesData = JSON.parse(imagesDataRaw);
     
+    // 4. Find and update the image URL in the JSON data
     const imageIndex = imagesData.placeholderImages.findIndex((img: { id: string }) => img.id === imageId);
 
     if (imageIndex !== -1) {
       imagesData.placeholderImages[imageIndex].imageUrl = `/images/${filename}`;
-      // This line was missing, it saves the changes to the file system.
-      await writeFile(imagesFilePath, JSON.stringify(imagesData, null, 2), 'utf-8');
     } else {
         return { success: false, message: `Image with ID ${imageId} not found in JSON file.`};
     }
 
-    // Revalidate paths to ensure new images are shown
+    // 5. Write the updated JSON data back to the file
+    await writeFile(imagesFilePath, JSON.stringify(imagesData, null, 2), 'utf-8');
+
+    // 6. Revalidate paths to ensure new images are shown across the site
     revalidatePath('/admin/photos');
-    revalidatePath('/'); // Revalidate home and other pages that might use the image
+    revalidatePath('/', 'layout'); // Revalidate all pages that might use the images
 
     return { success: true, message: 'Image téléversée avec succès !' };
   } catch (error) {

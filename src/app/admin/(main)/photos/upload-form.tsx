@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { handleImageUpload } from "./actions";
+import { handleImageUpload } from "../actions";
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { useToast } from '@/hooks/use-toast';
@@ -15,7 +15,17 @@ export function UploadForm({ imageId }: { imageId: string }) {
     event.preventDefault();
     const formData = new FormData(event.currentTarget);
 
+    if (!formData.get('image') || (formData.get('image') as File).size === 0) {
+        toast({
+            variant: 'destructive',
+            title: 'Aucun fichier sélectionné',
+            description: 'Veuillez sélectionner un fichier avant de le remplacer.',
+        });
+        return;
+    }
+
     setIsPending(true);
+
     try {
       const result = await handleImageUpload(formData);
 
@@ -52,8 +62,7 @@ export function UploadForm({ imageId }: { imageId: string }) {
       <Input 
         type="file" 
         name="image" 
-        accept="image/*" 
-        required 
+        accept="image/*"
         disabled={isPending}
       />
       <Button 
