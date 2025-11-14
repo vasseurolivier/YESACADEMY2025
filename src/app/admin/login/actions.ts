@@ -5,9 +5,12 @@ import { redirect } from 'next/navigation';
 
 export async function handleAdminLogin(formData: FormData) {
   const password = formData.get('password') as string;
-  const adminPassword = process.env.ADMIN_PASSWORD;
+  // Use the environment variable if it exists, otherwise fall back to the default password.
+  // This ensures login works in both development (with .env) and production.
+  const adminPassword = process.env.ADMIN_PASSWORD || 'YESACADEMY2025';
 
   if (!adminPassword) {
+    // This case should ideally not be reached anymore.
     return { success: false, message: 'Le mot de passe administrateur n\'est pas configuré.' };
   }
 
