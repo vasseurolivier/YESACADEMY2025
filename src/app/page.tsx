@@ -51,6 +51,7 @@ const activities = [
 
 export default function Home() {
   const heroImage = PlaceHolderImages.find(p => p.id === 'hero-football-match');
+  const whyUsImage = PlaceHolderImages.find(p => p.id === 'why-us-1');
 
   return (
     <div className="flex flex-col">
@@ -106,12 +107,12 @@ export default function Home() {
                 </li>
               </ul>
             <div className="flex justify-center">
-              {PlaceHolderImages.find(p => p.id === 'why-us-1') && 
+              {whyUsImage && 
                 <div className="relative aspect-[4/3] w-full max-w-lg overflow-hidden rounded-lg shadow-xl">
                   <Image 
-                    src={PlaceHolderImages.find(p => p.id === 'why-us-1')?.imageUrl!}
-                    alt={PlaceHolderImages.find(p => p.id === 'why-us-1')?.description!}
-                    data-ai-hint={PlaceHolderImages.find(p => p.id === 'why-us-1')?.imageHint!}
+                    src={whyUsImage.imageUrl}
+                    alt={whyUsImage.description}
+                    data-ai-hint={whyUsImage.imageHint}
                     fill
                     sizes="(max-width: 768px) 100vw, 50vw"
                     className="object-cover"
