@@ -68,7 +68,7 @@ export default function Home() {
             />
         )}
         <div className="absolute inset-0 bg-black/50" />
-        <div className="relative z-10 flex h-full flex-col items-center justify-center text-center text-white container">
+        <div className="relative z-10 flex h-full flex-col items-center justify-center pb-32 text-center text-white container">
             <h1 className="font-headline text-4xl font-extrabold tracking-tight md:text-6xl">
                 YOUR JOURNEY, YOUR SPORT, YOUR VICTORY
             </h1>
