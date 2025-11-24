@@ -44,6 +44,7 @@ export async function handleImageUrlUpdate(formData: FormData): Promise<void> {
   } catch (error) {
     console.error('Error updating image URL:', error);
     // Re-throw a generic error to be caught by the client form
-    throw new Error('Une erreur est survenue lors de la mise à jour du fichier sur le serveur.');
+    const errorMessage = error instanceof Error ? error.message : 'Une erreur est survenue lors de la mise à jour du fichier sur le serveur.';
+    throw new Error(errorMessage);
   }
 }
