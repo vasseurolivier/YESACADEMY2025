@@ -30,6 +30,9 @@ export const metadata: Metadata = {
   ],
 };
 
+// Force dynamic rendering to prevent stale cache issues
+export const revalidate = 0;
+
 export default function RootLayout({
   children,
 }: Readonly<{
