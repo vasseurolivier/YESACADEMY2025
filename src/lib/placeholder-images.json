@@ -66,14 +66,14 @@
     {
       "id": "sport-volleyball",
       "description": "A volleyball net on a sandy beach.",
-      "imageUrl": "/images/sport-volleyball.png",
+      "imageUrl": "https://i.postimg.cc/zG52HRzm/joueur-volley-ball-jeune-femme-asiatique-uniforme-rouge-ballon-183314-3767.avif",
       "imageHint": "beach volleyball",
       "location": "Page d'accueil - Section 'Découvrez votre passion', Page Sports, Page Sport (Volleyball) - Hero"
     },
     {
       "id": "sport-volleyball-content",
       "description": "Volleyball player spiking the ball.",
-      "imageUrl": "/images/sport-volleyball-content.png",
+      "imageUrl": "https://i.postimg.cc/zG52HRzm/joueur-volley-ball-jeune-femme-asiatique-uniforme-rouge-ballon-183314-3767.avif",
       "imageHint": "volleyball spike",
       "location": "Page Sport (Volleyball) - Contenu"
     },
