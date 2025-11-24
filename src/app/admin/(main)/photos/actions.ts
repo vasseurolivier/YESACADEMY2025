@@ -2,7 +2,6 @@
 
 import { readFile, writeFile } from 'fs/promises';
 import { join } from 'path';
-import { revalidatePath } from 'next/cache';
 
 const imagesFilePath = join(process.cwd(), 'src', 'lib', 'placeholder-images.json');
 
@@ -36,10 +35,6 @@ export async function handleImageUrlUpdate(formData: FormData): Promise<void> {
 
     // 3. Write the updated JSON data back to the file
     await writeFile(imagesFilePath, JSON.stringify(imagesData, null, 2), 'utf-8');
-
-    // 4. Revalidate all paths. This is necessary to ensure Next.js picks up the changes
-    // from the updated JSON file on subsequent page loads.
-    revalidatePath('/', 'layout');
 
   } catch (error) {
     console.error('Error updating image URL:', error);
