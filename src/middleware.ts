@@ -2,6 +2,11 @@ import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
 
 export function middleware(request: NextRequest) {
+  // If in development mode, bypass the middleware to avoid session issues during hot-reloading.
+  if (process.env.NODE_ENV === 'development') {
+    return NextResponse.next();
+  }
+  
   const adminPassword = process.env.ADMIN_PASSWORD;
   const { pathname } = request.nextUrl;
 
