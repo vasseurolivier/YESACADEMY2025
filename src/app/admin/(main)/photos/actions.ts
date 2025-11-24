@@ -1,54 +1,50 @@
 'use server';
 
-import { writeFile, readFile, mkdir } from 'fs/promises';
+import { readFile, writeFile } from 'fs/promises';
 import { join } from 'path';
 import { revalidatePath } from 'next/cache';
 
 const imagesFilePath = join(process.cwd(), 'src', 'lib', 'placeholder-images.json');
-const publicImagesDir = join(process.cwd(), 'public', 'images');
 
-// This action does not return a value. It throws an error on failure.
-export async function handleImageUpload(formData: FormData): Promise<void> {
-  const file = formData.get('image') as File;
+// This action updates an image URL in the JSON file.
+export async function handleImageUrlUpdate(formData: FormData): Promise<void> {
+  const imageUrl = formData.get('imageUrl') as string;
   const imageId = formData.get('imageId') as string;
 
-  if (!file || file.size === 0 || !imageId) {
-    throw new Error('Fichier ou ID d\'image manquant.');
+  if (!imageUrl || !imageId) {
+    throw new Error('URL ou ID d\'image manquant.');
+  }
+
+  // Validate if the URL is a proper URL
+  try {
+    new URL(imageUrl);
+  } catch (_) {
+    throw new Error('Veuillez fournir une URL valide.');
   }
 
   try {
-    // 1. Ensure the public/images directory exists
-    await mkdir(publicImagesDir, { recursive: true });
-
-    // 2. Create a unique filename and write the file
-    const bytes = await file.arrayBuffer();
-    const buffer = Buffer.from(bytes);
-    const filename = `${imageId}-${Date.now()}.${file.name.split('.').pop()}`;
-    const path = join(publicImagesDir, filename);
-    await writeFile(path, buffer);
-
-    // 3. Read the JSON file
+    // 1. Read the JSON file
     const imagesDataRaw = await readFile(imagesFilePath, 'utf-8');
     const imagesData = JSON.parse(imagesDataRaw);
     
-    // 4. Find and update the image URL in the JSON data
+    // 2. Find and update the image URL in the JSON data
     const imageIndex = imagesData.placeholderImages.findIndex((img: { id: string }) => img.id === imageId);
 
     if (imageIndex !== -1) {
-      imagesData.placeholderImages[imageIndex].imageUrl = `/images/${filename}`;
+      imagesData.placeholderImages[imageIndex].imageUrl = imageUrl;
     } else {
         throw new Error(`Image with ID ${imageId} not found in JSON file.`);
     }
 
-    // 5. Write the updated JSON data back to the file
+    // 3. Write the updated JSON data back to the file
     await writeFile(imagesFilePath, JSON.stringify(imagesData, null, 2), 'utf-8');
 
-    // 6. Revalidate paths to ensure new images are shown across the site
+    // 4. Revalidate paths to ensure new images are shown across the site
     revalidatePath('/', 'layout');
 
   } catch (error) {
-    console.error('Error uploading image:', error);
-    const errorMessage = error instanceof Error ? error.message : 'Erreur lors du téléversement de l\'image.';
+    console.error('Error updating image URL:', error);
+    const errorMessage = error instanceof Error ? error.message : 'Erreur lors de la mise à jour de l\'URL de l\'image.';
     // Re-throw the error to be caught by the client
     throw new Error(errorMessage);
   }

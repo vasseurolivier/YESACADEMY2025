@@ -13,7 +13,7 @@ export default function ManagePhotosPage() {
         <div className="container mx-auto py-8">
             <div className="mb-8">
                 <h1 className="text-3xl font-bold">Gérer les images du site</h1>
-                <p className="text-muted-foreground">Téléversez de nouvelles images pour remplacer celles existantes.</p>
+                <p className="text-muted-foreground">Collez une nouvelle URL d'image pour remplacer celle existante.</p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
