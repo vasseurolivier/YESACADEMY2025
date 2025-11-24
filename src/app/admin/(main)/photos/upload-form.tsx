@@ -13,6 +13,8 @@ export function UploadForm({ imageId }: { imageId: string }) {
 
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
+    setIsPending(true);
+
     const formData = new FormData(event.currentTarget);
     const imageUrl = formData.get('imageUrl') as string;
 
@@ -22,24 +24,25 @@ export function UploadForm({ imageId }: { imageId: string }) {
             title: 'URL manquante',
             description: 'Veuillez saisir une URL d\'image.',
         });
+        setIsPending(false);
         return;
     }
-
-    setIsPending(true);
 
     try {
       await handleImageUrlUpdate(formData);
 
       toast({
         title: 'Succès !',
-        description: "L'image a été remplacée. La page va se rafraîchir.",
+        description: "L'image a été mise à jour. La page va se rafraîchir.",
       });
 
+      // Force a reload to ensure the new image is visible across the site.
       setTimeout(() => {
         window.location.reload();
       }, 1500);
 
     } catch (e: any) {
+      // Catch errors thrown from the server action
       toast({
           variant: 'destructive',
           title: 'Erreur de mise à jour',

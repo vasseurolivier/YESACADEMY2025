@@ -15,11 +15,9 @@ export async function handleImageUrlUpdate(formData: FormData): Promise<void> {
     throw new Error('URL ou ID d\'image manquant.');
   }
 
-  // Validate if the URL is a proper URL
-  try {
-    new URL(imageUrl);
-  } catch (_) {
-    throw new Error('Veuillez fournir une URL valide.');
+  // Basic URL validation
+  if (!imageUrl.startsWith('http://') && !imageUrl.startsWith('https://')) {
+    throw new Error('Veuillez fournir une URL valide commençant par http:// ou https://.');
   }
 
   try {
@@ -39,13 +37,13 @@ export async function handleImageUrlUpdate(formData: FormData): Promise<void> {
     // 3. Write the updated JSON data back to the file
     await writeFile(imagesFilePath, JSON.stringify(imagesData, null, 2), 'utf-8');
 
-    // 4. Revalidate paths to ensure new images are shown across the site
+    // 4. Revalidate all paths. This is necessary to ensure Next.js picks up the changes
+    // from the updated JSON file on subsequent page loads.
     revalidatePath('/', 'layout');
 
   } catch (error) {
     console.error('Error updating image URL:', error);
-    const errorMessage = error instanceof Error ? error.message : 'Erreur lors de la mise à jour de l\'URL de l\'image.';
-    // Re-throw the error to be caught by the client
-    throw new Error(errorMessage);
+    // Re-throw a generic error to be caught by the client form
+    throw new Error('Une erreur est survenue lors de la mise à jour du fichier sur le serveur.');
   }
 }
